@@ -1,0 +1,1 @@
+certificate cert20.txt: n=20, min=112, coverage=262144, distinct witnesses=1627, winners=[[11, 7, 5, 1]], upper_checked=True

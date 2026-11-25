@@ -1,0 +1,10 @@
+Byte-for-byte agreement for 47 original ZIP members and the unmodified Git baseline.
+Reproduced SmallCertificate.lean
+Reproduced Slice17.lean
+Reproduced WinnerWitnesses.lean
+Reproduced ExtensionWitnesses.lean
+Reproduced evidence/Bench17.lean
+n=17 gaps=9,6,4,1, states=131072 edges=1114112 max=86
+full table UInt16LE 262144 5d1d59058b04bbf503afb1cda8f114576199061e1e2259c5377fbe153419ba59
+packed 72865 45b89c3b32b8a806bcdeff65807d7b6c435b4d4ef79ac96be7e08926096e738a block 0 8 checked outgoing edges 124
+Reproduced Potential17.lean and complete compressed potential.

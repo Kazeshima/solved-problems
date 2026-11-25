@@ -1,0 +1,63 @@
+theorem ShellMinimax.actual_threshold_path : ∀ {n : ℕ} (P : Equiv.Perm (Fin n)) (gaps : List ℕ),
+  (∀ h ∈ gaps, 0 < h) →
+    (ShellMinimax.Operational.trace (fun i => P i) gaps).length =
+      ShellMinimax.walkCost (ShellMinimax.addPosition n) (fun t i => ShellMinimax.edgeWeight n gaps t ↑i) ∅
+        (ShellMinimax.positions P) :=
+fun {n} P gaps hg =>
+  Eq.trans (Eq.symm (ShellMinimax.shell_path P gaps))
+    (ShellMinimax.walk_weight_eq gaps hg (ShellMinimax.positions_walk P))
+ShellMinimax.actual_threshold_maximum {n : ℕ} (gaps : List ℕ) (hg : ∀ h ∈ gaps, 0 < h) :
+  (∀ (P : Equiv.Perm (Fin n)),
+      (ShellMinimax.Operational.trace (fun i => P i) gaps).length ≤ ShellMinimax.thresholdMaximum n gaps) ∧
+    ∃ P, (ShellMinimax.Operational.trace (fun i => P i) gaps).length = ShellMinimax.thresholdMaximum n gaps
+ShellMinimax.executed_maximum {n : ℕ} (H : List ℕ) (pos : ∀ h ∈ H, 0 < h) :
+  (∀ (P : Equiv.Perm (Fin n)),
+      (ShellMinimax.Operational.execute (fun i => P i) H).2.length ≤ ShellMinimax.thresholdMaximum n H) ∧
+    ∃ P, (ShellMinimax.Operational.execute (fun i => P i) H).2.length = ShellMinimax.thresholdMaximum n H
+'ShellMinimax.executed_maximum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShellMinimax.Certificate.legal_last' depends on axioms: [propext, Quot.sound]
+ShellMinimax.Certificate.certificate_sound {n U : ℕ} {rows : Finset ℕ → ShellMinimax.Certificate.Row n}
+  (hc : ShellMinimax.Certificate.checkAll n U rows = true) :
+  (∃ H, ShellMinimax.Certificate.Legal n H ∧ ShellMinimax.thresholdMaximum n H = U) ∧
+    ∀ (H : List ℕ),
+      ShellMinimax.Certificate.Legal n H →
+        U ≤ ShellMinimax.thresholdMaximum n H ∧
+          (ShellMinimax.thresholdMaximum n H = U ↔ ShellMinimax.Certificate.winner (rows H.toFinset) = true)
+ShellMinimax.Reflected5.exact_minimizers (H : List ℕ) (hl : ShellMinimax.Certificate.Legal 5 H) :
+  ShellMinimax.thresholdMaximum 5 H = 10 ↔ H ∈ ShellMinimax.Reflected5.minimizers
+'ShellMinimax.Operational.ins_count' depends on axioms: [propext, Quot.sound]
+'ShellMinimax.Operational.pass_map' depends on axioms: [propext, Quot.sound]
+'ShellMinimax.pass_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShellMinimax.binaryPass_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShellMinimax.binaryPass_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShellMinimax.binaryPass_insert' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShellMinimax.pass_mark' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShellMinimax.pass_charge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShellMinimax.permutation_of_walk' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShellMinimax.actual_threshold_path' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShellMinimax.actual_threshold_maximum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShellMinimax.baseline_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShellMinimax.distribution_actual' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShellMinimax.Certificate.enumeration' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShellMinimax.Certificate.potential_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShellMinimax.Certificate.certificate_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShellMinimax.Reflected5.checked' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShellMinimax.Reflected5.exact_minimizers' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShellMinimax.Witnesses.w17_9_attains' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShellMinimax.Witnesses.w18_17_attains' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShellMinimax.Witnesses.w19_9_attains' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShellMinimax.Witnesses.w20_11_attains' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShellMinimax.Witnesses.w21_9_attains' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShellMinimax.Witnesses.w21_20_attains' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShellMinimax.Witnesses.w22_5_attains' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShellMinimax.Witnesses.w22_7_attains' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShellMinimax.Witnesses.w22_8_attains' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShellMinimax.Witnesses.w22_9_attains' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShellMinimax.Witnesses.w22_21_attains' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShellMinimax.Witnesses.w23_9_attains' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShellMinimax.Witnesses.w23_22_attains' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShellMinimax.Reflected17.mask0' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShellMinimax.Reflected17.mask7' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShellMinimax.Block17.state0' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShellMinimax.Block17.state7' depends on axioms: [propext, Classical.choice, Quot.sound]
+exit=0

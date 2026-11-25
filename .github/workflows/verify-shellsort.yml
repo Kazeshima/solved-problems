@@ -1,0 +1,64 @@
+name: Verify finite Shellsort minimax
+
+on:
+  pull_request:
+    paths:
+      - 'problems/shellsort-minimax/**'
+      - '.github/workflows/verify-shellsort.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'problems/shellsort-minimax/**'
+      - '.github/workflows/verify-shellsort.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+defaults:
+  run:
+    working-directory: problems/shellsort-minimax
+
+jobs:
+  certificates:
+    name: Replay all seven numerical certificates
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify the catalog files and original certificate hashes
+        run: |
+          sha256sum --check --quiet SHA256SUMS
+          sha256sum --check certificate_sha256.txt extension_sha256.txt
+      - name: Build the independent upper-bound solvers
+        run: |
+          mkdir -p .work
+          c++ -std=c++20 -O3 potential.cpp -o .work/potential
+          c++ -std=c++20 -O3 minimax.cpp -o .work/minimax
+      - name: Check the complete distributions and replay every mask
+        run: |
+          python3 -O audit.py --small 8 --binary .work/minimax
+          python3 -O check_extension.py --full .work/potential --mixed .work/minimax \
+            cert17.txt cert18.txt cert19.txt cert20.txt cert21_fast.txt cert22.txt cert23.txt
+
+  lean:
+    name: Build and replay the Lean proofs
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install elan
+        run: |
+          curl --fail --location --retry 3 https://raw.githubusercontent.com/leanprover/elan/58e8d545e33641f66dbcbd22c4283109e71757be/elan-init.sh -o "$RUNNER_TEMP/elan-init.sh"
+          sh "$RUNNER_TEMP/elan-init.sh" -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Fetch the pinned imports and build the project
+        shell: bash
+        run: |
+          mapfile -t imports < <(awk '/^import Mathlib\./ {print $2}' *.lean | sort -u)
+          lake exe cache get "${imports[@]}"
+          lake build
+      - name: Audit the theorems and replay their proof terms
+        run: |
+          lake env lean --trust=0 Audit.lean
+          lake env lean --trust=0 Replay.lean

@@ -1,0 +1,11 @@
+checked n=2, cumulative schedules=1, permutations-times-schedules=2
+checked n=3, cumulative schedules=3, permutations-times-schedules=14
+checked n=4, cumulative schedules=7, permutations-times-schedules=110
+checked n=5, cumulative schedules=15, permutations-times-schedules=1070
+checked n=6, cumulative schedules=31, permutations-times-schedules=12590
+checked n=7, cumulative schedules=63, permutations-times-schedules=173870
+certificate cert17.txt: n=17, min=86, coverage=32768, distinct witnesses=647, winners=[[9, 6, 4, 1]], upper_checked=True
+certificate cert18.txt: n=18, min=94, coverage=65536, distinct witnesses=779, winners=[[17, 9, 6, 4, 1]], upper_checked=True
+certificate cert19.txt: n=19, min=103, coverage=131072, distinct witnesses=1209, winners=[[9, 7, 4, 1]], upper_checked=True
+certificate cert20.txt: n=20, min=112, coverage=262144, distinct witnesses=1627, winners=[[11, 7, 5, 1]], upper_checked=True
+certificate cert21_fast.txt: n=21, min=121, coverage=524288, distinct witnesses=5439, winners=[[9, 7, 4, 1], [20, 9, 7, 4, 1]], upper_checked=True

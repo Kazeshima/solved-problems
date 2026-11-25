@@ -1,0 +1,3 @@
+Project and reflected source scan: 22 Lean files, no proof holes, project axiom declarations or native-reduction calls.
+All local document link targets exist.
+All seven numerical certificate file hashes matched.

@@ -1,0 +1,10 @@
+cert*.txt -text whitespace=cr-at-eol
+logs/* -text whitespace=cr-at-eol
+*.zip binary
+*.pdf binary
+*.zlib binary
+*.lean text eol=lf
+*.typ text eol=lf
+*.py text eol=lf
+*.cpp text eol=lf
+*.cmd -text

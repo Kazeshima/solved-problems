@@ -1,0 +1,1 @@
+certificate cert19.txt: n=19, min=103, coverage=131072, distinct witnesses=1209, winners=[[9, 7, 4, 1]], upper_checked=True

@@ -1,0 +1,2 @@
+{"utc":"2026-11-25T23:10:55.4607244Z","case":"256 exclusion rows at n=17","pid":46384,"user_seconds":446.578125,"kernel_seconds":90.484375,"working_set_bytes":6358327296,"free_physical_MiB":1126.0,"memory_limit_bytes":6442450944}
+{"action":"stopped","reason":"free physical memory below 2 GiB"}

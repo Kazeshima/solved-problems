@@ -1,0 +1,6 @@
+cert23.txt 2afbe8b31a722c008de719899faa6e13c208df3cd497130946c3eec7e7f538d3
+n=23 gaps=9,7,4,1, states=8388608 edges=96468992 max=139
+n=23 gaps=9,7,4,1 max=139 witness=15,11,21,16,14,19,17,22,4,10,6,18,12,8,13,1,20,3,9,5,0,2,7
+n=23 gaps=22,9,7,4,1, states=8388608 edges=96468992 max=139
+n=23 gaps=22,9,7,4,1 max=139 witness=6,0,18,7,9,1,17,15,5,12,4,21,13,10,14,19,22,16,11,2,20,8,3
+cert23.txt: complete, n=23, U=139, masks=2097152, rows={'B': 991685, 'X': 1105465, 'O': 2}, distinct witnesses=9818, listed winners=[[9, 7, 4, 1], [22, 9, 7, 4, 1]]

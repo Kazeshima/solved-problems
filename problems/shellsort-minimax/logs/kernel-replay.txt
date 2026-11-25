@@ -1,0 +1,2 @@
+Kernel replay accepted 28 roots and 3129 declarations above Init.
+exit=0 elapsed_seconds=317.4190788

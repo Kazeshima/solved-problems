@@ -1,0 +1,7 @@
+independent reverse mixed-radix n=24 gaps=[9, 7, 4, 1] states=110592 exact=148
+independent reverse mixed-radix n=25 gaps=[9, 7, 4, 1] states=147456 exact=159
+independent reverse mixed-radix n=26 gaps=[9, 7, 4, 1] states=196608 exact=167
+independent reverse mixed-radix n=27 gaps=[9, 7, 4, 1] states=262144 exact=179
+independent reverse mixed-radix n=28 gaps=[9, 7, 4, 1] states=327680 exact=187
+independent reverse mixed-radix n=29 gaps=[9, 7, 4, 1] states=409600 exact=198
+independent reverse mixed-radix n=30 gaps=[9, 7, 4, 1] states=512000 exact=209

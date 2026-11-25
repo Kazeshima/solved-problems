@@ -1,0 +1,5 @@
+initial n=10 best=35 gaps=9,6,1
+FINAL n=10 min=35 schedules=256 baseline_pruned=32 witness_pruned=177 dp=47 seconds=0.00426031
+winner 9,6,1
+winner 9,8,5,1
+winner 9,8,6,1

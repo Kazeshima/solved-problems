@@ -1,0 +1,15 @@
+name = "shellsort_minimax_v3"
+version = "0.3.0"
+packagesDir = ".lake/shared-packages"
+defaultTargets = ["BooleanLattice", "Executable", "Shellsort"]
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "v4.19.0"
+[[lean_lib]]
+name = "BooleanLattice"
+[[lean_lib]]
+name = "Executable"
+[[lean_lib]]
+name = "Shellsort"
+roots = ["Shellsort", "Operational", "Geometry", "PermutationPaths", "Transport", "Charging", "Certificates", "SmallCertificate", "WinnerWitnesses", "Slice17", "Potential17", "Baseline", "Distribution", "ExtensionWitnesses", "LegalSpec", "Execution"]

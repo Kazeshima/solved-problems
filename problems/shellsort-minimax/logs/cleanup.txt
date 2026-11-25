@@ -1,0 +1,5 @@
+Removed 428452594 bytes from interrupted uninitialized clone staging; no HEAD, refs, worktree files, reparse points or active clone.
+Removed 66318392 bytes of task-owned temporary package, rendering, object and duplicate test staging. Kept three validated executables and the seven pinned upstream source snapshots in the local ignored work directory. The full numerical table and measured benchmark inputs are retained under evidence/.
+Final citation and PDF render staging removed after visual inspection: 63712383 bytes.
+Retained local compiler outputs and frozen source reads in .work: 966098 bytes. Existing shared mathlib/toolchain caches were reused. Project-specific Lake build output was retained for direct verification.
+Removed 2048205 bytes of final linker intermediates and superseded Lean diagnostics. Primary proof, failure, benchmark and validation records are under logs/.

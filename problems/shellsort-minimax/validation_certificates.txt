@@ -1,0 +1,5 @@
+certificate cert17.txt: n=17, min=86, coverage=32768, distinct witnesses=647, winners=[[9, 6, 4, 1]], upper_checked=True
+certificate cert18.txt: n=18, min=94, coverage=65536, distinct witnesses=779, winners=[[17, 9, 6, 4, 1]], upper_checked=True
+certificate cert19.txt: n=19, min=103, coverage=131072, distinct witnesses=1209, winners=[[9, 7, 4, 1]], upper_checked=True
+certificate cert20.txt: n=20, min=112, coverage=262144, distinct witnesses=1627, winners=[[11, 7, 5, 1]], upper_checked=True
+certificate cert21_fast.txt: n=21, min=121, coverage=524288, distinct witnesses=5439, winners=[[9, 7, 4, 1], [20, 9, 7, 4, 1]], upper_checked=True

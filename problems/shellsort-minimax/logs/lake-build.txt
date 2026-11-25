@@ -1,0 +1,20 @@
+ℹ [667/677] Built Executable
+info: .\.\.\.\Executable.lean:73:0: 11
+info: .\.\.\.\Executable.lean:74:0: 23
+✔ [677/689] Built BooleanLattice
+✔ [797/808] Built Operational
+✔ [801/813] Built Geometry
+✔ [802/813] Built PermutationPaths
+✔ [915/932] Built Transport
+✔ [918/932] Built Baseline
+✔ [923/932] Built Charging
+✔ [924/932] Built Certificates
+✔ [925/932] Built Distribution
+✔ [926/932] Built Slice17
+✔ [927/932] Built Potential17
+✔ [928/932] Built WinnerWitnesses
+✔ [929/932] Built SmallCertificate
+✔ [930/932] Built ExtensionWitnesses
+✔ [931/932] Built Shellsort
+Build completed successfully.
+exit=0 elapsed_seconds=996.4879912
