@@ -49,6 +49,8 @@ For the binary POVM extension, each contraction $X$ commutes with $D=(I-X^2)^{1/
 
 ## Independent prior-art search
 
+These search counts record the public state immediately before the proof was posted on 25 November 2026. [Subsequent submission to the authors](https://github.com/LewisWooltorton/expanding-BI/issues/1)
+
 **Priority for even $N\ge4$ remains unproved.** The search located an exact earlier solution for $N=2$, the published attaining family for every even $N$, and prior results covering two ingredients of the upper bound. I found no earlier proof identifying the optimum on the zero-correlator slice for every even $N$.
 
 | Source or search | What was checked |
@@ -65,6 +67,12 @@ For the binary POVM extension, each contraction $X$ commutes with $D=(I-X^2)^{1/
 The checked mathlib v4.19.0 source gave no name or text match for this MABK result or for the Grace–Walsh theorem. Search indices have incomplete coverage. The public global commit search indexes messages, whereas the examination of the authors’ repository included historical file contents. These results support reporting “no equivalent prior solution located” for $N\ge4$. They do not establish a priority date for the submitted argument.
 
 The GitHub code search also surfaced the November 2026 revision of *Optimal GHZ extraction from MABK violations*. It solves the minimum extractable GHZ fidelity at a fixed Bell score, with extraction optimized over local channels. The constraint in the present conjecture fixes the observed probabilities of a specified joint measurement. The problem-list match in the same search cites Cao and colleagues' self-testing paper, and the settlement-census match points to PR #11696. The dated search responses include counts and example URLs. [Kreindel and Zabokritskiy, v3](https://arxiv.org/abs/2610.08516v3) · [Search records](../results/github-search.json)
+
+## Public listings checked on publication
+
+Wooltorton's Bristol thesis states the same condition $p(a\mid\mathbf 0)=2^{-N}$ and the same target as Conjecture 7.1 in §7.4, printed page 101. The resolution report to the author's companion repository identifies both statements. [Thesis](https://research-information.bris.ac.uk/files/460797363/LW_PhD_thesis.pdf) · [Resolution report](https://github.com/LewisWooltorton/expanding-BI/issues/1)
+
+I found no separate open entry for this threshold in the QIQCOP Zoo's 217 canonical records, the Open Quantum Problems catalogue and its proposals, or IQOQI Vienna's open list. The related nonlocality entry N8 in Open Quantum Problems concerns optimal self-testing robustness. Public GitHub issue, pull-request and discussion searches also yielded no additional matching tracker. [QIQCOP Zoo records](https://github.com/Naixu-Guo/quantum-open-problems/tree/6da6b3bed1dfef797f26b6899ba483a3e0a06a05/database/problems_json) · [Open Quantum Problems data](https://github.com/jpbruneton/open_quantum_problems/tree/8d17461b79164e16a7355d503c80f4dede4622bb/app/data) · [IQOQI Vienna](https://oqp.iqoqi.oeaw.ac.at/open-quantum-problems)
 
 ## Falsification checks
 

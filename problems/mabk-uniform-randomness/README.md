@@ -17,6 +17,8 @@ theorem MABK.conjecture1 (n : ℕ) (hn : 2 ≤ n) (he : Even n) :
 
 Lean 4.19.0 reports exactly `propext`, `Classical.choice` and `Quot.sound` as the theorem's axioms. A separate run of Lean's kernel checked 39,705 declarations from 1,422 modules above `Init`. The project sources contain no proof placeholders or additional axioms. The mathematical review records a corrected interval condition, an independent two-party proof and the limits of the priority search. [Theorem and definitions](MABKCore.lean#L76) · [Axiom report](results/kernel-audit.log) · [Dependency replay](results/dependency-replay.log) · [Independent review](review/INDEPENDENT_REVIEW.md)
 
+Lewis Wooltorton states the same problem as Conjecture 7.1 in §7.4, printed page 101 of his Bristol thesis. It imposes the same output probabilities and proposes the same maximum, so the proof resolves that formulation as well. The resolution was reported in the paper's companion repository, and GitHub Actions reproduced the build and both kernel replays on Ubuntu. [Thesis, Conjecture 7.1](https://research-information.bris.ac.uk/files/460797363/LW_PhD_thesis.pdf) · [Author-repository issue](https://github.com/LewisWooltorton/expanding-BI/issues/1) · [Successful public verification](https://github.com/Kazeshima/solved-problems/actions/runs/45641247041)
+
 ## Reproduce the result
 
 With elan installed, run these commands from the repository root. The Lake manifest pins mathlib and its dependencies.
