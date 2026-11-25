@@ -1,0 +1,138 @@
+[
+  {
+    "tool": "search",
+    "query": {
+      "query": "\"antiferromagnetic Potts\" \"convexity\"",
+      "topn": 12
+    },
+    "isError": false,
+    "usable": true,
+    "results": [
+      {
+        "url": "https://github.com/MColbrook/AIM/blob/b2ec0fac559f532fc0ed04fce81deea0ce07c68b/CATALOG.md",
+        "path": "CATALOG.md"
+      },
+      {
+        "url": "https://github.com/africamonkey/OEIS-Spider/blob/7cbc069b47ea504c99a845a429ac9b1bdab96139/prepare/data/data/A001006.txt",
+        "path": "prepare/data/data/A001006.txt"
+      },
+      {
+        "url": "https://github.com/Xsardas1000/Search/blob/691b97f2d946a2ff736234653bea5f22c00a5bc9/big_data/00081.txt",
+        "path": "big_data/00081.txt"
+      },
+      {
+        "url": "https://github.com/MColbrook/AIM/blob/b2ec0fac559f532fc0ed04fce81deea0ce07c68b/research/further-integration-2026-10-30/README.md",
+        "path": "research/further-integration-2026-10-30/README.md"
+      },
+      {
+        "url": "https://github.com/ehijano/rss_fetch/blob/5c8af7bcd258797ce310e0eb56eb21940cbe8c2c/rss_data/cs.DS/2024-11-12_cs.DS.xml",
+        "path": "rss_data/cs.DS/2024-11-12_cs.DS.xml"
+      },
+      {
+        "url": "https://github.com/ehijano/rss_fetch/blob/5c8af7bcd258797ce310e0eb56eb21940cbe8c2c/rss_data/cs.DS/2025-02-11_cs.DS.xml",
+        "path": "rss_data/cs.DS/2025-02-11_cs.DS.xml"
+      },
+      {
+        "url": "https://github.com/kooshi/hadwiger-nelson/blob/5049e2fbd3595d2939df6e14910b1a7d95039265/plans/POROS-2026-09-24-fs85-plan.md",
+        "path": "plans/POROS-2026-09-24-fs85-plan.md"
+      },
+      {
+        "url": "https://github.com/tamnd/arxiv/blob/e8cb5df247e0be403f5989ce429cca249ead7178/metadata/0004.md",
+        "path": "metadata/0004.md"
+      },
+      {
+        "url": "https://github.com/ehijano/rss_fetch/blob/5c8af7bcd258797ce310e0eb56eb21940cbe8c2c/rss_data/math.PR/2024-11-12_math.PR.xml",
+        "path": "rss_data/math.PR/2024-11-12_math.PR.xml"
+      },
+      {
+        "url": "https://github.com/ehijano/rss_fetch/blob/5c8af7bcd258797ce310e0eb56eb21940cbe8c2c/rss_data/math.PR/2025-02-11_math.PR.xml",
+        "path": "rss_data/math.PR/2025-02-11_math.PR.xml"
+      },
+      {
+        "url": "https://github.com/kooshi/hadwiger-nelson/blob/5049e2fbd3595d2939df6e14910b1a7d95039265/plans/FS85-rigidity-without-triangles.md",
+        "path": "plans/FS85-rigidity-without-triangles.md"
+      },
+      {
+        "url": "https://github.com/tamnd/arxiv/blob/e8cb5df247e0be403f5989ce429cca249ead7178/analysis/objects/2609/2609.23994.md",
+        "path": "analysis/objects/2609/2609.23994.md"
+      }
+    ]
+  },
+  {
+    "tool": "search",
+    "query": {
+      "query": "\"Potts\" \"convexity\"",
+      "repository_name": "openai/math",
+      "topn": 12
+    },
+    "isError": false,
+    "usable": true,
+    "results": [
+      {
+        "url": "https://github.com/openai/math/blob/3344da59991ed94f9ba711217b29c1d760badfa6/preprints/A-Capacity-Criterion-for-Four-State-Potts-Reconstruction-on-Trees-October-5-2026/build/main.tex",
+        "path": "preprints/A-Capacity-Criterion-for-Four-State-Potts-Reconstruction-on-Trees-October-5-2026/build/main.tex"
+      },
+      {
+        "url": "https://github.com/openai/math/blob/3344da59991ed94f9ba711217b29c1d760badfa6/overview.tex",
+        "path": "overview.tex"
+      },
+      {
+        "url": "https://github.com/openai/math/blob/3344da59991ed94f9ba711217b29c1d760badfa6/preprints/The-spherical-perceptron-with-bi-orthogonally-invariant-disorder-September-24-2026/build/paper.tex",
+        "path": "preprints/The-spherical-perceptron-with-bi-orthogonally-invariant-disorder-September-24-2026/build/paper.tex"
+      }
+    ]
+  },
+  {
+    "tool": "search",
+    "query": {
+      "query": "\"Potts\" \"belief propagation\"",
+      "repository_name": "isabelle-prover/mirror-afp-devel",
+      "topn": 10
+    },
+    "isError": false,
+    "usable": true,
+    "results": []
+  },
+  {
+    "tool": "search",
+    "query": {
+      "query": "\"Potts\" \"belief propagation\"",
+      "org": "rocq-community",
+      "topn": 10
+    },
+    "isError": false,
+    "usable": true,
+    "results": []
+  },
+  {
+    "tool": "search",
+    "query": {
+      "query": "\"Potts\" \"belief propagation\"",
+      "repository_name": "agda/agda-stdlib",
+      "topn": 10
+    },
+    "isError": false,
+    "usable": true,
+    "results": []
+  },
+  {
+    "tool": "search_issues",
+    "query": {
+      "query": "\"Q4813\" \"Potts\"",
+      "topn": 12
+    },
+    "isError": false,
+    "usable": true,
+    "results": []
+  },
+  {
+    "tool": "search_commits",
+    "query": {
+      "query": "\"Potts\" \"convexity classification\"",
+      "topn": 12
+    },
+    "isError": false,
+    "usable": true,
+    "results": []
+  }
+]

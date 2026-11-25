@@ -1,0 +1,959 @@
+[
+  {
+    "platform": "arXiv subject query",
+    "url": "https://export.arxiv.org/api/query?search_query=all%3A%22antiferromagnetic%20Potts%22%20AND%20%28all%3A%22convexity%22%20OR%20all%3A%22belief%20propagation%22%29&max_results=30",
+    "utc": "2026-11-25T18:49:42.564745+00:00",
+    "http": "200",
+    "exit": 0,
+    "bytes": 7077,
+    "sha256": "ba609983e7ff90dd873ccffc0cc016c296126efaaac213bab8d86895fc6b73bc",
+    "result": [
+      "arXiv Query: search_query=all:\"antiferromagnetic Potts\" AND (all:\"convexity\" OR all:\"belief propagation\")&id_list=&start=0&max_results=30",
+      "The sharp uniqueness threshold for the antiferromagnetic Potts model on regular trees",
+      "Counterexamples to a Weitz-Style Reduction for Multispin Systems",
+      "Inapproximability for Antiferromagnetic Spin Systems in the Tree Non-Uniqueness Region"
+    ]
+  },
+  {
+    "platform": "arXiv v2",
+    "url": "https://arxiv.org/abs/2411.06541v2",
+    "utc": "2026-11-25T18:49:42.166349+00:00",
+    "http": "200",
+    "exit": 0,
+    "bytes": 40627,
+    "sha256": "726415a32ad643e0c880992c68915b477142d76e0ba6144683c7c3be87f71566",
+    "result": {
+      "prefix": " [2411.06541v2] Counterexamples to a Weitz-Style Reduction for Multispin Systems Skip to main content Search Submit Donate Log in Search arXiv Press Enter to search · Advanced search --> Computer Science > Data Structures and Algorithms arXiv:2411.06541v2 (cs) [Submitted on 10 Nov 2024 ( v1 ), last revised 8 Feb 2025 (this version, v2)] T",
+      "matches": [
+        " [2411.06541v2] Counterexamples to a Weitz-Style Reduction for Multisp",
+        "v2] Counterexamples to a Weitz-Style Reduction for Multispin Systems Skip to main conten",
+        "res and Algorithms arXiv:2411.06541v2 (cs) [Submitted on 10 Nov 2024 ( v1 ), last revised 8 F",
+        "le: Counterexamples to a Weitz-Style Reduction for Multispin Systems Authors: Kuikui Liu",
+        "led Counterexamples to a Weitz-Style Reduction for Multispin Systems, by Kuikui Liu and ",
+        "act: In a seminal paper, Weitz showed that for two-state spin systems, such as the Ising",
+        "raphs. The key gadget in Weitz's reduction has been instrumental in recent advances in a",
+        "luding the ferromagnetic Potts model, there are fundamental obstacles to extending Weitz",
+        "l obstacles to extending Weitz's reduction to the multispin setting. A central component",
+        "or the antiferromagnetic Potts model. Subjects: Data Structures and Algorithms (cs.DS) ;",
+        "(math.PR) Cite as: arXiv:2411.06541 [cs.DS] (or arXiv:2411.06541v2 [cs.DS] for this version) ",
+        ".06541 [cs.DS] (or arXiv:2411.06541v2 [cs.DS] for this version) https://doi.org/10.48550/arXi"
+      ]
+    }
+  },
+  {
+    "platform": "Crossref Potts",
+    "url": "https://api.crossref.org/works?rows=8&select=title,DOI&query.bibliographic=antiferromagnetic%20Potts%20belief%20propagation%20image%20convexity",
+    "utc": "2026-11-25T18:49:42.869907+00:00",
+    "http": "200",
+    "exit": 0,
+    "bytes": 1146,
+    "sha256": "2c813ecf113fcae894900a119afb036642a17c83a0dcaba4afe9cbf1464774d6",
+    "result": [
+      {
+        "title": [
+          "Bayesian Image Segmentations by Potts Prior and Loopy Belief Propagation"
+        ],
+        "DOI": "10.7566/jpsj.83.124002"
+      },
+      {
+        "title": [
+          "Propagation of order in the dilute antiferromagnetic three-state Potts model"
+        ],
+        "DOI": "10.1007/bf01042604"
+      },
+      {
+        "title": [
+          "Recursive Belief Propagation --- Belief Propagation in a Well-order"
+        ],
+        "DOI": "10.3724/sp.j.1004.2010.01091"
+      },
+      {
+        "title": [
+          "Adaptive Image Deblurring via Tanner Graph Representation and Belief Propagation"
+        ],
+        "DOI": "10.1109/dcc.2011.85"
+      },
+      {
+        "title": [
+          "Order propagation in dilute antiferromagnetic Potts models"
+        ],
+        "DOI": "10.1088/0305-4470/20/4/009"
+      },
+      {
+        "title": [
+          "Multiscale Belief Propagation on Concrete CT Image Fast Segmentation"
+        ],
+        "DOI": "10.14257/ijgdc.2013.6.6.02"
+      },
+      {
+        "title": [
+          "Image completion for view synthesis using Markov random fields and efficient belief propagation"
+        ],
+        "DOI": "10.1109/icip.2013.6738439"
+      },
+      {
+        "title": [
+          "Sparse stereo matching using belief propagation"
+        ],
+        "DOI": "10.1109/icip.2008.4712121"
+      }
+    ]
+  },
+  {
+    "platform": "Crossref equivalent geometry",
+    "url": "https://api.crossref.org/works?rows=8&select=title,DOI&query.bibliographic=normalized%20Hadamard%20product%20probability%20simplex%20convex",
+    "utc": "2026-11-25T18:49:42.799794+00:00",
+    "http": "429",
+    "exit": 0,
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "result": {
+      "prefix": "",
+      "matches": []
+    }
+  },
+  {
+    "platform": "OpenAlex classification",
+    "url": "https://api.openalex.org/works?per_page=12&search=antiferromagnetic%20Potts%20belief%20propagation%20image%20convexity",
+    "utc": "2026-11-25T18:49:42.536027+00:00",
+    "http": "200",
+    "exit": 0,
+    "bytes": 73905,
+    "sha256": "9bb0004488a0955caa333b4d785a651f760a1a498dcf502db433bbe25ac16e06",
+    "result": [
+      {
+        "title": "Counterexamples to a Weitz-Style Reduction for Multispin Systems",
+        "doi": "https://doi.org/10.48550/arxiv.2411.06541"
+      },
+      {
+        "title": "Cluster variation method in statistical physics and probabilistic graphical models",
+        "doi": "https://doi.org/10.1088/0305-4470/38/33/r01"
+      },
+      {
+        "title": "Harnessing the Bethe Free Energy",
+        "doi": "https://doi.org/10.4230/lipics.approx-random.2015.467"
+      },
+      {
+        "title": "Variational Inference in Probabilistic Submodular Models",
+        "doi": "https://doi.org/10.3929/ethz-b-000296865"
+      }
+    ]
+  },
+  {
+    "platform": "OpenAlex cited by",
+    "url": "https://api.openalex.org/works?per_page=100&select=id,title,doi,publication_date&filter=cites:W4404391313",
+    "utc": "2026-11-25T18:49:42.465703+00:00",
+    "http": "200",
+    "exit": 0,
+    "bytes": 1601,
+    "sha256": "a8d4baa4ab8becfc1b54ecbc1af90dffb93a48884520a7f35f383a72659ad4e2",
+    "result": [
+      {
+        "title": "A Spectral Local-to-Global Principle for Spin Systems on Graphs with Girth At Least Five",
+        "doi": "https://doi.org/10.48550/arxiv.2608.25491"
+      },
+      {
+        "title": "Decay of correlations and zeros for the hard-core model",
+        "doi": "https://doi.org/10.48550/arxiv.2603.17858"
+      },
+      {
+        "title": "Rapid mixing of Potts Glauber dynamics throughout uniqueness",
+        "doi": "https://doi.org/10.48550/arxiv.2610.42059"
+      }
+    ]
+  },
+  {
+    "platform": "OpenAlex original and references",
+    "url": "https://api.openalex.org/works/W4404391313?select=id,title,doi,referenced_works,cited_by_count",
+    "utc": "2026-11-25T18:49:42.258051+00:00",
+    "http": "200",
+    "exit": 0,
+    "bytes": 1289,
+    "sha256": "d3dc623fea7a0746c0f5221ae9d58c9069ef7732ceaf6cf43818a9add94f42f8",
+    "result": {
+      "id": "https://openalex.org/W4404391313",
+      "title": "Counterexamples to a Weitz-Style Reduction for Multispin Systems",
+      "doi": "https://doi.org/10.48550/arxiv.2411.06541",
+      "referenced_works": [
+        "https://openalex.org/W9125994",
+        "https://openalex.org/W1776308369",
+        "https://openalex.org/W1976445742",
+        "https://openalex.org/W1977007046",
+        "https://openalex.org/W1987107795",
+        "https://openalex.org/W2004724832",
+        "https://openalex.org/W2017226731",
+        "https://openalex.org/W2078220608",
+        "https://openalex.org/W2079675572",
+        "https://openalex.org/W2109260999",
+        "https://openalex.org/W2165356592",
+        "https://openalex.org/W2295121732",
+        "https://openalex.org/W2568660165",
+        "https://openalex.org/W2898624802",
+        "https://openalex.org/W2950754995",
+        "https://openalex.org/W2962998907",
+        "https://openalex.org/W2996822558",
+        "https://openalex.org/W3000152275",
+        "https://openalex.org/W3037228632",
+        "https://openalex.org/W3042338675",
+        "https://openalex.org/W3081001064",
+        "https://openalex.org/W3111890340",
+        "https://openalex.org/W3114175352",
+        "https://openalex.org/W3127673302",
+        "https://openalex.org/W3170539426",
+        "https://openalex.org/W4214828486",
+        "https://openalex.org/W4235998730",
+        "https://openalex.org/W4362656134",
+        "https://openalex.org/W4402386084",
+        "https://openalex.org/W4406155001",
+        "https://openalex.org/W7223771244"
+      ],
+      "cited_by_count": 3
+    }
+  },
+  {
+    "platform": "Semantic Scholar cited by",
+    "url": "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2411.06541/citations?limit=100&fields=title,year,url",
+    "utc": "2026-11-25T18:49:42.082729+00:00",
+    "http": "200",
+    "exit": 0,
+    "bytes": 545,
+    "sha256": "1c7089aa42bbc7a6cbe6fb97dcb3ac06eef00705b7e5f70b3d865b2a553e35fd",
+    "result": {
+      "offset": 0,
+      "data": [
+        {
+          "citingPaper": {
+            "paperId": "43c599b124288bc06e1f20ffb7c8c486f27f2a0f",
+            "url": "http://www.semanticscholar.org/paper/43c599b124288bc06e1f20ffb7c8c486f27f2a0f",
+            "title": "A Spectral Local-to-Global Principle for Spin Systems on Graphs with Girth At Least Five",
+            "year": 2026
+          }
+        },
+        {
+          "citingPaper": {
+            "paperId": "e92a77fa2fb4760f410dff6e5b9fee329d6ecadf",
+            "url": "http://www.semanticscholar.org/paper/e92a77fa2fb4760f410dff6e5b9fee329d6ecadf",
+            "title": "Decay of correlations and zeros for the hard-core model",
+            "year": 2026
+          }
+        }
+      ]
+    }
+  },
+  {
+    "platform": "Semantic Scholar new terms",
+    "url": "https://api.semanticscholar.org/graph/v1/paper/search?limit=8&fields=title,year,url&query=antiferromagnetic%20Potts%20belief%20propagation%20image%20convexity",
+    "utc": "2026-11-25T18:49:42.670358+00:00",
+    "http": "429",
+    "exit": 0,
+    "bytes": 174,
+    "sha256": "65ab993d12c5c2cc9b68e6da2bb79b326930283e520363ffcdc145f88cd5a148",
+    "result": {
+      "message": "Too Many Requests. Please wait and try again or apply for a key for higher rate limits. https://www.semanticscholar.org/product/api#api-key-form",
+      "code": "429"
+    }
+  },
+  {
+    "platform": "DataCite query",
+    "url": "https://api.datacite.org/dois?page[size]=8&query=titles.title%3A%28%22Potts%22%20AND%20%22belief%20propagation%22%20AND%20%22convexity%22%29",
+    "utc": "2026-11-25T18:49:44.011250+00:00",
+    "http": "200",
+    "exit": 0,
+    "bytes": 219,
+    "sha256": "a650c9f538bb61555e36f4e1d004a156106589fe0cfae908488f9972bd821ddc",
+    "result": {
+      "total": 0,
+      "hits": []
+    }
+  },
+  {
+    "platform": "DBLP publications",
+    "url": "https://dblp.org/search/publ/api?format=json&h=10&q=Potts%20convexity%20belief%20propagation",
+    "utc": "2026-11-25T18:49:46.656304+00:00",
+    "http": "202",
+    "exit": 0,
+    "bytes": 2951,
+    "sha256": "e96cfd85ae505c4a4772884ff8cfe3adf6dde9a6aeca107f024213bb632387b7",
+    "result": {
+      "prefix": " Making sure you're not a bot! Making sure you're not a bot! Loading... Please wait a moment while we ensure the security of your connection. Protected by Anubis From Techaro . Made with ❤️ in 🇨🇦. Mascot design by CELPHASE . This website is running Anubis version v1.27.0 . ",
+      "matches": []
+    }
+  },
+  {
+    "platform": "Google Scholar",
+    "url": "https://scholar.google.com/scholar?q=%22Potts%22%20%22belief%20propagation%22%20%22convexity%22%20simplex",
+    "utc": "2026-11-25T18:49:44.325263+00:00",
+    "http": "200",
+    "exit": 0,
+    "bytes": 81936,
+    "sha256": "bfd919cf95f4de3c7c01de26649d4e3c84183c9b2e3b3bcc206cfa20e5e0939d",
+    "result": {
+      "prefix": " Verifying... Verifying your request... Please wait while we verify your session. ",
+      "matches": [
+        " Verifying... Verifying your request... Please wait while we verify ",
+        " Verifying... Verifying your request... Please wait while we verify your session."
+      ]
+    }
+  },
+  {
+    "platform": "zbMATH",
+    "url": "https://api.zbmath.org/v1/document/_search?results_per_page=10&search_string=ti%3A%22Potts%22%20%26%20ti%3A%22convexity%22",
+    "utc": "2026-11-25T18:49:46.762757+00:00",
+    "http": "404",
+    "exit": 0,
+    "bytes": 320,
+    "sha256": "58e7a35f2d36882ce0f3f95c933bf988163cb258fa1cd110d6693709fab7a91a",
+    "result": "{'result': None, 'status': {'execution': 'Entry not found!...', 'execution_bool': False, 'internal_code': 'successful access. No results found.', 'last_id': None, 'nr_total_results': None, 'nr_request_results': None, 'query_execution_time_in_seconds': 1.1920928955078125e-06, 'status_code': 404, 'time_stamp': '2026-11-25 19:49:47.123609'}}"
+  },
+  {
+    "platform": "MathSciNet",
+    "url": "https://mathscinet.ams.org/mathscinet/search/publications.html?pg1=ALLF&s1=antiferromagnetic%20Potts%20belief%20propagation%20image%20convexity",
+    "utc": "2026-11-25T18:49:43.328219+00:00",
+    "http": "200",
+    "exit": 0,
+    "bytes": 5678,
+    "sha256": "2e6c8dff629c1416d069efb582dc6df98e66339b57a567eca398e14b65cbda8a",
+    "result": {
+      "prefix": " Where Are You From Login Institutional Access Individual Access Identity & Access Management powered by LibLynx ",
+      "matches": []
+    }
+  },
+  {
+    "platform": "Math-Net.Ru",
+    "url": "https://www.mathnet.ru/php/search.phtml?wshow=search&option_lang=eng&words=antiferromagnetic%20Potts%20belief%20propagation%20image%20convexity",
+    "utc": "2026-11-25T18:49:44.543475+00:00",
+    "http": "200",
+    "exit": 0,
+    "bytes": 41442,
+    "sha256": "0df4fce151b336f0f99d3a820b7908fb412f9047632d7cbf6c352d5b4523cca9",
+    "result": {
+      "prefix": " ������� RUS ENG --> JOURNALS PEOPLE ORGANISATIONS CONFERENCES SEMINARS VIDEO LIBRARY PACKAGE AMSBIB JavaScript is disabled in your browser. Please switch it on to enable full functionality of the website Main page About this project Software Classifications Links Terms of Use Search papers Search references RSS Current issues Archive iss",
+      "matches": []
+    }
+  },
+  {
+    "platform": "Scopus",
+    "url": "https://www.scopus.com/results/results.uri?src=s&s=TITLE-ABS-KEY%28%22Potts%22%20AND%20%22belief%20propagation%22%20AND%20convexity%29",
+    "utc": "2026-11-25T18:49:59.254775+00:00",
+    "http": "307",
+    "exit": 47,
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "result": {
+      "prefix": "",
+      "matches": []
+    }
+  },
+  {
+    "platform": "Web of Science",
+    "url": "https://www.webofscience.com/wos/woscc/basic-search",
+    "utc": "2026-11-25T18:49:45.171334+00:00",
+    "http": "200",
+    "exit": 0,
+    "bytes": 2703,
+    "sha256": "4766479117ec8fe34089f60beba034979b9b05557de901f5502e5da32afa5961",
+    "result": {
+      "prefix": " Web of Science ",
+      "matches": []
+    }
+  },
+  {
+    "platform": "Dimensions",
+    "url": "https://app.dimensions.ai/discover/publication?search_text=antiferromagnetic%20Potts%20belief%20propagation%20image%20convexity",
+    "utc": "2026-11-25T18:49:45.745333+00:00",
+    "http": "202",
+    "exit": 0,
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "result": {
+      "prefix": "",
+      "matches": []
+    }
+  },
+  {
+    "platform": "Zenodo",
+    "url": "https://zenodo.org/api/records?size=8&q=%22Potts%22%20AND%20%22belief%20propagation%22%20AND%20%22convexity%22",
+    "utc": "2026-11-25T18:49:45.257623+00:00",
+    "http": "200",
+    "exit": 0,
+    "bytes": 485,
+    "sha256": "9a3bda9fe4b34a909656f51fe1faad787885b0c9c0d9beaf0a4873759ea73089",
+    "result": "{'hits': {'hits': [], 'total': 0}, 'aggregations': {'publication_date': {'buckets': [], 'label': 'Publication date'}, 'access_status': {'buckets': [], 'label': 'Access status'}, 'resource_type': {'buckets': [], 'label': 'Resource types'}, 'subject': {'buckets': [], 'label': 'Subjects'}, 'file_type': {'buckets': [], 'label': 'File type'}}, 'links': {'self': 'https://zenodo.org/api/records?page=1&q=%22Potts%22+AND+%22belief+propagation%22+AND+%22convexity%22&size=8&sort=bestmatch'}}"
+  },
+  {
+    "platform": "Figshare",
+    "url": "https://api.figshare.com/v2/articles/search",
+    "utc": "2026-11-25T18:49:45.729482+00:00",
+    "http": "200",
+    "exit": 0,
+    "bytes": 2,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "result": "[]"
+  },
+  {
+    "platform": "OSF",
+    "url": "https://api.osf.io/v2/preprints/?filter[title]=Potts%20belief%20propagation",
+    "utc": "2026-11-25T18:49:46.290878+00:00",
+    "http": "200",
+    "exit": 0,
+    "bytes": 128,
+    "sha256": "337a5845bf62ccbe2bee6d47834c9d6317bc033ab935af60bc66d75c688ef71a",
+    "result": "{'data': [], 'links': {'first': None, 'last': None, 'prev': None, 'next': None, 'meta': {'total': 0, 'per_page': 10}}, 'meta': {'version': '2.0'}}"
+  },
+  {
+    "platform": "HAL",
+    "url": "https://api.archives-ouvertes.fr/search/?wt=json&fl=title_s,uri_s&rows=10&q=title_t%3APotts%20AND%20text%3A%22belief%20propagation%22%20AND%20text%3Aconvexity",
+    "utc": "2026-11-25T18:49:49.384233+00:00",
+    "http": "200",
+    "exit": 0,
+    "bytes": 116,
+    "sha256": "316b596864c92e18c8f6688107ad49ecfc3fe632ebdc85efe82c65ed28ba8064",
+    "result": "{'response': {'numFound': 0, 'start': 0, 'maxScore': 0.0, 'numFoundExact': True, 'docs': []}}"
+  },
+  {
+    "platform": "SSRN",
+    "url": "https://papers.ssrn.com/sol3/results.cfm?txtKey_Words=antiferromagnetic%20Potts%20belief%20propagation%20image%20convexity",
+    "utc": "2026-11-25T18:49:46.625090+00:00",
+    "http": "403",
+    "exit": 0,
+    "bytes": 5831,
+    "sha256": "bb6c3d451eb988a685359a1cc57499ffcca7c6366dc57c949c0878a0547434c6",
+    "result": {
+      "prefix": " Just a moment... Enable JavaScript and cookies to continue ",
+      "matches": []
+    }
+  },
+  {
+    "platform": "OpenReview",
+    "url": "https://api2.openreview.net/notes/search?limit=8&term=antiferromagnetic%20Potts%20belief%20propagation%20image%20convexity",
+    "utc": "2026-11-25T18:49:47.227955+00:00",
+    "http": "200",
+    "exit": 0,
+    "bytes": 21938,
+    "sha256": "60ae97ec09264fc1b317c13acb7d3c81ad12087a8eff2d7ad028ecaf291640d4",
+    "result": [
+      null,
+      {
+        "value": "AI-Assisted Discovery of a Polynomial Lyapunov Potential for the Antiferromagnetic Potts Model"
+      },
+      {
+        "value": "Generalizations of the Relative Belief Transform"
+      },
+      {
+        "value": "Consonant Approximations in the Belief Space"
+      },
+      {
+        "value": "Spectrum doubling and the extended Brillouin zone scheme in the excitations of the 3-state Potts spin chain"
+      },
+      {
+        "value": "General Geometry of Belief Function Combination"
+      },
+      {
+        "value": "Deep Evidential Fusion Network for Image Classification"
+      },
+      {
+        "value": "An Extension of Specificity-Based Approximations to Other Belief Function Relations"
+      }
+    ]
+  },
+  {
+    "platform": "GitHub repo",
+    "url": "https://api.github.com/search/repositories?per_page=10&q=Potts%20belief%20propagation%20convexity",
+    "utc": "2026-11-25T18:49:46.453498+00:00",
+    "http": "200",
+    "exit": 0,
+    "bytes": 55,
+    "sha256": "4af480b8ee5b87b369a76c49bd22c9a783908272ebffbe97898f8ab0f0772a5f",
+    "result": {
+      "total": 0,
+      "hits": []
+    }
+  },
+  {
+    "platform": "GitHub discussion",
+    "url": "https://api.github.com/search/issues?per_page=10&q=%22Potts%22%20%22convexity%22%20%22belief%20propagation%22",
+    "utc": "2026-11-25T18:49:47.144004+00:00",
+    "http": "200",
+    "exit": 0,
+    "bytes": 53546,
+    "sha256": "5d401086d540e656612a3e81e3210f484ef4a1305bca220676990392436bf4cf",
+    "result": {
+      "total": 2,
+      "hits": [
+        [
+          "[Finite graphical models] Add exact factors, Bayesian-network joints, variable elimination, d-separation, and junction-tree marginals",
+          "https://github.com/morluto/jacobian/issues/1919"
+        ],
+        [
+          "[E306-PAPER-01][M7 / COMPARATIVE VALUE-ARCHITECTURE AUDIT AUTHORIZED / LOCAL RECONSTRUCTED CANDIDATE] Anchor–fibre framework and article",
+          "https://github.com/Yuren-Tang/erdos-306/issues/8"
+        ]
+      ]
+    }
+  },
+  {
+    "platform": "GitLab",
+    "url": "https://gitlab.com/api/v4/projects?per_page=10&search=PottsBP",
+    "utc": "2026-11-25T18:49:47.050270+00:00",
+    "http": "200",
+    "exit": 0,
+    "bytes": 2,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "result": "[]"
+  },
+  {
+    "platform": "Bitbucket",
+    "url": "https://api.bitbucket.org/2.0/repositories?q=name%20~%20%22PottsBP%22",
+    "utc": "2026-11-25T18:49:47.077558+00:00",
+    "http": "404",
+    "exit": 0,
+    "bytes": 243,
+    "sha256": "a445961203fb6a2902c5de41a5ebb5b788ae3f2ef7a6a55a763faeb44950ca18",
+    "result": "{'type': 'error', 'error': {'message': 'Resource not found', 'detail': \"There is no API hosted at this URL.\\n\\nFor information about our API's, please refer to the documentation at: https://developer.atlassian.com/bitbucket/api/2/reference/\"}}"
+  },
+  {
+    "platform": "Codeberg",
+    "url": "https://codeberg.org/api/v1/repos/search?q=PottsBP&limit=10",
+    "utc": "2026-11-25T18:49:48.478950+00:00",
+    "http": "429",
+    "exit": 0,
+    "bytes": 218,
+    "sha256": "6e5c9c1519610aa37aeeba87c9c4b12e5fa5da35fc92c5e252af923b21c3889f",
+    "result": {
+      "prefix": "Search and filtering is seeing a high influx of requests for this repository, to preserve the availability of Codeberg, your search request will not be processed. Sorry for the inconvenience and please try again later.",
+      "matches": []
+    }
+  },
+  {
+    "platform": "Hugging Face",
+    "url": "https://huggingface.co/api/datasets?search=Potts%20belief%20propagation&limit=10",
+    "utc": "2026-11-25T18:49:48.468314+00:00",
+    "http": "200",
+    "exit": 0,
+    "bytes": 2,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "result": "[]"
+  },
+  {
+    "platform": "MathOverflow",
+    "url": "https://api.stackexchange.com/2.3/search/advanced?site=mathoverflow&q=Potts%20convexity%20belief%20propagation",
+    "utc": "2026-11-25T18:49:47.476435+00:00",
+    "http": "200",
+    "exit": 0,
+    "bytes": 67,
+    "sha256": "f71d241b0378e02e364e4deea18379e50a48349795daccc4bff08c84ae056f8a",
+    "result": "{'items': [], 'has_more': False, 'quota_max': 300, 'quota_remaining': 274}"
+  },
+  {
+    "platform": "Mathematics Stack Exchange",
+    "url": "https://api.stackexchange.com/2.3/search/advanced?site=math&q=Potts%20belief%20propagation%20convexity",
+    "utc": "2026-11-25T18:49:47.436799+00:00",
+    "http": "200",
+    "exit": 0,
+    "bytes": 67,
+    "sha256": "f71d241b0378e02e364e4deea18379e50a48349795daccc4bff08c84ae056f8a",
+    "result": "{'items': [], 'has_more': False, 'quota_max': 300, 'quota_remaining': 274}"
+  },
+  {
+    "platform": "Open Math Atlas",
+    "url": "https://open-math-atlas.com/explorer",
+    "utc": "2026-11-25T18:49:49.413631+00:00",
+    "http": "200",
+    "exit": 0,
+    "bytes": 1438611,
+    "sha256": "67ac5191fde189a4ef12ac2e697e9966f9590aec85a138c69918f3a43f8557f8",
+    "result": {
+      "prefix": " Explorer — Open Math Atlas Skip Open Math Atlas openai/math Explorer Disciplines Analyses History About ⌘K Explorer Disciplines Analyses History About Explorer Search and filter every result family published in the openai/math repository. Narrow the catalogue by mathematical discipline, by verification label (\"Verified by Lean\" or \"To be",
+      "matches": [
+        "including the four-state Potts endpoint. In bounded Jordan domains with admissible latti"
+      ]
+    }
+  },
+  {
+    "platform": "MathDB",
+    "url": "https://mathdb.com/database?tag=product-measures",
+    "utc": "2026-11-25T18:49:49.619315+00:00",
+    "http": "200",
+    "exit": 0,
+    "bytes": 77798,
+    "sha256": "933f1f390aea5572a7e8aca468f16388e6d581011b74e2ed2fd26f72512a5fb1",
+    "result": {
+      "prefix": " Database | MathDB Skip to main content MathDB Sign in Home News Database Papers Forum Tags Graph People Badges API Notifications Chats Bookmarks About Discord Feature request Report a bug 7 problems Trending Newest Featured Likes Filters 1 Post Problem Matching Tag: product-measures Tokushige's product-measure conjecture for cross t t t ",
+      "matches": [
+        "p to main content MathDB Sign in Home News Database Papers Forum Tags Graph People Badges ",
+        "on. It's free to browse; sign in to post and comment. Sign up Forum Discord Recently Viewe"
+      ]
+    }
+  },
+  {
+    "platform": "ProbXiv",
+    "url": "https://probxiv.com/",
+    "utc": "2026-11-25T18:49:47.823653+00:00",
+    "http": "402",
+    "exit": 0,
+    "bytes": 78,
+    "sha256": "c949840465a4a5e90c8d54deff3d73448e6ebcfb77360d6447c4341ea63d342a",
+    "result": {
+      "prefix": "Payment required DEPLOYMENT_DISABLED cdg1::4qq5s-1795632588202-0e1e16e78d6f ",
+      "matches": []
+    }
+  },
+  {
+    "platform": "EulerSolve research catalog",
+    "url": "https://eulersolve.org/papers/",
+    "utc": "2026-11-25T18:49:48.571936+00:00",
+    "http": "200",
+    "exit": 0,
+    "bytes": 677601,
+    "sha256": "b940d3ecfb70af95e7da0d373fea2524223a95a68ea4cc0f7a5ffb9d0b9a8baa",
+    "result": {
+      "prefix": " Research Papers by Alper Ferudun | EulerSolve Skip to content e Euler Solve Home Problems Bonus Difficulty Papers Books About ◐ Open mathematics · permanent research record Research Papers Alper Ferudun · Mercury Software GmbH Complete-result manuscripts from the Open Math Problems programme, with the reading PDF, LaTeX source, reproduci",
+      "matches": []
+    }
+  },
+  {
+    "platform": "Hexagon form",
+    "url": "https://hexagonmath.org/search?q=Potts%20belief%20propagation",
+    "utc": "2026-11-25T18:49:49.003366+00:00",
+    "http": "200",
+    "exit": 0,
+    "bytes": 16696,
+    "sha256": "d0a3fa198753e1a74a698873e23859a1186bf09ff18732624b0a667ba89c75a6",
+    "result": {
+      "prefix": " Search results · Hexagon Skip to main content HEXAGON beta Submit About Who we are Sign in Browse Search results Browse the Hexagon catalog. Search Hexagon ⌕ Search Advanced search Matching works 0 works Show 10 50 100 No works match those fields. © 2026 Hexagon Mathematics Foundation API RSS feeds Report a problem Contact ",
+      "matches": [
+        " Submit About Who we are Sign in Browse Search results Browse the Hexagon catalog. Search ",
+        "s 0 works Show 10 50 100 No works match those fields. © 2026 Hexagon Mathematics Foundation API R"
+      ]
+    }
+  },
+  {
+    "platform": "aiXiv form",
+    "url": "https://aixiv.online/search?q=Potts%20convexity",
+    "utc": "2026-11-25T18:49:50.486253+00:00",
+    "http": "200",
+    "exit": 0,
+    "bytes": 164077,
+    "sha256": "dd15d4c2c49605dc616b54a65d3df49c32a144033f66cc0c89a18796608c4b5c",
+    "result": {
+      "prefix": " Search | aiXiv ai χ iv > search Search ☰ Go Papers Recent Problems Subjects Digest Forum Guide About Submit a paper Register Log in Papers Recent Problems Subjects Digest Forum Guide About Submit a paper Register Log in Search Search new since Search by a problem’s name, its statement, or a result to see whether it has been settled, the ",
+      "matches": [
+        "example to ferromagnetic Potts censoring Anonymous Comments: preprint: Zenodo 10.5281/ze",
+        "ld ferromagnetic 3-state Potts model at edge activity 30 on a 5-vertex graph (triangle A",
+        "ty for the ferromagnetic Potts model [ 2 ] aiXiv: 2611.00777 [ pdf ] preprint OpenAI GPT",
+        "harp for the three-state Potts model on regular trees Yitzchak Shmalo Comments: preprint",
+        "erromagnetic three-state Potts channel on the $d$-ary tree, every $d\\ge2$ and every $0\\l",
+        "ness for the three-state Potts channel [ 3 ] aiXiv: 2609.00019 [ pdf ] GPT-5.5 Pro On Ta",
+        "or the antiferromagnetic Potts model on regular trees Wei Wu, Yicheng Xu, Kuan Yang Subj",
+        "-state antiferromagnetic Potts model on the rooted $d$-ary tree or the $(d+1)$-regular t",
+        "or the antiferromagnetic Potts model on regular trees [ 5 ] aiXiv: 2610.01728 [ pdf ] Cl",
+        "sted Fluctuations in the Potts spin glass model at high temperature Partha S. Dey, Taegu",
+        "m For the $\\kappa$-color Potts spin glass with symmetric disorder of unit variance and f",
+        "ppa)$ is the Curie–Weiss–Potts critical inverse temperature; the CLT extends to the unco"
+      ]
+    }
+  },
+  {
+    "platform": "Evidence Press related counterexample",
+    "url": "https://evidencepress.org/releases/potts-censoring-counterexample/",
+    "utc": "2026-11-25T18:49:49.317466+00:00",
+    "http": "200",
+    "exit": 0,
+    "bytes": 38398,
+    "sha256": "84e9e877ea88ed8e6a31892d4bc8161ab683a31cf013fd98b483f1f0d1e7a92f",
+    "result": {
+      "prefix": " Skipping one Potts update · Evidence Press E Evidence Press Research Learn Practice About Shop Shop Donate Menu Research Releases Atlas Applications Articles Observatory Learn Minds Explored Science Explored Why Minds Break Think Again Thesis InterPsych Practice Six habits Protocol library Starter kit Case study Self-test Testing record ",
+      "matches": [
+        " Skipping one Potts update · Evidence Press E Evidence Press Research Learn P",
+        "ch Releases Skipping one Potts update Press release · 6 September 2026 · version 0.1.0-c",
+        "example to ferromagnetic Potts censoring An exact five-vertex example shows that omittin",
+        "rromagnetic three-colour Potts model closer to equilibrium at a fixed horizon. ▶ Listen ",
+        "ree-colour ferromagnetic Potts model started all one colour. The example is small: five ",
+        "e zero-field three-state Potts model on edges $AB,AC,AD,BC,BE,DE$, with Gibbs weights $3",
+        "ing an antiferromagnetic Potts example, and asks about the ferromagnetic constant-start ",
+        "struction to a universal Potts censoring extension. Preserve the finite-word and initial",
+        "mean-field ferromagnetic Potts model. Different asymptotic setting. Cite Anonymous. (202",
+        "example to ferromagnetic Potts censoring (Version 0.1.0-candidate) [Unrefereed candidate",
+        "546547 Copy BibTeX @misc{pottscensoringcounterexample2026, title = {A five-vertex counte",
+        "example to ferromagnetic Potts censoring}, author = {Anonymous}, year = {2026}, doi = {1"
+      ]
+    }
+  },
+  {
+    "platform": "AI Proof Watch",
+    "url": "https://aiproofwatch.com/",
+    "utc": "2026-11-25T18:49:49.017796+00:00",
+    "http": "200",
+    "exit": 0,
+    "bytes": 130024,
+    "sha256": "88b7898976776a65e5d290427652c605114535d0e9d7b37c73cc7ed26ff0ce6c",
+    "result": {
+      "prefix": " AI Contributions to Mathematics, Computer Science & Physics · AI Proof Watch Skip to content AI Proof Watch Keep up with AI contributions Search topics, problems, and contributions Topics & problems All contributions Analysis More Menu Topics & problems All contributions Analysis Use with your AI assistant Methodology & sources Website u",
+      "matches": []
+    }
+  },
+  {
+    "platform": "OpenAI math catalog",
+    "url": "https://raw.githubusercontent.com/openai/math/main/overview.tex",
+    "utc": "2026-11-25T18:49:49.480298+00:00",
+    "http": "200",
+    "exit": 0,
+    "bytes": 326151,
+    "sha256": "b8bfe031885cc8ddda69d4788bc49c22836dbaeb880890c2d90162a416ca4c70",
+    "result": {
+      "prefix": "\\documentclass[11pt,a4paper]{article} \\usepackage[a4paper,left=21mm,right=21mm,top=20mm,bottom=20mm,headheight=12pt,headsep=6mm,footskip=9mm]{geometry} \\usepackage{fontspec} \\setmainfont{texgyrepagella-regular.otf}[BoldFont=texgyrepagella-bold.otf,ItalicFont=texgyrepagella-italic.otf,BoldItalicFont=texgyrepagella-bolditalic.otf] \\usepacka",
+      "matches": [
+        "Ferromagnetic-Four-State-Potts-Model-October-5-2026/four-state-potts.pdf}{The Reconstruc",
+        "ctober-5-2026/four-state-potts.pdf}{The Reconstruction Threshold for the Ferromagnetic F",
+        "Ferromagnetic Four-State Potts Model}\\enspace\\textperiodcentered\\enspace\\href{https://gi",
+        "Criterion-for-Four-State-Potts-Reconstruction-on-Trees-October-5-2026/four-state-capacit",
+        "Criterion for Four-State Potts Reconstruction on Trees}\\enspace\\textperiodcentered\\enspa"
+      ]
+    }
+  },
+  {
+    "platform": "Mathlib documentation",
+    "url": "https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Convex/Basic.html",
+    "utc": "2026-11-25T18:49:50.117199+00:00",
+    "http": "200",
+    "exit": 0,
+    "bytes": 377271,
+    "sha256": "90f8340907ae884d103e9fefb5a5410b5606688db5339e0a128b19949da35783",
+    "result": {
+      "prefix": " Mathlib.Analysis.Convex.Basic Documentation Mathlib . Analysis . Convex . Basic Search return to top source Imports Init Mathlib.Tactic.Field Mathlib.Tactic.NoncommRing Mathlib.Analysis.Convex.Star Mathlib.LinearAlgebra.AffineSpace.AffineSubspace.Defs Mathlib.Algebra.Ring.Action.Pointwise.Set Imported by Convex Convex . starConvex convex",
+      "matches": []
+    }
+  },
+  {
+    "platform": "Open Problems Catalog Q4813 followup",
+    "url": "https://api.github.com/repos/10m-u/open-problems-catalog/pulls/7",
+    "utc": "2026-11-25T18:49:49.968204+00:00",
+    "http": "200",
+    "exit": 0,
+    "bytes": 18486,
+    "sha256": "25b01eb9b6d658ec720db6bcc10dd56c5f4a366965956f310fddd49eb43cd2b4",
+    "result": {
+      "title": "Q4813: record the verified counterexample for antiferromagnetic Potts BP",
+      "state": "open",
+      "merged": false,
+      "html_url": "https://github.com/10m-u/open-problems-catalog/pull/7",
+      "created_at": "2026-11-25T17:31:40Z"
+    }
+  },
+  {
+    "platform": "Kazeshima prior note",
+    "url": "https://raw.githubusercontent.com/Kazeshima/solved-problems/22864a3858ae02109d70c5743de1ec145113cc0b/problems/potts-bp-nonconvexity/paper.tex",
+    "utc": "2026-11-25T18:49:49.859499+00:00",
+    "http": "200",
+    "exit": 0,
+    "bytes": 7526,
+    "sha256": "d46d240f0d5989312fb217880fe792dbdcf31d9245bf01b43cc28a208462da50",
+    "result": {
+      "prefix": "\\documentclass[10pt,reqno]{amsart} \\usepackage[letterpaper,hmargin=1.04in,vmargin=0.88in]{geometry} \\usepackage{amsmath,amssymb} \\usepackage[hidelinks]{hyperref} \\hypersetup{ pdftitle={Nonconvexity of the product belief-propagation image for the antiferromagnetic Potts model}, pdfauthor={Kazeshima}, pdfkeywords={antiferromagnetic Potts mo",
+      "matches": [
+        "or the antiferromagnetic Potts model}, pdfauthor={Kazeshima}, pdfkeywords={antiferromagn",
+        "words={antiferromagnetic Potts model, belief propagation, product measures, convexity} }",
+        "convexity of the product Potts BP image]{Nonconvexity of the product belief-propagation ",
+        "or the antiferromagnetic Potts model} \\author{Kazeshima} \\date{November 25, 2026} \\begin",
+        "-state antiferromagnetic Potts model with two neighbours and diagonal interaction $1/2$,",
+        "blems/tree/main/problems/potts-bp-nonconvexity}{companion Lean project} formalizes the f",
+        "mph{Counterexamples to a Weitz-Style Reduction for Multispin Systems}, \\href{https://arx",
+        "ef{https://arxiv.org/abs/2411.06541v2}{arXiv:2411.06541v2}, 2025. \\bibitem{Mani} N. Mani, \\em",
+        "/abs/2411.06541v2}{arXiv:2411.06541v2}, 2025. \\bibitem{Mani} N. Mani, \\emph{A Probabilistic P"
+      ]
+    }
+  },
+  {
+    "platform": "Liu publications",
+    "url": "https://kuikuiliu.github.io/publications/",
+    "utc": "2026-11-25T18:49:50.066608+00:00",
+    "http": "200",
+    "exit": 0,
+    "bytes": 13760,
+    "sha256": "3365d92920b7b6795687273486e898b9977c19655f519ff3ae6494162eb40795",
+    "result": {
+      "prefix": " Papers - Home You are using an outdated browser. Please upgrade your browser to improve your experience. Home Publications Teaching CV Papers An FPRAS for Mixed Volumes with Xiaoyu Chen (Submitted 2026) On Zeros and Algorithms for Disordered Systems II: The Antiferromagnetic Ising Model up to Kesten-Stigum with Ferenc Bencs , Brice Huang",
+      "matches": [
+        "26) Counterexamples to a Weitz-Style Reduction for Multispin Systems with Nitya Mani , F"
+      ]
+    }
+  },
+  {
+    "platform": "Mani publications",
+    "url": "https://www.mit.edu/~nmani/",
+    "utc": "2026-11-25T18:49:51.071403+00:00",
+    "http": "200",
+    "exit": 0,
+    "bytes": 7953,
+    "sha256": "1e618f89f966921f1a12048576c4250891cdff1191a26a645461965c28cbdaf3",
+    "result": {
+      "prefix": " Nitya Mani Nitya Mani I am a PhD student in the Department of Mathematics at MIT . I am excited by problems in extremal graph theory, discrete probability, and convex optimization. I am fortunate to be advised by Pablo Parrilo and Yufei Zhao . I am supported by a Hertz Graduate Fellowship and the NSF Graduate Research Fellowship Program.",
+      "matches": [
+        "k ] Counterexamples to a Weitz-style reduction for multispin systems with Kuikui Liu, Fr"
+      ]
+    }
+  },
+  {
+    "platform": "Pernice publications",
+    "url": "https://sites.google.com/view/franciscopernice/research",
+    "utc": "2026-11-25T18:49:50.199227+00:00",
+    "http": "200",
+    "exit": 0,
+    "bytes": 124591,
+    "sha256": "4831f252b8a4426b67e5ffe92bf45d13d6e3b8454a81a7ea69e2a3c1f4fab9e7",
+    "result": {
+      "prefix": " Francisco Pernice - Research Search this site Embedded Files Skip to main content Skip to navigation Francisco Pernice Home Research Francisco Pernice Home Research More Home Research Research Papers Author lists marked (A) are in alphabetical order, which is the standard in TCS, math and theoretical physics. Author lists marked (C) are ",
+      "matches": [
+        "int Counterexamples to a Weitz-Style Reduction for Multispin Systems (A): Kuikui Liu , N"
+      ]
+    }
+  },
+  {
+    "platform": "MIT thesis",
+    "url": "https://dspace.mit.edu/handle/1721.1/159909",
+    "utc": "2026-11-25T18:49:50.795359+00:00",
+    "http": "200",
+    "exit": 0,
+    "bytes": 564848,
+    "sha256": "fd33a264d72ceb52cfed02bb9fd678a32a67d0a3208a8e35f2b3e91a21d5928d",
+    "result": {
+      "prefix": " A probabilistic perspective on graph coloring Skip to main content Our repository is under heavy load. This intermittently causes errors with pages loading, files appearing, and media being played. If you encounter these issues and need support from the repository team, please contact us at dspace-lib@mit.edu. Log in (current) MIT Open S",
+      "matches": []
+    }
+  },
+  {
+    "platform": "OpenAlex backward titles",
+    "url": "https://api.openalex.org/works?select=id,title,doi&per_page=100&filter=openalex:W9125994|W1776308369|W1976445742|W1977007046|W1987107795|W2004724832|W2017226731|W2078220608|W2079675572|W2109260999|W2165356592|W2295121732|W2568660165|W2898624802|W2950754995|W2962998907|W2996822558|W3000152275|W3037228632|W3042338675|W3081001064|W3111890340|W3114175352|W3127673302|W3170539426|W4214828486|W4235998730|W4362656134|W4402386084|W4406155001|W7223771244",
+    "utc": "2026-11-25T18:49:59.627030+00:00",
+    "http": "200",
+    "exit": 0,
+    "bytes": 9378,
+    "sha256": "7726eca4091e13b91830be139f0b8ca003912b0a5eb2bfdc3fc54cdb35e57097",
+    "result": [
+      {
+        "title": "Random generation of combinatorial structures from a uniform distribution",
+        "doi": "https://doi.org/10.1016/0304-3975(86)90174-x"
+      },
+      {
+        "title": "Counting independent sets up to the tree threshold",
+        "doi": "https://doi.org/10.1145/1132516.1132538"
+      },
+      {
+        "title": "A very simple algorithm for estimating the number of k‐colorings of a low‐degree graph",
+        "doi": "https://doi.org/10.1002/rsa.3240070205"
+      },
+      {
+        "title": "Computational Transition at the Uniqueness Threshold",
+        "doi": "https://doi.org/10.1109/focs.2010.34"
+      },
+      {
+        "title": "Spectral Independence in High-Dimensional Expanders and Applications to the Hardcore Model",
+        "doi": "https://doi.org/10.1137/20m1367696"
+      },
+      {
+        "title": "Inapproximability of the Partition Function for the Antiferromagnetic Ising and Hard-Core Models",
+        "doi": "https://doi.org/10.1017/s0963548315000401"
+      },
+      {
+        "title": "Counting in two-spin models on d-regular graphs",
+        "doi": "https://doi.org/10.1214/13-aop888"
+      },
+      {
+        "title": "Optimal mixing of Glauber dynamics: entropy factorization via high-dimensional expansion",
+        "doi": "https://doi.org/10.1145/3406325.3451035"
+      },
+      {
+        "title": "Improved analysis of higher order random walks and applications",
+        "doi": "https://doi.org/10.1145/3357713.3384317"
+      },
+      {
+        "title": "Correlation Decay up to Uniqueness in Spin Systems",
+        "doi": "https://doi.org/10.1137/1.9781611973105.5"
+      },
+      {
+        "title": "Inapproximability for Antiferromagnetic Spin Systems in the Tree Nonuniqueness Region",
+        "doi": "https://doi.org/10.1145/2785964"
+      },
+      {
+        "title": "Rapid Mixing of Glauber Dynamics up to Uniqueness via Contraction",
+        "doi": "https://doi.org/10.1109/focs46700.2020.00124"
+      },
+      {
+        "title": "Correlation Decay and Partition Function Zeros: Algorithms and Phase Transitions",
+        "doi": "https://doi.org/10.1137/20m1317384"
+      },
+      {
+        "title": "Flip Dynamics for Sampling Colorings: Improving (11/6 — ε) Using A Simple Metric",
+        "doi": "https://doi.org/10.1137/1.9781611978322.71"
+      },
+      {
+        "title": "Improved bounds for sampling colorings",
+        "doi": "https://doi.org/10.1063/1.533196"
+      },
+      {
+        "title": "Approximation Algorithms for Two-State Anti-Ferromagnetic Spin Systems on Bounded Degree Graphs",
+        "doi": "https://doi.org/10.1007/s10955-014-0947-5"
+      },
+      {
+        "title": "Counting without sampling: Asymptotics of the log‐partition function for certain statistical physics models",
+        "doi": "https://doi.org/10.1002/rsa.20236"
+      },
+      {
+        "title": "Rapid Mixing for Colorings via Spectral Independence",
+        "doi": "https://doi.org/10.1137/1.9781611976465.94"
+      },
+      {
+        "title": "Ferromagnetic Potts Model: Refined #BIS-hardness and Related Results",
+        "doi": "https://doi.org/10.1137/140997580"
+      },
+      {
+        "title": "Improved Bounds for Randomly Sampling Colorings via Linear Programming",
+        "doi": "https://doi.org/10.1137/1.9781611975482.134"
+      },
+      {
+        "title": "Approximate Counting via Correlation Decay in Spin Systems",
+        "doi": "https://doi.org/10.1137/1.9781611973099.74"
+      },
+      {
+        "title": "Correlation decay and deterministic FPTAS for counting colorings of a graph",
+        "doi": "https://doi.org/10.1016/j.jda.2010.10.002"
+      },
+      {
+        "title": "Rapid Mixing from Spectral Independence beyond the Boolean Domain",
+        "doi": "https://doi.org/10.1137/1.9781611976465.95"
+      },
+      {
+        "title": "Uniqueness of uniform random colorings of regular trees",
+        "doi": "https://doi.org/10.1016/s0167-7152(02)00054-8"
+      },
+      {
+        "title": "Improved FPTAS for Multi-spin Systems",
+        "doi": "https://doi.org/10.1007/978-3-642-40328-6_44"
+      },
+      {
+        "title": "Strong spatial mixing of list coloring of graphs",
+        "doi": "https://doi.org/10.1002/rsa.20518"
+      },
+      {
+        "title": "Improved mixing condition on the grid for counting and sampling independent sets",
+        "doi": "https://doi.org/10.1007/s00440-012-0421-8"
+      },
+      {
+        "title": "Strong Spatial Mixing for Colorings on Trees and its Algorithmic Applications",
+        "doi": "https://doi.org/10.1145/3837755"
+      },
+      {
+        "title": "Deterministic approximate counting of colorings with fewer than $2Δ$ colors via absence of zeros",
+        "doi": "https://doi.org/10.46298/theoretics.26.1"
+      },
+      {
+        "title": "Uniqueness thresholds on trees versus graphs",
+        "doi": "https://doi.org/10.1214/07-aap508"
+      },
+      {
+        "title": "Improved Strong Spatial Mixing for Colorings on Trees",
+        "doi": "https://doi.org/10.4230/lipics.approx-random.2019.48"
+      }
+    ]
+  }
+]

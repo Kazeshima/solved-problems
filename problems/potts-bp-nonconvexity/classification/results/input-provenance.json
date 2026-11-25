@@ -1,0 +1,18 @@
+{
+  "base": "6ed516b4ef5da98f1a1c9b1bf9c067edbc61ba53",
+  "public_potts_note_commit": "22864a3858ae02109d70c5743de1ec145113cc0b",
+  "supplement_sha256": "469e113e5a6014da8b5313e850e6f128cac8b7d1beda28ed3d5ee2493e3a2cbd",
+  "request_sha256": "b03a7cacb69a44843a7af90feeb9beac68044d3ba2e714ace1e1d56b0e9e8dfe",
+  "unchanged_published_files": {
+    "PottsBP.lean": "2dac6ff7d50650fa2f920afb41aa8b74459750a6d0e526269137cc15b482097d",
+    "PottsBPSource.lean": "45527935c1522009b6afb0d3503bb97d54282eac7ea4c5831046f5e98c822c00",
+    "PottsBPGeneral.lean": "98e2047496425d0d5091f16476bc4a8e1b90c0959556cbb8bfae01db48af412e",
+    "Audit.lean": "2d332a954fbf95c55a1b555a2cefd91e68211f7cad2cb8a5bd25c3f1d1d0ebe2",
+    "Replay.lean": "4d0a687369c65bdb3f8ed2da4f5ae94d5a6d9f5f7a369c380790e5d9118bda46",
+    "paper.tex": "d46d240f0d5989312fb217880fe792dbdcf31d9245bf01b43cc28a208462da50",
+    "output/pdf/paper.pdf": "88697368e931ced7450d5505e8a8eebef660acecc1830a56abeb64f4e36ff602",
+    "lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+    "lake-manifest.json": "848974314c21d54b2fc19733441d21ea2646f4a31b3088c2026624c18df38b6f"
+  },
+  "pypdf": "6.10.0"
+}

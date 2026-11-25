@@ -1,0 +1,5 @@
+u, v, w = (Fraction(1, 6), Fraction(1, 6), Fraction(1, 3), Fraction(1, 3)) (Fraction(1, 4), Fraction(1, 4), Fraction(1, 6), Fraction(1, 3)) (Fraction(5, 24), Fraction(5, 24), Fraction(1, 4), Fraction(1, 3))
+Symbolic boundary identity: PASS
+All eight forced support cases fail simplex sum: [Fraction(0, 1), Fraction(1, 2), Fraction(3, 4), Fraction(5, 4), Fraction(3, 4), Fraction(5, 4), Fraction(3, 2), Fraction(2, 1)]
+Admissibility, endpoints, midpoint, symbolic identity and contradiction: PASS
+exit=0

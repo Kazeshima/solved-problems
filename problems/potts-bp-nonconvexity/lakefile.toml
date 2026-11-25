@@ -1,6 +1,6 @@
 name = "potts_bp_refutation"
 version = "0.1.0"
-defaultTargets = ["PottsBP", "PottsBPSource", "PottsBPGeneral"]
+defaultTargets = ["PottsBP", "PottsBPSource", "PottsBPGeneral", "PottsClassification"]
 
 [[require]]
 name = "mathlib"
@@ -15,3 +15,30 @@ name = "PottsBPSource"
 
 [[lean_lib]]
 name = "PottsBPGeneral"
+
+[[lean_lib]]
+name = "PottsClassBasic"
+
+[[lean_lib]]
+name = "PottsClassColumn"
+
+[[lean_lib]]
+name = "PottsClassZero"
+
+[[lean_lib]]
+name = "PottsClassHot"
+
+[[lean_lib]]
+name = "PottsClassTwo"
+
+[[lean_lib]]
+name = "PottsClassEdges"
+
+[[lean_lib]]
+name = "PottsClassFiber"
+
+[[lean_lib]]
+name = "PottsClassThree"
+
+[[lean_lib]]
+name = "PottsClassification"

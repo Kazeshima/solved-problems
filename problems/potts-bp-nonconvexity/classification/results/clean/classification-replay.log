@@ -1,0 +1,95 @@
+$ lake env lean ClassificationReplay.lean
+UTC 2026-11-25T19:37:18.647622+00:00
+Replayed target PottsBP.question4_false
+Replayed target PottsBP.source_question4_false
+Replayed target PottsBP.source_nonconvex_general
+Replayed target PottsBP.productLaw_isProbability
+Replayed target PottsBP.sourceImage_eq_generalImage
+Replayed target PottsBP.sourceWeight_eq_rawWeight
+Replayed target PottsBP.admissibleSourceImage_eq_generalImage
+Replayed target PottsBP.admissibleSourceImage_eq_sourceImage_diff_zero
+Replayed target PottsBP.legacy_zero_image
+Replayed target PottsBP.source_convex_beta_one
+Replayed target PottsBP.source_convex_one_neighbor
+Replayed target PottsBP.source_convex_two_colors
+Replayed target PottsBP.source_convex_three_colors
+Replayed target PottsBP.source_image_zero_beta_eq_simplex
+Replayed target PottsBP.source_nonconvex_positive_beta
+Replayed target PottsBP.source_nonconvex_iff
+Replayed target PottsBP.source_nonconvex_iff_on_defined_outputs
+Replayed target PottsBP.Classification.column_tangent
+Replayed target PottsBP.Classification.fractional_at_tangent
+Replayed target PottsBP.Classification.edge_cross
+Replayed target PottsBP.Classification.height_intermediate
+Replayed target PottsBP.Classification.three_fill
+Replayed target PottsBP.sourceImage_eq_admissible_positive
+Replayed target PottsBP.paper_classification
+Covered theorem PottsClassBasic/admissibleSourceImage_eq_generalImage with axioms [propext,
+ Quot.sound,
+ Classical.choice]
+Covered theorem PottsClassBasic/Realizes.mem with axioms [propext, Quot.sound, Classical.choice]
+Covered theorem PottsClassBasic/factor_pos with axioms [propext, Quot.sound, Classical.choice]
+Covered theorem PottsClassBasic/raw_pos with axioms [propext, Quot.sound, Classical.choice]
+Covered theorem PottsClassBasic/raw_nonneg with axioms [propext, Quot.sound, Classical.choice]
+Covered theorem PottsClassBasic/raw_le_one with axioms [propext, Quot.sound, Classical.choice]
+Covered theorem PottsClassBasic/total_pos_of_pos with axioms [propext, Quot.sound, Classical.choice]
+Covered theorem PottsClassBasic/general_subset_simplex with axioms [propext, Quot.sound, Classical.choice]
+Covered theorem PottsClassBasic/singleton_pin with axioms [propext, Quot.sound, Classical.choice]
+Covered theorem PottsClassBasic/prepend with axioms [propext, Quot.sound, Classical.choice]
+Covered theorem PottsClassBasic/add_pins with axioms [propext, Quot.sound, Classical.choice]
+Covered theorem PottsClassBasic/realizes_empty with axioms [propext, Quot.sound, Classical.choice]
+Covered theorem PottsClassBasic/uniform_simplex with axioms [propext, Quot.sound, Classical.choice]
+Covered theorem PottsClassBasic/general_mono_degree with axioms [propext, Quot.sound, Classical.choice]
+Covered theorem PottsClassBasic/legacy_eq_of_pos with axioms [propext, Quot.sound, Classical.choice]
+Covered theorem PottsClassBasic/source_convex_beta_one with axioms [propext, Quot.sound, Classical.choice]
+Covered theorem PottsClassBasic/source_convex_one_neighbor with axioms [propext, Quot.sound, Classical.choice]
+Covered theorem PottsClassColumn/tangent_empty with axioms [propext, Quot.sound, Classical.choice]
+Covered theorem PottsClassColumn/column_tangent with axioms [propext, Quot.sound, Classical.choice]
+Covered theorem PottsClassColumn/fractional_at_tangent with axioms [propext, Quot.sound, Classical.choice]
+Covered theorem PottsClassEdges/bounds_scale with axioms [propext, Quot.sound, Classical.choice]
+Covered theorem PottsClassEdges/bounds_add with axioms [propext, Quot.sound, Classical.choice]
+Covered theorem PottsClassEdges/raw_bounds with axioms [propext, Quot.sound, Classical.choice]
+Covered theorem PottsClassEdges/bounds_of_mem with axioms [propext, Quot.sound, Classical.choice]
+Covered theorem PottsClassEdges/edge_realizes with axioms [propext, Quot.sound, Classical.choice]
+Covered theorem PottsClassEdges/edge_equality with axioms [propext, Quot.sound, Classical.choice]
+Covered theorem PottsClassEdges/crosses with axioms [propext, Quot.sound, Classical.choice]
+Covered theorem PottsClassEdges/edge_cross with axioms [propext, Quot.sound, Classical.choice]
+Covered theorem PottsClassFiber/gm_zero with axioms [propext, Quot.sound, Classical.choice]
+Covered theorem PottsClassFiber/gm_one with axioms [propext, Quot.sound, Classical.choice]
+Covered theorem PottsClassFiber/gm_bounds with axioms [propext, Quot.sound, Classical.choice]
+Covered theorem PottsClassFiber/project_simplex with axioms [propext, Quot.sound, Classical.choice]
+Covered theorem PottsClassFiber/project_f0 with axioms [propext, Quot.sound, Classical.choice]
+Covered theorem PottsClassFiber/project_f1 with axioms [propext, Quot.sound, Classical.choice]
+Covered theorem PottsClassFiber/fac_mem with axioms [propext, Quot.sound, Classical.choice]
+Covered theorem PottsClassFiber/project_restore with axioms [propext, Quot.sound, Classical.choice]
+Covered theorem PottsClassFiber/prod_gm with axioms [propext, Quot.sound, Classical.choice]
+Covered theorem PottsClassFiber/gm_scale with axioms [propext, Quot.sound, Classical.choice]
+Covered theorem PottsClassFiber/height_intermediate with axioms [propext, Quot.sound, Classical.choice]
+Covered theorem PottsClassHot/normalized_sum_mem with axioms [propext, Quot.sound, Classical.choice]
+Covered theorem PottsClassHot/realizes_pins with axioms [propext, Quot.sound, Classical.choice]
+Covered theorem PottsClassHot/column_sum_all with axioms [propext, Quot.sound, Classical.choice]
+Covered theorem PottsClassHot/nonconvex_positive with axioms [propext, Quot.sound, Classical.choice]
+Covered theorem PottsClassHot/source_nonconvex_positive_beta with axioms [propext, Quot.sound, Classical.choice]
+Covered theorem PottsClassThree/edge_chart with axioms [propext, Quot.sound, Classical.choice]
+Covered theorem PottsClassThree/three_fill with axioms [propext, Quot.sound, Classical.choice]
+Covered theorem PottsClassThree/source_convex_three_colors with axioms [propext, Quot.sound, Classical.choice]
+Covered theorem PottsClassTwo/Classification.raw_cont with axioms [propext, Quot.sound, Classical.choice]
+Covered theorem PottsClassTwo/source_convex_two_colors with axioms [propext, Quot.sound, Classical.choice]
+Covered theorem PottsClassZero/zero_star with axioms [propext, Quot.sound, Classical.choice]
+Covered theorem PottsClassZero/source_image_zero_beta_eq_simplex with axioms [propext, Quot.sound, Classical.choice]
+Covered theorem PottsClassification/admissibleSourceImage_eq_sourceImage_diff_zero with axioms [propext,
+ Quot.sound,
+ Classical.choice]
+Covered theorem PottsClassification/legacy_zero_image with axioms [propext, Quot.sound, Classical.choice]
+Covered theorem PottsClassification/source_nonconvex_iff with axioms [propext, Quot.sound, Classical.choice]
+Covered theorem PottsClassification/source_nonconvex_iff_on_defined_outputs with axioms [propext,
+ Quot.sound,
+ Classical.choice]
+Covered theorem PottsClassification/sourceImage_eq_admissible_positive with axioms [propext,
+ Quot.sound,
+ Classical.choice]
+Covered theorem PottsClassification/paper_classification with axioms [propext, Quot.sound, Classical.choice]
+Checked transitive axioms and replay membership for 57 new named theorems
+Kernel replay accepted 13036 declarations above Lean Init
+
+exit=0 elapsed_seconds=113.14

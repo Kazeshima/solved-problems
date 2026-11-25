@@ -1,0 +1,39 @@
+{
+  "checked_utc": "2026-11-25T19:42:41.797767+00:00",
+  "formal_runs": {
+    "worktree": {
+      "proof_source_hashes": true,
+      "axiom_reports": 60,
+      "new_named_theorems": 57,
+      "explicit_replay_targets": 24,
+      "replayed_declarations": 13036
+    },
+    "clean": {
+      "proof_source_hashes": true,
+      "axiom_reports": 60,
+      "new_named_theorems": 57,
+      "explicit_replay_targets": 24,
+      "replayed_declarations": 13036
+    }
+  },
+  "sample_records": 20658,
+  "samples_by_type": {
+    "signature": 17088,
+    "cartesian_support": 2793,
+    "zero_signature": 186,
+    "large_degree": 96,
+    "polygon": 15,
+    "three_lift": 360,
+    "three_optimization": 12,
+    "zero_lift": 96,
+    "two_interval": 12
+  },
+  "exact_signature_recomputation": "PASS",
+  "published_source_and_note_hash_comparisons": 9,
+  "manuscript_pages": 4,
+  "manuscript_pdf_sha256": "7ce1d08aa56c51f5ce1c50f58eeb9f0796258d4b1534d75c5a929ad1d9d47039",
+  "direct_api_queries": 49,
+  "additional_endpoint_queries": 6,
+  "original_note_and_research_manuscript_are_separate": true,
+  "status": "PASS"
+}

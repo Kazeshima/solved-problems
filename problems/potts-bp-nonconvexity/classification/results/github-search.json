@@ -1,0 +1,126 @@
+[
+  {
+    "date": "2026-11-25",
+    "query": [
+      "\"antiferromagnetic Potts\" \"convexity\""
+    ],
+    "status": "fulfilled",
+    "results": null
+  },
+  {
+    "date": "2026-11-25",
+    "query": [
+      "\"source_nonconvex_iff\""
+    ],
+    "status": "fulfilled",
+    "results": []
+  },
+  {
+    "date": "2026-11-25",
+    "query": [
+      "\"source_convex_three_colors\""
+    ],
+    "status": "fulfilled",
+    "results": []
+  },
+  {
+    "date": "2026-11-25",
+    "query": [
+      "\"Potts\" \"surjectivity\" \"belief propagation\""
+    ],
+    "status": "fulfilled",
+    "results": [
+      {
+        "path": "2011/2011-05-31.json",
+        "url": "https://github.com/HeinrichHartmann/arxiv_meta/blob/1d3cff6680c912137a7f243d363079dd33fb5cb4/2011/2011-05-31.json",
+        "fragments": [
+          "[\"1007.2119\",{\"format\":[],\"subject\":[\"Computer Science - Information Theory\"],\"relation\":[],\"rights\":[],\"publisher\":[],\"source\":[],\"contributor\":[],\"identifier\":[\"http://arxiv.org/abs/1007.2119\",\"doi:10.1016/j.phycom.2011.03.004\"],\"date\":[\"2010-07-13\",\"2011-03-18\"],\"type\":[\"text\"],\"creator\":[\"Chatzinotas, Symeon\",\"Ottersten, Bjo",
+          "[\"1102.4980\",{\"format\":[],\"subject\":[\"Mathematics - Combinatorics\",\"Computer Science - Discrete Mathematics\",\"05C15, 05C20\"],\"relation\":[],\"rights\":[],\"publisher\":[],\"source\":[],\"contributor\":[],\"identifier\":[\"http://arxiv.org/abs/1102.4980\"],\"date\":[\"2011-02-24\",\"2011-05-27\"],\"type\":[\"text\"],\"creator\":[\"Zhang, Xin\",\"Liu, Guizhe"
+        ]
+      },
+      {
+        "path": "rss_data/math-ph/2026-11-03_math-ph.xml",
+        "url": "https://github.com/ehijano/rss_fetch/blob/5c8af7bcd258797ce310e0eb56eb21940cbe8c2c/rss_data/math-ph/2026-11-03_math-ph.xml",
+        "fragments": [
+          "Abstract: We prove propagation estimates for extensive fermionic many-body interactions with polynomial time growth, no loss of spatial decay, and an optimal threshold for the polynomial spatial exponent. More precisely, we construct local representatives of evolved fermionic many-body interactions on metric spaces with polynomi",
+          "      <description>arXiv:2611.02641v1 Announce Type: cross \nAbstract: For Dirichlet Liouville Brownian motion associated with a subcritical Gaussian multiplicative chaos measure on a bounded planar domain, we study the response of finite spectral blocks under Cameron--Martin perturbations of the underlying Gaussian free field. F"
+        ]
+      },
+      {
+        "path": "rss_data/math.MP/2026-11-03_math.MP.xml",
+        "url": "https://github.com/ehijano/rss_fetch/blob/5c8af7bcd258797ce310e0eb56eb21940cbe8c2c/rss_data/math.MP/2026-11-03_math.MP.xml",
+        "fragments": [
+          "Abstract: We prove propagation estimates for extensive fermionic many-body interactions with polynomial time growth, no loss of spatial decay, and an optimal threshold for the polynomial spatial exponent. More precisely, we construct local representatives of evolved fermionic many-body interactions on metric spaces with polynomi",
+          "      <description>arXiv:2611.02641v1 Announce Type: cross \nAbstract: For Dirichlet Liouville Brownian motion associated with a subcritical Gaussian multiplicative chaos measure on a bounded planar domain, we study the response of finite spectral blocks under Cameron--Martin perturbations of the underlying Gaussian free field. F"
+        ]
+      },
+      {
+        "path": "rss_data/quant-ph/2026-01-26_quant-ph.xml",
+        "url": "https://github.com/ehijano/rss_fetch/blob/5c8af7bcd258797ce310e0eb56eb21940cbe8c2c/rss_data/quant-ph/2026-01-26_quant-ph.xml",
+        "fragments": [
+          "      <description>arXiv:2601.16758v1 Announce Type: new \nAbstract: Variational Quantum Algorithms (VQAs) are a class of hybrid quantum-classical algorithms that leverage on classical optimization tools to find the optimal parameters for a parameterized quantum circuit. One relevant application of VQAs is the Variational Quantum",
+          "      <description>arXiv:2601.16951v1 Announce Type: cross \nAbstract: We investigate the boundary critical phenomena of the one-dimensional quantum Ashkin-Teller model using boundary conformal field theory and density matrix renormalization group (DMRG) simulations. Based on the $\\mathbb{Z}_2$-orbifold of the $c=1$ compactified "
+        ]
+      },
+      {
+        "path": "Data/ParaSCI-arXiv/test/test.src",
+        "url": "https://github.com/dqxiu/ParaSCI/blob/6394ac9c327d1e76b9a51c31cd73c1591b85ea04/Data/ParaSCI-arXiv/test/test.src",
+        "fragments": [
+          "quantum laurent phenomenon , let a q be a quantum cluster algebra and t be a seed .\nby the work of bazhanov and stroganov , it proposed that the chiral potts model can be regarded as a certain new algebraic structure related to the six-vertex model .\nchen et al use cnn and recurrent neural network to capture the semantic informa",
+          "vard is a tool designed to detect and tag spelling variations in historical text , particularly those written in early modern english .\nthis implies surjectivity in the topological case .\nwe will be interested in situations where the calabi-yau is embedded as an hypersurface in some weighted projective space ."
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2026-11-25",
+    "query": [
+      "\"2411.06541\" \"classification\""
+    ],
+    "status": "fulfilled",
+    "results": [
+      {
+        "path": "reviews/statement-promotions/2026-10-13/main-review.json",
+        "url": "https://github.com/10m-u/open-problems-catalog/blob/ca8d4d44ba3db527f19f28928c240168f545ecfe/reviews/statement-promotions/2026-10-13/main-review.json",
+        "fragments": [
+          "      ],\n      \"literature_finding\": \"The paper and April 2026 thesis retain this comparison question. It differs from the within-family rank comparison because its target is a linear action on vectors rather than transported orders. No later resolution found. The source leaves n as a parameter; the promoted classification quest",
+          "        \"https://dspace.mit.edu/server/api/core/bitstreams/e66d55e0-26d8-4b82-8d6f-0c5fd49e5aa6/content\",\n        \"https://arxiv.org/abs/2411.06541v2\"\n      ]"
+        ]
+      },
+      {
+        "path": "problems/mathematics/probability-stochastic-processes-part-3.md",
+        "url": "https://github.com/10m-u/open-problems-catalog/blob/ca8d4d44ba3db527f19f28928c240168f545ecfe/problems/mathematics/probability-stochastic-processes-part-3.md",
+        "fragments": [
+          "\n**Literature check.** Status: checked 12 October 2026. The latest source explicitly leaves this classification open.\n",
+          "\n**Further links.** [1](https://arxiv.org/abs/2411.06541v2) · [2](https://arxiv.org/html/2411.06541v2#S4)\n"
+        ]
+      },
+      {
+        "path": "reviews/statement-promotions/2026-10-13/audit.json",
+        "url": "https://github.com/10m-u/open-problems-catalog/blob/ca8d4d44ba3db527f19f28928c240168f545ecfe/reviews/statement-promotions/2026-10-13/audit.json",
+        "fragments": [
+          "    \"https://arxiv.org/html/2210.14300\",\n    \"https://arxiv.org/html/2411.06541v2\",\n    \"https://combinatorialpress.com/cn-articles/volume-238/greedy-gossiping/\",",
+          "      \"corpus_same_source_label_or_text\": [],\n      \"distinction_and_scope\": \"This is an inter-rank Borel reduction comparison, in both directions specified by the source. It is not the fixed rank-three vector-action comparison, single-rank treeability, or the classification of the degree of the entire disjoint union. Generic gr"
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2026-11-25",
+    "query": [
+      "\"Potts\" \"belief propagation\"",
+      "leanprover-community/mathlib4"
+    ],
+    "status": "fulfilled",
+    "results": []
+  },
+  {
+    "date": "2026-11-25",
+    "query": [
+      "\"Potts\" \"convexity\"",
+      "openai/math"
+    ],
+    "status": "fulfilled",
+    "results": null
+  }
+]
