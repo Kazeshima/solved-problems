@@ -1,0 +1,18 @@
+$ lake build
+UTC 2026-11-25T19:12:57.199423+00:00
+ℹ [6653/6668] Built PottsBP
+info: .\.\.\.\PottsBP.lean:232:0: 'PottsBP.question4_false' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [6655/6668] Built PottsBPSource
+✔ [6657/6668] Built PottsBPGeneral
+✔ [6659/6668] Built PottsClassBasic
+✔ [6660/6668] Built PottsClassColumn
+✔ [6661/6668] Built PottsClassZero
+✔ [6662/6668] Built PottsClassTwo
+✔ [6663/6668] Built PottsClassEdges
+✔ [6664/6668] Built PottsClassHot
+✔ [6665/6668] Built PottsClassFiber
+✔ [6666/6668] Built PottsClassThree
+✔ [6667/6668] Built PottsClassification
+Build completed successfully.
+
+exit=0 elapsed_seconds=412.52

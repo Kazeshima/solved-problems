@@ -1,0 +1,6 @@
+ℹ [6653/6658] Built PottsBP
+info: .\.\.\.\PottsBP.lean:232:0: 'PottsBP.question4_false' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [6655/6658] Built PottsBPSource
+✔ [6657/6658] Built PottsBPGeneral
+Build completed successfully.
+exit=0

@@ -1,0 +1,49 @@
+# Classification on the positive-normalizer domain
+
+Let $D=(\Delta_q)^d$ with closed real simplices, let $t=1-\beta$, and put $g_i=\prod_j(1-tp_j(i))$, $Z=\sum_i g_i$. Only inputs with $Z>0$ contribute to the image $S$. Let $v(n)_i=\beta^{n_i}$ for a deterministic signature $n$ of total $d$, with $0^0=1$. Write $P$ for the convex hull of $v(n)/\sum_i v(n)_i$ over nonzero signatures (meaning $v(n)\ne0$).
+
+**Theorem.** For $q\ge2$, $d\ge1$ and $0\le\beta\le1$, the set $S$ is nonconvex exactly when $q\ge4$, $d\ge2$, and either $0<\beta<1$ or $\beta=0$ and $d\le q-2$. At $\beta=0$ and $d\ge q-1$ one has $S=\Delta_q$.
+
+For a joint input the source equations give $G_i=\mathbb E[\beta^{N_i}]$, with $N_i$ the number of occurrences of colour $i$. For a product law finite distributivity gives $G_i=g_i$. Normalizing a mixture of vectors of nonnegative weights reweights its nonzero components by their individual normalizers. Hence $S\subseteq P=\operatorname{conv}(S)$, including at zero temperature. The zero vector cannot occur as a normalized probability vector.
+
+## Positive temperature and at least four colours
+
+Assume $0<\beta<1$. For **every integer** $h$, $\beta^h\ge1-th$, with equality exactly at $h=0,1$. For $h\ge1$ this follows by summing the successive decrements $t\beta^j\le t$. For $h=-k<0$, $\beta^{-k}-1=t\sum_{j=1}^k\beta^{-j}>kt$. Thus negative shifted counts require no extension of a Bernoulli inequality to arbitrary real exponents.
+
+Let $A=\{1,2,3\}$, $b=(d-2,0,0)$ on $A$, and $m=\sum_{i\notin A}n_i$. The tangent bound gives
+\[
+ \sum_{i\in A}\beta^{n_i-b_i}\ge3-t(2-m)=1+2\beta+tm.
+\]
+The mean of $\beta^{n_i}$ off $A$ is at most 1. Subtraction of $(1+2\beta)$ times that mean gives precisely the proposed homogeneous functional $L\ge0$. Equality requires $m=0$ and the shifted counts all equal to 0 or 1. Exactly two are 1. Conversely each of those three feasible signatures gives equality. The three normalized vertices are affinely independent: in a linear dependence of the raw vectors the common inactive coordinate forces the coefficients to sum to zero, and then each active coordinate singles out its omitted colour with multiplier $(1-\beta)\beta^{b_i}\ne0$. Positive rescaling preserves linear independence. This proves the exposed face of $P$ is exactly a triangle.
+
+Take $w$ to be the normalization of the arithmetic mean of the three **raw** vectors. This weights the three normalized vertices proportionally to their normalizers. Those normalizers can differ when $d>2$. A product preimage on the exposed face has only minimizing configurations in its support. Its unused colours have raw weight 1, fixing its scale. Thus $\mathbb E[\beta^{N_i-b_i}]=(1+2\beta)/3$ on $A$, and $N_i-b_i$ is a Bernoulli variable with probability $2/3$ of being 1. For each $i$ the maximum and minimum attainable counts differ by one. Their difference is exactly the number of rows with $0<p_j(i)<1$, since the product support permits each such row to turn that colour on or off independently. All deterministic contributions total $b_i$, so the unique fractional entry for each active colour equals $2/3$. A row containing a $2/3$ entry cannot be completed to mass 1 using only $0,2/3,1$. This contradiction proves nonconvexity for arbitrary $d\ge2$.
+
+In fact the intersection of the product image with this face is exactly its perimeter. On the face all active counts have range at most one, so two flexible rows cannot share a colour. At most one row can be flexible among three colours. If it could choose all three colours, all three counts would vary and their minima would be the baseline counts, summing to $d-2$. The other $d-1$ fixed rows instead give minima of sum $d-1$. Thus a supported product on the face uses at most two of the three signatures. Conversely, any pair of equality signatures differs by a single neighbour transition, whose continuous change traverses the entire normalized edge. This sharper face description is a written corollary, beyond the nonconvexity certificate needed in Lean.
+
+There is an alternative columnwise certificate. For every $b\ge0$,
+\[
+  \prod_j(1-tp_j(i))\ \ge\ \beta^b\bigl[1+t(b-\textstyle\sum_jp_j(i))\bigr].
+\]
+It follows by finite expectation, or induction using that adding a row of occupation probability $u$ interpolates between the previous column and $\beta$ times that column. At equality, varying one fractional cell $p_j(i)$ to 0 and 1 gives equality at both endpoints by affinity. Subtracting forces the product of the other factors to equal $\beta^b$ and the sum of their occupations to equal $b$. This gives the same $2/3$ obstruction without enumerating the product support.
+
+## Three colours at positive temperature
+
+All normalized deterministic vectors are distinct: proportionality forces equal count differences in every coordinate, and the count sums agree. The three configurations using a single colour give affinely independent outputs for $d\ge1$.
+
+Every supporting line of the full-dimensional polygon $P$ is represented on the probability plane by $c\cdot x=0$, with $c\cdot P\ge0$. Both signs occur in $c$ because each vertex has strictly positive coordinates. Moving an occurrence from a colour with nonpositive coefficient to one with positive coefficient strictly decreases $c\cdot v$. A zero therefore uses only positive-coefficient colours. With one positive coefficient there is only one minimizing signature. With two, call the colours $a,b$. The function $c_a\beta^k+c_b\beta^{d-k}$ on integers $0\le k\le d$ has positive second differences. Minimizers are a singleton or two consecutive integers. Conversely for every $m+n=d-1$, the integer tangent bound gives the supporting inequality
+\[
+ (1+\beta)x_c\ \le\ x_a/\beta^m+x_b/\beta^n .
+\]
+Exactly the two signatures $(m+1,n,0)$ and $(m,n+1,0)$ in the order $a,b,c$ attain equality. These give the $3d$ edges of the simple polygon in three chains. Interpolating one neighbour between $a$ and $b$ traverses one entire edge: the raw map is affine and the positive normalizer makes the normalized interpolation a strictly monotone reparametrization. Changing rows sequentially around the three chains gives a closed lift, returning to the identical ordered tuple of rows. Its image traverses the boundary once. Coning the lift inside convex $D$ fills the boundary loop. Omission of any interior point would contract a loop of winding number $\pm1$ in its punctured plane, which proves the proposed topological argument.
+
+**Independent construction without winding numbers.** Fix $x\in P$, write $R=x_1/x_2>0$ and measure height by $x_3/x_2$. Since $\beta^d\le R\le\beta^{-d}$, the chain from all colour 1 to all colour 2 meets the line of ratio $R$. Its supporting inequality above gives an upper height at fixed $R$. If $R\ge1$, the chain from all colour 3 to all colour 2 meets the same ratio, giving a lower height (the coefficient of $x_3$ is now positive). If $R\le1$ use the chain from all colour 1 to all colour 3 instead. This follows also by simply dividing each supporting inequality by $x_2$. It remains to join the two product preimages at constant ratio.
+
+Let $a_j,b_j$ be the first two one-row interaction factors. Geometrically interpolate each of them between the two endpoint profiles, so $a_j(s)=a_j(0)^{1-s}a_j(1)^s$ and likewise for $b_j(s)$. The two products have constant ratio $R$. For each row multiply this pair by $\lambda_j=\max(1,(1+\beta)/(a_j+b_j))$. This preserves the product ratio. Both corrected factors are at most 1: in the rescaling case this is equivalent to $\beta a_j\le b_j$ and $\beta b_j\le a_j$, true because both original interpolants lie in $[\beta,1]$. Their sum lies in $[1+\beta,2]$. The third factor $2+\beta-\lambda_j(a_j+b_j)$ thus lies in $[\beta,1]$ as well. The factors sum to $2+\beta$, hence are exactly the factors of a row of the closed simplex. At both endpoints the correction is the identity. Along this continuous path the height assumes the desired value by the ordinary intermediate value theorem. The two ratios fix the normalized output. This gives $S=P$ and a numerical reconstruction algorithm based on three one-dimensional root searches (two edge crossings and one height crossing).
+
+## Zero temperature and elementary parameter values
+
+For $\beta=0$ choose a pivot $a$ maximizing the target $x_i$. Then $x_a>0$, and $y_i=x_i/x_a$ lies in $[0,1]$. Use one row for each $i\ne a$, putting $s y_i$ on $a$ and $1-s y_i$ on $i$. The nonpivot weights are $s y_i$ and the pivot weight is $\prod_{i\ne a}(1-s y_i)$. This product minus $s$ is continuous, equals 1 at 0, and is nonpositive at 1. Take a root $s\in(0,1]$. All weights are $(s/x_a)x_i$, and the normalizer is $s/x_a>0$. This covers point masses and zero coordinates directly. Each extra uniform row multiplies all weights by $1-1/q>0$. Thus $d\ge q-1$ gives the entire simplex. For $2\le d\le q-2$, the published disjoint-support theorem applies at $\beta=0$ with $Z\ge q-d>0$.
+
+At $\beta=1$ all outputs are uniform. For $d=1$ the numerator is affine and the denominator is the positive constant $q-1+\beta$. For $q=2$ at $\beta>0$ the product domain is convex, the map is continuous, and the normalized output is determined by a single real coordinate, whose image is an interval. The $\beta=0$ two-colour cases already have full image.
+
+The classification uses closed simplices. At strictly positive temperature, restricting every input row to strictly positive entries still gives nonconvexity in the nonconvex cases, by the compactness and perturbation argument for a missing point. At zero temperature and $d\ge q-1$, completely pinned inputs that use every colour have $Z=0$ and must be removed. In particular an unguarded formal division at zero can add the zero vector for $d\ge q$, even though the zero vector is not a probability distribution.

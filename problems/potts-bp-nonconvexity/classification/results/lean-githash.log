@@ -1,0 +1,5 @@
+$ lake env lean --githash
+UTC 2026-11-25T19:33:26.378408+00:00
+6caaee842e9495688c1567e78c0e68dbb96942aa
+
+exit=0 elapsed_seconds=1.77

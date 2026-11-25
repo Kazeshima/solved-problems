@@ -1,0 +1,148 @@
+\documentclass[11pt,reqno]{amsart}
+\usepackage[letterpaper,hmargin=1.12in,vmargin=0.98in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage{lmodern}
+\else
+  \usepackage{unicode-math}
+  \setmathfont{latinmodern-math.otf}
+\fi
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={A Complete Convexity Classification of Belief Propagation Images for the Antiferromagnetic Potts Model},pdfauthor={Kazeshima}}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\Sbp}{S_{q,d,\beta}}
+\newcommand{\E}{\mathbb E}
+\newcommand{\R}{\mathbb R}
+\DeclareMathOperator{\conv}{conv}
+\title[Convexity of Potts belief propagation images]{A complete convexity classification\\of belief propagation images\\for the antiferromagnetic Potts model}
+\author{Kazeshima}
+\date{November 25, 2026}
+\begin{document}
+\begin{abstract}
+We classify the image of one antiferromagnetic Potts belief propagation update on arbitrary independent neighbour marginals. At $0<\beta<1$ and degree $d\ge2$, the image is convex exactly for two or three colours. For three colours it fills a polygon with $3d$ edges. We give a constructive proof by interpolating at a fixed ratio of two output coordinates. From four colours onwards a triangular exposed face contains a point that independence precludes, even at arbitrarily large degree. At $\beta=0$ the image is the full simplex whenever $d\ge q-1$ and is nonconvex for $2\le d\le q-2$. The classification on the positive-normalizer domain is formalized in Lean~4.
+\end{abstract}
+\maketitle
+
+\section{The image of a single update}
+
+For the four-colour Potts model with two neighbours and diagonal interaction $1/2$, the convex hull of the product outputs has a face where the last coordinate is $1/3$. Independence forces the neighbours to use disjoint colours on that face. This yields an unattainable midpoint \cite{Short}. With many more neighbours than colours, disjoint supports for all neighbours are impossible. A different supporting functional then constrains the variation in the number of occurrences of each colour.
+
+Let $\Delta_q$ be the closed probability simplex on $[q]=\{1,\ldots,q\}$. Let $A_{ic}=\beta$ if $c=i$ and $A_{ic}=1$ otherwise. For a joint law $\mu$ on $[q]^d$, the source definition \cite[eqs.~(1)--(2)]{LMP} is
+\[
+ G_i(\mu)=\E_\mu\prod_{j=1}^d A_{i,\tau_j},\qquad
+ Z(\mu)=\sum_{i=1}^qG_i(\mu),\qquad F_i(\mu)=G_i(\mu)/Z(\mu).
+\]
+We use $F$ wherever $Z>0$. For $\mu=\bigotimes_j p_j$, independence and $\sum_c p_j(c)=1$ give
+\begin{equation}\label{eq:product}
+ g_i=G_i(\mu)=\prod_{j=1}^{d}(1-tp_j(i)),\qquad t=1-\beta .
+\end{equation}
+The $p_j$ range independently over $\Delta_q$. Write $\Sbp$ for the image of these inputs with positive normalizer.
+
+\begin{theorem}\label{thm:main}
+Let $q\ge2$, $d\ge1$ be integers and $0\le\beta\le1$. Then $\Sbp$ is nonconvex if and only if $q\ge4$, $d\ge2$, and the parameters satisfy
+\[
+   0<\beta<1,\qquad\text{or}\qquad \beta=0\ \text{ and }\ d\le q-2.
+\]
+At $\beta=0$ and $d\ge q-1$, one has $S_{q,d,0}=\Delta_q$.
+\end{theorem}
+
+Liu, Mani and Pernice ask about convexity for $q\ge3$ and $\max(0,1-q/(d+1))\le\beta\le1$ \cite[Question~4]{LMP}. The question also appears in Mani's thesis \cite[Question~3.9.18]{Mani}. The earlier note \cite{Short} establishes nonconvexity for $d\ge2$, $q\ge d+2$, including $\beta=0$. Theorem~\ref{thm:main} identifies the exact finite-temperature threshold in the number of colours and settles the complementary zero-temperature range.
+
+For a configuration with counts $n_i$ summing to $d$, write $v(n)_i=\beta^{n_i}$, with $0^0=1$, and $x(n)=v(n)/\sum_i v(n)_i$ when the sum is positive. Set $P=\conv\{x(n)\}$. Since $G_i(\mu)=\E_\mu[\beta^{n_i}]$, every defined output is a convex combination of the deterministic outputs, with each probability reweighted by its configuration's normalizer. A zero-weight vector contributes nothing. Deterministic configurations are themselves product inputs, so $\conv(\Sbp)=P$ \cite[Lemma~A.1]{LMP}.
+
+\section{A triangular face at every positive temperature}
+
+Throughout this section take $q\ge4$, $d\ge2$ and $0<\beta<1$. We use the extremal-coordinate method of \cite[Lemma~2.2 and Remark~3]{LMP}, applied to a different supporting functional on the standard antiferromagnetic matrix. The elementary inequality
+\begin{equation}\label{eq:tangent}
+ \beta^h\ge 1-th\quad(h\in\mathbb Z)
+\end{equation}
+has equality exactly for $h=0,1$. For $h\ge1$, use $1-\beta^h=t\sum_{j=0}^{h-1}\beta^j$. For $h=-k<0$, $\beta^{-k}-1=t\sum_{j=1}^{k}\beta^{-j}>kt$.
+
+Use the active colours $A=\{1,2,3\}$ and put $b=(d-2,0,0)$. Define
+\[
+ L(v)=\sum_{i\in A}\beta^{-b_i}v_i-
+          \frac{1+2\beta}{q-3}\sum_{i\notin A}v_i .
+\]
+If $m=\sum_{i\notin A}n_i$, then $\sum_{i\in A}(n_i-b_i)=2-m$. By \eqref{eq:tangent} the positive sum in $L(v(n))$ is at least $1+2\beta+tm$, while its subtracted term is at most $1+2\beta$. Equality requires $m=0$ and hence each shifted count to be 0 or 1. These are precisely the three signatures with active counts $b$ plus a permutation of $(0,1,1)$.
+
+The corresponding normalized points are affinely independent. In a linear relation among their raw vectors, an inactive coordinate forces the coefficients to sum to zero. The active coordinate $i$ then isolates the coefficient of the vector omitting $i$ in the shift, with nonzero multiplier $\beta^{b_i}(1-\beta)$. Thus the three raw vectors, and hence their positive rescalings, are linearly independent. The face $L=0$ of $P$ is their triangle.
+
+Let $w$ be the normalization of the \emph{raw} average of these three vectors. It is a convex combination with strictly positive coefficients of their normalized outputs. Suppose a product input realizes $w$. Since $L(g)=0$, every configuration of positive product probability must lie on the face. No inactive colour can appear, so its raw coordinate is 1, fixing the normalization. For each $i\in A$, we consequently have
+\[
+ N_i\in\{b_i,b_i+1\},\qquad
+ \E[\beta^{N_i-b_i}]=(1+2\beta)/3,\qquad
+ \Pr(N_i=b_i+1)=2/3 .
+\]
+On a Cartesian-product support, the difference between the maximum and minimum of $N_i$ equals the number of neighbours $j$ for which $0<p_j(i)<1$. Indeed, one can make every such row choose $i$, or make all avoid it. Exactly one row has a fractional entry in each active column, and that entry equals $2/3$. Any row containing such an entry must sum to 1 using only $0,2/3,1$. This is impossible. Hence $w\notin\Sbp$.
+
+\section{Three colours fill their convex hull}
+
+Take $q=3$, $0<\beta<1$ and $d\ge1$. The pure outputs with all neighbours of one colour are affinely independent, so $P$ is a polygon. Distinct signatures give distinct normalized points because proportional vectors $(\beta^{n_i})_i$ have constant coordinatewise count differences, which must vanish since both count totals equal $d$.
+
+\begin{lemma}\label{lem:edges}
+The boundary of $P$ consists of three chains of $d$ edges. For each permutation $(a,b,c)$ and $m+n=d-1$, changing one neighbour between signatures $(m+1,n,0)$ and $(m,n+1,0)$ traces a whole edge. Its supporting inequality is
+\begin{equation}\label{eq:edge}
+ (1+\beta)x_c\le \beta^{-m}x_a+\beta^{-n}x_b .
+\end{equation}
+\end{lemma}
+\begin{proof}
+As in \eqref{eq:tangent}, the raw right side is at least $1+\beta+tn_c$, and the raw left side at most $1+\beta$. Equality holds precisely at the two stated signatures. Varying one row from $\delta_a$ to $\delta_b$ interpolates their raw vectors linearly. Positive normalization traverses their entire segment monotonically.
+
+Conversely write any supporting line as $\sum_i c_i x_i=0$ with nonnegative values on $P$. Its coefficients have both signs because every pure output is strictly positive. Moving an occurrence from a nonpositive-coefficient colour to a positive-coefficient colour strictly decreases the raw functional. Thus at equality all occupied colours have positive coefficients. A single positive coefficient allows only one signature. If two coefficients are positive, say $c_a,c_b$, the relevant sequence is $c_a\beta^k+c_b\beta^{d-k}$, $0\le k\le d$. Its second differences are strictly positive. A supporting edge therefore ties exactly two consecutive counts. This exhausts the edges.
+\end{proof}
+
+Write $R=x_1/x_2$ for the ratio of the first two coordinates and call $x_3/x_2$ the height. To reconstruct an arbitrary $x\in P$ it suffices to connect two product inputs with the same $R$ whose heights bracket that of $x$.
+
+\begin{lemma}\label{lem:fibre}
+If two product inputs give the same $R$, a continuous path of product inputs between them keeps $R$ fixed.
+\end{lemma}
+\begin{proof}
+In row $j$ write $u_j,v_j$ for the first two interaction factors $1-tp_j(i)$. Interpolate each factor geometrically between its endpoints, using $u_j(s)=u_j(0)^{1-s}u_j(1)^s$ for $0\le s\le1$, and likewise for $v_j(s)$. Their products still have ratio $R$, and each factor lies in $[\beta,1]$.
+
+At each $s$ multiply the pair $(u_j,v_j)$ by
+\[
+ \lambda_j=\max\{1,(1+\beta)/(u_j+v_j)\}.
+\]
+The common row multiplier preserves $R$. The corrected factors are at most 1, since $\beta u_j\le v_j$ and $\beta v_j\le u_j$. Their sum lies in $[1+\beta,2]$. Taking the third factor to be $2+\beta-\lambda_j(u_j+v_j)$ gives three factors in $[\beta,1]$ of sum $2+\beta$. Turning each factor $z$ into $(1-z)/t$ recovers a probability row. The construction is continuous and $\lambda_j=1$ at the endpoints, where the original rows were already admissible.
+\end{proof}
+
+For any $x\in P$, $\beta^d\le R\le\beta^{-d}$ because $\beta^d x_j\le x_i$ holds at every pure output. Follow the boundary chain from all colour 1 to all colour 2. Its endpoint ratios are $\beta^d$ and $\beta^{-d}$, so it meets the prescribed $R$. Dividing \eqref{eq:edge} by $x_2$ shows that the height at that meeting is an upper bound for the target height (here $c=3$). If $R\ge1$, the chain from all colour 3 to all colour 2 also meets $R$, as its endpoint ratios are 1 and $\beta^{-d}$. This time colour 3 is on the right of \eqref{eq:edge}, so the meeting gives a lower bound. If $R\le1$, use the chain from all colour 1 to all colour 3 for the lower bound. By Lemma~\ref{lem:fibre} and the intermediate value theorem a product input has the desired height. The two ratios determine the normalized vector. Thus $S_{3,d,\beta}=P$.
+
+\section{The colouring limit and elementary cases}
+
+\begin{proposition}\label{prop:zero}
+If $d\ge q-1$ and $q\ge2$, then $S_{q,d,0}=\Delta_q$.
+\end{proposition}
+\begin{proof}
+Given $x\in\Delta_q$, let $a$ maximize $x_a$, and set $y_i=x_i/x_a$ for $i\ne a$. Use one neighbour for each $i\ne a$, assigning probability $s y_i$ to $a$ and $1-s y_i$ to $i$. The function
+\[
+ [0,1]\ni s\longmapsto \prod_{i\ne a}(1-s y_i)-s
+\]
+equals 1 at 0 and is nonpositive at 1. At a root $s\in(0,1]$ the raw weights are $s$ on $a$ and $s y_i$ elsewhere, hence the normalizer is $s/x_a>0$. This includes zero coordinates and point masses. Additional uniform neighbours multiply every weight by the same positive factor $1-1/q$.
+\end{proof}
+
+If $\beta=0$ and $2\le d\le q-2$, nonconvexity follows from \cite[Theorem~1]{Short}, whose lower bound $Z\ge q-d$ is strictly positive. At $\beta=1$ the image is the uniform point. For $d=1$ the denominator in \eqref{eq:product} is the constant $q-1+\beta>0$ and the map is affine. For $q=2$, $\beta>0$, the continuous image of the connected input domain is an interval in the one-dimensional probability simplex, as observed in \cite[\S4]{LMP}. These cases complete Theorem~\ref{thm:main}.
+
+At $q\ge4$, $d\ge q-1$, the full simplex at $\beta=0$ can thus be a limit of nonconvex compact images. Indeed, for each target, Proposition~\ref{prop:zero} gives an input whose normalizer stays positive near zero. Its outputs converge to the target. A finite $\varepsilon$-net of the simplex gives Hausdorff convergence as $\beta\downarrow0$. This is a geometric feature of one update. Gibbs uniqueness, mixing rates and the existence of a universal-field reduction involve different quantifiers. In particular, the large-degree matching theorem \cite[Theorem~1.4]{LMP} imposes additional tail bounds.
+
+\section{Verification and provenance}
+
+The accompanying Lean~4.19.0 and Mathlib~v4.19.0 project checks the classification over real probabilities. The theorem \texttt{PottsBP.paper\_classification} displays the finite expectation, the independent rows and the positive-normalizer condition in its type. The three-colour proof uses scalar interpolation. From the project directory, \texttt{lake build} checks the modules and \texttt{python classification/verify\_formal.py} records their axiom lists and replays the proofs through the kernel. The final targets use only propositional extensionality, classical choice and quotient soundness. Exact rational enumerations and numerical reconstructions accompany the proof.
+
+At zero temperature a tuple pinning every colour has $Z=0$. Totalized division would assign the zero vector to it. The formal project therefore restricts the source expectation to its domain and proves that its image is exactly the earlier source image with the zero vector removed. The difference matters when $d\ge q$.
+
+A preliminary working draft supplied the shifted supporting functional and the three-chain boundary argument. The fibre construction in Lemma~\ref{lem:fibre} gives a direct alternative to a winding-number proof. The accessible public sources examined on November~25, 2026 contained the partial result \cite{Short}. We did not locate an equivalent full classification. Work on three-colour uniqueness \cite{GGY} and on the sharp tree uniqueness threshold \cite{WXY} studies iterated recursion. Generative AI assisted in the mathematical development, formalization and preparation of the manuscript.
+
+\begin{thebibliography}{9}
+\bibitem{LMP} K. Liu, N. Mani and F. Pernice, \emph{Counterexamples to a Weitz-Style Reduction for Multispin Systems}, \href{https://arxiv.org/abs/2411.06541v2}{arXiv:2411.06541v2}, 2025.
+\bibitem{Mani} N. Mani, \emph{A Probabilistic Perspective on Graph Coloring}, Ph.D. thesis, Massachusetts Institute of Technology, 2025, \href{https://dspace.mit.edu/handle/1721.1/159909}{hdl:1721.1/159909}.
+\bibitem{Short} Kazeshima, \emph{Nonconvexity of the product belief-propagation image for the antiferromagnetic Potts model}, research note, November~25, 2026, \href{https://github.com/Kazeshima/solved-problems/tree/22864a3858ae02109d70c5743de1ec145113cc0b/problems/potts-bp-nonconvexity}{public version and Lean project}.
+\bibitem{GGY} A. Galanis, L.~A. Goldberg and K. Yang, \emph{Uniqueness for the 3-state antiferromagnetic Potts model on the tree}, Electron. J. Probab. \textbf{23} (2018), paper 82, \href{https://doi.org/10.1214/18-EJP211}{doi:10.1214/18-EJP211}.
+\bibitem{WXY} W. Wu, Y. Xu and K. Yang, \emph{The sharp uniqueness threshold for the antiferromagnetic Potts model on regular trees}, \href{https://arxiv.org/abs/2611.32635v1}{arXiv:2611.32635v1}, 2026.
+\end{thebibliography}
+\end{document}

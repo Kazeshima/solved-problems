@@ -1,0 +1,195 @@
+[
+  {
+    "date": "2026-11-25T19:10:46.881894+00:00",
+    "url": "https://arxiv.org/pdf/2411.06541v2",
+    "exit": 0,
+    "sha256": "f5141ff51daf192c394ab2d62d111b9345521ebc87d38fd5e5038cdc807d29b0",
+    "pages": 25,
+    "term_pages": {
+      "convex hull": [
+        5
+      ],
+      "image of product measures": [
+        5
+      ],
+      "Question 4": [
+        12
+      ],
+      "convex potential": [],
+      "Weitz": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        12,
+        14,
+        19
+      ],
+      "log-convex": [],
+      "arXiv target": [
+        1
+      ],
+      "surjectivity": [],
+      "independent messages": []
+    },
+    "title_page": "arXiv:2411.06541v2 [cs.DS] 8 Feb 2025 Counterexamples to a Weitz-Style Reduction for Multispin Systems Kuikui Liu ∗ Nitya Mani† Francisco Pernice‡ February 2025 Abstract In a seminal paper, Weitz [ Wei06] showed that for two-state spin syst"
+  },
+  {
+    "date": "2026-11-25T19:10:47.096781+00:00",
+    "url": "https://arxiv.org/pdf/2611.32635v1",
+    "exit": 0,
+    "sha256": "0d5821a4bb7cb1dc3dfb001244d405700a1efef9b11a8b4ca4f7a881fb509f72",
+    "pages": 41,
+    "term_pages": {
+      "convex hull": [],
+      "image of product measures": [],
+      "Question 4": [],
+      "convex potential": [
+        1,
+        5
+      ],
+      "Weitz": [],
+      "log-convex": [],
+      "arXiv target": [],
+      "surjectivity": [],
+      "independent messages": []
+    },
+    "title_page": "The sharp uniqueness threshold for the antiferromagnetic Potts model on regular trees Wei Wu∗ Yicheng Xu † Kuan Yang‡ November 25, 2026 Abstract We study Gibbs uniqueness for the q-state antiferromagnetic Potts model on the infinite rooted "
+  },
+  {
+    "date": "2026-11-25T19:10:47.939573+00:00",
+    "url": "https://arxiv.org/pdf/1804.03514v1",
+    "exit": 0,
+    "sha256": "5421c2ee2175db906907258c4b3e1afc2c874449b3d0895f69333792a2882df4",
+    "pages": 41,
+    "term_pages": {
+      "convex hull": [],
+      "image of product measures": [],
+      "Question 4": [],
+      "convex potential": [],
+      "Weitz": [],
+      "log-convex": [],
+      "arXiv target": [],
+      "surjectivity": [],
+      "independent messages": []
+    },
+    "title_page": "arXiv:1804.03514v1 [cs.DM] 10 Apr 2018 Uniqueness for the 3-State Antiferromagnetic Potts Model o n the Tree Andreas Galanis, Leslie Ann Goldberg, and Kuan Yang 10 April 2018 Abstract The antiferromagneticq-state Potts model is perhaps the "
+  },
+  {
+    "date": "2026-11-25T19:10:47.091233+00:00",
+    "url": "https://arxiv.org/pdf/2011.05638v3",
+    "exit": 0,
+    "sha256": "abbd161f463f970932b6bb1480d22549317b7989d9455b98e659fbd816cc34b2",
+    "pages": 24,
+    "term_pages": {
+      "convex hull": [
+        9,
+        14,
+        16
+      ],
+      "image of product measures": [],
+      "Question 4": [],
+      "convex potential": [],
+      "Weitz": [
+        24
+      ],
+      "log-convex": [
+        5,
+        6,
+        8,
+        10,
+        15,
+        16,
+        21,
+        22
+      ],
+      "arXiv target": [],
+      "surjectivity": [],
+      "independent messages": []
+    },
+    "title_page": "arXiv:2011.05638v3 [math.PR] 16 Jan 2023 UNIQUENESS OF THE GIBBS MEASURE FOR THE 4-ST A TE ANTI-FERROMAGNETIC POTTS MODEL ON THE REGULAR TREE DA VID DE BOER, PJOTR BUYS, AND GUUS REGTS Abstract. W e show that the 4-state anti-ferromagnetic "
+  },
+  {
+    "date": "2026-11-25T19:10:49.869497+00:00",
+    "url": "https://arxiv.org/pdf/2608.25491v1",
+    "exit": 0,
+    "sha256": "a9fab4dd8f8d3180d6abb5c2b065f266bfc61ac9bd5362414471d45d46fc0e7c",
+    "pages": 38,
+    "term_pages": {
+      "convex hull": [],
+      "image of product measures": [],
+      "Question 4": [],
+      "convex potential": [],
+      "Weitz": [
+        5,
+        37
+      ],
+      "log-convex": [],
+      "arXiv target": [
+        5,
+        37
+      ],
+      "surjectivity": [],
+      "independent messages": []
+    },
+    "title_page": "A Spectral Local-to-Global Principle for Spin Systems on Graphs with Girth At Least Five Xiaoyu Chen∗ Kuikui Liu† Abstract It is proved that, for everyδ∈(0, 1) , the Glauber dynamics for the uniform distribution on properq-colorings is rapi"
+  },
+  {
+    "date": "2026-11-25T19:10:50.517256+00:00",
+    "url": "https://arxiv.org/pdf/2603.17858v2",
+    "exit": 0,
+    "sha256": "d86f6d631a29cf717792d4f235162e36b63a439658336aa2b64d8e846c3abdb5",
+    "pages": 28,
+    "term_pages": {
+      "convex hull": [],
+      "image of product measures": [],
+      "Question 4": [],
+      "convex potential": [],
+      "Weitz": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        27,
+        28
+      ],
+      "log-convex": [],
+      "arXiv target": [
+        26,
+        27
+      ],
+      "surjectivity": [],
+      "independent messages": []
+    },
+    "title_page": "DECAY OF CORRELATIONS AND ZEROS FOR THE HARD-CORE MODEL HAN PETERS, GUUS REGTS, AND JOSIAS REPPEKUS Abstract.In a recent paper the last author proved that absence of complex zeros of the partition function of the hard-core model near a para"
+  },
+  {
+    "date": "2026-11-25T19:10:51.633899+00:00",
+    "url": "https://arxiv.org/pdf/2610.42059v1",
+    "exit": 0,
+    "sha256": "fc29cdb543ff0ef2c4bd75d10b64502ed0874e28d2b74852975f96d4aa59ff89",
+    "pages": 53,
+    "term_pages": {
+      "convex hull": [],
+      "image of product measures": [],
+      "Question 4": [],
+      "convex potential": [],
+      "Weitz": [
+        3,
+        52,
+        53
+      ],
+      "log-convex": [],
+      "arXiv target": [
+        3,
+        52
+      ],
+      "surjectivity": [],
+      "independent messages": []
+    },
+    "title_page": "Rapid mixing of Potts Glauber dynamics throughout uniqueness Antonio Blanca ∗ Reza Gheissari † Heehyun Park ‡ Xusheng Zhang § Abstract Sampling from the ferromagneticq-state Potts model is a fundamental problem in statistical physics and ap"
+  }
+]

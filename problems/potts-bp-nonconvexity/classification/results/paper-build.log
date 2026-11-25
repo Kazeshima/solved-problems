@@ -1,0 +1,24 @@
+$ tectonic -X compile classification/paper.tex --keep-logs --outdir .lake/classification-work
+note: "version 2" Tectonic command-line interface activated
+note: Running TeX ...
+Fontconfig error: Cannot load default config file: No such file: (null)
+note: downloading unicode-math.sty
+note: downloading expl3.sty
+note: downloading unicode-math-xetex.sty
+note: downloading xparse.sty
+note: downloading l3keys2e.sty
+note: downloading fontspec.sty
+note: downloading fontspec-xetex.sty
+note: downloading fontenc.sty
+note: downloading fontspec.cfg
+note: downloading fix-cm.sty
+note: downloading unicode-math-table.tex
+note: downloading latinmodern-math.otf
+note: downloading lmroman5-regular.otf
+note: Rerunning TeX because "paper.out" changed ...
+note: Running xdvipdfmx ...
+note: Writing `.lake/classification-work\paper.log` (22.5361328125 KiB)
+note: Writing `.lake/classification-work\paper.pdf` (79.3134765625 KiB)
+note: Skipped writing 2 intermediate files (use --keep-intermediates to keep them)
+
+exit=0

@@ -4,6 +4,8 @@
 
 [Read the short note (PDF)](output/pdf/paper.pdf) · [LaTeX source](paper.tex)
 
+The [complete classification research package](classification/README.md) contains a separate four-page manuscript, the positive-normalizer source theorem, and the expanded Lean and computational verification.
+
 In the four-colour model with two independent neighbours and diagonal interaction $\beta=1/2$, the product image contains $(1,1,2,2)/6$ and $(3,3,2,4)/12$. Their midpoint $(5,5,6,8)/24$ is unattainable. More generally, the image is nonconvex for all $d\ge2$, $q\ge d+2$ and $0\le\beta<1$, including proper colourings. Here each neighbour has its own arbitrary real probability vector on the closed simplex.
 
 Kuikui Liu, Nitya Mani and Francisco Pernice posed the question in Section 4 of their preprint. Nitya Mani also posed it in her thesis. Their use of an extremal coordinate in Lemma 2.2 and Remark 3 is the methodological precedent. For the standard antiferromagnetic interaction, equality at the upper bound for one coordinate forces the neighbours' supports to be pairwise disjoint. The note uses that rigidity to exhibit missing convex combinations. The public literature search through 25 November 2026 did not identify an earlier equivalent solution. The result addresses the geometry of the BP image. [Question 4](https://arxiv.org/pdf/2411.06541v2#page=12) · [Definition 2](https://arxiv.org/pdf/2411.06541v2#page=5) · [Method in the original paper](https://arxiv.org/pdf/2411.06541v2#page=7) · [Thesis, Question 3.9.18, p. 163](https://dspace.mit.edu/handle/1721.1/159909) · [Catalog entry Q4813](https://github.com/10m-u/open-problems-catalog/blob/main/problems/mathematics/probability-stochastic-processes-part-3.md#q4813)

@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-25",
+  "arxiv": [
+    {
+      "id": "http://arxiv.org/abs/2611.32635v1",
+      "title": "The sharp uniqueness threshold for the antiferromagnetic Potts model on regular trees",
+      "published": "2026-11-24T13:56:37Z",
+      "summary": "We study Gibbs uniqueness for the $q$-state antiferromagnetic Potts model on the infinite rooted $d$-ary tree and the infinite $(d+1)$-regular tree, where $d\\geqslant1$ and $q\\geqslant2$. An edge has weight $p\\in[0,1]$ if its endpoints have the same color and weight $1$ otherwise. We prove that there is a unique Gibbs state if and only if $p\\geqslant p_c:=\\max\\{0,1-q/(d+1)\\}$, except when $(q,p)=(d+1,0)$, thus completes the uniqueness thresholds for all $d\\geqslant1$ and $q\\geqslant2$. Our proof use a convex potential for the tree recursion and show that it strictly decreases away from the uniform distribution. Together with the result of Gu, Wu and Yang, our theorem gives the exact critical power law whenever $p_c>0$."
+    },
+    {
+      "id": "http://arxiv.org/abs/2411.06541v2",
+      "title": "Counterexamples to a Weitz-Style Reduction for Multispin Systems",
+      "published": "2024-11-10T17:43:24Z",
+      "summary": "In a seminal paper, Weitz showed that for two-state spin systems, such as the Ising and hardcore models from statistical physics, correlation decay on trees implies correlation decay on arbitrary graphs. The key gadget in Weitz's reduction has been instrumental in recent advances in approximate counting and sampling, from analysis of local Markov chains like Glauber dynamics to the design of deterministic algorithms for estimating the partition function. A longstanding open problem in the field has been to find such a reduction for more general multispin systems like the uniform distribution over proper colorings of a graph.\n  In this paper, we show that for a rich class of multispin systems, including the ferromagnetic Potts model, there are fundamental obstacles to extending Weitz's reduction to the multispin setting. A central component of our investigation is establishing nonconvexity of the image of the belief propagation functional, the standard tool for analyzing spin systems on trees. On the other hand, we provide evidence of convexity for the antiferromagnetic Potts model."
+    },
+    {
+      "id": "http://arxiv.org/abs/1305.2902v3",
+      "title": "Inapproximability for Antiferromagnetic Spin Systems in the Tree Non-Uniqueness Region",
+      "published": "2013-05-13T19:38:35Z",
+      "summary": "A remarkable connection has been established for antiferromagnetic 2-spin systems, including the Ising and hard-core models, showing that the computational complexity of approximating the partition function for graphs with maximum degree D undergoes a phase transition that coincides with the statistical physics uniqueness/non-uniqueness phase transition on the infinite D-regular tree. Despite this clear picture for 2-spin systems, there is little known for multi-spin systems. We present the first analog of the above inapproximability results for multi-spin systems.\n  The main difficulty in previous inapproximability results was analyzing the behavior of the model on random D-regular bipartite graphs, which served as the gadget in the reduction. To this end one needs to understand the moments of the partition function. Our key contribution is connecting: (i) induced matrix norms, (ii) maxima of the expectation of the partition function, and (iii) attractive fixed points of the associated tree recursions (belief propagation). The view through matrix norms allows a simple and generic analysis of the second moment for any spin system on random D-regular bipartite graphs. This yields concentration results for any spin system in which one can analyze the maxima of the first moment. The connection to fixed points of the tree recursions enables an analysis of the maxima of the first moment for specific models of interest.\n  For k-colorings we prove that for even k, in the tree non-uniqueness region (which corresponds to k<D) it is NP-hard, unless NP=RP, to approximate the number of colorings for triangle-free D-regular graphs. Our proof extends to the antiferromagnetic Potts model, and, in fact, to every antiferromagnetic model under a mild condition."
+    }
+  ],
+  "openreview_url": "https://api2.openreview.net/notes/search?limit=8&term=antiferromagnetic%20Potts%20belief%20propagation%20image%20convexity",
+  "openreview": [
+    {
+      "id": "UmBYp5HEf7",
+      "forum": "UmBYp5HEf7",
+      "created": 1779789127741,
+      "content": {
+        "venue": {
+          "value": "ICML 2026 AI4Math Workshop Poster"
+        },
+        "abstract": {
+          "value": "Progress in AI for mathematics is largely measured on benchmarks and competition problems, leaving\na gap with the questions working mathematicians actually care about. We argue for a different entry\npoint: problems whose key idea is simple once seen, yet whose search and verification are tedious.\nAs a case study from a working mathematician's perspective, we revisit an already-resolved problem\nand find a genuinely new proof of it: uniqueness of the Gibbs measure for the three-state\nantiferromagnetic Potts model on the infinite binary tree at every positive temperature. Where\nprior proofs control the tree recursion through two-step compositions and delicate\ncomputer-assisted estimates, we construct a new one-step polynomial Lyapunov potential on the\nsimplex that reduces the whole problem to a single finite-dimensional inequality---which we then\ndischarge by harnessing AI's strength in symbolic computation and exact verification, via a\nBernstein-basis certificate. Beyond the proof itself, we report on the agentic workflow that led to it: we tried several\nAI-driven paths to this problem---autonomous proof search, adversarial potential discovery, and\nformal-prover attempts---and summarize what worked and what did not, offering a few concrete\nlessons for using current agents in this kind of search-and-verify mathematics."
+        },
+        "title": {
+          "value": "AI-Assisted Discovery of a Polynomial Lyapunov Potential for the Antiferromagnetic Potts Model"
+        },
+        "authors": {
+          "value": [
+            "Chendong Song",
+            "Zijie Zhou",
+            "Chenlin Gu"
+          ]
+        }
+      }
+    }
+  ]
+}

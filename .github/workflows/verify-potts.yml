@@ -1,4 +1,4 @@
-name: Verify the Potts BP counterexample
+name: Verify the Potts BP classification
 
 on:
   push:
@@ -22,22 +22,26 @@ jobs:
         working-directory: problems/potts-bp-nonconvexity
     steps:
       - uses: actions/checkout@v4
-      - name: Check the rational witness
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Check the manuscripts and verified files
+        run: sha256sum --check --quiet classification/VERIFIED.sha256
+      - name: Reproduce the rational witness and classification experiments
         run: |
-          python -m pip install -r requirements.txt
+          python -m pip install -r classification/requirements.txt
           python verify.py
+          python classification/check_geometry.py
       - name: Install elan
         run: |
           curl --fail --location --retry 3 https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -o "$RUNNER_TEMP/elan-init.sh"
           sh "$RUNNER_TEMP/elan-init.sh" -y --default-toolchain none
           echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
-      - name: Build the pinned project
-        run: |
-          lake exe cache get
-          lake build
-      - name: Check theorem types, axioms and kernel replay
+      - name: Fetch the pinned Mathlib cache
+        run: lake exe cache get
+      - name: Build, audit and replay both the short note and the classification
         shell: bash
         run: |
-          lake env lean --trust=0 Audit.lean | tee "$RUNNER_TEMP/potts-axioms.log"
-          diff -u <(grep "^'PottsBP\." results/axioms.log) <(grep "^'PottsBP\." "$RUNNER_TEMP/potts-axioms.log")
-          lake env lean Replay.lean
+          python classification/verify_formal.py
+          diff -u <(grep "^'PottsBP\." results/axioms.log) <(grep "^'PottsBP\." classification/results/original-axioms.log)
+          grep -F 'Checked transitive axioms and replay membership' classification/results/classification-replay.log

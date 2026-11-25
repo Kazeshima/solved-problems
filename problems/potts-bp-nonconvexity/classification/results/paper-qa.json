@@ -1,0 +1,53 @@
+{
+  "pages": 4,
+  "author": "Kazeshima",
+  "pdf_sha256": "7ce1d08aa56c51f5ce1c50f58eeb9f0796258d4b1534d75c5a929ad1d9d47039",
+  "text_chars_per_page": [
+    2422,
+    3295,
+    3387,
+    3343
+  ],
+  "embedded_fonts": {
+    "/IHAIZV+LMRoman10-Bold-Identity-H": true,
+    "/BZIVMZ+LMRoman9-Regular-Identity-H": true,
+    "/IXFAWU+LMRomanCaps10-Regular-Identity-H": true,
+    "/TQTHRL+LatinModernMath-Regular-Identity-H": true,
+    "/YEUUOC+LMRoman10-Regular-Identity-H": true,
+    "/AKHCZK+LMRoman10-Italic-Identity-H": true,
+    "/VDVGTR+LMRoman9-Italic-Identity-H": true,
+    "/CAFSZL+LMRoman8-Regular-Identity-H": true,
+    "/PVTTLK+MSAM10": true,
+    "/DDIEWW+LMMono10-Regular-Identity-H": true,
+    "/FKPJSN+LMRoman9-Bold-Identity-H": true
+  },
+  "unicode_inequality_count": 42,
+  "layout_log_issues": [],
+  "visually_inspected_pages": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "render_pixels": [
+    [
+      816,
+      1056
+    ],
+    [
+      816,
+      1056
+    ],
+    [
+      816,
+      1056
+    ],
+    [
+      816,
+      1056
+    ]
+  ],
+  "driver_note": "Windows Fontconfig reported missing default configuration. Tectonic loaded the requested fonts, the PDF embeds all fonts, and the rendered pages and extracted Unicode mathematics passed.",
+  "exact_repeat_build_sha256": "7ce1d08aa56c51f5ce1c50f58eeb9f0796258d4b1534d75c5a929ad1d9d47039",
+  "source_date_epoch": 1795564800
+}

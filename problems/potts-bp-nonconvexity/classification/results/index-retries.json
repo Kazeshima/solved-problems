@@ -1,0 +1,134 @@
+[
+  {
+    "platform": "Crossref equivalent geometry retry",
+    "url": "https://api.crossref.org/works?rows=8&select=DOI,title&query.bibliographic=normalized%20Hadamard%20product%20probability%20simplex%20convex",
+    "utc": "2026-11-25T19:37:21.564889+00:00",
+    "http": "200",
+    "exit": 0,
+    "bytes": 1085,
+    "sha256": "8f3f24b6db08483f31f81b1077377de5217cd482130a99f486026c6b1b3acb50",
+    "result": [
+      {
+        "DOI": "10.1016/j.spl.2017.04.009",
+        "title": [
+          "The Hadamard product and the free convolutions"
+        ]
+      },
+      {
+        "DOI": "10.3390/jimaging10030062",
+        "title": [
+          "Enhancing Deep Edge Detection through Normalized Hadamard-Product Fusion"
+        ]
+      },
+      {
+        "DOI": "10.28919/aia/9781",
+        "title": [
+          "Hermite Hadamard type inequalities for product of log convex function and exponential convex functions and some generalized results"
+        ]
+      },
+      {
+        "DOI": "10.1016/j.aml.2006.08.021",
+        "title": [
+          "The quasi-Hadamard product of certain starlike and convex functions"
+        ]
+      },
+      {
+        "DOI": "10.47974/jim-1489",
+        "title": [
+          "Hermite-Hadamard inequality for product of (h1, h2, s)-convex and m-harmonically convex function"
+        ]
+      },
+      {
+        "DOI": "10.1515/9783110361629.30",
+        "title": [
+          "2 Convex sets and convex functions"
+        ]
+      },
+      {
+        "DOI": "10.1007/springerreference_72176",
+        "title": [
+          "Convex-Simplex Algorithm"
+        ]
+      },
+      {
+        "DOI": "10.1515/9783110361629.58",
+        "title": [
+          "3 Weak convergence in Hadamard spaces"
+        ]
+      }
+    ]
+  },
+  {
+    "platform": "Semantic Scholar bulk retry",
+    "url": "https://api.semanticscholar.org/graph/v1/paper/search/bulk?fields=title,year,url&query=%22Potts%22%20%2B%20%22belief%20propagation%22%20%2B%20convexity",
+    "utc": "2026-11-25T19:37:21.508285+00:00",
+    "http": "429",
+    "exit": 0,
+    "bytes": 174,
+    "sha256": "65ab993d12c5c2cc9b68e6da2bb79b326930283e520363ffcdc145f88cd5a148",
+    "result": {
+      "message": "Too Many Requests. Please wait and try again or apply for a key for higher rate limits. https://www.semanticscholar.org/product/api#api-key-form",
+      "code": "429"
+    }
+  },
+  {
+    "platform": "Loogle index",
+    "url": "https://loogle.lean-lang.org/json?q=%22Potts%22",
+    "utc": "2026-11-25T19:37:22.823602+00:00",
+    "http": "200",
+    "exit": 0,
+    "bytes": 108,
+    "sha256": "054ab185993c0c12f012a0cf4b5e62823f8b2e26c54a68243f1a84e5fb40fe5d",
+    "result": "{'count': 0, 'header': 'Found 0 declarations whose name contains \"Potts\".\\n', 'heartbeats': 0, 'hits': []}"
+  },
+  {
+    "platform": "DBLP CoRR record",
+    "url": "https://dblp.org/rec/journals/corr/abs-2411-06541.xml",
+    "utc": "2026-11-25T19:37:22.483750+00:00",
+    "http": "202",
+    "exit": 0,
+    "bytes": 2951,
+    "sha256": "00694a5872aafd4e18e0412d889e110d0b70794716e9241f04907d2fe9455e41",
+    "result": {
+      "prefix": " Making sure you're not a bot! Making sure you're not a bot! Loading... Please wait a moment while we ensure the security of your connection. Protected by Anubis From Techaro . Made with ❤️ in 🇨🇦. Mascot design by CELPHASE . This website is running Anubis version v1.27.0 . ",
+      "matches": []
+    }
+  },
+  {
+    "platform": "DataCite original DOI",
+    "url": "https://api.datacite.org/dois/10.48550/arxiv.2411.06541",
+    "utc": "2026-11-25T19:37:20.717046+00:00",
+    "http": "200",
+    "exit": 0,
+    "bytes": 9252,
+    "sha256": "387e260ec045b9d2d02bf8e646d5f015c3327d7f66ddb4c5d34a06868410edea",
+    "result": "{'data': {'id': '10.48550/arxiv.2411.06541', 'type': 'dois', 'attributes': {'doi': '10.48550/arxiv.2411.06541', 'prefix': '10.48550', 'suffix': 'arxiv.2411.06541', 'identifiers': [{'identifier': '2411.06541', 'identifierType': 'arXiv'}], 'alternateIdentifiers': [{'alternateIdentifierType': 'arXiv', 'alternateIdentifier': '2411.06541'}], 'creators': [{'name': 'Liu, Kuikui', 'nameType': 'Personal', 'givenName': 'Kuikui', 'familyName': 'Liu', 'affiliation': [], 'nameIdentifiers': []}, {'name': 'Mani, Nitya', 'nameType': 'Personal', 'givenName': 'Nitya', 'familyName': 'Mani', 'affiliation': [], 'nameIdentifiers': []}, {'name': 'Pernice, Francisco', 'nameType': 'Personal', 'givenName': 'Francisco', 'familyName': 'Pernice', 'affiliation': [], 'nameIdentifiers': []}], 'titles': [{'title': 'Counterexamples to a Weitz-Style Reduction for Multispin Systems'}], 'publisher': 'arXiv', 'container': {}, 'publicationYear': 2024, 'subjects': [{'lang': 'en', 'subject': 'Data Structures and Algorithms (cs.DS)', 'subjectScheme': 'arXiv'}, {'lang': 'en', 'subject': 'Probability (math.PR)', 'subjectScheme': 'arXiv'}, {'subject': 'FOS: Computer and information sciences', 'subjectScheme': 'Fields of Science and Technology (FOS)'}, {'subject': 'FOS: Computer and information sciences', 'schemeUri': 'http://www.oecd.org/science/inno/38235147.pdf', 'subjectScheme': 'Fields of Science and Technology (FOS)'}, {'subject': 'FOS: Mathematics', 'subjectScheme': 'Fields of Science and Technology (FOS)'}, {'subject': 'FOS: Mathematics', 'schemeUri': 'http://www.oecd.org/science/inno/38235147.pdf', 'subjectScheme': 'Fields of Science and Technology (FOS)'}], 'contributors': [], 'dates': [{'date': '2024-11-10T17:43:24Z', 'dateType': 'Submitted', 'dateInformation': 'v1'}, {'date': '2024-11-12T01:51:12Z', 'dateType': 'Updated', 'dateInformation': 'v1'}, {'date': '2025-02-08T01:35:24Z', 'dateType': 'Submitted', 'dateInformation': 'v2'}, {'date': '2025-02-11T01:13:09Z', 'dateType': 'Updated', 'dateInformation': 'v2'}, {'date': '2024-11', 'dateType': 'Available', 'dateInformation': 'v1'}, {'date': '2024', 'dateType': 'Issued'}], 'language': None, 'types': {'ris': 'GEN', 'bibtex': 'misc', 'citeproc': 'art"
+  },
+  {
+    "platform": "OpenAlex projective geometry",
+    "url": "https://api.openalex.org/works?per_page=12&search=normalized%20Hadamard%20powers%20affine%20simplices%20real%20coordinatewise%20product%20probability%20geometry",
+    "utc": "2026-11-25T19:37:21.911800+00:00",
+    "http": "200",
+    "exit": 0,
+    "bytes": 72867,
+    "sha256": "2d3fd267d8239273eeca26c483d12fe7ad21876e79b32d907a00e74620931978",
+    "result": [
+      {
+        "title": "Likelihood Geometry",
+        "doi": "https://doi.org/10.1007/978-3-319-04870-3_3"
+      },
+      {
+        "title": "Tropical aspects of real polynomials and hypergeometric functions",
+        "doi": null
+      },
+      {
+        "title": "What the Machine Invented: Mining New Mathematical Instruments from OpenAI's October 2026 Release of AI-Generated Mathematics",
+        "doi": "https://doi.org/10.5281/zenodo.23319144"
+      },
+      {
+        "title": "Finding a Positive Index Nash Equilibrium is PPADS-Complete",
+        "doi": "https://doi.org/10.48550/arxiv.2609.23879"
+      }
+    ]
+  }
+]

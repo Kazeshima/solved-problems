@@ -1,0 +1,5 @@
+$ lake --version
+UTC 2026-11-25T19:33:28.136504+00:00
+Lake version 5.0.0-6caaee8 (Lean version 4.19.0)
+
+exit=0 elapsed_seconds=0.11

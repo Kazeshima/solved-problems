@@ -1,0 +1,168 @@
+$ lake env lean --trust=0 ClassificationAudit.lean
+UTC 2026-11-25T19:36:17.781625+00:00
+PottsBP.simplex (p : V) : Prop
+'PottsBP.simplex' depends on axioms: [propext, Classical.choice, Quot.sound]
+PottsBP.simplexN {q : ℕ} (p : Fin q → ℝ) : Prop
+'PottsBP.simplexN' depends on axioms: [propext, Classical.choice, Quot.sound]
+PottsBP.weight (p r : V) (i : Fin 4) : ℝ
+'PottsBP.weight' depends on axioms: [propext, Classical.choice, Quot.sound]
+PottsBP.partition (p r : V) : ℝ
+'PottsBP.partition' depends on axioms: [propext, Classical.choice, Quot.sound]
+PottsBP.bp (p r : V) : V
+'PottsBP.bp' depends on axioms: [propext, Classical.choice, Quot.sound]
+PottsBP.prodImage : Set V
+'PottsBP.prodImage' depends on axioms: [propext, Classical.choice, Quot.sound]
+PottsBP.rawWeight {q d : ℕ} (β : ℝ) (p : Fin d → Fin q → ℝ) (i : Fin q) : ℝ
+'PottsBP.rawWeight' depends on axioms: [propext, Classical.choice, Quot.sound]
+PottsBP.generalBP {q d : ℕ} (β : ℝ) (p : Fin d → Fin q → ℝ) : Fin q → ℝ
+'PottsBP.generalBP' depends on axioms: [propext, Classical.choice, Quot.sound]
+PottsBP.generalImage (q d : ℕ) (β : ℝ) : Set (Fin q → ℝ)
+'PottsBP.generalImage' depends on axioms: [propext, Classical.choice, Quot.sound]
+PottsBP.Question4 : Prop
+'PottsBP.Question4' depends on axioms: [propext, Classical.choice, Quot.sound]
+PottsBP.productLaw {q d : ℕ} (p : Fin d → Fin q → ℝ) (τ : Fin d → Fin q) : ℝ
+'PottsBP.productLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+PottsBP.sourceWeight {q d : ℕ} (β : ℝ) (μ : (Fin d → Fin q) → ℝ) (i : Fin q) : ℝ
+'PottsBP.sourceWeight' depends on axioms: [propext, Classical.choice, Quot.sound]
+PottsBP.sourceBP {q d : ℕ} (β : ℝ) (μ : (Fin d → Fin q) → ℝ) (i : Fin q) : ℝ
+'PottsBP.sourceBP' depends on axioms: [propext, Classical.choice, Quot.sound]
+PottsBP.sourceImage (q d : ℕ) (β : ℝ) : Set (Fin q → ℝ)
+'PottsBP.sourceImage' depends on axioms: [propext, Classical.choice, Quot.sound]
+PottsBP.SourceQuestion4 : Prop
+'PottsBP.SourceQuestion4' depends on axioms: [propext, Classical.choice, Quot.sound]
+PottsBP.partition_pos (p r : V) (hp : simplex p) (hr : simplex r) : 0 < partition p r
+'PottsBP.partition_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+PottsBP.u_mem : u ∈ prodImage
+'PottsBP.u_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+PottsBP.v_mem : v ∈ prodImage
+'PottsBP.v_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+PottsBP.midpoint_eq : (1 / 2) • u + (1 / 2) • v = w
+'PottsBP.midpoint_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+PottsBP.w_not_mem : w ∉ prodImage
+'PottsBP.w_not_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+PottsBP.not_convex : ¬Convex ℝ prodImage
+'PottsBP.not_convex' depends on axioms: [propext, Classical.choice, Quot.sound]
+PottsBP.simplexN_four (p : V) : simplexN p ↔ simplex p
+'PottsBP.simplexN_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+PottsBP.rawWeight_four (p : Fin 2 → V) (i : Fin 4) : rawWeight (1 / 2) p i = weight (p 0) (p 1) i / 4
+'PottsBP.rawWeight_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+PottsBP.rawPartition_four (p : Fin 2 → V) : ∑ k, rawWeight (1 / 2) p k = partition (p 0) (p 1) / 4
+'PottsBP.rawPartition_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+PottsBP.generalBP_four (p : Fin 2 → V) : generalBP (1 / 2) p = bp (p 0) (p 1)
+'PottsBP.generalBP_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+PottsBP.generalImage_four : generalImage 4 2 (1 / 2) = prodImage
+'PottsBP.generalImage_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+PottsBP.question4_counterexample : ¬Convex ℝ (generalImage 4 2 (1 / 2))
+'PottsBP.question4_counterexample' depends on axioms: [propext, Classical.choice, Quot.sound]
+PottsBP.question4_false : ¬Question4
+'PottsBP.question4_false' depends on axioms: [propext, Classical.choice, Quot.sound]
+PottsBP.productLaw_isProbability {q d : ℕ} {p : Fin d → Fin q → ℝ} (hp : ∀ (j : Fin d), simplexN (p j)) :
+  (∀ (τ : Fin d → Fin q), 0 ≤ productLaw p τ) ∧ ∑ τ, productLaw p τ = 1
+'PottsBP.productLaw_isProbability' depends on axioms: [propext, Classical.choice, Quot.sound]
+PottsBP.interaction_mean {q : ℕ} (β : ℝ) (p : Fin q → ℝ) (hp : simplexN p) (i : Fin q) :
+  ∑ b, p b * interaction β i b = 1 - (1 - β) * p i
+'PottsBP.interaction_mean' depends on axioms: [propext, Classical.choice, Quot.sound]
+PottsBP.sourceWeight_eq_rawWeight {q d : ℕ} (β : ℝ) (p : Fin d → Fin q → ℝ) (hp : ∀ (j : Fin d), simplexN (p j))
+  (i : Fin q) : sourceWeight β (productLaw p) i = rawWeight β p i
+'PottsBP.sourceWeight_eq_rawWeight' depends on axioms: [propext, Classical.choice, Quot.sound]
+PottsBP.sourceBP_eq_generalBP {q d : ℕ} (β : ℝ) (p : Fin d → Fin q → ℝ) (hp : ∀ (j : Fin d), simplexN (p j)) :
+  sourceBP β (productLaw p) = generalBP β p
+'PottsBP.sourceBP_eq_generalBP' depends on axioms: [propext, Classical.choice, Quot.sound]
+PottsBP.partition_lower_bound {q d : ℕ} {β : ℝ} {p : Fin d → Fin q → ℝ} (h0 : 0 ≤ β) (h1 : β ≤ 1)
+  (hp : ∀ (j : Fin d), simplexN (p j)) : ↑q - ↑d * (1 - β) ≤ ∑ i, rawWeight β p i
+'PottsBP.partition_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+PottsBP.admissible_partition_pos {q d : ℕ} {β : ℝ} (hq : 0 < q) (hβ : max 0 (1 - ↑q / (↑d + 1)) ≤ β) (h1 : β ≤ 1)
+  {p : Fin d → Fin q → ℝ} (hp : ∀ (j : Fin d), simplexN (p j)) : 0 < ∑ i, rawWeight β p i
+'PottsBP.admissible_partition_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+PottsBP.sourceImage_eq_generalImage {q d : ℕ} {β : ℝ} (hq : 0 < q) (hβ : max 0 (1 - ↑q / (↑d + 1)) ≤ β) (h1 : β ≤ 1) :
+  sourceImage q d β = generalImage q d β
+'PottsBP.sourceImage_eq_generalImage' depends on axioms: [propext, Classical.choice, Quot.sound]
+PottsBP.source_question4_counterexample : ¬Convex ℝ (sourceImage 4 2 (1 / 2))
+'PottsBP.source_question4_counterexample' depends on axioms: [propext, Classical.choice, Quot.sound]
+PottsBP.source_question4_false : ¬SourceQuestion4
+'PottsBP.source_question4_false' depends on axioms: [propext, Classical.choice, Quot.sound]
+PottsBP.nonconvex_general {q d : ℕ} (hd : 2 ≤ d) (hq : d + 2 ≤ q) {β : ℝ} (h0 : 0 ≤ β) (h1 : β < 1) :
+  ¬Convex ℝ (generalImage q d β)
+'PottsBP.nonconvex_general' depends on axioms: [propext, Classical.choice, Quot.sound]
+PottsBP.source_nonconvex_general {q d : ℕ} (hd : 2 ≤ d) (hq : d + 2 ≤ q) {β : ℝ} (h0 : 0 ≤ β) (h1 : β < 1) :
+  ¬Convex ℝ (sourceImage q d β)
+'PottsBP.source_nonconvex_general' depends on axioms: [propext, Classical.choice, Quot.sound]
+PottsBP.admissibleSourceImage (q d : ℕ) (β : ℝ) : Set (Fin q → ℝ)
+'PottsBP.admissibleSourceImage' depends on axioms: [propext, Classical.choice, Quot.sound]
+PottsBP.admissibleSourceImage_eq_generalImage {q d : ℕ} (β : ℝ) : admissibleSourceImage q d β = generalImage q d β
+'PottsBP.admissibleSourceImage_eq_generalImage' depends on axioms: [propext, Classical.choice, Quot.sound]
+PottsBP.admissibleSourceImage_eq_sourceImage_diff_zero {q d : ℕ} {β : ℝ} (h0 : 0 ≤ β) (h1 : β ≤ 1) :
+  admissibleSourceImage q d β = sourceImage q d β \ {0}
+'PottsBP.admissibleSourceImage_eq_sourceImage_diff_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+PottsBP.legacy_zero_image {q d : ℕ} (hq : 2 ≤ q) (hd : q ≤ d) : sourceImage q d 0 = insert 0 (stdSimplex ℝ (Fin q))
+'PottsBP.legacy_zero_image' depends on axioms: [propext, Classical.choice, Quot.sound]
+PottsBP.source_convex_beta_one (q d : ℕ) : Convex ℝ (admissibleSourceImage q d 1)
+'PottsBP.source_convex_beta_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+PottsBP.source_convex_one_neighbor {q : ℕ} (hq : 2 ≤ q) {β : ℝ} (h0 : 0 ≤ β) : Convex ℝ (admissibleSourceImage q 1 β)
+'PottsBP.source_convex_one_neighbor' depends on axioms: [propext, Classical.choice, Quot.sound]
+PottsBP.source_convex_two_colors (d : ℕ) (hd : 1 ≤ d) {β : ℝ} (h0 : 0 ≤ β) (h1 : β ≤ 1) :
+  Convex ℝ (admissibleSourceImage 2 d β)
+'PottsBP.source_convex_two_colors' depends on axioms: [propext, Classical.choice, Quot.sound]
+PottsBP.source_convex_three_colors {d : ℕ} (hd : 1 ≤ d) {β : ℝ} (h0 : 0 ≤ β) (h1 : β ≤ 1) :
+  Convex ℝ (admissibleSourceImage 3 d β)
+'PottsBP.source_convex_three_colors' depends on axioms: [propext, Classical.choice, Quot.sound]
+PottsBP.source_image_zero_beta_eq_simplex {q d : ℕ} (hq : 2 ≤ q) (hd : q - 1 ≤ d) :
+  admissibleSourceImage q d 0 = stdSimplex ℝ (Fin q)
+'PottsBP.source_image_zero_beta_eq_simplex' depends on axioms: [propext, Classical.choice, Quot.sound]
+PottsBP.source_nonconvex_positive_beta {q d : ℕ} (hq : 4 ≤ q) (hd : 2 ≤ d) {β : ℝ} (hb : 0 < β) (h1 : β < 1) :
+  ¬Convex ℝ (admissibleSourceImage q d β)
+'PottsBP.source_nonconvex_positive_beta' depends on axioms: [propext, Classical.choice, Quot.sound]
+PottsBP.source_nonconvex_iff {q d : ℕ} (hq : 2 ≤ q) (hd : 1 ≤ d) {β : ℝ} (hb : 0 ≤ β) (h1 : β ≤ 1) :
+  ¬Convex ℝ (admissibleSourceImage q d β) ↔ 4 ≤ q ∧ 2 ≤ d ∧ (0 < β ∧ β < 1 ∨ β = 0 ∧ d ≤ q - 2)
+'PottsBP.source_nonconvex_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+PottsBP.source_nonconvex_iff_on_defined_outputs {q d : ℕ} (hq : 2 ≤ q) (hd : 1 ≤ d) {β : ℝ} (hb : 0 ≤ β) (h1 : β ≤ 1) :
+  ¬Convex ℝ (sourceImage q d β \ {0}) ↔ 4 ≤ q ∧ 2 ≤ d ∧ (0 < β ∧ β < 1 ∨ β = 0 ∧ d ≤ q - 2)
+'PottsBP.source_nonconvex_iff_on_defined_outputs' depends on axioms: [propext, Classical.choice, Quot.sound]
+PottsBP.Classification.column_tangent.{u_1} {ι : Type u_1} [DecidableEq ι] (s : Finset ι) (v : ι → ℝ) {β : ℝ}
+  (hb : 0 ≤ β) (h1 : β ≤ 1) (v0 : ∀ (j : ι), 0 ≤ v j) (v1 : ∀ (j : ι), v j ≤ 1) (b : ℕ) :
+  β ^ b * (1 + (1 - β) * (↑b - ∑ j ∈ s, v j)) ≤ ∏ j ∈ s, (1 - (1 - β) * v j)
+'PottsBP.Classification.column_tangent' depends on axioms: [propext, Classical.choice, Quot.sound]
+PottsBP.Classification.fractional_at_tangent.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι] (v : ι → ℝ) {β : ℝ}
+  (hb : 0 < β) (h1 : β < 1) (v0 : ∀ (j : ι), 0 ≤ v j) (v1 : ∀ (j : ι), v j ≤ 1) (b : ℕ)
+  (tight : ∏ j, (1 - (1 - β) * v j) = β ^ b * (1 + (1 - β) * (↑b - ∑ j, v j))) (i : ι) (hi0 : 0 < v i) (hi1 : v i < 1) :
+  v i = ∑ j, v j - ↑b
+'PottsBP.Classification.fractional_at_tangent' depends on axioms: [propext, Classical.choice, Quot.sound]
+PottsBP.Classification.raw_bounds {d : ℕ} {β : ℝ} (hb : 0 < β) (h1 : β < 1) (p : Fin d → Fin 3 → ℝ)
+  (hp : ∀ (j : Fin d), simplexN (p j)) : Classification.Bounds d β (rawWeight β p)
+'PottsBP.Classification.raw_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+PottsBP.Classification.edge_equality {β : ℝ} (hb : 0 < β) {a b c : Fin 3} (hab : a ≠ b) (hac : a ≠ c) (hbc : b ≠ c)
+  (m n : ℕ) (s : ℝ) :
+  let g := Classification.edgeWeight β a b m n s;
+  (1 + β) * g c = g a / β ^ m + g b / β ^ n
+'PottsBP.Classification.edge_equality' depends on axioms: [propext, Classical.choice, Quot.sound]
+PottsBP.Classification.edge_cross {d : ℕ} (hd : 1 ≤ d) (β R : ℝ) (a b : Fin 3)
+  (h0 : Classification.pinFactor β a 0 ^ d ≤ R * Classification.pinFactor β a 1 ^ d)
+  (h1 : R * Classification.pinFactor β b 1 ^ d ≤ Classification.pinFactor β b 0 ^ d) :
+  ∃ m n s p,
+    m + n + 1 = d ∧
+      (∀ (j : Fin d), simplexN (p j)) ∧
+        rawWeight β p = Classification.edgeWeight β a b m n s ∧ rawWeight β p 0 = R * rawWeight β p 1
+'PottsBP.Classification.edge_cross' depends on axioms: [propext, Classical.choice, Quot.sound]
+PottsBP.Classification.height_intermediate {d : ℕ} {β R W : ℝ} (hb : 0 < β) (h1 : β < 1) (hR : 0 < R)
+  (p r : Fin d → Fin 3 → ℝ) (hp : ∀ (j : Fin d), simplexN (p j)) (hr : ∀ (j : Fin d), simplexN (r j))
+  (ep : rawWeight β p 0 = R * rawWeight β p 1) (er : rawWeight β r 0 = R * rawWeight β r 1)
+  (lo : rawWeight β p 2 / rawWeight β p 1 ≤ W) (hi : W ≤ rawWeight β r 2 / rawWeight β r 1) :
+  ∃ z, (∀ (j : Fin d), simplexN (z j)) ∧ rawWeight β z 0 = R * rawWeight β z 1 ∧ rawWeight β z 2 = W * rawWeight β z 1
+'PottsBP.Classification.height_intermediate' depends on axioms: [propext, Classical.choice, Quot.sound]
+PottsBP.Classification.three_fill {d : ℕ} (hd : 1 ≤ d) {β : ℝ} (hb : 0 < β) (h1 : β < 1) {x : Fin 3 → ℝ}
+  (hx : simplexN x) (pos : ∀ (i : Fin 3), 0 < x i) (bound : Classification.Bounds d β x) : x ∈ generalImage 3 d β
+'PottsBP.Classification.three_fill' depends on axioms: [propext, Classical.choice, Quot.sound]
+PottsBP.sourceImage_eq_admissible_positive {q d : ℕ} (hq : 0 < q) {β : ℝ} (hb : 0 < β) (h1 : β ≤ 1) :
+  sourceImage q d β = admissibleSourceImage q d β
+'PottsBP.sourceImage_eq_admissible_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+PottsBP.paper_classification {q d : ℕ} (hq : 2 ≤ q) (hd : 1 ≤ d) {β : ℝ} (hb : 0 ≤ β) (h1 : β ≤ 1) :
+  let G := fun p i => ∑ τ, (∏ j, p j (τ j)) * ∏ j, if i = τ j then β else 1;
+  ¬Convex ℝ
+        {x |
+          ∃ p,
+            (∀ (j : Fin d), (∀ (i : Fin q), 0 ≤ p j i) ∧ ∑ i, p j i = 1) ∧
+              0 < ∑ i, G p i ∧ (fun i => G p i / ∑ k, G p k) = x} ↔
+    4 ≤ q ∧ 2 ≤ d ∧ (0 < β ∧ β < 1 ∨ β = 0 ∧ d ≤ q - 2)
+'PottsBP.paper_classification' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+exit=0 elapsed_seconds=60.84
