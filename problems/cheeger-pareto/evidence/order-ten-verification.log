@@ -1,0 +1,18 @@
+$ python3 verify_order10.py
+ICOceQd{W: |E|=18 h=4/3 rho=6 5h=20/3 |Aut|=6
+ICOceQd|O: |E|=18 h=4/3 rho=6 5h=20/3 |Aut|=4
+ICOceQd~w: |E|=21 h=5/3 rho=8 5h=25/3 |Aut|=48
+screen.cpp
+audit.cpp
+Rejected corrupted reference cuts, invalid pivots, missing children, trailing nodes, duplicate classes, isomorphic relabelings and an incomplete census.
+11716571 records
+candidate 8003575 ICOceQd{W edges=18 12kh=80 key=704580881983 aut=6
+candidate 8003577 ICOceQd|O edges=18 12kh=80 key=704580882043 aut=4
+candidate 8003588 ICOceQd~w edges=21 12kh=100 key=18143069308927 aut=48
+distinct connected classes=11716571 labeled orbit sum=34496488594816 recurrence=34496488594816
+verified refutation trees=11716568 pivot nodes=24249296 largest tree=121
+no union=9885683 no compatible cover=1830885 candidates=3
+PASS
+PASS: 11716571 connected classes, 34496488594816 labeled graphs, 3 violating classes. Minimum edges = 18.
+All edge minimizers: ICOceQd{W ICOceQd|O
+exit=0

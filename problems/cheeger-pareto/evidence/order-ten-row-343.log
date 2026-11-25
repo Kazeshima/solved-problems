@@ -1,0 +1,8 @@
+$ python3 verify_order10.py --row 343 --lean-out .lake/CatalogRow343.lean
+ICOceQd{W: |E|=18 h=4/3 rho=6 5h=20/3 |Aut|=6
+ICOceQd|O: |E|=18 h=4/3 rho=6 5h=20/3 |Aut|=4
+ICOceQd~w: |E|=21 h=5/3 rho=8 5h=25/3 |Aut|=48
+PASS: row 343 I???E?xHw, reference mask=131, status=1, proof nodes=16
+$ lake env lean .lake/CatalogRow343.lean
+'CatalogRow.result' depends on axioms: [propext, Classical.choice, Quot.sound]
+exit=0

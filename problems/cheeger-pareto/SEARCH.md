@@ -4,6 +4,8 @@ The source survey below predates this project's own public GitHub branch. On 25 
 
 **Search date:** 25 November 2026. **Finding for B:** no earlier public resolution was identified in the sources below. **NOVELTY: PASS** in the stated search sense. The graph and witness belong to the submitted archive. This review does not establish who first discovered them privately or confer an absolute priority date.
 
+The order-ten extension searched the three catalog strings, the original string, and the combined terms “Cheeger Pareto 18 edges”, “minimum counterexample”, “uniqueness”, “jinni”, and the two question IDs on 25 November 2026. No independent prior classification was identified in those results. The abstract graphs themselves are present in McKay’s public collection. This review attributes the original witness and makes a classification claim about the stated inequality. [Catalog](https://users.cecs.anu.edu.au/~bdm/data/graphs.html) · [Order-ten evidence](ORDER10.md)
+
 ## The question and the first verifiable prior result
 
 In the thread history the earliest confirmed refutation of **A** is DSM's seven-vertex example in a comment at **02:13 UTC on 19 December 2025**. The author acknowledged it at 09:45 UTC. DSM posted a two-example answer at 13:54 UTC and revised the closing sentence at 14:07 UTC. At 17:34 UTC on 20 December, jinni commented on using the floor. The formal wording of B had already appeared that day at 11:39 UTC. [First counterexample](https://mathoverflow.net/questions/506070#comment1317845_506070) · [DSM's answer](https://mathoverflow.net/a/506124) · [Answer revisions](https://mathoverflow.net/posts/506124/revisions) · [Floor comment](https://mathoverflow.net/questions/506070#comment1318015_506124)

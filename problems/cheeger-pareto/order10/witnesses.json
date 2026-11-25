@@ -1,0 +1,76 @@
+{
+  "order": 10,
+  "tight_cover": [
+    [
+      0,
+      3,
+      6,
+      9
+    ],
+    [
+      1,
+      4,
+      7,
+      9
+    ],
+    [
+      2,
+      5,
+      8,
+      9
+    ]
+  ],
+  "expansion_attainer": [
+    0,
+    3,
+    6
+  ],
+  "graphs": [
+    {
+      "graph6": "ICOceQd{W",
+      "catalog_index": 8003575,
+      "edges": 18,
+      "h": "4/3",
+      "rho": 6,
+      "hub": 9,
+      "canonical_key": 704580881983,
+      "automorphisms": 6
+    },
+    {
+      "graph6": "ICOceQd|O",
+      "catalog_index": 8003577,
+      "edges": 18,
+      "h": "4/3",
+      "rho": 6,
+      "hub": 9,
+      "canonical_key": 704580882043,
+      "automorphisms": 4
+    },
+    {
+      "graph6": "ICOceQd~w",
+      "catalog_index": 8003588,
+      "edges": 21,
+      "h": "5/3",
+      "rho": 8,
+      "hub": 9,
+      "canonical_key": 18143069308927,
+      "automorphisms": 48
+    }
+  ],
+  "original": {
+    "graph6": "IJOG[BHvO",
+    "representative": "ICOceQd|O",
+    "old_to_representative": [
+      2,
+      7,
+      4,
+      1,
+      0,
+      3,
+      6,
+      5,
+      8,
+      9
+    ]
+  }
+}

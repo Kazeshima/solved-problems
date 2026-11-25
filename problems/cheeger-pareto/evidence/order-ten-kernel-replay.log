@@ -1,0 +1,12 @@
+$ lake env lean --run ../mabk-uniform-randomness/review/DependencyReplay.lean CheegerTen CheegerPareto.Ten.excluded_by_tree
+Submitting 4324 declarations for CheegerPareto.Ten.excluded_by_tree to the kernel, with only Init imported.
+Dependency replay succeeded for CheegerPareto.Ten.excluded_by_tree, including declarations from 212 modules above Init.
+exit=0
+$ lake env lean --run ../mabk-uniform-randomness/review/DependencyReplay.lean CheegerTen CheegerPareto.Ten.nonunique_at_eighteen
+Submitting 3920 declarations for CheegerPareto.Ten.nonunique_at_eighteen to the kernel, with only Init imported.
+Dependency replay succeeded for CheegerPareto.Ten.nonunique_at_eighteen, including declarations from 201 modules above Init.
+exit=0
+$ lake env lean --run ../mabk-uniform-randomness/review/DependencyReplay.lean CheegerTen CheegerPareto.Ten.efficient_minima
+Submitting 3721 declarations for CheegerPareto.Ten.efficient_minima to the kernel, with only Init imported.
+Dependency replay succeeded for CheegerPareto.Ten.efficient_minima, including declarations from 189 modules above Init.
+exit=0

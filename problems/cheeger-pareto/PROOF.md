@@ -38,3 +38,5 @@ $$
 The [paper](output/pdf/paper.pdf) proves the same bounds directly from the triangle structure. The discovery program in the submitted archive used floating-point optimization to look for graphs. The calculation above and the [Lean proof](CheegerPareto.lean) use exact arithmetic.
 
 The minimum possible order is ten. [Proof through order nine and full real-vector census](MINIMALITY.md)
+
+All three order-ten isomorphism classes and both 18-edge minimizers are identified in the [order-ten classification](ORDER10.md).
