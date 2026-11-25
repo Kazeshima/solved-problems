@@ -1,6 +1,12 @@
 # The MABK randomness threshold for an even number of parties
 
-**Solved for every even $N\ge2$.** Wooltorton, Brown and Colbeck gave a GHZ strategy with a uniform joint output on the all-zero input, and conjectured that its MABK score was the largest possible under that constraint. This entry proves the matching upper bound in the normalization of their Eq. (1). The case $N=2$ was known. [Conjecture 1, §4.3.1](https://arxiv.org/html/2308.07030v3#S4.SS3.SSS1) · [Earlier bipartite result](https://arxiv.org/abs/2205.00124)
+## Conjecture credit
+
+**Lewis Wooltorton, Peter Brown and Roger Colbeck** posed Conjecture 1 in §4.3.1 of *Expanding bipartite Bell inequalities for maximum multi-partite randomness*. They exhibited a GHZ strategy with uniform joint output on the all-zero input and conjectured that its MABK score was the largest possible under that constraint. [Original paper and author list](https://arxiv.org/abs/2308.07030v3) · [Original conjecture, §4.3.1](https://arxiv.org/html/2308.07030v3#S4.SS3.SSS1) · [Lewis Wooltorton’s GitHub profile](https://github.com/LewisWooltorton) · [Original companion repository](https://github.com/LewisWooltorton/expanding-BI)
+
+## Result
+
+**Solved for every even $N\ge2$.** This entry proves the matching upper bound in the normalization of the authors’ Eq. (1). The case $N=2$ was known. [Earlier bipartite result](https://arxiv.org/abs/2205.00124)
 
 Let $d=\pi/[4(N+1)]$. The maximum over all strategies with $p(a\mid\mathbf 0)=2^{-N}$ for every output string $a$ is
 

@@ -2,7 +2,7 @@
 
 **Reviewed 25 November 2026.** The independent audit identifies the domain correction at line 123. [Audit](../review/INDEPENDENT_REVIEW.md) · [Formal proof](../review/FORMALIZATION_STATUS.md)
 
-The target is the even-party Conjecture 1 in §4.3.1, with the Bell normalization of Eq. (1). The mathematical argument below and the Lean formalization establish the same maximum. [Original paper](https://arxiv.org/abs/2308.07030v3)
+Lewis Wooltorton, Peter Brown and Roger Colbeck posed the even-party Conjecture 1 in §4.3.1 of their paper. The mathematical argument below and the Lean formalization establish their proposed maximum in the Bell normalization of Eq. (1). [Original paper](https://arxiv.org/abs/2308.07030v3) · [Lewis Wooltorton’s original companion repository](https://github.com/LewisWooltorton/expanding-BI)
 
 ## 1. Statement and notation
 
