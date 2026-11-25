@@ -1,0 +1,6 @@
+checked n=2, cumulative schedules=1, permutations-times-schedules=2
+checked n=3, cumulative schedules=3, permutations-times-schedules=14
+checked n=4, cumulative schedules=7, permutations-times-schedules=110
+checked n=5, cumulative schedules=15, permutations-times-schedules=1070
+checked n=6, cumulative schedules=31, permutations-times-schedules=12590
+checked n=7, cumulative schedules=63, permutations-times-schedules=173870

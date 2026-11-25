@@ -1,0 +1,25 @@
+Operational.lean:44:2: error: failed to synthesize
+  IsAntisymm β ?r
+
+Additional diagnostic information may be available using the `set_option diagnostics true` command.
+Operational.lean:79:4: error: unsolved goals
+case pos
+α : Type u_1
+β : Type u_2
+inst✝¹ : LinearOrder α
+inst✝ : LinearOrder β
+f : α → β
+hf : Monotone f
+a : α
+b : β
+mark : ∀ (y : α), f y = b ↔ y = a
+test : ∀ (y : α), f y ≤ f a ↔ y ≤ a
+ys : List α
+ih : List.count b (chain (List.map f ys)).2 = List.count a (chain ys).2
+he : f a = b
+⊢ List.count (f a) (chain (List.map f ys)).2 = List.count a (chain ys).2
+Operational.lean:125:10: error: invalid field notation, type is not of the form (C ...) where C is a constant
+  List.map_congr_left
+has type
+  (∀ a ∈ ?m.7246, ?m.7248 a = ?m.7249 a) → List.map ?m.7248 ?m.7246 = List.map ?m.7249 ?m.7246
+Operational.lean:126:4: error: no goals to be solved

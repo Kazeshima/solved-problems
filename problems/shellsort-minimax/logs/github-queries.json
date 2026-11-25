@@ -1,0 +1,78 @@
+[
+  {
+    "query": {
+      "query": "shellsort",
+      "repository_name": "openai/math"
+    },
+    "matches": []
+  },
+  {
+    "query": {
+      "query": "shellsort minimax"
+    },
+    "matches": [
+      {
+        "url": "https://github.com/TheAlgorithms/Java/blob/15a4a9d36387782eb324416984b6e465d1c3f7cc/DIRECTORY.md",
+        "path": "DIRECTORY.md"
+      },
+      {
+        "url": "https://github.com/fuyou4546/DataStructure/blob/8b3cd8267dd1b45e37761628fc4fef9a879b8dd7/src/Sort.c",
+        "path": "src/Sort.c"
+      },
+      {
+        "url": "https://github.com/MichaelB7/nemorino/blob/622d7c6f0987d09b705bf85006966a0e5e108207/src/position.cpp",
+        "path": "src/position.cpp"
+      },
+      {
+        "url": "https://github.com/onetrueawk/awk/blob/72e9b56caddb4a6f8d1405315a5183c26b8650a4/testdir/funstack.ok",
+        "path": "testdir/funstack.ok"
+      },
+      {
+        "url": "https://github.com/stdlib-js/stdlib/blob/fed67ca5c061226163931386318cc61a44dbfc69/docs/references/bib.bib",
+        "path": "docs/references/bib.bib"
+      },
+      {
+        "url": "https://github.com/kumar91gopi/Algorithms-and-Data-Structures-in-Ruby/blob/92b952f99f79f31b0975f7305840b79e810fa7f7/README.md",
+        "path": "README.md"
+      }
+    ]
+  },
+  {
+    "query": {
+      "query": "\"Shellsort\" \"Boolean lattice\""
+    },
+    "matches": [
+      {
+        "url": "https://github.com/mrconter1/vibemathed/blob/f3138e789acd0d91b299b1b2f1550cdab5fb3c1a/scripts/openai-math/overlap-adc7f12.md",
+        "path": "scripts/openai-math/overlap-adc7f12.md"
+      },
+      {
+        "url": "https://github.com/tnflas/open-math-progress/blob/1bdca9fa2fca34b9175085de17adca9f848f2afa/docs/INDEX.md",
+        "path": "docs/INDEX.md"
+      },
+      {
+        "url": "https://github.com/tnflas/open-math-progress/blob/1bdca9fa2fca34b9175085de17adca9f848f2afa/docs/PROBLEMS.md",
+        "path": "docs/PROBLEMS.md"
+      },
+      {
+        "url": "https://github.com/davidar/dblp.yaml/blob/7f7366315ddf6b4ff6260196937a53d172d09e6d/journals/rsa.bib",
+        "path": "journals/rsa.bib"
+      },
+      {
+        "url": "https://github.com/tnflas/open-math-progress/blob/1bdca9fa2fca34b9175085de17adca9f848f2afa/docs/CONTRIBUTIONS.md",
+        "path": "docs/CONTRIBUTIONS.md"
+      },
+      {
+        "url": "https://github.com/tnflas/open-math-progress/blob/1bdca9fa2fca34b9175085de17adca9f848f2afa/data/problems.json",
+        "path": "data/problems.json"
+      }
+    ]
+  },
+  {
+    "query": {
+      "query": "\"smaller_before\"",
+      "repository_name": "EternalYMZ/Project-S"
+    },
+    "matches": []
+  }
+]

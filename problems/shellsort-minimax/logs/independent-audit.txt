@@ -1,0 +1,22 @@
+cert17.txt 5ee528d3c92d4650728f2ecc640c433eecae757d4e9895e951b3f6ab9823242b
+cert18.txt 0d8e5d489e59567830ccafb4602a07056345d0953f809f2d2c6f6047d43a725a
+cert19.txt 93a606352a4cf6b751f9548feb02c79b495d73f2bfbb8208c72b84e58c5de237
+cert20.txt 0cf4bbfa01e868bbd4fe2a49aa6a1bd242f9d4a1e9f057e45e45e4a06d53229d
+cert21_fast.txt 26cf2eaffdd7843e4c1f1119ceaacbcb428e30b551e5f7023e94500e7fb766bc
+witness n=17 gaps=[9, 6, 4, 1] pass costs=[8, 14, 17, 47] total=86
+witness n=18 gaps=[17, 9, 6, 4, 1] pass costs=[1, 9, 15, 20, 49] total=94
+witness n=19 gaps=[9, 7, 4, 1] pass costs=[11, 15, 27, 50] total=103
+witness n=20 gaps=[11, 7, 5, 1] pass costs=[9, 18, 24, 61] total=112
+witness n=21 gaps=[9, 7, 4, 1] pass costs=[15, 18, 31, 57] total=121
+witness n=21 gaps=[20, 9, 7, 4, 1] pass costs=[1, 15, 18, 31, 56] total=121
+All six mixed-radix maxima matched independent full-subset maxima and literal witnesses.
+<temporary directory>/cert.txt: complete, n=3, U=3, masks=2, rows={'B': 0, 'X': 1, 'O': 1}, distinct witnesses=1, listed winners=[[1]]
+rejected all 16 invalid certificates
+n=2: 1 complete distributions, 2 executions, nested maxima pass
+n=3: 2 complete distributions, 12 executions, nested maxima pass
+n=4: 4 complete distributions, 96 executions, nested maxima pass
+n=5: 8 complete distributions, 960 executions, nested maxima pass
+n=6: 16 complete distributions, 11520 executions, nested maxima pass
+n=7: 32 complete distributions, 161280 executions, nested maxima pass
+n=8: 64 complete distributions, 2580480 executions, nested maxima pass
+600 seeded adversarial rank-by-rank and pass-by-pass comparisons passed

@@ -1,0 +1,5 @@
+initial n=5 best=10 gaps=1
+FINAL n=5 min=10 schedules=8 baseline_pruned=0 witness_pruned=4 dp=4 seconds=6.8741e-05
+winner 1
+winner 3,1
+winner 4,3,1

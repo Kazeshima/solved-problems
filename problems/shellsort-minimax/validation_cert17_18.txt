@@ -1,0 +1,2 @@
+certificate cert17.txt: n=17, min=86, coverage=32768, distinct witnesses=647, winners=[[9, 6, 4, 1]], upper_checked=True
+certificate cert18.txt: n=18, min=94, coverage=65536, distinct witnesses=779, winners=[[17, 9, 6, 4, 1]], upper_checked=True

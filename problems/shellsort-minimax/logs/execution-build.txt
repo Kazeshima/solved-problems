@@ -1,0 +1,7 @@
+ℹ [658/670] Replayed Executable
+info: .\.\.\.\Executable.lean:73:0: 11
+info: .\.\.\.\Executable.lean:74:0: 23
+✔ [932/934] Built Execution
+✔ [933/934] Built Shellsort
+Build completed successfully.
+exit=0 elapsed_seconds=308.8101718

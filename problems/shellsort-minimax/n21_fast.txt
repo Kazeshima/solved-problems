@@ -1,0 +1,4 @@
+initial n=21 best=121 gaps=9,7,4,1
+FINAL n=21 min=121 schedules=524288 baseline_pruned=209257 witness_pruned=314791 local_subset=5194 dp=240 seconds=43.5423
+winner 9,7,4,1
+winner 20,9,7,4,1

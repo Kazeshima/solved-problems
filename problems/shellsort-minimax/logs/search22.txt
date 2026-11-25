@@ -1,0 +1,11 @@
+initial n=22 best=131 gaps=9,7,4,1
+progress n=22 mask=4756 full=100 pool=671
+progress n=22 mask=49164 full=200 pool=2172
+progress n=22 mask=168452 full=300 pool=4169
+progress n=22 mask=526377 full=400 pool=6223
+FINAL n=22 min=131 schedules=1048576 baseline_pruned=440833 witness_pruned=607297 local_subset=7227 dp=446 seconds=232.222
+winner 5,3,1
+winner 7,5,4,1
+winner 8,7,3,1
+winner 9,7,4,1
+winner 21,8,7,3,1

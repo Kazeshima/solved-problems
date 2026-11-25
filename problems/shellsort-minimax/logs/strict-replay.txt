@@ -1,0 +1,5 @@
+cert17.txt: complete, n=17, U=86, masks=32768, rows={'B': 9198, 'X': 23569, 'O': 1}, distinct witnesses=647, listed winners=[[9, 6, 4, 1]]
+cert18.txt: complete, n=18, U=94, masks=65536, rows={'B': 20715, 'X': 44820, 'O': 1}, distinct witnesses=779, listed winners=[[17, 9, 6, 4, 1]]
+cert19.txt: complete, n=19, U=103, masks=131072, rows={'B': 44414, 'X': 86657, 'O': 1}, distinct witnesses=1209, listed winners=[[9, 7, 4, 1]]
+cert20.txt: complete, n=20, U=112, masks=262144, rows={'B': 96171, 'X': 165972, 'O': 1}, distinct witnesses=1627, listed winners=[[11, 7, 5, 1]]
+cert21_fast.txt: complete, n=21, U=121, masks=524288, rows={'B': 209257, 'X': 315029, 'O': 2}, distinct witnesses=5439, listed winners=[[9, 7, 4, 1], [20, 9, 7, 4, 1]]

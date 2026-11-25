@@ -1,0 +1,5 @@
+PDF ff8231a486185c94206907e9d5a1bd3ae8d67764f8f7019d603762b52c5b9a23 pages 4
+1 Exact worst-case comparison counts
+2 2. Comparisons as path weights
+3 3. Maximization, compression and the distribution
+4 4. Reproducibility and verification

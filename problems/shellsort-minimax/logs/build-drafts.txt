@@ -1,0 +1,5 @@
+✔ [6653/6656] Built BooleanLattice
+ℹ [6655/6656] Built Executable
+info: .\.\.\.\Executable.lean:75:0: 11
+info: .\.\.\.\Executable.lean:76:0: 23
+Build completed successfully.
