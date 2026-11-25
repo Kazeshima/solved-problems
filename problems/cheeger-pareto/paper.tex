@@ -11,11 +11,11 @@
 \setlength{\parskip}{5pt plus 1pt minus 1pt}
 \setlength{\abovedisplayskip}{6pt}
 \setlength{\belowdisplayskip}{6pt}
-\hypersetup{pdftitle={A ten-vertex counterexample to a Cheeger bound for Pareto-efficient vectors}}
+\hypersetup{pdftitle={The least counterexample to a Cheeger bound for Pareto-efficient vectors has ten vertices}}
 \begin{document}
 \begin{center}
-{\Large\bfseries A ten-vertex counterexample to a Cheeger bound\\[3pt]
-for Pareto-efficient vectors\par}
+{\Large\bfseries The least counterexample to a Cheeger bound\\[3pt]
+for Pareto-efficient vectors has ten vertices\par}
 \smallskip
 {\small Research note \(\cdot\) 25 November 2026}
 \end{center}
@@ -24,11 +24,12 @@ for Pareto-efficient vectors\par}
 For a connected simple graph with ten vertices and eighteen edges, the edge
 expansion is \(4/3\) and the minimum total weight of a Pareto-efficient point
 of the small-cut polytope is \(6\). This disproves the floor-corrected lower
-bound proposed by jinni. A decomposition into triangles gives a direct proof.
+bound proposed by jinni. We prove that every graph on two through nine
+vertices satisfies the bound for every efficient real vector.
 
 \section*{The question and the graph}
-For a finite simple graph \(G=(V,E)\), put \(k=\lfloor |V|/2\rfloor\) and
-assume \(|V|\ge2\). Let \(\cut(S)\) count the edges with exactly one endpoint
+For a finite simple graph \(G=(V,E)\), write \(n=|V|\ge2\) and
+\(k=\lfloor n/2\rfloor\). Let \(\cut(S)\) count the edges with exactly one endpoint
 in \(S\), and write \(x(S)=\sum_{v\in S}x_v\). Define
 \[
 P_G=\{x\in\RR_{\ge0}^{V}:x(S)\le\cut(S)\text{ whenever }|S|\le k\},
@@ -42,6 +43,7 @@ DSM's examples for the original coefficient \(|V|/2\) have odd order [3].
 \begin{theorem}
 The graph whose graph6 string is \textnormal{\texttt{IJOG[BHvO}} has
 \(\rho(G)=6<20/3=\lfloor |V|/2\rfloor h(G)\).
+Its order is the least possible.
 \end{theorem}
 
 Take three disjoint triangles \(Q_i\). Join the three distinguished vertices
@@ -107,15 +109,68 @@ coordinate at \(9\). Its new sum on any set containing \(9\) is at most six
 by nonnegativity, and every other sum is unchanged. This produces a distinct
 feasible vector dominating \(z\). Thus every efficient vector has mass at
 least six, and \(x\) attains this bound. The violation is \(20/3-6=2/3\).
-\hfill\(\square\)
+
+\section*{Why a smaller counterexample would need a special cover}
+Suppose that an efficient real vector \(z\) has total \(w<kh(G)\), so
+\(h(G)>0\). Call an admissible set \(S\) \emph{tight} when \(z(S)=\cut(S)\).
+Every vertex belongs to a tight set. Otherwise its coordinate could be
+increased by the minimum positive slack among the finitely many
+constraints containing it. The inclusion-maximal tight sets therefore
+cover \(V\). Each has size strictly less than \(k\), since
+\(h(G)|S|\le\cut(S)=z(S)\le w\).
+
+Take two distinct maximal tight sets \(A,B\) and put \(U=A\cup B\),
+\(I=A\cap B\). The cut function is submodular since the difference
+\(\cut(A)+\cut(B)-\cut(U)-\cut(I)\) counts twice the edges between
+\(A\setminus B\) and \(B\setminus A\). Feasibility on \(I\) gives
+\[
+  \cut(U)\le\cut(A)+\cut(B)-\cut(I)
+       \le z(A)+z(B)-z(I)=z(U)\le w.
+\]
+
+\newpage
+\noindent
+If \(|U|\le k\), feasibility makes \(U\) tight, contradicting maximality.
+If \(|U|=n-k\), the complement has size \(k\), so
+\(\cut(U)=\cut(V\setminus U)\ge kh(G)>w\). The sets must intersect,
+since disjoint sets would have combined mass at least
+\(h(G)(|A|+|B|)>kh(G)\). Thus every distinct pair satisfies
+\[
+ k<|A\cup B|\le 2(k-1)-1,\qquad |A\cup B|\ne n-k.
+\]
+There are at least two maximal tight sets since each has size less than \(k\).
+For \(2\le n\le9\), the displayed conditions force \(k=4\) and
+\(|A\cup B|=5\). They exclude \(n=9\) since \(9-4=5\). At \(n=8\)
+every maximal tight set must be a triple, and every two triples must meet
+in exactly one vertex.
+
+\section*{Eight vertices cannot be covered by such triples}
+Three distinct triples exist because two cover at most five vertices.
+Choose three of them.
+The three together cover at most seven, since the second and third
+each meet the first. Take a fourth triple through an uncovered point.
+Its two remaining positions must meet all three earlier triples.
+One point \(p\) therefore belongs to three distinct triples.
+
+These three triples through \(p\) cover exactly seven points because their
+three pairs outside \(p\) are disjoint. Let \(W\) cover the eighth point.
+If \(p\notin W\), meeting all three triples requires one vertex from
+each of the three disjoint pairs, leaving no position for the eighth point.
+If \(p\in W\), both its other vertices must be outside the seven to avoid
+a second intersection. There is only one such vertex. This contradiction
+proves the lower bound for all real vectors. Together with the graph
+above it proves that the minimum order is ten. \hfill\(\square\)
 
 \smallskip
 {\small\textbf{Verification and provenance.}
-The graph and the single-coordinate witness were supplied in the review
-archive. The companion Python program decodes graph6 and checks all 638
-admissible sets, including the empty set. Lean verifies the finite cut
-inequalities and the real-vector argument. The proof above uses the triangle
-decomposition in place of subset enumeration.}
+The ten-vertex graph and witness were supplied in the review archive.
+Lean 4 verifies their cut bounds, efficiency over the reals, and the
+universal lower bound on the order. Independently, the exact certificate
+checker tested all 273,192 connected graph representatives of orders
+2 through 9 from McKay's catalog [4]. For each graph it computes the
+expansion and tries every compatible choice of maximal tight sets of
+capacity below \(kh(G)\). The analytic proof above establishes minimality
+without assuming that the catalog is complete.}
 
 {\small
 \textbf{Sources}\par
@@ -128,5 +183,7 @@ decomposition in place of subset enumeration.}
 \href{https://math.stackexchange.com/questions/5118288}{Mathematics Stack Exchange 5118288},
 5 January 2026.\par
 [3] DSM, \href{https://mathoverflow.net/a/506124}{answer to MathOverflow 506070},
-19 December 2025.}
+19 December 2025.\par
+[4] Brendan D. McKay, \href{https://users.cecs.anu.edu.au/~bdm/data/graphs.html}{\emph{Combinatorial Data: Simple graphs}},
+connected graph6 catalogs, orders 2--9, accessed 25 November 2026.}
 \end{document}

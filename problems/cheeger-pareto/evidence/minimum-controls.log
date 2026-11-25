@@ -1,0 +1,5 @@
+PASS: unmodified universal proof accepted
+PASS: deleted order-eight root -> missing root at order 8
+PASS: deleted reachable successor -> unproved branch
+PASS: altered cheap-set mask -> incorrect certificate row for A_
+PASS: ten-vertex positive control survives with h=4/3

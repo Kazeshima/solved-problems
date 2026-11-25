@@ -1,7 +1,7 @@
+note: using only cached resource files
 note: Running TeX ...
 Fontconfig error: Cannot load default config file: No such file: (null)
-note: downloading lmmono10-regular.otf
 note: Rerunning TeX because "paper.aux" changed ...
 note: Running xdvipdfmx ...
-note: Writing `output/pdf\paper.pdf` (47.1201171875 KiB)
+note: Writing `output/pdf\paper.pdf` (53.5107421875 KiB)
 note: Skipped writing 2 intermediate files (use --keep-intermediates to keep them)

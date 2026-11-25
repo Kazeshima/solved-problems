@@ -1,5 +1,5 @@
 # Problem status
 
-Conjecture B is false. The ten-vertex witness and its exact efficient minimum have been checked in Lean 4.19.0. DSM previously refuted A on MathOverflow.
+**Conjecture B is false and 10 is the least counterexample order.** Every simple graph on two through nine vertices satisfies the inequality for all nonnegative real Pareto-efficient vectors. The explicit ten-vertex witness has h = 4/3 and minimum efficient mass 6 < 20/3. DSM previously refuted A.
 
-[Original MO question](https://mathoverflow.net/questions/506070) · [MSE question](https://math.stackexchange.com/questions/5118288) · [Originality search](SEARCH.md)
+[Original MathOverflow question](https://mathoverflow.net/questions/506070) · [Original Mathematics Stack Exchange question](https://math.stackexchange.com/questions/5118288) · [Proof and exact census](MINIMALITY.md) · [Originality search](SEARCH.md)

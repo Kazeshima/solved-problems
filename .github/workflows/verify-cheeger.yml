@@ -1,0 +1,46 @@
+name: Verify the Cheeger counterexample and its minimum order
+
+on:
+  pull_request:
+    paths:
+      - 'problems/cheeger-pareto/**'
+      - 'problems/mabk-uniform-randomness/review/DependencyReplay.lean'
+      - '.github/workflows/verify-cheeger.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'problems/cheeger-pareto/**'
+      - 'problems/mabk-uniform-randomness/review/DependencyReplay.lean'
+      - '.github/workflows/verify-cheeger.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    defaults:
+      run:
+        working-directory: problems/cheeger-pareto
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify the reviewed source and certificate hashes
+        run: sha256sum -c VERIFIED.sha256
+      - name: Verify graph6 witness and exact all-real certificates
+        run: |
+          python3 verify.py
+          python3 verify_minimum.py
+      - name: Install elan
+        run: |
+          curl --fail --location --retry 3 https://raw.githubusercontent.com/leanprover/elan/13e8ade06344711b0a99be2374483872ac70d036/elan-init.sh -o "$RUNNER_TEMP/elan-init.sh"
+          sh "$RUNNER_TEMP/elan-init.sh" -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Build and check the least-order theorem
+        run: |
+          lake exe cache get
+          lake build
+          lake env lean CheegerMinimum.lean
+      - name: Replay the proof above Init
+        run: lake env lean --run ../mabk-uniform-randomness/review/DependencyReplay.lean CheegerMinimum CheegerPareto.minimum_counterexample_order

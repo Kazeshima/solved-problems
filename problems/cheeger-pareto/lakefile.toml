@@ -1,6 +1,6 @@
 name = "cheeger_pareto"
 version = "0.1.0"
-defaultTargets = ["CheegerPareto"]
+defaultTargets = ["CheegerPareto", "CheegerMinimum"]
 
 [[require]]
 name = "mathlib"
@@ -9,3 +9,6 @@ rev = "v4.19.0"
 
 [[lean_lib]]
 name = "CheegerPareto"
+
+[[lean_lib]]
+name = "CheegerMinimum"

@@ -1,0 +1,10 @@
+n=2: 1 connected graphs, all excluded over the reals; 1 universal proof states
+n=3: 2 connected graphs, all excluded over the reals; 1 universal proof states
+n=4: 6 connected graphs, all excluded over the reals; 2 universal proof states
+n=5: 21 connected graphs, all excluded over the reals; 2 universal proof states
+n=6: 112 connected graphs, all excluded over the reals; 7 universal proof states
+n=7: 853 connected graphs, all excluded over the reals; 8 universal proof states
+n=8: 11117 connected graphs, all excluded over the reals; 3060 universal proof states
+n=9: 261080 connected graphs, all excluded over the reals; 38 universal proof states
+PASS: 273192 graphs; minimum counterexample order = 10
+Positive control: IJOG[BHvO survives the cover test; its real witness is in CheegerPareto.lean.

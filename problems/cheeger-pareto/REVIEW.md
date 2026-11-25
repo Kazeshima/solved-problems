@@ -1,11 +1,11 @@
-# Independent review of the Cheeger–Pareto counterexample
+# Independent review of the Cheeger–Pareto counterexample and its minimum order
 
-**Verdict for Conjecture B: ACCEPTED.** Review completed on 25 November 2026. Acceptance here means that the mathematical result, formal theorem, statement comparison and bounded public originality search all passed. The original submission did not compile.
+**Verdict for Conjecture B and minimum order: ACCEPTED. The least order is 10.** Review completed on 25 November 2026. Acceptance here means that the mathematical result, formal theorem, statement comparison and bounded public originality search all passed. The original submission did not compile.
 
 | Criterion | Result | Grounds |
 |---|---|---|
-| MATHEMATICAL_CORRECTNESS | PASS | Exact graph6 reconstruction, all small cuts, a separate analytic proof, and a tight cover for all real competitors. The efficient minimum is exactly 6. |
-| FORMAL_VERIFICATION | PASS | Lean 4.19.0 checked the revised file and the Lake library. The final theorem has only the three standard dependencies printed below. |
+| MATHEMATICAL_CORRECTNESS | PASS | Exact graph6 reconstruction, all small cuts, a separate analytic proof, and a tight cover for all real competitors. The efficient minimum is exactly 6. A general tight-cover argument excludes all smaller graphs. |
+| FORMAL_VERIFICATION | PASS | Lean 4.19.0 checked the revised file and the Lake library. The counterexample, its exact efficient mass and the least-order theorem have only the three standard axiom dependencies printed below. |
 | STATEMENT_FIDELITY | PASS | The original seven general definitions are source-identical to the submission and were independently matched to revision 5 of MO and to MSE. The attained real minimum was also proved explicitly for this graph. |
 | NOVELTY | PASS | No prior resolution of B was located across the documented public sources and alternative formulations. The single-vertex support idea is already present in DSM's answer to A. [Search report](SEARCH.md) |
 
@@ -32,7 +32,7 @@ For completeness, on every graph of order at least two the feasible polytope is 
 4. **The supplied material gave only an upper bound on ρ and an enumerative cut proof.** The new lower bound on efficient mass proves the minimum is exactly six. It is formalized as an attained minimum, which directly checks the quantity in the source. The English paper proves the cut bounds separately using four edge-disjoint triangles and six spokes. [Paper source](paper.tex) · [Enumeration proof](PROOF.md)
 5. **Dependencies and successful build evidence were missing.** The reviewed release matches the original version pin. Lake generated a checked-in-ready manifest with exact revisions for all nine packages. Each checkout was compared with the manifest and checked for tracked modifications. [Environment and declaration checks](evidence/environment.log)
 6. **The prior-art report omitted important checks.** The live APIs resolved the conflicting answer count. A degree-eight description in DSM's second example is a degree-ten vertex with weight eight. Exact cut checks and the hub lower bound show that both old graphs satisfy B for every efficient point. Exact code searches were complemented by semantic queries, formalization repositories, the AI research tracker and mathematical publication databases. Scholar's session challenge and the restricted MathSciNet search are recorded. The archive establishes the submitted witness, without establishing first discovery worldwide. [Prior-art review](SEARCH.md)
-7. **A local English answer cannot be called ready for this particular website.** The mathematical note and its self-contained enumeration snippet were checked. Mathematics Stack Exchange expressly disallows LLM-drafted answers. A human contributor must independently author any eventual post. The project and research materials were kept local. [MSE policy](https://math.stackexchange.com/help/gen-ai-policy)
+7. **A local English answer cannot be called ready for this particular website.** The mathematical note and its self-contained enumeration snippet were checked. Mathematics Stack Exchange expressly disallows LLM-drafted answers. A human contributor must independently author any eventual post. The first review was completed locally. [MSE policy](https://math.stackexchange.com/help/gen-ai-policy)
 
 ## Executed acceptance checks
 
@@ -55,10 +55,19 @@ These are propositional extensionality, classical choice, and quotient soundness
 
 The independently computed minimum boundaries by set size 1 through 5 were **2, 3, 4, 6, 7**. The corresponding minima containing vertex 9 were **6, 7, 6, 6, 7**. The equality sets for expansion were precisely **{0,7,8}**, **{1,2,3}**, and **{4,5,6}**. Each becomes a tight feasible constraint after adjoining 9. All three have size four. [Raw labeled cuts](evidence/cuts.tsv)
 
-## Scope of the additional small-graph search
+## Minimum order and independent certificates
 
-The C scan found no smaller single-supported example among McKay's 273,192 connected graphs of orders 2 through 9, one representative per isomorphism class. It reproduces the submitted ten-vertex witness as a positive control. A direct Python calculation checked the first, middle and last available graph of each order. Reconstructing every original input file from the retained result rows reproduced its exact bytes. This is computational evidence concerning one-coordinate witnesses. The minimum order for unrestricted counterexamples remains undetermined. [Inputs and hashes](evidence/small-graphs.log) · [Complete results](evidence/spike-scan.tsv.gz) · [Catalog and attribution](https://users.cecs.anu.edu.au/~bdm/data/graphs.html)
+**The minimum counterexample order is 10 for unrestricted real Pareto vectors.** An efficient point below the conjectured bound would give a cover of the vertices by inclusion-maximal tight sets. Distinct members intersect, their union exceeds the size cutoff, and the complement of that union cannot have size equal to the cutoff. For orders through nine this leaves only triples on eight points meeting pairwise once. Such triples cannot cover eight points. The proof and formalization quantify over every graph, independently of the graph catalog. [Full argument](MINIMALITY.md) · [Analytic reduction](CheegerMinimum/Analytic.lean) · [Set-theoretic obstruction](CheegerMinimum/Covers.lean)
 
-The manuscript and answer note are in English. Re-running the floating-point discovery search was unnecessary for acceptance. No claim of journal acceptance or of priority over unpublished work follows from this review.
+The exact checker separately excluded all 273,192 connected graph representatives of orders 2 through 9 over the full real domain. It tests a necessary condition for any violating efficient vector. Failure to find a compatible cover certifies the whole real polytope. The generator counted boundaries by adding one vertex at a time. The verifier recomputed them by counting outside neighbors, reconstructed the catalog SHA-256 of each order, checked all graph records and verified closure of all 3,119 graph-independent proof states. The ten-vertex positive control survives the same cover test. The old one-coordinate search is retained as historical evidence. [Per-order results and formats](MINIMALITY.md) · [Offline replay](evidence/all-real-replay.log) · [Negative controls](evidence/minimum-controls.log)
 
-The two-page PDF was typeset and both pages were rendered with Poppler and visually checked. Tectonic reported a system fontconfig warning and completed with the TeX fonts. The PDF's embedded text and four source links were checked separately. [Typesetting log](evidence/paper-build.log)
+Both **lake build** and **lake env lean CheegerMinimum.lean** completed successfully. The independent dependency replay submitted **4,488** declarations from **228** modules to the kernel starting with only Lean's **Init**. The lower bound and the attained least-order theorem both have exactly the following axiom dependencies.
+
+~~~text
+'CheegerPareto.bound_through_nine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CheegerPareto.minimum_counterexample_order' depends on axioms: [propext, Classical.choice, Quot.sound]
+~~~
+
+The CI and the package README give the replay command. The proof uses no native-decision axiom, LP oracle, graph catalog or read-in certificate. [Least-order theorem](CheegerMinimum.lean) · [Build](evidence/minimum-build.log) · [Direct check](evidence/minimum-lean.log) · [Dependency replay](evidence/minimum-kernel-replay.log)
+
+The English manuscript contains the ten-vertex construction and the lower bound in three pages. The public repository cites both original questions. The MSE help center disallows AI-generated drafts. The MathOverflow help center asks for mathematical content that the poster can personally provide and notes that AI-generated mathematics is likely to be deleted. This project supplies a public answer with provenance in the repository. No answer, comment or edit was posted on either thread by this project. [MSE policy](https://math.stackexchange.com/help/gen-ai-policy) · [MO policy](https://mathoverflow.net/help/gen-ai-policy)

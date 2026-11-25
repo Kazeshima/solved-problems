@@ -1,5 +1,7 @@
 # Originality review of the floor-corrected Cheeger–Pareto inequality
 
+The source survey below predates this project's own public GitHub branch. On 25 November 2026, the minimum-order follow-up also searched for “Cheeger Pareto minimum counterexample”, both question IDs with “9 vertices”, and “maximal tight sets floor jinni”. The matches led back to the original questions. A separate search for linearly intersecting triples found earlier work on linear triple systems. The elementary eight-vertex incidence observation is proved in the manuscript with no claim of priority as a standalone hypergraph lemma. The new conclusion here is the least order for the stated graph-cut question. [Original MSE question](https://math.stackexchange.com/questions/5118288) · [Related work on linear triple systems](https://arxiv.org/abs/2011.13678) · [This project's public repository](https://github.com/Kazeshima/solved-problems)
+
 **Search date:** 25 November 2026. **Finding for B:** no earlier public resolution was identified in the sources below. **NOVELTY: PASS** in the stated search sense. The graph and witness belong to the submitted archive. This review does not establish who first discovered them privately or confer an absolute priority date.
 
 ## The question and the first verifiable prior result
