@@ -33,7 +33,7 @@ lake env lean --trust=0 Audit.lean
 lake env lean --trust=0 Replay.lean
 ```
 
-Lake uses `.lake/shared-packages` as its dependency directory. An empty checkout can populate it normally. The recorded Windows build reused a preinstalled copy of exactly the pinned packages. The first attempted dependency clone was stopped once the local cache was available. Its setup log is separate from the successful build of the original drafts in `logs/build-drafts.txt`. No local absolute path is required by the project configuration. The counted chain loop is in `Operational.lean`. The complete program and its attained maximum theorem are in `Execution.lean`. `Charging.lean` connects its traces to the arithmetic recurrence. The certificate checker is in `Certificates.lean`. `Executable.lean` also contains a mutable-array executable retained from the archive.
+The catalog uses Lake’s standard `.lake/packages` directory. The pinned mathlib cache looks for ProofWidgets there on a fresh installation. The recorded Windows build reused a preinstalled shared copy of the same package revisions. The first attempted dependency clone was stopped once the local cache was available. Its setup log is separate from the successful build of the original drafts in `logs/build-drafts.txt`. No local absolute path is required by the project configuration. The counted chain loop is in `Operational.lean`. The complete program and its attained maximum theorem are in `Execution.lean`. `Charging.lean` connects its traces to the arithmetic recurrence. The certificate checker is in `Certificates.lean`. `Executable.lean` also contains a mutable-array executable retained from the archive.
 
 ## Reproduce the computations
 
@@ -71,6 +71,6 @@ The translator supplies untrusted data. Lean decides the finite tests and applie
 
 ## Provenance
 
-The enclosed original ZIP preserves all 47 input files. It can be extracted separately for a file-by-file comparison. This catalog edition adds the result table and public provenance here, and replaces one machine-specific temporary pathname in the audit log. All comparison data, certificate bytes, proof sources and measured results match the reviewed snapshot. Run `sha256sum -c SHA256SUMS` from this directory to verify the catalog edition. Generative AI assisted with the original research, review and Lean formalization.
+The enclosed original ZIP preserves all 47 input files. It can be extracted separately for a file-by-file comparison. This catalog edition adds the result table and public provenance here, uses the standard dependency directory, and replaces one machine-specific temporary pathname in the audit log. All comparison data, certificate bytes, proof sources and measured results match the reviewed snapshot. Run `sha256sum -c SHA256SUMS` from this directory to verify the catalog edition. Generative AI assisted with the original research, review and Lean formalization.
 
 To regenerate the paper with Typst, run `typst compile paper.typ paper.pdf`. The verified typesetting run used Typst 0.15.2 and Cambria. The bibliographic scripts `search_sources.py`, `search_overlap.py` and `search_followup.py` repeat the public searches. Service availability and later index results can differ from the saved evidence.

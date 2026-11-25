@@ -1,6 +1,5 @@
 name = "shellsort_minimax_v3"
 version = "0.3.0"
-packagesDir = ".lake/shared-packages"
 defaultTargets = ["BooleanLattice", "Executable", "Shellsort"]
 [[require]]
 name = "mathlib"
