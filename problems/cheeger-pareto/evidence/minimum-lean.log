@@ -1,0 +1,4 @@
+$ lake env lean CheegerMinimum.lean
+'CheegerPareto.bound_through_nine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CheegerPareto.minimum_counterexample_order' depends on axioms: [propext, Classical.choice, Quot.sound]
+exit=0

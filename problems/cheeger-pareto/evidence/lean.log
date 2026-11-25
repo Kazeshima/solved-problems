@@ -1,0 +1,6 @@
+$ lake env lean CheegerPareto.lean
+UTC 2026-11-25T16:40:00.674301+00:00
+'CheegerPareto.graph6_certificate' depends on axioms: [propext, Quot.sound]
+'CheegerPareto.rho_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CheegerPareto.not_conjectureB' depends on axioms: [propext, Classical.choice, Quot.sound]
+exit=0 elapsed_seconds=28.0

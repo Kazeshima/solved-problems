@@ -1,0 +1,602 @@
+[
+  {
+    "service": "Stack Exchange",
+    "url": "https://api.stackexchange.com/2.3/questions/506070?site=mathoverflow&filter=withbody&pagesize=100",
+    "checked_utc": "2026-11-25T16:29:10.664803+00:00",
+    "status": 200,
+    "http_date": "Wed, 25 Nov 2026 16:29:11 GMT",
+    "bytes_read": 2887,
+    "has_more": false,
+    "items": [
+      {
+        "question_id": 506070,
+        "answer_count": 1,
+        "creation_date": 1766066446,
+        "last_activity_date": 1766266880,
+        "link": "https://mathoverflow.net/questions/506070/conjecture-involving-the-cheeger-constant-of-a-graph",
+        "title": "Conjecture involving the Cheeger constant of a graph"
+      }
+    ]
+  },
+  {
+    "service": "Stack Exchange",
+    "url": "https://api.stackexchange.com/2.3/questions/506070/answers?site=mathoverflow&filter=withbody&pagesize=100",
+    "checked_utc": "2026-11-25T16:29:10.666819+00:00",
+    "status": 200,
+    "http_date": "Wed, 25 Nov 2026 16:29:11 GMT",
+    "bytes_read": 1872,
+    "has_more": false,
+    "items": [
+      {
+        "question_id": 506070,
+        "answer_id": 506124,
+        "creation_date": 1766152472,
+        "last_activity_date": 1766153252
+      }
+    ]
+  },
+  {
+    "service": "Stack Exchange",
+    "url": "https://api.stackexchange.com/2.3/questions/506070/comments?site=mathoverflow&filter=withbody&pagesize=100",
+    "checked_utc": "2026-11-25T16:29:10.666819+00:00",
+    "status": 200,
+    "http_date": "Wed, 25 Nov 2026 16:29:11 GMT",
+    "bytes_read": 1223,
+    "has_more": false,
+    "items": [
+      {
+        "comment_id": 1317876,
+        "post_id": 506070,
+        "creation_date": 1766137544
+      },
+      {
+        "comment_id": 1317845,
+        "post_id": 506070,
+        "creation_date": 1766110406
+      }
+    ]
+  },
+  {
+    "service": "Stack Exchange",
+    "url": "https://api.stackexchange.com/2.3/posts/506070/revisions?site=mathoverflow&filter=withbody&pagesize=100",
+    "checked_utc": "2026-11-25T16:29:10.666819+00:00",
+    "status": 200,
+    "http_date": "Wed, 25 Nov 2026 16:29:11 GMT",
+    "bytes_read": 17851,
+    "has_more": false,
+    "items": [
+      {
+        "post_id": 506070,
+        "creation_date": 1766266880,
+        "revision_number": 8,
+        "revision_guid": "9A6D242B-D0E9-488E-ABE6-B39A641D23F7",
+        "comment": "added 1 character in body"
+      },
+      {
+        "post_id": 506070,
+        "creation_date": 1766260740,
+        "revision_number": 7,
+        "revision_guid": "84F45EFE-E35B-4B04-B3AE-7FA8F8DF44D0",
+        "comment": "added 187 characters in body"
+      },
+      {
+        "post_id": 506070,
+        "creation_date": 1766257773,
+        "revision_number": 6,
+        "revision_guid": "E2E23732-2AF9-413C-BE82-656EA0683351",
+        "comment": "deleted 16 characters in body"
+      },
+      {
+        "post_id": 506070,
+        "creation_date": 1766230788,
+        "revision_number": 5,
+        "revision_guid": "C774F5BD-AB71-4085-8A45-7DF5D7B6DDEC",
+        "comment": "added 288 characters in body"
+      },
+      {
+        "post_id": 506070,
+        "creation_date": 1766159190,
+        "revision_number": 4,
+        "revision_guid": "9AB07CF3-62DC-49CC-AB48-5FBE5ED2696B",
+        "comment": "deleted 144 characters in body"
+      },
+      {
+        "post_id": 506070,
+        "creation_date": 1766137597,
+        "revision_number": 3,
+        "revision_guid": "4169DBF1-2DD2-48C6-A4CC-7670AC26D4E4",
+        "comment": "added 49 characters in body"
+      },
+      {
+        "post_id": 506070,
+        "creation_date": 1766067468,
+        "revision_number": 2,
+        "revision_guid": "681F8FD3-689F-40A7-A22D-7BB2BB3213EE",
+        "comment": "added 9 characters in body"
+      },
+      {
+        "post_id": 506070,
+        "creation_date": 1766066446,
+        "revision_number": 1,
+        "revision_guid": "8C9BB257-15D9-4005-B0CF-36B5E6D6F9CD",
+        "title": "Conjecture involving the Cheeger constant of a graph"
+      }
+    ]
+  },
+  {
+    "service": "Stack Exchange",
+    "url": "https://api.stackexchange.com/2.3/posts/506124/revisions?site=mathoverflow&filter=withbody&pagesize=100",
+    "checked_utc": "2026-11-25T16:29:11.197081+00:00",
+    "status": 200,
+    "http_date": "Wed, 25 Nov 2026 16:29:11 GMT",
+    "bytes_read": 3805,
+    "has_more": false,
+    "items": [
+      {
+        "post_id": 506124,
+        "creation_date": 1766153252,
+        "revision_number": 2,
+        "revision_guid": "94E341DA-AE48-43A8-BF4B-E05C26888425",
+        "comment": "added 31 characters in body"
+      },
+      {
+        "post_id": 506124,
+        "creation_date": 1766152472,
+        "revision_number": 1,
+        "revision_guid": "E68DDC11-A223-4F92-9F96-0089FE0D2566"
+      }
+    ]
+  },
+  {
+    "service": "Stack Exchange",
+    "url": "https://api.stackexchange.com/2.3/questions/5118288?site=math&filter=withbody&pagesize=100",
+    "checked_utc": "2026-11-25T16:29:11.206223+00:00",
+    "status": 200,
+    "http_date": "Wed, 25 Nov 2026 16:29:11 GMT",
+    "bytes_read": 2549,
+    "has_more": false,
+    "items": [
+      {
+        "question_id": 5118288,
+        "answer_count": 0,
+        "creation_date": 1767622347,
+        "last_activity_date": 1767874024,
+        "link": "https://math.stackexchange.com/questions/5118288/conjecture-involving-the-cheeger-constant-of-a-graph",
+        "title": "Conjecture involving the Cheeger constant of a graph"
+      }
+    ]
+  },
+  {
+    "service": "Stack Exchange",
+    "url": "https://api.stackexchange.com/2.3/questions/5118288/answers?site=math&filter=withbody&pagesize=100",
+    "checked_utc": "2026-11-25T16:29:11.206739+00:00",
+    "status": 200,
+    "http_date": "Wed, 25 Nov 2026 16:29:11 GMT",
+    "bytes_read": 67,
+    "has_more": false,
+    "items": []
+  },
+  {
+    "service": "Stack Exchange",
+    "url": "https://api.stackexchange.com/2.3/questions/5118288/comments?site=math&filter=withbody&pagesize=100",
+    "checked_utc": "2026-11-25T16:29:11.252809+00:00",
+    "status": 200,
+    "http_date": "Wed, 25 Nov 2026 16:29:11 GMT",
+    "bytes_read": 67,
+    "has_more": false,
+    "items": []
+  },
+  {
+    "service": "Stack Exchange",
+    "url": "https://api.stackexchange.com/2.3/posts/5118288/revisions?site=math&filter=withbody&pagesize=100",
+    "checked_utc": "2026-11-25T16:29:11.407351+00:00",
+    "status": 200,
+    "http_date": "Wed, 25 Nov 2026 16:29:11 GMT",
+    "bytes_read": 9473,
+    "has_more": false,
+    "items": [
+      {
+        "post_id": 5118288,
+        "creation_date": 1767874024,
+        "revision_number": 4,
+        "revision_guid": "349B0D6C-F0C4-4D34-BDD6-41AB0C580F17",
+        "comment": "added 4 characters in body"
+      },
+      {
+        "post_id": 5118288,
+        "creation_date": 1767700924,
+        "revision_number": 3,
+        "revision_guid": "F07A9B6E-FC64-42E9-88DA-2AB660087755",
+        "comment": "deleted 1 character in body"
+      },
+      {
+        "post_id": 5118288,
+        "creation_date": 1767695369,
+        "revision_number": 2,
+        "revision_guid": "82485BEE-8921-41AB-B330-A12FA8902B37",
+        "comment": "Improved MathJax"
+      },
+      {
+        "post_id": 5118288,
+        "creation_date": 1767622347,
+        "revision_number": 1,
+        "revision_guid": "5A55E16E-8835-4057-A05A-AAB814275953",
+        "title": "Conjecture involving the Cheeger constant of a graph"
+      }
+    ]
+  },
+  {
+    "service": "Stack Exchange",
+    "url": "https://api.stackexchange.com/2.3/posts/506124/comments?site=mathoverflow&filter=withbody",
+    "checked_utc": "2026-11-25T16:29:11.434314+00:00",
+    "status": 200,
+    "http_date": "Wed, 25 Nov 2026 16:29:12 GMT",
+    "bytes_read": 621,
+    "has_more": false,
+    "items": [
+      {
+        "comment_id": 1318015,
+        "post_id": 506124,
+        "creation_date": 1766252085
+      }
+    ]
+  },
+  {
+    "service": "Stack Exchange",
+    "url": "https://api.stackexchange.com/2.3/search/advanced?site=mathoverflow&q=Conjecture+involving+the+Cheeger+constant+of+a+graph&pagesize=30",
+    "checked_utc": "2026-11-25T16:29:11.482512+00:00",
+    "status": 200,
+    "http_date": "Wed, 25 Nov 2026 16:29:12 GMT",
+    "bytes_read": 773,
+    "has_more": false,
+    "items": [
+      {
+        "question_id": 506070,
+        "answer_count": 1,
+        "creation_date": 1766066446,
+        "last_activity_date": 1766266880,
+        "link": "https://mathoverflow.net/questions/506070/conjecture-involving-the-cheeger-constant-of-a-graph",
+        "title": "Conjecture involving the Cheeger constant of a graph"
+      }
+    ]
+  },
+  {
+    "service": "Stack Exchange",
+    "url": "https://api.stackexchange.com/2.3/search/advanced?site=mathoverflow&q=Cheeger+Pareto&pagesize=30",
+    "checked_utc": "2026-11-25T16:29:11.499659+00:00",
+    "status": 200,
+    "http_date": "Wed, 25 Nov 2026 16:29:12 GMT",
+    "bytes_read": 773,
+    "has_more": false,
+    "items": [
+      {
+        "question_id": 506070,
+        "answer_count": 1,
+        "creation_date": 1766066446,
+        "last_activity_date": 1766266880,
+        "link": "https://mathoverflow.net/questions/506070/conjecture-involving-the-cheeger-constant-of-a-graph",
+        "title": "Conjecture involving the Cheeger constant of a graph"
+      }
+    ]
+  },
+  {
+    "service": "Stack Exchange",
+    "url": "https://api.stackexchange.com/2.3/search/advanced?site=math&q=Conjecture+involving+the+Cheeger+constant+of+a+graph&pagesize=30",
+    "checked_utc": "2026-11-25T16:29:11.637283+00:00",
+    "status": 200,
+    "http_date": "Wed, 25 Nov 2026 16:29:12 GMT",
+    "bytes_read": 797,
+    "has_more": false,
+    "items": [
+      {
+        "question_id": 5118288,
+        "answer_count": 0,
+        "creation_date": 1767622347,
+        "last_activity_date": 1767874024,
+        "link": "https://math.stackexchange.com/questions/5118288/conjecture-involving-the-cheeger-constant-of-a-graph",
+        "title": "Conjecture involving the Cheeger constant of a graph"
+      }
+    ]
+  },
+  {
+    "service": "Stack Exchange",
+    "url": "https://api.stackexchange.com/2.3/search/advanced?site=math&q=Cheeger+Pareto&pagesize=30",
+    "checked_utc": "2026-11-25T16:29:11.726758+00:00",
+    "status": 200,
+    "http_date": "Wed, 25 Nov 2026 16:29:12 GMT",
+    "bytes_read": 797,
+    "has_more": false,
+    "items": [
+      {
+        "question_id": 5118288,
+        "answer_count": 0,
+        "creation_date": 1767622347,
+        "last_activity_date": 1767874024,
+        "link": "https://math.stackexchange.com/questions/5118288/conjecture-involving-the-cheeger-constant-of-a-graph",
+        "title": "Conjecture involving the Cheeger constant of a graph"
+      }
+    ]
+  },
+  {
+    "service": "arXiv",
+    "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22Conjecture+involving+the+Cheeger+constant+of+a+graph%22&start=0&max_results=12",
+    "checked_utc": "2026-11-25T16:29:11.748616+00:00",
+    "status": 200,
+    "http_date": "Wed, 25 Nov 2026 16:29:12 GMT",
+    "bytes_read": 792,
+    "total": "0",
+    "items": []
+  },
+  {
+    "service": "arXiv",
+    "url": "https://export.arxiv.org/api/query?search_query=abs%3A%22Cheeger+constant%22+AND+abs%3A%22Pareto%22&start=0&max_results=12",
+    "checked_utc": "2026-11-25T16:29:11.848298+00:00",
+    "status": 200,
+    "http_date": "Wed, 25 Nov 2026 16:29:12 GMT",
+    "bytes_read": 760,
+    "total": "0",
+    "items": []
+  },
+  {
+    "service": "arXiv",
+    "url": "https://export.arxiv.org/api/query?search_query=abs%3A%22edge+expansion%22+AND+abs%3A%22Pareto+efficiency%22&start=0&max_results=12",
+    "checked_utc": "2026-11-25T16:29:11.877779+00:00",
+    "status": 200,
+    "http_date": "Wed, 25 Nov 2026 16:29:12 GMT",
+    "bytes_read": 778,
+    "total": "0",
+    "items": []
+  },
+  {
+    "service": "Google Scholar",
+    "url": "https://scholar.google.com/scholar?hl=en&q=%22Conjecture+involving+the+Cheeger+constant+of+a+graph%22",
+    "checked_utc": "2026-11-25T16:29:11.998299+00:00",
+    "status": 200,
+    "http_date": "Wed, 25 Nov 2026 16:29:12 GMT",
+    "bytes_read": 81839,
+    "items": [],
+    "page_excerpt": "Verifying your request... Please wait while we verify your session.",
+    "title": "Verifying..."
+  },
+  {
+    "service": "Google Scholar",
+    "url": "https://scholar.google.com/scholar?hl=en&q=%22Cheeger+constant%22+%22Pareto-efficient%22+graph",
+    "checked_utc": "2026-11-25T16:29:12.095975+00:00",
+    "status": 200,
+    "http_date": "Wed, 25 Nov 2026 16:29:13 GMT",
+    "bytes_read": 81423,
+    "items": [],
+    "page_excerpt": "Verifying your request... Please wait while we verify your session.",
+    "title": "Verifying..."
+  },
+  {
+    "service": "Google Scholar",
+    "url": "https://scholar.google.com/scholar?hl=en&q=%22edge+expansion%22+%22maximal%22+%22cut+constraints%22+graph+polytope",
+    "checked_utc": "2026-11-25T16:29:12.184984+00:00",
+    "status": 200,
+    "http_date": "Wed, 25 Nov 2026 16:29:12 GMT",
+    "bytes_read": 81541,
+    "items": [],
+    "page_excerpt": "Verifying your request... Please wait while we verify your session.",
+    "title": "Verifying..."
+  },
+  {
+    "service": "zbMATH Open",
+    "url": "https://api.zbmath.org/v1/document/_search?search_string=ti%3A%22Cheeger+constant%22+%26+ti%3APareto&results_per_page=10",
+    "checked_utc": "2026-11-25T16:29:12.198537+00:00",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)>"
+  },
+  {
+    "service": "zbMATH Open",
+    "url": "https://api.zbmath.org/v1/document/_search?search_string=ti%3A%22Cheeger+constant%22+%26+au%3Ajinni&results_per_page=10",
+    "checked_utc": "2026-11-25T16:29:12.342840+00:00",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)>"
+  },
+  {
+    "service": "Crossref",
+    "url": "https://api.crossref.org/works?query.bibliographic=Conjecture+involving+the+Cheeger+constant+of+a+graph&rows=10",
+    "checked_utc": "2026-11-25T16:29:12.474620+00:00",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "service": "OpenAlex",
+    "url": "https://api.openalex.org/works?search=Conjecture+involving+the+Cheeger+constant+of+a+graph&per_page=10",
+    "checked_utc": "2026-11-25T16:29:12.478487+00:00",
+    "status": 200,
+    "http_date": "Wed, 25 Nov 2026 16:29:13 GMT",
+    "bytes_read": 176958,
+    "total": 1401,
+    "items": [
+      [
+        "The Novikov conjecture on Cheeger spaces",
+        "https://doi.org/10.4171/jncg/11-2-2"
+      ],
+      [
+        "Explicit Computation of Cheeger Constants for some Classes of Graphs",
+        "https://doi.org/10.1088/1742-6596/1127/1/012064"
+      ],
+      [
+        "A Nordhaus-Gaddum type problem for the normalized Laplacian spectrum and graph Cheeger constant",
+        "https://doi.org/10.1016/j.amc.2024.128920"
+      ],
+      [
+        "Sharp inequalities involving the Cheeger constant of planar convex sets",
+        "https://doi.org/10.1051/cocv/2024015"
+      ],
+      [
+        "Consistency of Cheeger and Ratio Graph Cuts",
+        "https://doi.org/10.48550/arxiv.1411.6590"
+      ],
+      [
+        "Lions and contamination, triangular grids, and Cheeger constants",
+        "https://doi.org/10.48550/arxiv.2012.06702"
+      ],
+      [
+        "Cheeger inequalities on simplicial complexes",
+        "https://doi.org/10.2422/2036-2145.202307_009"
+      ],
+      [
+        "Cheeger Inequalities for Submodular Transformations",
+        "https://doi.org/10.1137/1.9781611975482.160"
+      ],
+      [
+        "Cheeger cuts and Robin spectral minimal partitions of metric graphs",
+        "https://doi.org/10.1007/s11854-025-0419-7"
+      ],
+      [
+        "A geometric proof of the Blaschke–Lebesgue theorem for the Cheeger constant",
+        "https://doi.org/10.5802/aif.3728"
+      ]
+    ]
+  },
+  {
+    "service": "Crossref",
+    "url": "https://api.crossref.org/works?query.bibliographic=%22Cheeger+constant%22+%22Pareto+efficiency%22&rows=10",
+    "checked_utc": "2026-11-25T16:29:12.506382+00:00",
+    "status": 200,
+    "http_date": "Wed, 25 Nov 2026 16:29:13 GMT",
+    "bytes_read": 40786,
+    "total": 710295,
+    "items": [
+      [
+        [
+          "Every Graph with a Positive Cheeger Constant Contains a Tree with a Positive Cheeger Constant"
+        ],
+        "https://doi.org/10.1007/pl00001625"
+      ],
+      [
+        [
+          "The Cheeger constant of curved tubes in real space forms"
+        ],
+        "https://doi.org/10.2139/ssrn.7344726"
+      ],
+      [
+        [
+          "Between Pareto efficiency and Pareto ε-efficiency"
+        ],
+        "https://doi.org/10.1080/02331938908843483"
+      ],
+      [
+        [
+          "Classification by Cheeger Constant Regularization"
+        ],
+        "https://doi.org/10.1109/icip.2007.4379129"
+      ],
+      [
+        [
+          "The Cheeger constant of curved strips"
+        ],
+        "https://doi.org/10.2140/pjm.2011.254.309"
+      ],
+      [
+        [
+          "Bounded cohomology and the Cheeger isoperimetric constant"
+        ],
+        "https://doi.org/10.1007/s10711-015-0064-x"
+      ],
+      [
+        [
+          "Figure 10: CEAP Pareto fronts for increasing task numbers with constant system nodes."
+        ],
+        "https://doi.org/10.7717/peerj-cs.3603/fig-10"
+      ],
+      [
+        [
+          "The First Cheeger Constant of a Simplex"
+        ],
+        "https://doi.org/10.1007/s00373-017-1853-9"
+      ],
+      [
+        [
+          "Cheeger constant of convex co-compact hyperbolic 3-manifolds"
+        ],
+        "https://doi.org/10.4310/mrl.251126164547"
+      ],
+      [
+        [
+          "Cheeger Constant and Connectivity of Graphs"
+        ],
+        "https://doi.org/10.4036/iis.2002.147"
+      ]
+    ]
+  },
+  {
+    "service": "OpenAlex",
+    "url": "https://api.openalex.org/works?search=%22Cheeger+constant%22+%22Pareto+efficiency%22&per_page=10",
+    "checked_utc": "2026-11-25T16:29:12.905782+00:00",
+    "status": 200,
+    "http_date": "Wed, 25 Nov 2026 16:29:13 GMT",
+    "bytes_read": 1186,
+    "total": 0,
+    "items": []
+  },
+  {
+    "service": "MathSciNet Mref",
+    "url": "https://mathscinet.ams.org/mathscinet-mref?ref=Conjecture+involving+the+Cheeger+constant+of+a+graph&dataType=json",
+    "checked_utc": "2026-11-25T16:29:12.971781+00:00",
+    "status": 200,
+    "http_date": "Wed, 25 Nov 2026 16:29:16 GMT",
+    "bytes_read": 4551,
+    "response": "<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n<html>\n<head>\n  <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n  <title>Reference Search</title>\n  <link rel=\"stylesheet\" href=\"/msnhtml/mathscinetStyle.CSS\" type=\"text/css\">\n  <style type=\"text/css\">\n  a {\n\t  text-decoration: underline;\n\t  margin: 0px;\n\t  padding: 0px;\n  }\n  img{\n\t  margin: 0px;\n\t  padding: 0px;\n  }\n  </style>\n</head>\n<body onload=\"document.reference.ref.focus();window.scroll(0,0);\">\n<div align=\"center\">\n<form name=\"reference\" id=\"reference\" action=\"/mathscinet-mref\" method=\"get\" enctype=\"application/x-www-form-urlencoded\">\n<table cellpadding=\"0\" cellspacing=\"0\" width=\"1px\" border=\"0\">\n    <tr><td>\n\t\t<table width=\"100%\"><tr>\n\t\t<td><img src=\"/mathscinet/images/mref.gif\" width=\"263\" height="
+  },
+  {
+    "service": "AI Proof Watch",
+    "url": "https://aiproofwatch.com/problems",
+    "checked_utc": "2026-11-25T16:29:13.137413+00:00",
+    "status": 200,
+    "http_date": "Wed, 25 Nov 2026 16:29:14 GMT",
+    "bytes_read": 74333,
+    "matches": {
+      "Cheeger": [],
+      "Pareto": [],
+      "5118288": [],
+      "506070": [],
+      "edge expansion": []
+    }
+  },
+  {
+    "service": "AI Proof Watch",
+    "url": "https://aiproofwatch.com/archive",
+    "checked_utc": "2026-11-25T16:29:13.447956+00:00",
+    "status": 200,
+    "http_date": "Wed, 25 Nov 2026 16:29:14 GMT",
+    "bytes_read": 109481,
+    "matches": {
+      "Cheeger": [],
+      "Pareto": [],
+      "5118288": [],
+      "506070": [],
+      "edge expansion": []
+    }
+  },
+  {
+    "service": "AI Proof Watch",
+    "url": "https://aiproofwatch.com/problems/combinatorics",
+    "checked_utc": "2026-11-25T16:29:13.639267+00:00",
+    "status": 200,
+    "http_date": "Wed, 25 Nov 2026 16:29:14 GMT",
+    "bytes_read": 812103,
+    "matches": {
+      "Cheeger": [],
+      "Pareto": [],
+      "5118288": [],
+      "506070": [],
+      "edge expansion": []
+    }
+  },
+  {
+    "service": "AI Proof Watch",
+    "url": "https://aiproofwatch.com/sources/considered",
+    "checked_utc": "2026-11-25T16:29:14.498198+00:00",
+    "status": 200,
+    "http_date": "Wed, 25 Nov 2026 16:29:14 GMT",
+    "bytes_read": 91250,
+    "matches": {
+      "Cheeger": [],
+      "Pareto": [],
+      "5118288": [],
+      "506070": [],
+      "edge expansion": []
+    }
+  }
+]

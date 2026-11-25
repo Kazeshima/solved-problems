@@ -1,0 +1,189 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=26mm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs}
+\usepackage[hidelinks]{hyperref}
+\usepackage{microtype}
+\newcommand{\cut}{c}
+\newcommand{\RR}{\mathbb R}
+\newcommand{\eff}{\operatorname{Eff}}
+\newtheorem*{theorem}{Theorem}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt plus 1pt minus 1pt}
+\setlength{\abovedisplayskip}{6pt}
+\setlength{\belowdisplayskip}{6pt}
+\hypersetup{pdftitle={The least counterexample to a Cheeger bound for Pareto-efficient vectors has ten vertices}}
+\begin{document}
+\begin{center}
+{\Large\bfseries The least counterexample to a Cheeger bound\\[3pt]
+for Pareto-efficient vectors has ten vertices\par}
+\smallskip
+{\small Research note \(\cdot\) 25 November 2026}
+\end{center}
+
+\textbf{Abstract.}
+For a connected simple graph with ten vertices and eighteen edges, the edge
+expansion is \(4/3\) and the minimum total weight of a Pareto-efficient point
+of the small-cut polytope is \(6\). This disproves the floor-corrected lower
+bound proposed by jinni. We prove that every graph on two through nine
+vertices satisfies the bound for every efficient real vector.
+
+\section*{The question and the graph}
+For a finite simple graph \(G=(V,E)\), write \(n=|V|\ge2\) and
+\(k=\lfloor n/2\rfloor\). Let \(\cut(S)\) count the edges with exactly one endpoint
+in \(S\), and write \(x(S)=\sum_{v\in S}x_v\). Define
+\[
+P_G=\{x\in\RR_{\ge0}^{V}:x(S)\le\cut(S)\text{ whenever }|S|\le k\},
+\qquad h(G)=\min_{1\le |S|\le k}\frac{\cut(S)}{|S|}.
+\]
+A vector \(x\in P_G\) is Pareto-efficient if every \(y\in P_G\) with
+\(y\ge x\) coordinatewise equals \(x\). Write \(\rho(G)=\min_{x\in\eff(P_G)}x(V)\).
+The revised question asks whether \(\rho(G)\ge k h(G)\) [1,2].
+DSM's examples for the original coefficient \(|V|/2\) have odd order [3].
+
+\begin{theorem}
+The graph whose graph6 string is \textnormal{\texttt{IJOG[BHvO}} has
+\(\rho(G)=6<20/3=\lfloor |V|/2\rfloor h(G)\).
+Its order is the least possible.
+\end{theorem}
+
+Take three disjoint triangles \(Q_i\). Join the three distinguished vertices
+in the middle column of the table to form a fourth triangle \(D\).
+Join vertex \(9\) to the indicated pair in each row.
+\begin{center}
+\begin{tabular}{ccc}\toprule
+Vertices of \(Q_i\) & Vertex of \(D\) & Neighbors of \(9\) in \(Q_i\)\\ \midrule
+\(\{0,7,8\}\) & \(8\) & \(0,7\)\\
+\(\{1,2,3\}\) & \(1\) & \(1,3\)\\
+\(\{4,5,6\}\) & \(4\) & \(4,5\)\\ \bottomrule
+\end{tabular}
+\end{center}
+These four edge-disjoint triangles and six additional edges give eighteen edges.
+Every vertex is within distance two of \(9\).
+
+\section*{The cut bounds}
+Fix \(S\) with \(|S|\le5\). Write \(a_i=|S\cap Q_i|\), \(t=|S\cap D|\), and
+let \(m_i\) count the neighbors of \(9\) in \(S\cap Q_i\). Each \(Q_i\)
+contributes \(a_i(3-a_i)\) crossing edges, and \(D\) contributes \(t(3-t)\).
+If \(9\notin S\), the remaining contribution is \(\sum_i m_i\).
+If \(9\in S\), it is \(6-\sum_i m_i\).
+
+\textit{Sets omitting \(9\).}
+If \(a_i\le2\), then \(a_i(3-a_i)+m_i\ge 3a_i/2\).
+Indeed one selected vertex has two internal edges leaving it, and two selected
+vertices include at least one neighbor of \(9\). Thus if \(S\) contains no full
+triangle \(Q_i\), its boundary is at least \(3|S|/2\).
+
+\newpage
+If \(S\) contains a whole \(Q_i\), put \(j=|S|-3\le2\). This \(Q_i\)
+contributes two spokes and contains one vertex of \(D\). For \(t=1,2\),
+the triangle \(D\) contributes two more edges and the remaining rows contribute
+at least \(3j/2\). Hence \(\cut(S)\ge4+3j/2\ge4|S|/3\).
+For \(t=3\), the extra vertices must be the two other distinguished vertices.
+They each contribute two edges of their own row, and at least one is a neighbor
+of \(9\). Thus \(\cut(S)\ge2+4+1=7\) for this five-set.
+Altogether \(\cut(S)\ge4|S|/3\) for \(|S|\le5\) omitting \(9\).
+In particular every such five-set has at least seven crossing edges.
+
+\textit{Sets containing \(9\).}
+For a five-set, take its complement and apply the preceding seven-edge bound.
+For \(|S|\le4\), at most three vertices besides \(9\) are selected. If they fill
+a row, the four spokes to the other rows and the two crossing edges of \(D\)
+give \(\cut(S)=6\). Otherwise \(a_i\le2\), so
+\(a_i(3-a_i)-m_i\ge0\) in each row. The cut formula gives \(\cut(S)\ge6\).
+In both cases \(\cut(S)\ge4|S|/3\). Each individual row \(Q_i\) has three
+vertices and boundary four, so \(h(G)=4/3\).
+
+\section*{The minimum over efficient real vectors}
+Set \(x_9=6\) and \(x_v=0\) elsewhere. Every admissible set containing \(9\)
+has boundary at least six, which proves feasibility. Each \(U_i=Q_i\cup\{9\}\)
+has size four and boundary six. If a feasible real vector \(y\) dominates \(x\),
+then
+\[
+0\le\sum_{v\in U_i}(y_v-x_v)\le \cut(U_i)-x(U_i)=0 .
+\]
+All summands are nonnegative, so \(y=x\) on each \(U_i\). The three sets cover
+\(V\), proving efficiency.
+
+Conversely, if a feasible \(z\) has \(z(V)<6\), add \(6-z(V)>0\) to its
+coordinate at \(9\). Its new sum on any set containing \(9\) is at most six
+by nonnegativity, and every other sum is unchanged. This produces a distinct
+feasible vector dominating \(z\). Thus every efficient vector has mass at
+least six, and \(x\) attains this bound. The violation is \(20/3-6=2/3\).
+
+\section*{Why a smaller counterexample would need a special cover}
+Suppose that an efficient real vector \(z\) has total \(w<kh(G)\), so
+\(h(G)>0\). Call an admissible set \(S\) \emph{tight} when \(z(S)=\cut(S)\).
+Every vertex belongs to a tight set. Otherwise its coordinate could be
+increased by the minimum positive slack among the finitely many
+constraints containing it. The inclusion-maximal tight sets therefore
+cover \(V\). Each has size strictly less than \(k\), since
+\(h(G)|S|\le\cut(S)=z(S)\le w\).
+
+Take two distinct maximal tight sets \(A,B\) and put \(U=A\cup B\),
+\(I=A\cap B\). The cut function is submodular since the difference
+\(\cut(A)+\cut(B)-\cut(U)-\cut(I)\) counts twice the edges between
+\(A\setminus B\) and \(B\setminus A\). Feasibility on \(I\) gives
+\[
+  \cut(U)\le\cut(A)+\cut(B)-\cut(I)
+       \le z(A)+z(B)-z(I)=z(U)\le w.
+\]
+
+\newpage
+\noindent
+If \(|U|\le k\), feasibility makes \(U\) tight, contradicting maximality.
+If \(|U|=n-k\), the complement has size \(k\), so
+\(\cut(U)=\cut(V\setminus U)\ge kh(G)>w\). The sets must intersect,
+since disjoint sets would have combined mass at least
+\(h(G)(|A|+|B|)>kh(G)\). Thus every distinct pair satisfies
+\[
+ k<|A\cup B|\le 2(k-1)-1,\qquad |A\cup B|\ne n-k.
+\]
+There are at least two maximal tight sets since each has size less than \(k\).
+For \(2\le n\le9\), the displayed conditions force \(k=4\) and
+\(|A\cup B|=5\). They exclude \(n=9\) since \(9-4=5\). At \(n=8\)
+every maximal tight set must be a triple, and every two triples must meet
+in exactly one vertex.
+
+\section*{Eight vertices cannot be covered by such triples}
+Three distinct triples exist because two cover at most five vertices.
+Choose three of them.
+The three together cover at most seven, since the second and third
+each meet the first. Take a fourth triple through an uncovered point.
+Its two remaining positions must meet all three earlier triples.
+One point \(p\) therefore belongs to three distinct triples.
+
+These three triples through \(p\) cover exactly seven points because their
+three pairs outside \(p\) are disjoint. Let \(W\) cover the eighth point.
+If \(p\notin W\), meeting all three triples requires one vertex from
+each of the three disjoint pairs, leaving no position for the eighth point.
+If \(p\in W\), both its other vertices must be outside the seven to avoid
+a second intersection. There is only one such vertex. This contradiction
+proves the lower bound for all real vectors. Together with the graph
+above it proves that the minimum order is ten. \hfill\(\square\)
+
+\smallskip
+{\small\textbf{Verification and provenance.}
+The ten-vertex graph and witness were supplied in the review archive.
+Lean 4 verifies their cut bounds, efficiency over the reals, and the
+universal lower bound on the order. Independently, the exact certificate
+checker tested all 273,192 connected graph representatives of orders
+2 through 9 from McKay's catalog [4]. For each graph it computes the
+expansion and tries every compatible choice of maximal tight sets of
+capacity below \(kh(G)\). The analytic proof above establishes minimality
+without assuming that the catalog is complete.}
+
+{\small
+\textbf{Sources}\par
+[1] jinni, \emph{Conjecture involving the Cheeger constant of a graph},
+\href{https://mathoverflow.net/questions/506070}{MathOverflow 506070},
+18 December 2025. Conjecture B was added in
+\href{https://mathoverflow.net/revisions/c774f5bd-ab71-4085-8a45-7df5d7b6ddec/view-source}{revision 5},
+20 December 2025.\par
+[2] jinni, \emph{Conjecture involving the Cheeger constant of a graph},
+\href{https://math.stackexchange.com/questions/5118288}{Mathematics Stack Exchange 5118288},
+5 January 2026.\par
+[3] DSM, \href{https://mathoverflow.net/a/506124}{answer to MathOverflow 506070},
+19 December 2025.\par
+[4] Brendan D. McKay, \href{https://users.cecs.anu.edu.au/~bdm/data/graphs.html}{\emph{Combinatorial Data: Simple graphs}},
+connected graph6 catalogs, orders 2--9, accessed 25 November 2026.}
+\end{document}

@@ -1,0 +1,10 @@
+$ lake build
+ℹ [863/869] Replayed CheegerPareto
+info: .\.\.\.\CheegerPareto.lean:246:0: 'CheegerPareto.graph6_certificate' depends on axioms: [propext, Quot.sound]
+info: .\.\.\.\CheegerPareto.lean:247:0: 'CheegerPareto.rho_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: .\.\.\.\CheegerPareto.lean:248:0: 'CheegerPareto.not_conjectureB' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [868/869] Built CheegerMinimum
+info: .\.\.\.\CheegerMinimum.lean:31:0: 'CheegerPareto.bound_through_nine' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: .\.\.\.\CheegerMinimum.lean:32:0: 'CheegerPareto.minimum_counterexample_order' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+exit=0

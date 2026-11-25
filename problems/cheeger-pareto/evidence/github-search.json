@@ -1,0 +1,210 @@
+{
+  "date": "2026-11-25",
+  "scope": "GitHub connected search. Counts are returned results within the requested page, not total index counts.",
+  "followup_searches": [
+    {
+      "query": "\"Cheeger\" \"Pareto\" repo:leanprover-community/mathlib4",
+      "type": "code",
+      "link": "https://github.com/search?q=%22Cheeger%22%20%22Pareto%22%20repo%3Aleanprover-community%2Fmathlib4&type=code",
+      "count_returned": 0,
+      "items": [],
+      "error": false
+    },
+    {
+      "query": "\"5118288\" repo:google-deepmind/formal-conjectures",
+      "type": "code",
+      "link": "https://github.com/search?q=%225118288%22%20repo%3Agoogle-deepmind%2Fformal-conjectures&type=code",
+      "count_returned": 0,
+      "items": [],
+      "error": false
+    },
+    {
+      "query": "\"506070\" \"Cheeger\"",
+      "type": "commits",
+      "link": "https://github.com/search?q=%22506070%22%20%22Cheeger%22&type=commits",
+      "count_returned": 0,
+      "items": [],
+      "error": false
+    },
+    {
+      "query": "\"math.stackexchange.com/questions/5118288\" is:issue",
+      "type": "issues",
+      "link": "https://github.com/search?q=%22math.stackexchange.com%2Fquestions%2F5118288%22%20is%3Aissue&type=issues",
+      "count_returned": 0,
+      "items": [],
+      "error": false
+    },
+    {
+      "query": "\"IJOG[BHvO\" is:pr",
+      "type": "pullrequests",
+      "link": "https://github.com/search?q=%22IJOG%5BBHvO%22%20is%3Apr&type=pullrequests",
+      "count_returned": 0,
+      "items": [],
+      "error": false
+    }
+  ],
+  "searches": [
+    {
+      "query": "\"IJOG[BHvO\"",
+      "type": "code",
+      "link": "https://github.com/search?q=%22IJOG%5BBHvO%22&type=code",
+      "count_returned": 0,
+      "items": [],
+      "error": false
+    },
+    {
+      "query": "\"mathoverflow.net/questions/506070\"",
+      "type": "code",
+      "link": "https://github.com/search?q=%22mathoverflow.net%2Fquestions%2F506070%22&type=code",
+      "count_returned": 0,
+      "items": [],
+      "error": false
+    },
+    {
+      "query": "\"math.stackexchange.com/questions/5118288\"",
+      "type": "code",
+      "link": "https://github.com/search?q=%22math.stackexchange.com%2Fquestions%2F5118288%22&type=code",
+      "count_returned": 0,
+      "items": [],
+      "error": false
+    },
+    {
+      "query": "\"Conjecture involving the Cheeger constant of a graph\"",
+      "type": "code",
+      "link": "https://github.com/search?q=%22Conjecture%20involving%20the%20Cheeger%20constant%20of%20a%20graph%22&type=code",
+      "count_returned": 0,
+      "items": [],
+      "error": false
+    },
+    {
+      "query": "\"not_conjectureB\" \"IsCheeger\"",
+      "type": "code",
+      "link": "https://github.com/search?q=%22not_conjectureB%22%20%22IsCheeger%22&type=code",
+      "count_returned": 0,
+      "items": [],
+      "error": false
+    },
+    {
+      "query": "repo:google-deepmind/formal-conjectures Cheeger",
+      "type": "code",
+      "link": "https://github.com/search?q=repo%3Agoogle-deepmind%2Fformal-conjectures%20Cheeger&type=code",
+      "count_returned": 0,
+      "items": [],
+      "error": false
+    },
+    {
+      "query": "\"Cheeger\" \"Pareto\" \"conjecture\"",
+      "type": "code",
+      "link": "https://github.com/search?q=%22Cheeger%22%20%22Pareto%22%20%22conjecture%22&type=code",
+      "count_returned": 15,
+      "items": [
+        {
+          "url": "https://github.com/yao8839836/text_gcn/blob/962223652e9bb164ac2d83cd09fc7b8845ce860b/data/corpus/dblp_vocab.txt",
+          "description": "data/corpus/dblp_vocab.txt"
+        },
+        {
+          "url": "https://github.com/cool-japan/scirs/blob/467efc02ce1a8c738b1d7114f25b4f457cf3601a/CHANGELOG.md",
+          "description": "CHANGELOG.md"
+        },
+        {
+          "url": "https://github.com/zzllrr/mather/blob/8adc6fa67dd3f27c4981b72ceafd38099580c363/js/htm/wiki/dictionary/glossary.js",
+          "description": "js/htm/wiki/dictionary/glossary.js"
+        },
+        {
+          "url": "https://github.com/SakuraMathcraft/LaTeXSnipper/blob/ed6e4507b2080bc19527a9da8927ef62b19bceea/Office_plugin/shared/EditorAssets/symbol-library.mjs",
+          "description": "Office_plugin/shared/EditorAssets/symbol-library.mjs"
+        },
+        {
+          "url": "https://github.com/ericproffitt/TopicModelsVB.jl/blob/a91ae62af7fac40d27eb4776be8c79c59bac96b7/datasets/nsf/nsfvocab.txt",
+          "description": "datasets/nsf/nsfvocab.txt"
+        },
+        {
+          "url": "https://github.com/ericproffitt/TopicModelsVB.jl/blob/a91ae62af7fac40d27eb4776be8c79c59bac96b7/v0.6/datasets/nsf/nsflex.txt",
+          "description": "v0.6/datasets/nsf/nsflex.txt"
+        },
+        {
+          "url": "https://github.com/ASSERT-KTH/royal-chaos/blob/b6e51bb97c95afa3c62dd813c5a6bab3dc51ad48/phoebe/experiments/hedwig/dataset/289.msg",
+          "description": "phoebe/experiments/hedwig/dataset/289.msg"
+        },
+        {
+          "url": "https://github.com/JohannesBuchner/paq/blob/a03449adbf3bc4454146e98a59dfaf8810c015e6/paq8b/TextFilter/wrt-short-math.dic",
+          "description": "paq8b/TextFilter/wrt-short-math.dic"
+        },
+        {
+          "url": "https://github.com/davidar/dblp.yaml/blob/7f7366315ddf6b4ff6260196937a53d172d09e6d/conf/approx.bib",
+          "description": "conf/approx.bib"
+        },
+        {
+          "url": "https://github.com/RiazML/math-for-llms/blob/1fd3d13a099df97532bcfcb356535c1cc57afdba/11-Graph-Theory/06-Random-Graphs/notes.md",
+          "description": "11-Graph-Theory/06-Random-Graphs/notes.md"
+        },
+        {
+          "url": "https://github.com/ajb2969/MLInformationRetrieval/blob/e7682cc2537f31fabfbc0175c61f9b5cdef1fc9a/documents/2-834.txt",
+          "description": "documents/2-834.txt"
+        },
+        {
+          "url": "https://github.com/thoppe/RNN_science_titles/blob/5b9e6cbfab453f51bc947d98ccb367484183dd52/samples/cs.CG_real.txt",
+          "description": "samples/cs.CG_real.txt"
+        },
+        {
+          "url": "https://github.com/xiaohan2012/chowmein/blob/920cd2b73639c2e8be4b0d176974c37c78092523/chowmein/datasets/nips-2012.dat",
+          "description": "chowmein/datasets/nips-2012.dat"
+        },
+        {
+          "url": "https://github.com/loserChen/TensorFlow-In-Practice/blob/47c2e10168b9ef4da58bfb6688585f91ae003b71/TEXTGCN/data/corpus/dblp_vocab.txt",
+          "description": "TEXTGCN/data/corpus/dblp_vocab.txt"
+        },
+        {
+          "url": "https://github.com/thoppe/RNN_science_titles/blob/5b9e6cbfab453f51bc947d98ccb367484183dd52/samples/math.MG_real.txt",
+          "description": "samples/math.MG_real.txt"
+        }
+      ],
+      "error": false
+    },
+    {
+      "query": "\"Cheeger\" \"Pareto\"",
+      "type": "commits",
+      "link": "https://github.com/search?q=%22Cheeger%22%20%22Pareto%22&type=commits",
+      "count_returned": 1,
+      "items": [
+        {
+          "url": "https://github.com/rootcoder007/crimlab/commit/93b89ca1ee1f7508a1cd9949ecc03abbd20e140f",
+          "description": "net: benchmark against igraph and sna"
+        }
+      ],
+      "error": false
+    },
+    {
+      "query": "\"IJOG[BHvO\"",
+      "type": "commits",
+      "link": "https://github.com/search?q=%22IJOG%5BBHvO%22&type=commits",
+      "count_returned": 0,
+      "items": [],
+      "error": false
+    },
+    {
+      "query": "\"IJOG[BHvO\" is:issue",
+      "type": "issues",
+      "link": "https://github.com/search?q=%22IJOG%5BBHvO%22%20is%3Aissue&type=issues",
+      "count_returned": 0,
+      "items": [],
+      "error": false
+    },
+    {
+      "query": "\"Conjecture involving the Cheeger constant of a graph\" is:pr",
+      "type": "pullrequests",
+      "link": "https://github.com/search?q=%22Conjecture%20involving%20the%20Cheeger%20constant%20of%20a%20graph%22%20is%3Apr&type=pullrequests",
+      "count_returned": 0,
+      "items": [],
+      "error": false
+    },
+    {
+      "query": "\"Cheeger-Pareto\"",
+      "type": "repositories",
+      "link": "https://github.com/search?q=%22Cheeger-Pareto%22&type=repositories",
+      "count_returned": 0,
+      "items": [],
+      "error": false
+    }
+  ]
+}

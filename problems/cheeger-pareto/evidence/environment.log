@@ -1,0 +1,31 @@
+Platform: Windows-11-10.0.26200-SP0
+Python: 3.12.14
+Lean (version 4.19.0, x86_64-w64-windows-gnu, commit 6caaee842e94, Release)
+Lake version 5.0.0-6caaee8 (Lean version 4.19.0)
+git version 2.55.0.windows.5
+lean-toolchain: leanprover/lean4:v4.19.0
+input ZIP SHA256: 433e03c2449dba32a37ad783b11d80dffa527fffbcee915c73e6aa9630f35d23
+Lean release zip SHA256: 2c197a74b6d9c4d46363e34e06591165ed848237ba66de849f8b8d5539eb3895
+package name and checked-out SHA (matched to lake-manifest.json)
+mathlib c44e0c8ee63ca166450922a373c7409c5d26b00b
+plausible 77e08eddc486491d7b9e470926b3dbe50319451a
+LeanSearchClient 25078369972d295301f5a1e53c3e5850cf6d9d4c
+importGraph e6a9f0f5ee3ccf7443a0070f92b62f8db12ae82b
+proofwidgets c4919189477c3221e6a204008998b0d724f49904
+aesop 5d50b08dedd7d69b3d9b3176e0d58a23af228884
+Qq fa4f7f15d97591a9cf3aa7724ba371c7fc6dda02
+batteries f5d04a9c4973d401c8c92500711518f7c656f034
+Cli 02dbd02bc00ec4916e99b04b2245b30200e200d0
+source-identical declaration EdgeSet
+source-identical declaration OrderedEdges
+source-identical declaration cutSize
+source-identical declaration Feasible
+source-identical declaration Pareto
+source-identical declaration IsCheeger
+source-identical declaration ConjectureB
+absent from reviewed proof source: sorry
+absent from reviewed proof source: admit
+absent from reviewed proof source: axiom
+absent from reviewed proof source: native_decide
+absent from reviewed proof source: unsafe
+absent from reviewed proof source: implemented_by

@@ -1,0 +1,86 @@
+[
+  {
+    "service": "arXiv control",
+    "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22Cheeger+Inequalities+for+Submodular+Transformations%22&max_results=3",
+    "checked_utc": "2026-11-25T16:38:01.976332+00:00",
+    "status": 200,
+    "http_date": "Wed, 25 Nov 2026 16:38:02 GMT",
+    "bytes_read": 3277,
+    "total": "1",
+    "items": [
+      [
+        "Cheeger Inequalities for Submodular Transformations",
+        "http://arxiv.org/abs/1708.08781v3"
+      ]
+    ]
+  },
+  {
+    "service": "OpenAlex exact title",
+    "url": "https://api.openalex.org/works?filter=title.search%3A%22Conjecture+involving+the+Cheeger+constant+of+a+graph%22&per_page=5",
+    "checked_utc": "2026-11-25T16:38:01.980538+00:00",
+    "status": 200,
+    "http_date": "Wed, 25 Nov 2026 16:38:03 GMT",
+    "bytes_read": 1197,
+    "total": 0,
+    "items": []
+  },
+  {
+    "service": "Crossref title retry",
+    "url": "https://api.crossref.org/works?query.title=Conjecture+involving+the+Cheeger+constant+of+a+graph&rows=5",
+    "checked_utc": "2026-11-25T16:38:01.980538+00:00",
+    "status": 200,
+    "http_date": "Wed, 25 Nov 2026 16:38:03 GMT",
+    "bytes_read": 32764,
+    "total": 413907,
+    "items": [
+      [
+        [
+          "The Cheeger constant of a quantum graph"
+        ],
+        "https://doi.org/10.1002/pamm.201610426"
+      ],
+      [
+        [
+          "Every Graph with a Positive Cheeger Constant Contains a Tree with a Positive Cheeger Constant"
+        ],
+        "https://doi.org/10.1007/pl00001625"
+      ],
+      [
+        [
+          "Sharp inequalities involving the Cheeger constant of planar convex sets"
+        ],
+        "https://doi.org/10.1051/cocv/2024015"
+      ],
+      [
+        [
+          "On a conjecture of Cheeger"
+        ],
+        "https://doi.org/10.1515/9783110550832-004"
+      ],
+      [
+        [
+          "The Normalized Graph Cut and Cheeger Constant: From Discrete to Continuous"
+        ],
+        "https://doi.org/10.1239/aap/1354716583"
+      ]
+    ]
+  },
+  {
+    "service": "arXiv alternate",
+    "url": "https://export.arxiv.org/api/query?search_query=%28abs%3A%22isoperimetric+number%22+OR+abs%3A%22edge+expansion%22%29+AND+%28abs%3A%22maximal+feasible%22+OR+abs%3A%22Pareto+optimality%22%29&max_results=12",
+    "checked_utc": "2026-11-25T16:38:02.644779+00:00",
+    "status": 200,
+    "http_date": "Wed, 25 Nov 2026 16:38:03 GMT",
+    "bytes_read": 906,
+    "total": "0",
+    "items": []
+  },
+  {
+    "service": "AI Proof Watch sitemap",
+    "url": "https://aiproofwatch.com/sitemap.xml",
+    "index": "{http://www.sitemaps.org/schemas/sitemap/0.9}urlset",
+    "total": 4236,
+    "matches": [],
+    "indexes": []
+  }
+]

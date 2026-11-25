@@ -1,0 +1,6 @@
+F~qc_  n=7  edges=12  degrees=[6, 4, 4, 4, 2, 2, 2]
+admissible=64  h=2  min_hub_cut=6  tight_cover_union=(0, 1, 2, 3, 4, 5, 6)
+rho=6 by the hub lower bound and tight cover; floor bound=6; A bound=7
+J|fMDAOaCG?  n=11  edges=20  degrees=[10, 4, 4, 4, 4, 4, 2, 2, 2, 2, 2]
+admissible=1024  h=3/2  min_hub_cut=8  tight_cover_union=(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+rho=8 by the hub lower bound and tight cover; floor bound=15/2; A bound=33/4
