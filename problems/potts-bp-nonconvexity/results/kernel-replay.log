@@ -1,0 +1,7 @@
+Replayed target PottsBP.question4_false
+Replayed target PottsBP.source_question4_false
+Replayed target PottsBP.source_nonconvex_general
+Replayed target PottsBP.productLaw_isProbability
+Replayed target PottsBP.sourceImage_eq_generalImage
+Replayed target PottsBP.sourceWeight_eq_rawWeight
+Kernel replay accepted 9609 declarations above Lean Init

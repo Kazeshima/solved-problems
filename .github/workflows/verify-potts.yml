@@ -1,0 +1,43 @@
+name: Verify the Potts BP counterexample
+
+on:
+  push:
+    paths:
+      - 'problems/potts-bp-nonconvexity/**'
+      - '.github/workflows/verify-potts.yml'
+  pull_request:
+    paths:
+      - 'problems/potts-bp-nonconvexity/**'
+      - '.github/workflows/verify-potts.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: problems/potts-bp-nonconvexity
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check the rational witness
+        run: |
+          python -m pip install -r requirements.txt
+          python verify.py
+      - name: Install elan
+        run: |
+          curl --fail --location --retry 3 https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -o "$RUNNER_TEMP/elan-init.sh"
+          sh "$RUNNER_TEMP/elan-init.sh" -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Build the pinned project
+        run: |
+          lake exe cache get
+          lake build
+      - name: Check theorem types, axioms and kernel replay
+        shell: bash
+        run: |
+          lake env lean --trust=0 Audit.lean | tee "$RUNNER_TEMP/potts-axioms.log"
+          diff -u <(grep "^'PottsBP\." results/axioms.log) <(grep "^'PottsBP\." "$RUNNER_TEMP/potts-axioms.log")
+          lake env lean Replay.lean
