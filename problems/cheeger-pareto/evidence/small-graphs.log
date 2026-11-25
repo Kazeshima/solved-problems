@@ -1,0 +1,15 @@
+2026-11-25 / McKay connected simple graph catalog / exact single-support scan
+compile: MSVC 2022, /std:c17 /O2 /W4 /WX (same source accepts C99); run: scan-spikes graph2c.g6 ... graph9c.g6
+positive control: scan-spikes graph6.txt -> IJOG[BHvO 4/3 9=6
+n  unique_graphs graph6_input_sha256 URL
+2 1 fae4bfc454bd04363dcd5222772f2973b1193e1ff6f676e822a427323a677ef9 https://users.cecs.anu.edu.au/~bdm/data/graph2c.g6
+3 2 5966edf890849db6cb03626431916231a81a30c9db9a4781a4a8f2e5dc7e6129 https://users.cecs.anu.edu.au/~bdm/data/graph3c.g6
+4 6 d7da485669f2dc74b81c02f18774a07430937684896833d59f138b10debb5005 https://users.cecs.anu.edu.au/~bdm/data/graph4c.g6
+5 21 3c436a6a15f554e3eff3ce9178fddd3d75db6d365b3c6b102b64afe82145050b https://users.cecs.anu.edu.au/~bdm/data/graph5c.g6
+6 112 2dc8cbb1c05a12b5dcb28b6227cee86d585f203347f6aebb8fcbdb2b9bdf5fd7 https://users.cecs.anu.edu.au/~bdm/data/graph6c.g6
+7 853 ec46e9ec29eddb1d6e41bdea6be940c523ed6024eebe202b4bd176370c90f72e https://users.cecs.anu.edu.au/~bdm/data/graph7c.g6
+8 11117 0002354f1ab3344a2706626a037ad15367bf23a2163aa68f552c3a169ca9a036 https://users.cecs.anu.edu.au/~bdm/data/graph8c.g6
+9 261080 ad4fda3b6c7157e6711270cdc9cefdc06ac5154d7bd6ce295e1ac41808755c65 https://users.cecs.anu.edu.au/~bdm/data/graph9c.g6
+273192 graphs; no violating single-supported Pareto point. Each input reconstructed byte-for-byte from the first column.
+First, middle and last available record of each order cross-checked with verify.inspect using direct edge counting.
+Result archive SHA256: 627a175fc86be164c968a55019d4319f3444a1ba88354dd82878c83fe7080d57

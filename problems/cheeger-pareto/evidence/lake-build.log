@@ -1,0 +1,8 @@
+$ lake build
+UTC 2026-11-25T16:38:54.269709+00:00
+ℹ [863/864] Built CheegerPareto
+info: .\.\.\.\CheegerPareto.lean:246:0: 'CheegerPareto.graph6_certificate' depends on axioms: [propext, Quot.sound]
+info: .\.\.\.\CheegerPareto.lean:247:0: 'CheegerPareto.rho_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: .\.\.\.\CheegerPareto.lean:248:0: 'CheegerPareto.not_conjectureB' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+exit=0 elapsed_seconds=30.0

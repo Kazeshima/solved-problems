@@ -1,0 +1,95 @@
+[
+  {
+    "Query": "ti:Cheeger & ti:Pareto",
+    "Url": "https://api.zbmath.org/v1/document/_search?search_string=ti%3ACheeger%20%26%20ti%3APareto&results_per_page=5",
+    "Status": {
+      "execution": "Entry not found!...",
+      "execution_bool": false,
+      "internal_code": "successful access. No results found.",
+      "last_id": null,
+      "nr_total_results": null,
+      "nr_request_results": null,
+      "query_execution_time_in_seconds": 1.430511474609375E-06,
+      "status_code": 404,
+      "time_stamp": "2026-11-25 17:33:19.206678"
+    },
+    "message": null,
+    "Info": null,
+    "result_count": 0,
+    "titles": [
+      null
+    ]
+  },
+  {
+    "Query": "Cheeger Pareto",
+    "Url": "https://api.zbmath.org/v1/document/_search?search_string=Cheeger%20Pareto&results_per_page=5",
+    "error": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\" \"http://www.w3.org/TR/html4/strict.dtd\"><html><head><title>502 Proxy Error</title></head><"
+  },
+  {
+    "Query": "ti:Conjecture involving the Cheeger constant of a graph",
+    "Url": "https://api.zbmath.org/v1/document/_search?search_string=ti%3AConjecture%20involving%20the%20Cheeger%20constant%20of%20a%20graph&results_per_page=5",
+    "Status": {
+      "execution": "Entry not found!...",
+      "execution_bool": false,
+      "internal_code": "successful access. No results found.",
+      "last_id": null,
+      "nr_total_results": null,
+      "nr_request_results": null,
+      "query_execution_time_in_seconds": 9.5367431640625E-07,
+      "status_code": 404,
+      "time_stamp": "2026-11-25 17:33:26.713292"
+    },
+    "message": null,
+    "Info": null,
+    "result_count": 0,
+    "titles": [
+      null
+    ]
+  },
+  {
+    "Query": "Cheeger",
+    "Url": "https://api.zbmath.org/v1/document/_search?search_string=Cheeger&results_per_page=5",
+    "Status": {
+      "execution": "successful request",
+      "execution_bool": true,
+      "internal_code": "ok",
+      "last_id": null,
+      "nr_total_results": 2210,
+      "nr_request_results": 5,
+      "query_execution_time_in_seconds": 0.14536786079406738,
+      "status_code": 200,
+      "time_stamp": "2026-11-25T16:33:28Z"
+    },
+    "message": null,
+    "Info": null,
+    "result_count": 5,
+    "titles": [
+      "Differentiability of Lipschitz functions on metric measure spaces",
+      "A lower bound for the smallest eigenvalue of the Laplacian",
+      "Spectral geometry of singular Riemannian spaces",
+      "On the Hodge theory of Riemannian pseudomanifolds",
+      "Finiteness theorems for Riemannian manifolds"
+    ]
+  },
+  {
+    "Query": "\"Cheeger constant\" & \"Pareto\"",
+    "Url": "https://api.zbmath.org/v1/document/_search?search_string=%22Cheeger%20constant%22%20%26%20%22Pareto%22&results_per_page=5",
+    "Status": {
+      "execution": "Entry not found!...",
+      "execution_bool": false,
+      "internal_code": "successful access. No results found.",
+      "last_id": null,
+      "nr_total_results": null,
+      "nr_request_results": null,
+      "query_execution_time_in_seconds": 1.1920928955078125E-06,
+      "status_code": 404,
+      "time_stamp": "2026-11-25 17:33:29.341160"
+    },
+    "message": null,
+    "Info": null,
+    "result_count": 0,
+    "titles": [
+      null
+    ]
+  }
+]

@@ -1,0 +1,21 @@
+$ lake env lean .lake/review/Submitted.lean
+UTC 2026-11-25T16:37:34.680556+00:00
+.lake/review/Submitted.lean:131:2: error: linarith failed to find a contradiction
+case h2.h
+S : Finset V
+hs : S.card ≤ 5
+ht : cutSize edges S = 6
+h9 : 9 ∈ S
+y : V → ℝ
+hy : Feasible edges y
+hd : ∀ (v : V), x v ≤ y v
+v : V
+hv : v ∈ S
+hsum : ∑ v ∈ S, y v ≤ ↑6
+hx : ∑ i ∈ S, x i = 6
+hn : ∀ i ∈ S, 0 ≤ y i - x i
+hle : y v - x v ≤ ∑ x ∈ S, y x - 6
+a✝ : x v < y v
+⊢ False failed
+'CheegerPareto.not_conjectureB' depends on axioms: [propext, sorryAx, Classical.choice, Lean.ofReduceBool, Quot.sound]
+exit=1 elapsed_seconds=24.0
