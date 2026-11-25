@@ -1,0 +1,7 @@
+candidate 8003575 ICOceQd{W edges=18 12kh=80 key=704580881983 aut=6
+candidate 8003577 ICOceQd|O edges=18 12kh=80 key=704580882043 aut=4
+candidate 8003588 ICOceQd~w edges=21 12kh=100 key=18143069308927 aut=48
+distinct connected classes=11716571 labeled orbit sum=34496488594816 recurrence=34496488594816
+verified refutation trees=11716568 pivot nodes=24249296 largest tree=121
+no union=9885683 no compatible cover=1830885 candidates=3
+PASS

@@ -43,3 +43,5 @@ For order $n$, list the nonempty subsets of size less than $k$ in increasing ord
 To regenerate, download **graph2c.g6** through **graph9c.g6** from the linked catalog into one directory and run **python3 verify_minimum.py --generate DIRECTORY**. The original graph6 records are Brendan D. McKay's data under CC BY 4.0. The added columns and the cover proof states were computed in this project. [Attribution](https://users.cecs.anu.edu.au/~bdm/data/) · [License](https://creativecommons.org/licenses/by/4.0/)
 
 For the formal verification run **lake build** and **lake env lean CheegerMinimum.lean**. The theorem **CheegerPareto.minimum_counterexample_order** states an attained least order for the exact graph and real-vector definitions of B. The lower-bound theorem applies to disconnected graphs as well. [Build log](evidence/minimum-build.log) · [Axiom report](evidence/minimum-lean.log)
+
+All three order-ten isomorphism classes and both 18-edge minimizers are identified in the [order-ten classification](ORDER10.md).

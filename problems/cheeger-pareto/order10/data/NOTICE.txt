@@ -1,0 +1,16 @@
+The graph6 stream in graph10c.g6.xz is Brendan D. McKay's catalog of
+connected simple graphs on ten vertices, redistributed under CC BY 4.0.
+The published gzip file was losslessly recompressed as XZ. The graph6 rows,
+their order, and their LF terminators are preserved.
+
+Catalog: https://users.cecs.anu.edu.au/~bdm/data/graphs.html
+Source file: https://users.cecs.anu.edu.au/~bdm/data/graph10c.g6.gz
+Attribution: https://users.cecs.anu.edu.au/~bdm/data/
+License: https://creativecommons.org/licenses/by/4.0/
+Downloaded: 25 November 2026
+Publisher gzip SHA-256: ddabd151a69913720065bcbc09fcbcddc56f57f95c66a5728338177ec26fd56a
+Uncompressed graph6 SHA-256: 0642748d4518ce8cb30e5b13866ef527357064082729730316f3d57dc41b65f5
+
+The cut certificates, negative proof trees, automorphism orders, survivor
+list and replay results were computed for this project. See ORDER10.md in
+the problem directory for their formats, mathematical meaning and verifier.

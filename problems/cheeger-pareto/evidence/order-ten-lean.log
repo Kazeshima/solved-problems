@@ -1,0 +1,23 @@
+$ lake build
+ℹ [863/874] Replayed CheegerPareto
+info: .\.\.\.\CheegerPareto.lean:246:0: 'CheegerPareto.graph6_certificate' depends on axioms: [propext, Quot.sound]
+info: .\.\.\.\CheegerPareto.lean:247:0: 'CheegerPareto.rho_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: .\.\.\.\CheegerPareto.lean:248:0: 'CheegerPareto.not_conjectureB' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [868/874] Replayed CheegerMinimum
+info: .\.\.\.\CheegerMinimum.lean:31:0: 'CheegerPareto.bound_through_nine' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: .\.\.\.\CheegerMinimum.lean:32:0: 'CheegerPareto.minimum_counterexample_order' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [873/874] Replayed CheegerTen
+info: .\.\.\.\CheegerTen.lean:130:0: 'CheegerPareto.Ten.excluded_by_search' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: .\.\.\.\CheegerTen.lean:131:0: 'CheegerPareto.Ten.excluded_by_tree' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: .\.\.\.\CheegerTen.lean:132:0: 'CheegerPareto.Ten.efficient_minima' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: .\.\.\.\CheegerTen.lean:133:0: 'CheegerPareto.Ten.original_relabels' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: .\.\.\.\CheegerTen.lean:134:0: 'CheegerPareto.Ten.nonunique_at_eighteen' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+exit=0
+$ lake env lean CheegerTen.lean
+'CheegerPareto.Ten.excluded_by_search' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CheegerPareto.Ten.excluded_by_tree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CheegerPareto.Ten.efficient_minima' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CheegerPareto.Ten.original_relabels' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CheegerPareto.Ten.nonunique_at_eighteen' depends on axioms: [propext, Classical.choice, Quot.sound]
+exit=0

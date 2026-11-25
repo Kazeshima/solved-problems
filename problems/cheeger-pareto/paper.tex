@@ -11,11 +11,11 @@
 \setlength{\parskip}{5pt plus 1pt minus 1pt}
 \setlength{\abovedisplayskip}{6pt}
 \setlength{\belowdisplayskip}{6pt}
-\hypersetup{pdftitle={The least counterexample to a Cheeger bound for Pareto-efficient vectors has ten vertices}}
+\hypersetup{pdftitle={The three least-order counterexamples to a Cheeger bound for Pareto-efficient vectors}}
 \begin{document}
 \begin{center}
-{\Large\bfseries The least counterexample to a Cheeger bound\\[3pt]
-for Pareto-efficient vectors has ten vertices\par}
+{\Large\bfseries The three least-order counterexamples to a Cheeger bound\\[3pt]
+for Pareto-efficient vectors\par}
 \smallskip
 {\small Research note \(\cdot\) 25 November 2026}
 \end{center}
@@ -24,8 +24,10 @@ for Pareto-efficient vectors has ten vertices\par}
 For a connected simple graph with ten vertices and eighteen edges, the edge
 expansion is \(4/3\) and the minimum total weight of a Pareto-efficient point
 of the small-cut polytope is \(6\). This disproves the floor-corrected lower
-bound proposed by jinni. We prove that every graph on two through nine
-vertices satisfies the bound for every efficient real vector.
+bound proposed by jinni. Every graph on two through nine vertices satisfies
+the bound for every efficient real vector. An exact census shows that
+precisely three isomorphism classes violate it at order ten. Their edge
+counts are 18, 18, and 21.
 
 \section*{The question and the graph}
 For a finite simple graph \(G=(V,E)\), write \(n=|V|\ge2\) and
@@ -43,7 +45,8 @@ DSM's examples for the original coefficient \(|V|/2\) have odd order [3].
 \begin{theorem}
 The graph whose graph6 string is \textnormal{\texttt{IJOG[BHvO}} has
 \(\rho(G)=6<20/3=\lfloor |V|/2\rfloor h(G)\).
-Its order is the least possible.
+Its order is the least possible. Among graphs of that order there are two
+counterexamples with eighteen edges and one with twenty-one edges.
 \end{theorem}
 
 Take three disjoint triangles \(Q_i\). Join the three distinguished vertices
@@ -159,18 +162,76 @@ each of the three disjoint pairs, leaving no position for the eighth point.
 If \(p\in W\), both its other vertices must be outside the seven to avoid
 a second intersection. There is only one such vertex. This contradiction
 proves the lower bound for all real vectors. Together with the graph
-above it proves that the minimum order is ten. \hfill\(\square\)
+above it proves that the minimum order is ten.
 
-\smallskip
+\section*{The three order-ten classes}
+In McKay's labels [4], all three graphs have the triangles
+\(\{0,3,6\},\{1,4,7\},\{2,5,8\}\) and \(\{0,7,8\}\).
+Their only other edges join \(9\) to the neighbors listed below.
+\begin{center}
+\begin{tabular}{l l r c c}\toprule
+graph6 & Neighbors of \(9\) & Edges & \(h\) & \(\rho\)\\ \midrule
+\verb!ICOceQd{W! & \(0,1,2,3,7,8\) & 18 & \(4/3\) & 6\\
+\verb!ICOceQd|O! & \(0,1,2,3,5,7\) & 18 & \(4/3\) & 6\\
+\verb!ICOceQd~w! & \(0,1,\ldots,8\) & 21 & \(5/3\) & 8\\ \bottomrule
+\end{tabular}
+\end{center}
+In each case \(x=\rho e_9\) is feasible and the first three triangles,
+each augmented by \(9\), are tight and cover \(V\). Every admissible
+cut through \(9\) has capacity at least \(\rho\), so the deficit argument
+above proves the exact minimum. The finite inequalities and attained
+expansions are checked in Lean. Only the second 18-edge graph has a
+degree-four vertex. The map with successive values
+\((2,7,4,1,0,3,6,5,8,9)\) carries the original example to this second graph.
+
+\newpage
+\section*{An exact certificate of exhaustiveness}
+In a putative violation, each maximal tight set \(A\) has size 3 or 4.
+Indeed there is another such set \(B\), with \(|B|\le4\), intersecting
+\(A\) and satisfying \(|A\cup B|>5\). Also \(\cut(A)<5h\). Every pair
+of distinct maximal tight sets must satisfy the sharper inequality
+\[
+ \cut(A)+\cut(B)-\cut(A\cap B)
+ \le z(A)+z(B)-z(A\cap B)=z(A\cup B)\le w<5h .
+\]
+For each graph the certificate specifies an attaining cut \(T\).
+All comparisons with \(5h=5\cut(T)/|T|\) use integer cross-products.
+Start with the three- and four-sets of capacity below this threshold.
+A negative proof tree names an uncovered vertex at each node. For
+every available set through that vertex there is a child, with its
+vertices removed and the pool restricted to compatible sets meeting
+the remainder. A pivot with no available set closes a branch. A
+putative tight cover would follow children to an empty remainder,
+where no pivot can be supplied. Each supplied tree is checked in full.
+
+Of the 11,716,571 connected representatives, the initial pool misses
+a vertex for 9,885,683. The pair constraints exclude a further
+1,830,885. The three remaining graphs are exactly the realizations
+in the table. Among the 774,628 graphs with fewer than 18 edges every
+one was excluded. Of the 561,106 graphs with 18 edges precisely two
+survive. A disconnected graph of order ten has a nonempty component
+with at most five vertices, so its Cheeger constant is zero.
+
+Completeness of the input was checked independently. Ordered partition
+refinement and individualization gave distinct canonical adjacency
+strings for every input. The number of labelings realizing the chosen
+canonical string gives the automorphism order. Summing
+\(10!/|\operatorname{Aut}(G)|\) gave \(34{,}496{,}488{,}594{,}816\).
+This equals the number \(C_{10}\) of connected labeled graphs. Partitioning
+all labeled graphs according to the component of vertex 0 gives
+\[
+C_n=2^{\binom n2}-
+  \sum_{j=1}^{n-1}\binom{n-1}{j-1} C_j\,2^{\binom{n-j}{2}},
+\qquad C_1=1.
+\]
+This establishes the classification up to isomorphism. \hfill\(\square\)
+
 {\small\textbf{Verification and provenance.}
-The ten-vertex graph and witness were supplied in the review archive.
-Lean 4 verifies their cut bounds, efficiency over the reals, and the
-universal lower bound on the order. Independently, the exact certificate
-checker tested all 273,192 connected graph representatives of orders
-2 through 9 from McKay's catalog [4]. For each graph it computes the
-expansion and tries every compatible choice of maximal tight sets of
-capacity below \(kh(G)\). The analytic proof above establishes minimality
-without assuming that the catalog is complete.}
+The original graph and its witness were supplied in the review archive.
+Lean checks the real-vector exclusion rule, the witnesses and the
+nonisomorphism result. Two C++ programs produce and replay the order-ten
+census with different cut calculations. The project includes all input
+graphs, refutation trees, automorphism orders and a Python checker [5].}
 
 {\small
 \textbf{Sources}\par
@@ -185,5 +246,6 @@ without assuming that the catalog is complete.}
 [3] DSM, \href{https://mathoverflow.net/a/506124}{answer to MathOverflow 506070},
 19 December 2025.\par
 [4] Brendan D. McKay, \href{https://users.cecs.anu.edu.au/~bdm/data/graphs.html}{\emph{Combinatorial Data: Simple graphs}},
-connected graph6 catalogs, orders 2--9, accessed 25 November 2026.}
+connected graph6 catalogs, orders 2--10, accessed 25 November 2026.\par
+[5] \href{https://github.com/Kazeshima/solved-problems/tree/main/problems/cheeger-pareto}{\emph{Cheeger--Pareto proofs, census certificates and replay programs}}, project repository.}
 \end{document}

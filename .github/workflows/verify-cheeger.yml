@@ -18,6 +18,14 @@ permissions:
   contents: read
 
 jobs:
+  order-ten-census:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Rebuild and replay the order-ten certificates and orbit counts
+        working-directory: problems/cheeger-pareto
+        run: python3 verify_order10.py
   verify:
     runs-on: ubuntu-latest
     timeout-minutes: 30
@@ -42,5 +50,13 @@ jobs:
           lake exe cache get
           lake build
           lake env lean CheegerMinimum.lean
+          lake env lean CheegerTen.lean
+          python3 verify_order10.py --row 343 --lean-out .lake/CatalogRow343.lean
+          lake env lean .lake/CatalogRow343.lean
       - name: Replay the proof above Init
-        run: lake env lean --run ../mabk-uniform-randomness/review/DependencyReplay.lean CheegerMinimum CheegerPareto.minimum_counterexample_order
+        run: |
+          replay=../mabk-uniform-randomness/review/DependencyReplay.lean
+          lake env lean --run "$replay" CheegerMinimum CheegerPareto.minimum_counterexample_order
+          lake env lean --run "$replay" CheegerTen CheegerPareto.Ten.excluded_by_tree
+          lake env lean --run "$replay" CheegerTen CheegerPareto.Ten.nonunique_at_eighteen
+          lake env lean --run "$replay" CheegerTen CheegerPareto.Ten.efficient_minima
