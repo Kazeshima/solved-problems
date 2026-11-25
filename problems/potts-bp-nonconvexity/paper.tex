@@ -1,0 +1,168 @@
+\documentclass[10pt,reqno]{amsart}
+\usepackage[letterpaper,hmargin=1.04in,vmargin=0.88in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+  pdftitle={Nonconvexity of the product belief-propagation image for the antiferromagnetic Potts model},
+  pdfauthor={Kazeshima},
+  pdfkeywords={antiferromagnetic Potts model, belief propagation, product measures, convexity}
+}
+\newtheorem{theorem}{Theorem}
+\newcommand{\E}{\mathbb E}
+\newcommand{\Fprod}{\mathcal F^{\mathrm{prod}}}
+
+\title[Nonconvexity of the product Potts BP image]{Nonconvexity of the product belief-propagation image\\
+for the antiferromagnetic Potts model}
+\author{Kazeshima}
+\date{November 25, 2026}
+
+\begin{document}
+\begin{abstract}
+For the four-state antiferromagnetic Potts model with two neighbours and
+diagonal interaction $1/2$, we give two product inputs whose belief-propagation
+outputs have an unattainable midpoint. This answers Question~4 of Liu, Mani
+and Pernice in the negative. More generally, the product image is nonconvex
+for every $d\ge2$, $q\ge d+2$ and $0\le\beta<1$. Attaining the largest
+possible output probability for one colour forces the neighbours to have
+pairwise disjoint supports.
+\end{abstract}
+\maketitle
+
+\section{A missing midpoint in four colours}
+
+Take two independent neighbours with respective colour distributions
+$p,r\in\Delta_4$, where $\Delta_q$ is the closed probability simplex on
+$[q]=\{1,\ldots,q\}$. A neighbour contributes a factor $1/2$ when its
+colour agrees with the root colour and a factor $1$ otherwise. The
+unnormalized weight for root colour $i$ and the normalizing sum are therefore
+\begin{equation}\label{eq:four}
+ g_i=(1-p_i/2)(1-r_i/2),\qquad
+ Z=\sum_{i=1}^4g_i=3+\tfrac14\sum_{i=1}^4p_i r_i .
+\end{equation}
+Write $F(p,r)=(g_i/Z)_{i=1}^4$ and let $\delta_i$ denote the point mass at $i$.
+Two choices of messages give
+\[
+ u=F(\delta_1,\delta_2)=\tfrac16(1,1,2,2),\qquad
+ v=F\bigl(\delta_3,(\delta_1+\delta_2)/2\bigr)=\tfrac1{12}(3,3,2,4).
+\]
+Their midpoint is $w=(5,5,6,8)/24$. We claim that $w$ is unattainable.
+
+Indeed, $g_4\le1$ and $Z\ge3$, so $F_4\le1/3$. Since $w_4=1/3$, any
+preimage of $w$ must have both $g_4=1$ and $Z=3$. The first equality
+forces $p_4=r_4=0$. The second forces $p_i r_i=0$ for every $i$, by
+\eqref{eq:four}. Thus on the three remaining colours
+$g_i=1-(p_i+r_i)/2=3w_i$, giving
+\[
+ (p_1+r_1,\ p_2+r_2,\ p_3+r_3)=(3/4,3/4,1/2).
+\]
+Each positive mass belongs entirely to one neighbour. To give each
+neighbour total mass $1$, the three masses must split into two nonempty
+groups. One group would be a singleton, yet none of the masses is $1$.
+
+Liu, Mani and Pernice ask whether the product belief-propagation image is
+convex for $q\ge3$ and $\max\{0,1-q/(d+1)\}\le\beta\le1$
+\cite[Definition~2 and Question~4]{LMP}. The same question appears in
+Mani's thesis \cite[Question~3.9.18]{Mani}. The admissible interval for
+$(q,d)=(4,2)$ is $[0,1]$, so the two messages above give a counterexample
+at an interior value of the interaction parameter.
+
+\section{The general obstruction}
+
+Let $A_{ib}=\beta$ for $b=i$ and $A_{ib}=1$ otherwise, and put $t=1-\beta$.
+For a joint law $\mu$ of the neighbour configuration
+$\tau=(\tau_1,\ldots,\tau_d)\in[q]^d$, the map in
+\cite[eqs.~(1)--(2)]{LMP} is $F_i(\mu)=G_i(\mu)/Z(\mu)$, where
+\[
+ G_i(\mu)=\E_\mu\prod_{j=1}^d A_{i,\tau_j},
+ \qquad Z(\mu)=\sum_{b=1}^q G_b(\mu).
+\]
+If $\mu=\bigotimes_{j=1}^d p_j$ with arbitrary $p_j\in\Delta_q$, independence
+gives $G_i(\mu)=\prod_j(1-tp_j(i))$. Denote the set of all such normalized
+outputs by $\Fprod_{A,d}$.
+
+\begin{theorem}\label{thm:main}
+For all integers $d\ge2$ and $q\ge d+2$ and all real $0\le\beta<1$,
+the set $\Fprod_{A,d}$ is nonconvex.
+\end{theorem}
+
+\begin{proof}
+Write $Z_0=q-dt\ge q-d\ge2$. For a configuration $\tau$ let $N_i$ count
+its occurrences of colour $i$. Then $G_i(\mu)=\E_\mu[\beta^{N_i}]$, with
+$\beta^0=1$ also at $\beta=0$. For integers $n\ge1$,
+\[
+ 1-\beta^n=t\sum_{k=0}^{n-1}\beta^k\le nt .
+\]
+Thus $\beta^n\ge1-nt$ for every $n\ge0$, with equality precisely for
+$n=0,1$. Summing over colours and using $\sum_iN_i=d$ gives
+\begin{equation}\label{eq:partition}
+ Z(\mu)\ge Z_0 .
+\end{equation}
+Equality holds precisely when the neighbours have pairwise distinct colours
+almost surely. For a product law this is equivalent to pairwise disjoint
+supports of the $p_j$. A shared colour $i$ would be drawn by two specified
+neighbours with probability $p_j(i)p_k(i)>0$. At equality, every colour
+therefore satisfies
+\begin{equation}\label{eq:linear}
+ G_i(\mu)=1-t\sum_{j=1}^d p_j(i).
+\end{equation}
+
+Fix a set $S$ of $d+1$ colours. For each $a\in S$, take a deterministic
+input which uses each colour in $S\setminus\{a\}$ once. Its weights are
+$\beta$ on the occupied colours and $1$ elsewhere, with common sum $Z_0$.
+The arithmetic mean $\bar w$ of these $d+1$ outputs satisfies
+\[
+ Z_0\bar w_i=
+ \begin{cases}
+  1-td/(d+1),& i\in S,\\
+  1,& i\notin S .
+ \end{cases}
+\]
+Choose $b\notin S$, which is possible since $q\ge d+2$. A product preimage
+of $\bar w$ would have $G_b/Z=1/Z_0$. As $G_b\le1$, \eqref{eq:partition}
+forces $Z=Z_0$. Equation~\eqref{eq:linear} now gives
+$\sum_jp_j(i)=d/(d+1)$ for each $i\in S$. Exactly one neighbour must carry
+each such mass. Since $d/(d+1)>1/2$, a neighbour can carry at most one of
+them. There are $d+1$ masses and only $d$ neighbours. Hence this finite
+convex combination lies outside $\Fprod_{A,d}$.
+\end{proof}
+
+\section{Scope and verification}
+
+Liu, Mani and Pernice use an extremal coordinate for an auxiliary matrix
+\cite[Lemma~2.2 and Remark~3]{LMP}. They identify the minimizers of a
+special-colour coordinate. For the standard antiferromagnetic matrix,
+equality at an upper face gives the disjoint-support condition. We found
+no earlier resolution of Question~4 in the public sources examined through
+November~25, 2026.
+
+The result includes proper colourings at $\beta=0$ and persists for strictly
+positive input marginals. By continuity and \eqref{eq:partition}, the image
+of the closed product of simplices is compact and has positive distance
+from $\bar w$. Mixing each input marginal with a sufficiently small
+proportion of the uniform law therefore keeps the mean output outside the
+image. The range $q\le d+1$ remains beyond this argument. Theorem~1.4
+of \cite{LMP} treats $d\ge2q$ under lower tail bounds. Jerrum's conjecture
+on sampling graph colourings \cite[Conjecture~1]{LMP} remains a separate
+algorithmic question.
+
+The \href{https://github.com/Kazeshima/solved-problems/tree/main/problems/potts-bp-nonconvexity}{companion Lean project}
+formalizes the four-colour example and Theorem~\ref{thm:main} over the
+reals, with a proof that the finite expectation for a product law equals
+the factored expression above. Lean~4.19.0 and Mathlib~v4.19.0 check the
+theorems. Their transitive axiom lists contain only propositional
+extensionality, classical choice and quotient soundness. The repository
+provides the kernel replay and reproduction commands. Generative AI
+assisted in preparing the manuscript and the formalization.
+
+\begin{thebibliography}{9}
+\bibitem{LMP}
+K. Liu, N. Mani and F. Pernice,
+\emph{Counterexamples to a Weitz-Style Reduction for Multispin Systems},
+\href{https://arxiv.org/abs/2411.06541v2}{arXiv:2411.06541v2}, 2025.
+
+\bibitem{Mani}
+N. Mani, \emph{A Probabilistic Perspective on Graph Coloring},
+Ph.D. thesis, Massachusetts Institute of Technology, 2025,
+\href{https://dspace.mit.edu/handle/1721.1/159909}{hdl:1721.1/159909}.
+\end{thebibliography}
+\end{document}
