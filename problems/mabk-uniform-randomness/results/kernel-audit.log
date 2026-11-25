@@ -1,0 +1,49 @@
+theorem MABK.conjecture1 : ∀ (n : ℕ), 2 ≤ n → Even n → IsGreatest (MABK.uniformValues n) (MABK.publishedMstar n) :=
+fun n hn he =>
+  ⟨Exists.casesOn (MABK.tensor_attainment n hn) fun M h =>
+      And.casesOn h fun hun hval =>
+        Exists.casesOn (MABK.tensor_realization M) fun e hr => Exists.intro e (Exists.intro M.prob ⟨hr, ⟨hun, hval⟩⟩),
+    fun ⦃v⦄ a =>
+    Exists.casesOn a fun e h =>
+      Exists.casesOn h fun p h =>
+        And.casesOn h fun hborn right =>
+          And.casesOn right fun hun right =>
+            right ▸
+              MABK.uniform_upper hn he e.P (MABK.vectorState e.ψ) (MABK.vectorState_contractive e.ψ e.norm_one) p hborn
+                hun⟩
+def MABK.uniformValues : ℕ → Set ℝ :=
+fun n => {v | ∃ e p, e.Realizes p ∧ (∀ (a : MABK.Bits n), p ∅ a = 1 / 2 ^ n) ∧ MABK.mabk p = v}
+def MABK.HilbertBehavior.Realizes : {n : ℕ} → MABK.HilbertBehavior n → (Finset (Fin n) → MABK.Bits n → ℝ) → Prop :=
+fun {n} e p =>
+  ∀ (s : Finset (Fin n)) (a : MABK.Bits n), (MABK.vectorState e.ψ) (MABK.outcomeOperator e.P s a) = ↑(p s a)
+def MABK.publishedMstar : ℕ → ℝ :=
+fun n => MABK.quantumMaximum n * MABK.eq24 n (MABK.publishedAngle n)
+def MABK.mabk : {n : ℕ} → (Finset (Fin n) → MABK.Bits n → ℝ) → ℝ :=
+fun {n} p =>
+  2 ^ ((1 - ↑n) / 2) *
+    ∑ s ∈ Finset.univ.powerset, Real.cos ((↑n - 1) * Real.pi / 4 - ↑s.card * Real.pi / 2) * MABK.correlator p s
+def MABK.eq24 : ℕ → ℝ → ℝ :=
+fun n θ =>
+  Real.cos (θ / 2 + Real.pi / 4) ^ n * Real.sin (↑n * θ / 2 + Real.pi / 4) +
+    Real.cos (θ / 2 - Real.pi / 4) ^ n * Real.sin (↑n * θ / 2 - Real.pi / 4)
+def MABK.publishedAngle : ℕ → ℝ :=
+fun n => 2 * Real.pi * MABK.angleIndex n / (↑n + 1)
+def MABK.angleIndex : ℕ → ℝ :=
+fun n =>
+  if n % 8 = 2 then ↑n / 4 + 1 / 2
+  else if n % 8 = 4 then ↑n / 4 else if n % 8 = 6 then 3 * ↑n / 4 + 1 / 2 else 3 * ↑n / 4 + 1
+def MABK.radius : ℕ → ℝ :=
+fun n => Real.cos (MABK.δ n) ^ (n + 1) + MABK.ε n * Real.sin (MABK.δ n) ^ (n + 1)
+MABK.zero_correlator_bound.{u_1} {n : ℕ} (hn : 2 ≤ n) (he : Even n) {A : Type u_1} [CStarAlgebra A]
+  (P : MABK.ProjectiveStrategy n A) (ω : A →L[ℂ] ℂ) (hω : ‖ω‖ ≤ 1) (p : Finset (Fin n) → MABK.Bits n → ℝ)
+  (born : ∀ (s : Finset (Fin n)) (a : MABK.Bits n), ω (MABK.outcomeOperator P s a) = ↑(p s a))
+  (zero : MABK.correlator p ∅ = 0) : |MABK.mabk p| ≤ MABK.publishedMstar n
+MABK.tensor_attainment (n : ℕ) (hn : 2 ≤ n) :
+  ∃ M, (∀ (a : MABK.Bits n), M.prob ∅ a = 1 / 2 ^ n) ∧ MABK.mabk M.prob = MABK.publishedMstar n
+'MABK.conjecture1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MABK.uniform_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MABK.zero_correlator_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MABK.tensor_realization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MABK.tensor_attainment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MABK.all_even_torus' depends on axioms: [propext, Classical.choice, Quot.sound]
+Lean exited with code 0.

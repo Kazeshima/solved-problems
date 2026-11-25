@@ -1,0 +1,4 @@
+38100 derivative-sign probes, including all interval boundaries
+Worst sampled off-diagonal disk excess = -3.468e-05
+Largest direct GHZ / Eq. (24) / radius discrepancy = 4.441e-16
+Reproduced the negative-y counterexample and detected reversed disk centers.

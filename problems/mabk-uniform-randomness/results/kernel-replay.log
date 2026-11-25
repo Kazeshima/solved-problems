@@ -1,0 +1,103 @@
+Compiler helper outside the logic: MABK.ε._cstage1
+Compiler helper outside the logic: MABK.ε._closed_1._cstage2
+Compiler helper outside the logic: MABK.ε._cstage2
+Compiler helper outside the logic: Finset.sum._at.MABK.correlator._spec_5
+Compiler helper outside the logic: MABK.parity._cstage2
+Compiler helper outside the logic: MABK.correlator._cstage2
+Compiler helper outside the logic: Finset.prod._at.MABK.parity._spec_1._rarg._cstage2
+Compiler helper outside the logic: Finset.sum._at.MABK.correlator._spec_5._rarg._closed_1._cstage2
+Compiler helper outside the logic: Fintype.piFinset._at.MABK.correlator._spec_1._cstage2
+Compiler helper outside the logic: MABK.correlator._lambda_1._closed_2._cstage2
+Compiler helper outside the logic: MABK.signBit._cstage2
+Compiler helper outside the logic: Multiset.pi._at.MABK.correlator._spec_3._closed_1._cstage2
+Compiler helper outside the logic: Multiset.Pi.cons._at.MABK.correlator._spec_4._rarg._cstage2
+Compiler helper outside the logic: Multiset.pi._at.MABK.correlator._spec_3._cstage2
+Compiler helper outside the logic: Finset.prod._at.MABK.parity._spec_1._rarg._closed_1._cstage2
+Compiler helper outside the logic: Multiset.Pi.cons._at.MABK.correlator._spec_4
+Compiler helper outside the logic: Finset.sum._at.MABK.correlator._spec_5._cstage2
+Compiler helper outside the logic: MABK.parity._cstage1
+Compiler helper outside the logic: MABK.correlator._cstage1
+Compiler helper outside the logic: Multiset.pi._at.MABK.correlator._spec_3._lambda_1._cstage2
+Compiler helper outside the logic: Multiset.pi._at.MABK.correlator._spec_3
+Compiler helper outside the logic: MABK.parity._closed_1._cstage2
+Compiler helper outside the logic: MABK.correlator._closed_1._cstage2
+Compiler helper outside the logic: Finset.prod._at.MABK.parity._spec_1
+Compiler helper outside the logic: Finset.prod._at.MABK.parity._spec_1._cstage2
+Compiler helper outside the logic: MABK.signBit._closed_1._cstage2
+Compiler helper outside the logic: Fintype.piFinset._at.MABK.correlator._spec_1._lambda_1._cstage2
+Compiler helper outside the logic: Multiset.pi._at.MABK.correlator._spec_3._lambda_2._cstage2
+Compiler helper outside the logic: Multiset.pi._at.MABK.correlator._spec_3._closed_2._cstage2
+Compiler helper outside the logic: Multiset.Pi.cons._at.MABK.correlator._spec_4._cstage2
+Compiler helper outside the logic: MABK.correlator._lambda_1._closed_1._cstage2
+Compiler helper outside the logic: MABK.parity._lambda_1._cstage2
+Compiler helper outside the logic: MABK.correlator._lambda_1._cstage2
+Compiler helper outside the logic: MABK.signBit._cstage1
+Compiler helper outside the logic: Finset.pi._at.MABK.correlator._spec_2
+Compiler helper outside the logic: Finset.pi._at.MABK.correlator._spec_2._cstage2
+Compiler helper outside the logic: Fintype.piFinset._at.MABK.correlator._spec_1
+Compiler helper outside the logic: Fintype.piFinset._at.MABK.correlator._spec_1._closed_1._cstage2
+Compiler helper outside the logic: MABK.correlator._lambda_2._cstage2
+Compiler helper outside the logic: Finset.sum._at.MABK.correlator._spec_5._rarg._cstage2
+Compiler helper outside the logic: Matrix.diagonal._at.MABK.singleMatrix._spec_1._cstage2
+Compiler helper outside the logic: MABK.singleMatrix._rarg._cstage2
+Compiler helper outside the logic: Multiset.prod._at.MABK.tensorMatrix._spec_2
+Compiler helper outside the logic: Multiset.prod._at.MABK.tensorMatrix._spec_2._cstage2
+Compiler helper outside the logic: MABK.tensorMatrix._closed_1._cstage2
+Compiler helper outside the logic: MABK.singleMatrix._rarg._lambda_1._cstage2
+Compiler helper outside the logic: Finset.prod._at.MABK.tensorMatrix._spec_1._cstage2
+Compiler helper outside the logic: MABK.placeMatrix._cstage2
+Compiler helper outside the logic: MABK.tensorMatrix._cstage1
+Compiler helper outside the logic: Multiset.prod._at.MABK.tensorMatrix._spec_2._closed_1._cstage2
+Compiler helper outside the logic: MABK.singleMatrix._cstage1
+Compiler helper outside the logic: Finset.prod._at.MABK.tensorMatrix._spec_1._rarg._cstage2
+Compiler helper outside the logic: MABK.placeMatrix._cstage1
+Compiler helper outside the logic: Matrix.diagonal._at.MABK.singleMatrix._spec_1
+Compiler helper outside the logic: MABK.tensorMatrix._cstage2
+Compiler helper outside the logic: Multiset.prod._at.MABK.tensorMatrix._spec_2._lambda_1._cstage2
+Compiler helper outside the logic: Matrix.diagonal._at.MABK.singleMatrix._spec_1._closed_1._cstage2
+Compiler helper outside the logic: MABK.singleMatrix._rarg._closed_1._cstage2
+Compiler helper outside the logic: MABK.tensorMatrix._lambda_1._cstage2
+Compiler helper outside the logic: MABK.singleMatrix._cstage2
+Compiler helper outside the logic: Finset.prod._at.MABK.tensorMatrix._spec_1
+Compiler helper outside the logic: Multiset.prod._at.MABK.tensorMatrix._spec_2._closed_2._cstage2
+Compiler helper outside the logic: Function.update._at._private.MABKCore.Symmetry.0.MABK.replacePair._spec_1
+Compiler helper outside the logic: Function.update._at._private.MABKCore.Symmetry.0.MABK.replacePair._spec_1._cstage2
+Compiler helper outside the logic: _private.MABKCore.Symmetry.0.MABK.replacePair._rarg._cstage2
+Compiler helper outside the logic: _private.MABKCore.Symmetry.0.MABK.chord._cstage2
+Compiler helper outside the logic: _private.MABKCore.Symmetry.0.MABK.replacePair._cstage2
+Compiler helper outside the logic: Function.update._at._private.MABKCore.Symmetry.0.MABK.replacePair._spec_1._rarg._cstage2
+Compiler helper outside the logic: _private.MABKCore.Symmetry.0.MABK.replacePair._cstage1
+Compiler helper outside the logic: _private.MABKCore.Symmetry.0.MABK.chord._cstage1
+Compiler helper outside the logic: _private.MABKCore.Realization.0.MABK.proj._rarg._cstage2
+Compiler helper outside the logic: _private.MABKCore.Realization.0.MABK.obs._cstage1
+Compiler helper outside the logic: _private.MABKCore.Realization.0.MABK.qubitKet._cstage1
+Compiler helper outside the logic: _private.MABKCore.Realization.0.MABK.proj._cstage2
+Compiler helper outside the logic: _private.MABKCore.Realization.0.MABK.obs._rarg._lambda_2._closed_2._cstage2
+Compiler helper outside the logic: _private.MABKCore.Realization.0.MABK.qubitKet._rarg._cstage2
+Compiler helper outside the logic: _private.MABKCore.Realization.0.MABK.obs._rarg._lambda_2._closed_1._cstage2
+Compiler helper outside the logic: _private.MABKCore.Realization.0.MABK.obs._rarg._closed_1._cstage2
+Compiler helper outside the logic: _private.MABKCore.Realization.0.MABK.obs._rarg._cstage2
+Compiler helper outside the logic: _private.MABKCore.Realization.0.MABK.qubitKet._rarg._closed_1._cstage2
+Compiler helper outside the logic: _private.MABKCore.Realization.0.MABK.proj._cstage1
+Compiler helper outside the logic: _private.MABKCore.Realization.0.MABK.obs._rarg._lambda_1._closed_1._cstage2
+Compiler helper outside the logic: _private.MABKCore.Realization.0.MABK.obs._rarg._lambda_2._cstage2
+Compiler helper outside the logic: _private.MABKCore.Realization.0.MABK.obs._rarg._lambda_1._cstage2
+Compiler helper outside the logic: _private.MABKCore.Realization.0.MABK.obs._cstage2
+Compiler helper outside the logic: _private.MABKCore.Realization.0.MABK.qubitKet._cstage2
+MABKCore.Basic: 22 declarations rechecked
+MABKCore.Quantum: 35 declarations rechecked
+MABKCore.Outcomes: 25 declarations rechecked
+MABKCore.Tensor: 24 declarations rechecked
+MABKCore.Curve: 12 declarations rechecked
+MABKCore.Estimates: 14 declarations rechecked
+MABKCore.Symmetry: 14 declarations rechecked
+MABKCore.HalfTurn: 2 declarations rechecked
+MABKCore.Disk: 5 declarations rechecked
+MABKCore.Diagonal: 50 declarations rechecked
+MABKCore.GHZ: 39 declarations rechecked
+MABKCore.Realization: 73 declarations rechecked
+MABKCore.Two: 4 declarations rechecked
+MABKCore.Bipartite: 1 declarations rechecked
+MABKCore: 17 declarations rechecked
+Kernel replay succeeded for 337 declarations across 15 project modules.
+Compiler-generated staging helpers outside the logic: 86.

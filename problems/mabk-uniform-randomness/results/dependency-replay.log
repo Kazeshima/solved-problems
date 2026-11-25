@@ -1,0 +1,11 @@
+Final proof uses MABK.joint_spectral_bound
+Final proof uses MABK.polarization_diagonal_max
+Final proof uses MABK.canonical_disk_norm
+Final proof uses MABK.torus_disk_two
+Final proof uses MABK.angle_contact
+Final proof uses MABK.paper_curve
+Final proof uses MABK.zero_correlator_bound
+Final proof uses MABK.ghz_probability
+Final proof uses MABK.tensor_realization
+Submitting 39705 declarations for MABK.conjecture1 to the kernel, with only Init imported.
+Dependency replay succeeded for MABK.conjecture1, including declarations from 1422 modules above Init.

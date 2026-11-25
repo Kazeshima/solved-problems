@@ -1,0 +1,8 @@
+Review performed on 2026-11-25.
+Lean (version 4.19.0, x86_64-w64-windows-gnu, commit 6caaee842e94, Release)
+Lake version 5.0.0-6caaee8 (Lean version 4.19.0)
+git version 2.51.0.windows.2
+Python 3.14.0
+mathlib c44e0c8ee63ca166450922a373c7409c5d26b00b (v4.19.0)
+Dependencies resolved with lake update and the official mathlib binary cache.
+The final source build began with an empty project build directory.

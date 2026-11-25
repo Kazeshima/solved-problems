@@ -1,0 +1,37 @@
+name: Verify MABK Conjecture 1
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: problems/mabk-uniform-randomness
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify reviewed source hashes
+        run: sha256sum -c VERIFIED.sha256
+      - name: Install elan
+        run: |
+          curl --fail --location --retry 3 https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -o "$RUNNER_TEMP/elan-init.sh"
+          sh "$RUNNER_TEMP/elan-init.sh" -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Fetch pinned mathlib cache
+        run: lake exe cache get
+      - name: Build the proof
+        run: lake build
+      - name: Check the theorem and its axioms
+        run: |
+          lake env lean MABKCore.lean
+          lake env lean review/KernelAudit.lean
+      - name: Replay all project declarations
+        run: lake env lean --run review/KernelReplay.lean
+      - name: Replay transitive dependencies above Init
+        run: lake env lean --run review/DependencyReplay.lean

@@ -1,0 +1,157 @@
+{
+  "date": "2026-11-25",
+  "companion": {
+    "default_branch": "main",
+    "fork_count": 0,
+    "html_url": "https://github.com/LewisWooltorton/expanding-BI",
+    "open_issues_count": 0
+  },
+  "companion_all_pull_requests": 0,
+  "companion_all_issues_and_prs": 0,
+  "searches": [
+    {
+      "endpoint": "repositories",
+      "query": "\"2308.07030\" in:readme",
+      "result": {
+        "incomplete_results": false,
+        "sample": [
+          {
+            "label": "LewisWooltorton/expanding-BI",
+            "url": "https://github.com/LewisWooltorton/expanding-BI"
+          },
+          {
+            "label": "polyidoit/Arxiv-Quantum",
+            "url": "https://github.com/polyidoit/Arxiv-Quantum"
+          }
+        ],
+        "total_count": 2
+      }
+    },
+    {
+      "endpoint": "code",
+      "query": "\"2308.07030\"",
+      "result": {
+        "incomplete_results": false,
+        "sample": [
+          {
+            "label": "rss_data/quant-ph/2024-12-12_quant-ph.xml",
+            "url": "https://github.com/ehijano/rss_fetch/blob/5c8af7bcd258797ce310e0eb56eb21940cbe8c2c/rss_data/quant-ph/2024-12-12_quant-ph.xml"
+          },
+          {
+            "label": "rss_data/quant-ph/2025-12-02_quant-ph.xml",
+            "url": "https://github.com/ehijano/rss_fetch/blob/5c8af7bcd258797ce310e0eb56eb21940cbe8c2c/rss_data/quant-ph/2025-12-02_quant-ph.xml"
+          },
+          {
+            "label": "data/rainbow_bank/download.json",
+            "url": "https://github.com/Fireblossom/EditTrans/blob/c03cdb7271676f84ffdb4ab2200908acecfaa4d0/data/rainbow_bank/download.json"
+          }
+        ],
+        "total_count": 9
+      }
+    },
+    {
+      "endpoint": "code",
+      "query": "\"Conjecture 1\" \"MABK\"",
+      "result": {
+        "incomplete_results": false,
+        "sample": [
+          {
+            "label": "manual_todo.md",
+            "url": "https://github.com/jpbruneton/open_quantum_problems/blob/8d17461b79164e16a7355d503c80f4dede4622bb/manual_todo.md"
+          },
+          {
+            "label": "docs/reports/physics-settlement-value-census/labels.json",
+            "url": "https://github.com/the-omega-institute/trureturing-experiments/blob/13cb7ca643256d271c7c6b00d7ad041c578116d3/docs/reports/physics-settlement-value-census/labels.json"
+          },
+          {
+            "label": "rss_data/quant-ph/2026-11-11_quant-ph.xml",
+            "url": "https://github.com/ehijano/rss_fetch/blob/5c8af7bcd258797ce310e0eb56eb21940cbe8c2c/rss_data/quant-ph/2026-11-11_quant-ph.xml"
+          }
+        ],
+        "total_count": 6
+      }
+    },
+    {
+      "endpoint": "commits",
+      "query": "\"2308.07030\"",
+      "result": {
+        "incomplete_results": false,
+        "sample": [],
+        "total_count": 0
+      }
+    },
+    {
+      "endpoint": "commits",
+      "query": "MABK randomness",
+      "result": {
+        "incomplete_results": false,
+        "sample": [],
+        "total_count": 0
+      }
+    },
+    {
+      "endpoint": "issues",
+      "query": "\"2308.07030\" is:issue",
+      "result": {
+        "incomplete_results": false,
+        "sample": [],
+        "total_count": 0
+      }
+    },
+    {
+      "endpoint": "issues",
+      "query": "\"2308.07030\" is:pr",
+      "result": {
+        "incomplete_results": false,
+        "sample": [],
+        "total_count": 0
+      }
+    },
+    {
+      "endpoint": "issues",
+      "query": "MABK randomness is:issue",
+      "result": {
+        "incomplete_results": false,
+        "sample": [
+          {
+            "label": "Failed to run bundle: install plan is not available for the subscription",
+            "url": "https://github.com/operator-framework/operator-sdk/issues/5410"
+          }
+        ],
+        "total_count": 1
+      }
+    },
+    {
+      "endpoint": "issues",
+      "query": "MABK randomness is:pr",
+      "result": {
+        "incomplete_results": false,
+        "sample": [],
+        "total_count": 0
+      }
+    },
+    {
+      "endpoint": "issues",
+      "query": "MABK Lean is:pr",
+      "result": {
+        "incomplete_results": false,
+        "sample": [
+          {
+            "label": "Prove the remaining MABK positivity conjecture for all n ≥ 6 (#11561)",
+            "url": "https://github.com/the-omega-institute/trureturing/pull/11696"
+          }
+        ],
+        "total_count": 1
+      }
+    },
+    {
+      "endpoint": "repositories",
+      "query": "MABK language:Lean",
+      "result": {
+        "incomplete_results": false,
+        "sample": [],
+        "total_count": 0
+      }
+    }
+  ]
+}
