@@ -1,0 +1,192 @@
+2026-11-26T00:31:03.158771+00:00 lake build Quadric.Five.Resources.Cert00 Quadric.Five.Resources.Cert01
+✔ [770/784] Built Quadric.Five.Elimination
+✔ [775/787] Built Quadric.Five.Literals
+✔ [779/787] Built Quadric.Five.SmallGeometry
+⚠ [782/787] Built Quadric.Five.Forms
+warning: .\.\.\.\Quadric\Five\Forms.lean:50:55: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [784/787] Built Quadric.Five.Certificates
+✔ [785/787] Built Quadric.Five.Gram
+✔ [786/787] Built Quadric.Five.Resources.Cert01
+✔ [787/787] Built Quadric.Five.Resources.Cert00
+Build completed successfully.
+2026-11-26T01:00:24.921753+00:00 exit=0
+2026-11-26T01:00:24.921753+00:00 lake build Quadric.Five.Resources.Cert02 Quadric.Five.Resources.Cert03
+⚠ [782/787] Replayed Quadric.Five.Forms
+warning: .\.\.\.\Quadric\Five\Forms.lean:50:55: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [786/787] Built Quadric.Five.Resources.Cert03
+✔ [787/787] Built Quadric.Five.Resources.Cert02
+Build completed successfully.
+2026-11-26T01:07:51.386378+00:00 exit=0
+2026-11-26T01:07:51.386378+00:00 lake build Quadric.Five.Resources.Cert04 Quadric.Five.Resources.Cert05
+⚠ [780/787] Replayed Quadric.Five.Forms
+warning: .\.\.\.\Quadric\Five\Forms.lean:50:55: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [786/787] Built Quadric.Five.Resources.Cert05
+✔ [787/787] Built Quadric.Five.Resources.Cert04
+Build completed successfully.
+2026-11-26T01:12:56.760553+00:00 exit=0
+2026-11-26T01:12:56.760553+00:00 lake build Quadric.Five.Resources.Cert06 Quadric.Five.Resources.Cert07
+⚠ [775/787] Replayed Quadric.Five.Forms
+warning: .\.\.\.\Quadric\Five\Forms.lean:50:55: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [786/787] Built Quadric.Five.Resources.Cert07
+✔ [787/787] Built Quadric.Five.Resources.Cert06
+Build completed successfully.
+2026-11-26T01:22:14.123017+00:00 exit=0
+2026-11-26T01:22:14.123017+00:00 lake build Quadric.Five.Resources.Cert08 Quadric.Five.Resources.Cert09
+⚠ [777/789] Replayed Quadric.Five.Forms
+warning: .\.\.\.\Quadric\Five\Forms.lean:50:55: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [786/789] Built Quadric.Five.Resources.Cert09
+⚠ [787/789] Built Quadric.Five.FastRows
+warning: .\.\.\.\Quadric\Five\FastRows.lean:55:64: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [788/789] Built Quadric.Five.TriLiterals
+✔ [789/789] Built Quadric.Five.Resources.Cert08
+Build completed successfully.
+2026-11-26T01:36:54.459022+00:00 exit=0
+2026-11-26T01:36:54.459022+00:00 lake build Quadric.Five.Resources.Cert10 Quadric.Five.Resources.Cert11
+⚠ [776/787] Replayed Quadric.Five.Forms
+warning: .\.\.\.\Quadric\Five\Forms.lean:50:55: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [786/787] Built Quadric.Five.Resources.Cert11
+✔ [787/787] Built Quadric.Five.Resources.Cert10
+Build completed successfully.
+2026-11-26T01:42:33.045170+00:00 exit=0
+2026-11-26T01:42:33.045170+00:00 lake build Quadric.Five.Resources.Cert12 Quadric.Five.Resources.Cert13
+⚠ [782/789] Replayed Quadric.Five.Forms
+warning: .\.\.\.\Quadric\Five\Forms.lean:50:55: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [786/789] Replayed Quadric.Five.FastRows
+warning: .\.\.\.\Quadric\Five\FastRows.lean:55:64: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [787/789] Built Quadric.Five.Resources.Cert12
+✔ [789/789] Built Quadric.Five.Resources.Cert13
+Build completed successfully.
+2026-11-26T01:52:25.989993+00:00 exit=0
+2026-11-26T01:52:25.991011+00:00 lake build Quadric.Five.Resources.Cert14 Quadric.Five.Resources.Cert15
+⚠ [780/787] Replayed Quadric.Five.Forms
+warning: .\.\.\.\Quadric\Five\Forms.lean:50:55: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [786/787] Built Quadric.Five.Resources.Cert15
+✔ [787/787] Built Quadric.Five.Resources.Cert14
+Build completed successfully.
+2026-11-26T02:06:52.869450+00:00 exit=0
+2026-11-26T02:06:52.869450+00:00 lake build Quadric.Five.Resources.Cert16 Quadric.Five.Resources.Cert17
+⚠ [777/787] Replayed Quadric.Five.Forms
+warning: .\.\.\.\Quadric\Five\Forms.lean:50:55: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [786/787] Built Quadric.Five.Resources.Cert17
+✔ [787/787] Built Quadric.Five.Resources.Cert16
+Build completed successfully.
+2026-11-26T02:14:22.829018+00:00 exit=0
+2026-11-26T02:14:22.829018+00:00 lake build Quadric.Five.Resources.Cert18 Quadric.Five.Resources.Cert19
+⚠ [780/787] Replayed Quadric.Five.Forms
+warning: .\.\.\.\Quadric\Five\Forms.lean:50:55: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [786/787] Built Quadric.Five.Resources.Cert19
+✔ [787/787] Built Quadric.Five.Resources.Cert18
+Build completed successfully.
+2026-11-26T02:21:43.311118+00:00 exit=0
+2026-11-26T02:21:43.311714+00:00 lake build Quadric.Five.Resources.Cert20 Quadric.Five.Resources.Cert21
+⚠ [780/789] Replayed Quadric.Five.Forms
+warning: .\.\.\.\Quadric\Five\Forms.lean:50:55: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [786/789] Replayed Quadric.Five.FastRows
+warning: .\.\.\.\Quadric\Five\FastRows.lean:55:64: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [787/789] Built Quadric.Five.Resources.Cert20
+✔ [789/789] Built Quadric.Five.Resources.Cert21
+Build completed successfully.
+2026-11-26T02:28:20.318683+00:00 exit=0
+2026-11-26T02:28:20.318683+00:00 lake build Quadric.Five.Resources.Cert22 Quadric.Five.Resources.Cert23
+⚠ [777/789] Replayed Quadric.Five.Forms
+warning: .\.\.\.\Quadric\Five\Forms.lean:50:55: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [786/789] Replayed Quadric.Five.FastRows
+warning: .\.\.\.\Quadric\Five\FastRows.lean:55:64: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [788/789] Built Quadric.Five.Resources.Cert23
+✔ [789/789] Built Quadric.Five.Resources.Cert22
+Build completed successfully.
+2026-11-26T02:34:52.894023+00:00 exit=0
+2026-11-26T02:34:52.894023+00:00 lake build Quadric.Five.Resources.Cert24 Quadric.Five.Resources.Cert25
+⚠ [776/789] Replayed Quadric.Five.Forms
+warning: .\.\.\.\Quadric\Five\Forms.lean:50:55: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [786/789] Replayed Quadric.Five.FastRows
+warning: .\.\.\.\Quadric\Five\FastRows.lean:55:64: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [788/789] Built Quadric.Five.Resources.Cert25
+✔ [789/789] Built Quadric.Five.Resources.Cert24
+Build completed successfully.
+2026-11-26T02:53:26.406248+00:00 exit=0
+2026-11-26T02:53:26.406248+00:00 lake build Quadric.Five.Resources.Cert26 Quadric.Five.Resources.Cert27
+⚠ [782/787] Replayed Quadric.Five.Forms
+warning: .\.\.\.\Quadric\Five\Forms.lean:50:55: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [786/787] Built Quadric.Five.Resources.Cert27
+✔ [787/787] Built Quadric.Five.Resources.Cert26
+Build completed successfully.
+2026-11-26T03:25:16.968128+00:00 exit=0
+2026-11-26T03:25:16.968128+00:00 lake build Quadric.Five.Resources.Cert28 Quadric.Five.Resources.Cert29
+⚠ [781/787] Replayed Quadric.Five.Forms
+warning: .\.\.\.\Quadric\Five\Forms.lean:50:55: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [786/787] Built Quadric.Five.Resources.Cert29
+✔ [787/787] Built Quadric.Five.Resources.Cert28
+Build completed successfully.
+2026-11-26T03:35:09.184985+00:00 exit=0
+2026-11-26T03:35:09.184985+00:00 lake build Quadric.Five.Resources.Cert30 Quadric.Five.Resources.Cert31
+⚠ [780/787] Replayed Quadric.Five.Forms
+warning: .\.\.\.\Quadric\Five\Forms.lean:50:55: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [786/787] Built Quadric.Five.Resources.Cert31
+✔ [787/787] Built Quadric.Five.Resources.Cert30
+Build completed successfully.
+2026-11-26T03:45:58.772738+00:00 exit=0
+2026-11-26T03:45:58.772738+00:00 lake build Quadric.Five.Resources.Cert32 Quadric.Five.Resources.Cert33
+⚠ [778/787] Replayed Quadric.Five.Forms
+warning: .\.\.\.\Quadric\Five\Forms.lean:50:55: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [786/787] Built Quadric.Five.Resources.Cert33
+✔ [787/787] Built Quadric.Five.Resources.Cert32
+Build completed successfully.
+2026-11-26T03:56:59.177609+00:00 exit=0
+2026-11-26T03:56:59.177609+00:00 lake build Quadric.Five.Resources.Cert34 Quadric.Five.Resources.Cert35
+⚠ [777/787] Replayed Quadric.Five.Forms
+warning: .\.\.\.\Quadric\Five\Forms.lean:50:55: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [786/787] Built Quadric.Five.Resources.Cert35
+✔ [787/787] Built Quadric.Five.Resources.Cert34
+Build completed successfully.
+2026-11-26T04:07:24.823951+00:00 exit=0
+2026-11-26T04:07:24.823951+00:00 lake build Quadric.Five.Resources.Cert36 Quadric.Five.Resources.Cert37
+⚠ [780/789] Replayed Quadric.Five.Forms
+warning: .\.\.\.\Quadric\Five\Forms.lean:50:55: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [786/789] Replayed Quadric.Five.FastRows
+warning: .\.\.\.\Quadric\Five\FastRows.lean:55:64: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [787/789] Built Quadric.Five.Resources.Cert36
+✔ [789/789] Built Quadric.Five.Resources.Cert37
+Build completed successfully.
+2026-11-26T04:16:54.887037+00:00 exit=0
+2026-11-26T04:16:54.887037+00:00 lake build Quadric.Five.Resources.Cert38 Quadric.Five.Resources.Cert39
+⚠ [780/787] Replayed Quadric.Five.Forms
+warning: .\.\.\.\Quadric\Five\Forms.lean:50:55: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [786/787] Built Quadric.Five.Resources.Cert39
+✔ [787/787] Built Quadric.Five.Resources.Cert38
+Build completed successfully.
+2026-11-26T04:24:57.732205+00:00 exit=0
+2026-11-26T04:24:57.732205+00:00 lake build Quadric.Five.Resources.Cert40 Quadric.Five.Resources.Cert41
+⚠ [780/787] Replayed Quadric.Five.Forms
+warning: .\.\.\.\Quadric\Five\Forms.lean:50:55: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [786/787] Built Quadric.Five.Resources.Cert41
+✔ [787/787] Built Quadric.Five.Resources.Cert40
+Build completed successfully.
+2026-11-26T04:31:29.776825+00:00 exit=0
