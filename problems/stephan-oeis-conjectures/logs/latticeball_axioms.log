@@ -1,0 +1,8 @@
+'LatticeBall.mem_ballPoints' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LatticeBall.card_ballPoints_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LatticeBall.inv_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LatticeBall.inv_double' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LatticeBall.inv_two_pow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LatticeBall.A055414_mod_sixteen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LatticeBall.A055410_mod_eight' depends on axioms: [propext, Classical.choice, Quot.sound]
+EXIT 0  (21s)

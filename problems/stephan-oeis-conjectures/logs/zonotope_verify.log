@@ -1,0 +1,13 @@
+n=3 consistent graphs=8 flips=12 formula=12 OEIS=12 classes_ok=True OK
+n=4 consistent graphs=24 flips=36 formula=36 OEIS=36 classes_ok=True OK
+n=5 consistent graphs=62 flips=100 formula=100 OEIS=100 classes_ok=True OK
+n=6 consistent graphs=148 flips=264 formula=264 OEIS=264 classes_ok=True OK
+n=7 consistent graphs=338 flips=672 formula=672 OEIS=672 classes_ok=True OK
+n=8 consistent graphs=752 flips=1664 formula=1664 OEIS=1664 classes_ok=True OK
+n=9 consistent graphs=1646 flips=4032 formula=4032 OEIS=4032 classes_ok=True OK
+n=10 consistent graphs=3564 flips=9600 formula=9600 OEIS=9600 classes_ok=True OK
+n=11 consistent graphs=7658 flips=22528 formula=22528 OEIS=22528 classes_ok=True OK
+n=12 consistent graphs=16360 flips=52224 formula=52224 OEIS=52224 classes_ok=True OK
+n=13 consistent graphs=34790 flips=119808 formula=119808 OEIS=None classes_ok=True OK
+n=14 consistent graphs=73700 flips=272384 formula=272384 OEIS=None classes_ok=True OK
+ALL OK
