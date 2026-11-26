@@ -1,0 +1,59 @@
+name: Verify Pauli quadric proofs
+
+on:
+  pull_request:
+    paths:
+      - 'problems/pauli-quadric-contextuality/**'
+      - '.github/workflows/verify-pauli-quadrics.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'problems/pauli-quadric-contextuality/**'
+      - '.github/workflows/verify-pauli-quadrics.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+defaults:
+  run:
+    working-directory: problems/pauli-quadric-contextuality
+
+jobs:
+  evidence:
+    name: Check replayed inputs and finite geometry
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check the recorded proof inputs and verification evidence
+        run: |
+          sha256sum --check --strict --quiet VERIFIED.sha256
+          sha256sum --check --strict --quiet EVIDENCE.sha256
+      - name: Reconstruct the witnesses and compare the complete four-qubit tables
+        shell: bash
+        run: |
+          output="$RUNNER_TEMP/quadric-tables"
+          python3 -B tests/check_quadric.py --output-dir "$output"
+          for name in four-states.tsv.gz four-configurations.json.gz; do
+            cmp <(gzip -dc "logs/$name") <(gzip -dc "$output/$name")
+          done
+
+  lean:
+    name: Build four-qubit classification and five-qubit witness
+    runs-on: ubuntu-latest
+    timeout-minutes: 75
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install elan
+        run: |
+          curl --fail --location --retry 3 https://raw.githubusercontent.com/leanprover/elan/58e8d545e33641f66dbcbd22c4283109e71757be/elan-init.sh -o "$RUNNER_TEMP/elan-init.sh"
+          sh "$RUNNER_TEMP/elan-init.sh" -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Fetch pinned imports and build the two targets
+        working-directory: problems/pauli-quadric-contextuality/lean
+        shell: bash
+        run: |
+          mapfile -t imports < <(awk '/^import Mathlib\./ {print $2}' Quadric/*.lean Quadric/Five/Witness.lean | sort -u)
+          lake exe cache get "${imports[@]}"
+          lake build Quadric.ClaimB Quadric.Five.Witness

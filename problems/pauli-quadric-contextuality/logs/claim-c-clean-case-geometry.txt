@@ -1,0 +1,1099 @@
+2026-11-26T02:44:10.467011+00:00 lake build Quadric.Five.Resources.CaseForms00
+⚠ [726/734] Replayed Quadric.Five.Packing
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:41: 'intro i hi' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:53: 'have := hf _ hi' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:70: 'omega' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:41: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:53: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:70: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [736/741] Replayed Quadric.Five.OneBlock
+warning: .\.\.\.\Quadric\Five\OneBlock.lean:61:12: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [785/787] Replayed Quadric.Five.Forms
+warning: .\.\.\.\Quadric\Five\Forms.lean:50:55: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2083/2100] Replayed Quadric.Pauli
+warning: .\.\.\.\Quadric\Pauli.lean:30:49: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2086/2101] Replayed Quadric.Counts
+warning: .\.\.\.\Quadric\Counts.lean:51:49: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2098/2111] Replayed Quadric.Five.Covers
+warning: .\.\.\.\Quadric\Five\Covers.lean:60:51: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: .\.\.\.\Quadric\Five\Covers.lean:61:42: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2234/2255] Replayed Quadric.Gates
+warning: .\.\.\.\Quadric\Gates.lean:49:33: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Gates.lean:49:33: 'nlinarith' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [2237/2259] Replayed Quadric.Spectral
+warning: .\.\.\.\Quadric\Spectral.lean:23:14: try 'simp' instead of 'simpa'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [2251/2259] Replayed Quadric.Five.Models
+warning: .\.\.\.\Quadric\Five\Models.lean:57:61: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2252/2259] Replayed Quadric.Five.Transport
+warning: .\.\.\.\Quadric\Five\Transport.lean:50:38: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:100:47: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:75: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:87: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:75: 'abel_nf' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:87: 'simp' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [2255/2259] Replayed Quadric.Five.Tagged
+warning: .\.\.\.\Quadric\Five\Tagged.lean:94:31: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [2258/2259] Built Quadric.Five.BlockGeometry
+✔ [2259/2259] Built Quadric.Five.Resources.CaseForms00
+Build completed successfully.
+2026-11-26T03:07:32.677744+00:00 exit=0
+2026-11-26T03:07:32.677744+00:00 lake build Quadric.Five.Resources.CaseForms01
+⚠ [726/734] Replayed Quadric.Five.Packing
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:41: 'intro i hi' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:53: 'have := hf _ hi' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:70: 'omega' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:41: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:53: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:70: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [733/741] Replayed Quadric.Five.OneBlock
+warning: .\.\.\.\Quadric\Five\OneBlock.lean:61:12: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [782/788] Replayed Quadric.Five.Forms
+warning: .\.\.\.\Quadric\Five\Forms.lean:50:55: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2083/2094] Replayed Quadric.Pauli
+warning: .\.\.\.\Quadric\Pauli.lean:30:49: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2085/2100] Replayed Quadric.Counts
+warning: .\.\.\.\Quadric\Counts.lean:51:49: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2098/2107] Replayed Quadric.Five.Covers
+warning: .\.\.\.\Quadric\Five\Covers.lean:60:51: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: .\.\.\.\Quadric\Five\Covers.lean:61:42: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2232/2248] Replayed Quadric.Gates
+warning: .\.\.\.\Quadric\Gates.lean:49:33: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Gates.lean:49:33: 'nlinarith' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [2238/2259] Replayed Quadric.Spectral
+warning: .\.\.\.\Quadric\Spectral.lean:23:14: try 'simp' instead of 'simpa'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [2252/2259] Replayed Quadric.Five.Models
+warning: .\.\.\.\Quadric\Five\Models.lean:57:61: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2253/2259] Replayed Quadric.Five.Transport
+warning: .\.\.\.\Quadric\Five\Transport.lean:50:38: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:100:47: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:75: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:87: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:75: 'abel_nf' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:87: 'simp' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [2255/2259] Replayed Quadric.Five.Tagged
+warning: .\.\.\.\Quadric\Five\Tagged.lean:94:31: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [2259/2259] Built Quadric.Five.Resources.CaseForms01
+Build completed successfully.
+2026-11-26T03:22:43.108184+00:00 exit=0
+2026-11-26T03:22:43.108759+00:00 lake build Quadric.Five.Resources.CaseForms02
+⚠ [726/734] Replayed Quadric.Five.Packing
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:41: 'intro i hi' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:53: 'have := hf _ hi' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:70: 'omega' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:41: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:53: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:70: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [733/741] Replayed Quadric.Five.OneBlock
+warning: .\.\.\.\Quadric\Five\OneBlock.lean:61:12: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [784/792] Replayed Quadric.Five.Forms
+warning: .\.\.\.\Quadric\Five\Forms.lean:50:55: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2083/2101] Replayed Quadric.Pauli
+warning: .\.\.\.\Quadric\Pauli.lean:30:49: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2086/2101] Replayed Quadric.Counts
+warning: .\.\.\.\Quadric\Counts.lean:51:49: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2099/2111] Replayed Quadric.Five.Covers
+warning: .\.\.\.\Quadric\Five\Covers.lean:60:51: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: .\.\.\.\Quadric\Five\Covers.lean:61:42: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2232/2248] Replayed Quadric.Gates
+warning: .\.\.\.\Quadric\Gates.lean:49:33: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Gates.lean:49:33: 'nlinarith' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [2236/2259] Replayed Quadric.Spectral
+warning: .\.\.\.\Quadric\Spectral.lean:23:14: try 'simp' instead of 'simpa'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [2249/2259] Replayed Quadric.Five.Models
+warning: .\.\.\.\Quadric\Five\Models.lean:57:61: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2250/2259] Replayed Quadric.Five.Transport
+warning: .\.\.\.\Quadric\Five\Transport.lean:50:38: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:100:47: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:75: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:87: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:75: 'abel_nf' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:87: 'simp' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [2255/2259] Replayed Quadric.Five.Tagged
+warning: .\.\.\.\Quadric\Five\Tagged.lean:94:31: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [2259/2259] Built Quadric.Five.Resources.CaseForms02
+Build completed successfully.
+2026-11-26T03:27:01.362382+00:00 exit=0
+2026-11-26T03:27:01.362382+00:00 lake build Quadric.Five.Resources.CaseForms03
+⚠ [726/734] Replayed Quadric.Five.Packing
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:41: 'intro i hi' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:53: 'have := hf _ hi' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:70: 'omega' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:41: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:53: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:70: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [733/742] Replayed Quadric.Five.OneBlock
+warning: .\.\.\.\Quadric\Five\OneBlock.lean:61:12: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [784/788] Replayed Quadric.Five.Forms
+warning: .\.\.\.\Quadric\Five\Forms.lean:50:55: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2083/2097] Replayed Quadric.Pauli
+warning: .\.\.\.\Quadric\Pauli.lean:30:49: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2085/2101] Replayed Quadric.Counts
+warning: .\.\.\.\Quadric\Counts.lean:51:49: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2096/2106] Replayed Quadric.Five.Covers
+warning: .\.\.\.\Quadric\Five\Covers.lean:60:51: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: .\.\.\.\Quadric\Five\Covers.lean:61:42: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2234/2255] Replayed Quadric.Gates
+warning: .\.\.\.\Quadric\Gates.lean:49:33: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Gates.lean:49:33: 'nlinarith' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [2237/2259] Replayed Quadric.Spectral
+warning: .\.\.\.\Quadric\Spectral.lean:23:14: try 'simp' instead of 'simpa'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [2252/2259] Replayed Quadric.Five.Models
+warning: .\.\.\.\Quadric\Five\Models.lean:57:61: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2253/2259] Replayed Quadric.Five.Transport
+warning: .\.\.\.\Quadric\Five\Transport.lean:50:38: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:100:47: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:75: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:87: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:75: 'abel_nf' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:87: 'simp' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [2255/2259] Replayed Quadric.Five.Tagged
+warning: .\.\.\.\Quadric\Five\Tagged.lean:94:31: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [2259/2259] Built Quadric.Five.Resources.CaseForms03
+Build completed successfully.
+2026-11-26T03:31:08.065376+00:00 exit=0
+2026-11-26T03:31:08.066942+00:00 lake build Quadric.Five.Resources.CaseForms04
+⚠ [726/737] Replayed Quadric.Five.Packing
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:41: 'intro i hi' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:53: 'have := hf _ hi' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:70: 'omega' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:41: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:53: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:70: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [732/742] Replayed Quadric.Five.OneBlock
+warning: .\.\.\.\Quadric\Five\OneBlock.lean:61:12: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [782/787] Replayed Quadric.Five.Forms
+warning: .\.\.\.\Quadric\Five\Forms.lean:50:55: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2083/2100] Replayed Quadric.Pauli
+warning: .\.\.\.\Quadric\Pauli.lean:30:49: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2084/2100] Replayed Quadric.Counts
+warning: .\.\.\.\Quadric\Counts.lean:51:49: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2095/2106] Replayed Quadric.Five.Covers
+warning: .\.\.\.\Quadric\Five\Covers.lean:60:51: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: .\.\.\.\Quadric\Five\Covers.lean:61:42: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2234/2255] Replayed Quadric.Gates
+warning: .\.\.\.\Quadric\Gates.lean:49:33: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Gates.lean:49:33: 'nlinarith' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [2237/2259] Replayed Quadric.Spectral
+warning: .\.\.\.\Quadric\Spectral.lean:23:14: try 'simp' instead of 'simpa'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [2252/2259] Replayed Quadric.Five.Models
+warning: .\.\.\.\Quadric\Five\Models.lean:57:61: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2253/2259] Replayed Quadric.Five.Transport
+warning: .\.\.\.\Quadric\Five\Transport.lean:50:38: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:100:47: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:75: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:87: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:75: 'abel_nf' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:87: 'simp' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [2255/2259] Replayed Quadric.Five.Tagged
+warning: .\.\.\.\Quadric\Five\Tagged.lean:94:31: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [2259/2259] Built Quadric.Five.Resources.CaseForms04
+Build completed successfully.
+2026-11-26T03:35:11.251060+00:00 exit=0
+2026-11-26T03:35:11.251060+00:00 lake build Quadric.Five.Resources.CaseForms05
+⚠ [726/737] Replayed Quadric.Five.Packing
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:41: 'intro i hi' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:53: 'have := hf _ hi' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:70: 'omega' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:41: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:53: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:70: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [734/742] Replayed Quadric.Five.OneBlock
+warning: .\.\.\.\Quadric\Five\OneBlock.lean:61:12: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [785/792] Replayed Quadric.Five.Forms
+warning: .\.\.\.\Quadric\Five\Forms.lean:50:55: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2083/2101] Replayed Quadric.Pauli
+warning: .\.\.\.\Quadric\Pauli.lean:30:49: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2084/2101] Replayed Quadric.Counts
+warning: .\.\.\.\Quadric\Counts.lean:51:49: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2095/2106] Replayed Quadric.Five.Covers
+warning: .\.\.\.\Quadric\Five\Covers.lean:60:51: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: .\.\.\.\Quadric\Five\Covers.lean:61:42: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2235/2259] Replayed Quadric.Gates
+warning: .\.\.\.\Quadric\Gates.lean:49:33: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Gates.lean:49:33: 'nlinarith' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [2238/2259] Replayed Quadric.Spectral
+warning: .\.\.\.\Quadric\Spectral.lean:23:14: try 'simp' instead of 'simpa'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [2252/2259] Replayed Quadric.Five.Models
+warning: .\.\.\.\Quadric\Five\Models.lean:57:61: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2253/2259] Replayed Quadric.Five.Transport
+warning: .\.\.\.\Quadric\Five\Transport.lean:50:38: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:100:47: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:75: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:87: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:75: 'abel_nf' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:87: 'simp' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [2255/2259] Replayed Quadric.Five.Tagged
+warning: .\.\.\.\Quadric\Five\Tagged.lean:94:31: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [2259/2259] Built Quadric.Five.Resources.CaseForms05
+Build completed successfully.
+2026-11-26T03:39:12.348048+00:00 exit=0
+2026-11-26T03:39:12.349062+00:00 lake build Quadric.Five.Resources.CaseForms06
+⚠ [726/736] Replayed Quadric.Five.Packing
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:41: 'intro i hi' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:53: 'have := hf _ hi' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:70: 'omega' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:41: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:53: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:70: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [731/741] Replayed Quadric.Five.OneBlock
+warning: .\.\.\.\Quadric\Five\OneBlock.lean:61:12: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [785/792] Replayed Quadric.Five.Forms
+warning: .\.\.\.\Quadric\Five\Forms.lean:50:55: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2083/2100] Replayed Quadric.Pauli
+warning: .\.\.\.\Quadric\Pauli.lean:30:49: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2084/2100] Replayed Quadric.Counts
+warning: .\.\.\.\Quadric\Counts.lean:51:49: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2098/2107] Replayed Quadric.Five.Covers
+warning: .\.\.\.\Quadric\Five\Covers.lean:60:51: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: .\.\.\.\Quadric\Five\Covers.lean:61:42: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2233/2255] Replayed Quadric.Gates
+warning: .\.\.\.\Quadric\Gates.lean:49:33: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Gates.lean:49:33: 'nlinarith' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [2238/2259] Replayed Quadric.Spectral
+warning: .\.\.\.\Quadric\Spectral.lean:23:14: try 'simp' instead of 'simpa'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [2252/2259] Replayed Quadric.Five.Models
+warning: .\.\.\.\Quadric\Five\Models.lean:57:61: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2253/2259] Replayed Quadric.Five.Transport
+warning: .\.\.\.\Quadric\Five\Transport.lean:50:38: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:100:47: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:75: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:87: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:75: 'abel_nf' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:87: 'simp' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [2255/2259] Replayed Quadric.Five.Tagged
+warning: .\.\.\.\Quadric\Five\Tagged.lean:94:31: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [2259/2259] Built Quadric.Five.Resources.CaseForms06
+Build completed successfully.
+2026-11-26T03:43:55.946836+00:00 exit=0
+2026-11-26T03:43:55.952146+00:00 lake build Quadric.Five.Resources.CaseForms07
+⚠ [726/736] Replayed Quadric.Five.Packing
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:41: 'intro i hi' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:53: 'have := hf _ hi' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:70: 'omega' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:41: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:53: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:70: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [733/741] Replayed Quadric.Five.OneBlock
+warning: .\.\.\.\Quadric\Five\OneBlock.lean:61:12: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [784/788] Replayed Quadric.Five.Forms
+warning: .\.\.\.\Quadric\Five\Forms.lean:50:55: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2083/2100] Replayed Quadric.Pauli
+warning: .\.\.\.\Quadric\Pauli.lean:30:49: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2086/2101] Replayed Quadric.Counts
+warning: .\.\.\.\Quadric\Counts.lean:51:49: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2100/2111] Replayed Quadric.Five.Covers
+warning: .\.\.\.\Quadric\Five\Covers.lean:60:51: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: .\.\.\.\Quadric\Five\Covers.lean:61:42: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2234/2255] Replayed Quadric.Gates
+warning: .\.\.\.\Quadric\Gates.lean:49:33: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Gates.lean:49:33: 'nlinarith' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [2237/2259] Replayed Quadric.Spectral
+warning: .\.\.\.\Quadric\Spectral.lean:23:14: try 'simp' instead of 'simpa'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [2252/2259] Replayed Quadric.Five.Models
+warning: .\.\.\.\Quadric\Five\Models.lean:57:61: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2253/2259] Replayed Quadric.Five.Transport
+warning: .\.\.\.\Quadric\Five\Transport.lean:50:38: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:100:47: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:75: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:87: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:75: 'abel_nf' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:87: 'simp' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [2255/2259] Replayed Quadric.Five.Tagged
+warning: .\.\.\.\Quadric\Five\Tagged.lean:94:31: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [2259/2259] Built Quadric.Five.Resources.CaseForms07
+Build completed successfully.
+2026-11-26T03:48:56.809111+00:00 exit=0
+2026-11-26T03:48:56.809111+00:00 lake build Quadric.Five.Resources.CaseForms08
+⚠ [726/740] Replayed Quadric.Five.Packing
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:41: 'intro i hi' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:53: 'have := hf _ hi' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:70: 'omega' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:41: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:53: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:70: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [733/742] Replayed Quadric.Five.OneBlock
+warning: .\.\.\.\Quadric\Five\OneBlock.lean:61:12: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [782/787] Replayed Quadric.Five.Forms
+warning: .\.\.\.\Quadric\Five\Forms.lean:50:55: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2083/2097] Replayed Quadric.Pauli
+warning: .\.\.\.\Quadric\Pauli.lean:30:49: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2085/2101] Replayed Quadric.Counts
+warning: .\.\.\.\Quadric\Counts.lean:51:49: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2096/2107] Replayed Quadric.Five.Covers
+warning: .\.\.\.\Quadric\Five\Covers.lean:60:51: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: .\.\.\.\Quadric\Five\Covers.lean:61:42: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2231/2248] Replayed Quadric.Gates
+warning: .\.\.\.\Quadric\Gates.lean:49:33: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Gates.lean:49:33: 'nlinarith' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [2238/2259] Replayed Quadric.Spectral
+warning: .\.\.\.\Quadric\Spectral.lean:23:14: try 'simp' instead of 'simpa'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [2252/2259] Replayed Quadric.Five.Models
+warning: .\.\.\.\Quadric\Five\Models.lean:57:61: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2253/2259] Replayed Quadric.Five.Transport
+warning: .\.\.\.\Quadric\Five\Transport.lean:50:38: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:100:47: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:75: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:87: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:75: 'abel_nf' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:87: 'simp' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [2255/2259] Replayed Quadric.Five.Tagged
+warning: .\.\.\.\Quadric\Five\Tagged.lean:94:31: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [2259/2259] Built Quadric.Five.Resources.CaseForms08
+Build completed successfully.
+2026-11-26T03:53:32.965399+00:00 exit=0
+2026-11-26T03:53:32.965399+00:00 lake build Quadric.Five.Resources.CaseForms09
+⚠ [726/734] Replayed Quadric.Five.Packing
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:41: 'intro i hi' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:53: 'have := hf _ hi' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:70: 'omega' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:41: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:53: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:70: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [730/741] Replayed Quadric.Five.OneBlock
+warning: .\.\.\.\Quadric\Five\OneBlock.lean:61:12: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [784/792] Replayed Quadric.Five.Forms
+warning: .\.\.\.\Quadric\Five\Forms.lean:50:55: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2083/2094] Replayed Quadric.Pauli
+warning: .\.\.\.\Quadric\Pauli.lean:30:49: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2084/2101] Replayed Quadric.Counts
+warning: .\.\.\.\Quadric\Counts.lean:51:49: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2096/2107] Replayed Quadric.Five.Covers
+warning: .\.\.\.\Quadric\Five\Covers.lean:60:51: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: .\.\.\.\Quadric\Five\Covers.lean:61:42: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2235/2259] Replayed Quadric.Spectral
+warning: .\.\.\.\Quadric\Spectral.lean:23:14: try 'simp' instead of 'simpa'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [2237/2259] Replayed Quadric.Gates
+warning: .\.\.\.\Quadric\Gates.lean:49:33: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Gates.lean:49:33: 'nlinarith' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [2252/2259] Replayed Quadric.Five.Models
+warning: .\.\.\.\Quadric\Five\Models.lean:57:61: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2253/2259] Replayed Quadric.Five.Transport
+warning: .\.\.\.\Quadric\Five\Transport.lean:50:38: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:100:47: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:75: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:87: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:75: 'abel_nf' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:87: 'simp' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [2255/2259] Replayed Quadric.Five.Tagged
+warning: .\.\.\.\Quadric\Five\Tagged.lean:94:31: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [2259/2259] Built Quadric.Five.Resources.CaseForms09
+Build completed successfully.
+2026-11-26T03:57:49.433698+00:00 exit=0
+2026-11-26T03:57:49.433698+00:00 lake build Quadric.Five.Resources.CaseForms10
+⚠ [726/736] Replayed Quadric.Five.Packing
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:41: 'intro i hi' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:53: 'have := hf _ hi' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:70: 'omega' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:41: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:53: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:70: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [734/742] Replayed Quadric.Five.OneBlock
+warning: .\.\.\.\Quadric\Five\OneBlock.lean:61:12: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [784/792] Replayed Quadric.Five.Forms
+warning: .\.\.\.\Quadric\Five\Forms.lean:50:55: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2084/2101] Replayed Quadric.Pauli
+warning: .\.\.\.\Quadric\Pauli.lean:30:49: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2085/2101] Replayed Quadric.Counts
+warning: .\.\.\.\Quadric\Counts.lean:51:49: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2097/2107] Replayed Quadric.Five.Covers
+warning: .\.\.\.\Quadric\Five\Covers.lean:60:51: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: .\.\.\.\Quadric\Five\Covers.lean:61:42: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2235/2259] Replayed Quadric.Gates
+warning: .\.\.\.\Quadric\Gates.lean:49:33: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Gates.lean:49:33: 'nlinarith' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [2238/2259] Replayed Quadric.Spectral
+warning: .\.\.\.\Quadric\Spectral.lean:23:14: try 'simp' instead of 'simpa'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [2252/2259] Replayed Quadric.Five.Models
+warning: .\.\.\.\Quadric\Five\Models.lean:57:61: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2253/2259] Replayed Quadric.Five.Transport
+warning: .\.\.\.\Quadric\Five\Transport.lean:50:38: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:100:47: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:75: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:87: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:75: 'abel_nf' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:87: 'simp' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [2255/2259] Replayed Quadric.Five.Tagged
+warning: .\.\.\.\Quadric\Five\Tagged.lean:94:31: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [2259/2259] Built Quadric.Five.Resources.CaseForms10
+Build completed successfully.
+2026-11-26T04:02:17.984877+00:00 exit=0
+2026-11-26T04:02:17.984877+00:00 lake build Quadric.Five.Resources.CaseForms11
+⚠ [726/737] Replayed Quadric.Five.Packing
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:41: 'intro i hi' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:53: 'have := hf _ hi' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:70: 'omega' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:41: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:53: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:70: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [733/741] Replayed Quadric.Five.OneBlock
+warning: .\.\.\.\Quadric\Five\OneBlock.lean:61:12: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [784/792] Replayed Quadric.Five.Forms
+warning: .\.\.\.\Quadric\Five\Forms.lean:50:55: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2084/2104] Replayed Quadric.Pauli
+warning: .\.\.\.\Quadric\Pauli.lean:30:49: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2085/2104] Replayed Quadric.Counts
+warning: .\.\.\.\Quadric\Counts.lean:51:49: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2097/2111] Replayed Quadric.Five.Covers
+warning: .\.\.\.\Quadric\Five\Covers.lean:60:51: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: .\.\.\.\Quadric\Five\Covers.lean:61:42: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2232/2248] Replayed Quadric.Gates
+warning: .\.\.\.\Quadric\Gates.lean:49:33: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Gates.lean:49:33: 'nlinarith' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [2236/2259] Replayed Quadric.Spectral
+warning: .\.\.\.\Quadric\Spectral.lean:23:14: try 'simp' instead of 'simpa'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [2251/2259] Replayed Quadric.Five.Models
+warning: .\.\.\.\Quadric\Five\Models.lean:57:61: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2252/2259] Replayed Quadric.Five.Transport
+warning: .\.\.\.\Quadric\Five\Transport.lean:50:38: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:100:47: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:75: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:87: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:75: 'abel_nf' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:87: 'simp' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [2255/2259] Replayed Quadric.Five.Tagged
+warning: .\.\.\.\Quadric\Five\Tagged.lean:94:31: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [2259/2259] Built Quadric.Five.Resources.CaseForms11
+Build completed successfully.
+2026-11-26T04:06:22.108258+00:00 exit=0
+2026-11-26T04:06:22.109230+00:00 lake build Quadric.Five.Resources.CaseForms12
+⚠ [726/736] Replayed Quadric.Five.Packing
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:41: 'intro i hi' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:53: 'have := hf _ hi' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:70: 'omega' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:41: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:53: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:70: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [733/741] Replayed Quadric.Five.OneBlock
+warning: .\.\.\.\Quadric\Five\OneBlock.lean:61:12: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [785/792] Replayed Quadric.Five.Forms
+warning: .\.\.\.\Quadric\Five\Forms.lean:50:55: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2083/2101] Replayed Quadric.Pauli
+warning: .\.\.\.\Quadric\Pauli.lean:30:49: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2084/2101] Replayed Quadric.Counts
+warning: .\.\.\.\Quadric\Counts.lean:51:49: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2095/2107] Replayed Quadric.Five.Covers
+warning: .\.\.\.\Quadric\Five\Covers.lean:60:51: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: .\.\.\.\Quadric\Five\Covers.lean:61:42: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2234/2255] Replayed Quadric.Gates
+warning: .\.\.\.\Quadric\Gates.lean:49:33: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Gates.lean:49:33: 'nlinarith' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [2237/2259] Replayed Quadric.Spectral
+warning: .\.\.\.\Quadric\Spectral.lean:23:14: try 'simp' instead of 'simpa'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [2252/2259] Replayed Quadric.Five.Models
+warning: .\.\.\.\Quadric\Five\Models.lean:57:61: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2253/2259] Replayed Quadric.Five.Transport
+warning: .\.\.\.\Quadric\Five\Transport.lean:50:38: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:100:47: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:75: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:87: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:75: 'abel_nf' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:87: 'simp' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [2255/2259] Replayed Quadric.Five.Tagged
+warning: .\.\.\.\Quadric\Five\Tagged.lean:94:31: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [2259/2259] Built Quadric.Five.Resources.CaseForms12
+Build completed successfully.
+2026-11-26T04:09:58.207872+00:00 exit=0
+2026-11-26T04:09:58.207872+00:00 lake build Quadric.Five.Resources.CaseForms13
+⚠ [726/737] Replayed Quadric.Five.Packing
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:41: 'intro i hi' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:53: 'have := hf _ hi' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:70: 'omega' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:41: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:53: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:70: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [732/742] Replayed Quadric.Five.OneBlock
+warning: .\.\.\.\Quadric\Five\OneBlock.lean:61:12: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [784/792] Replayed Quadric.Five.Forms
+warning: .\.\.\.\Quadric\Five\Forms.lean:50:55: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2083/2100] Replayed Quadric.Pauli
+warning: .\.\.\.\Quadric\Pauli.lean:30:49: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2086/2104] Replayed Quadric.Counts
+warning: .\.\.\.\Quadric\Counts.lean:51:49: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2095/2107] Replayed Quadric.Five.Covers
+warning: .\.\.\.\Quadric\Five\Covers.lean:60:51: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: .\.\.\.\Quadric\Five\Covers.lean:61:42: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2234/2255] Replayed Quadric.Gates
+warning: .\.\.\.\Quadric\Gates.lean:49:33: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Gates.lean:49:33: 'nlinarith' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [2237/2259] Replayed Quadric.Spectral
+warning: .\.\.\.\Quadric\Spectral.lean:23:14: try 'simp' instead of 'simpa'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [2252/2259] Replayed Quadric.Five.Models
+warning: .\.\.\.\Quadric\Five\Models.lean:57:61: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2253/2259] Replayed Quadric.Five.Transport
+warning: .\.\.\.\Quadric\Five\Transport.lean:50:38: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:100:47: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:75: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:87: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:75: 'abel_nf' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:87: 'simp' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [2255/2259] Replayed Quadric.Five.Tagged
+warning: .\.\.\.\Quadric\Five\Tagged.lean:94:31: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [2259/2259] Built Quadric.Five.Resources.CaseForms13
+Build completed successfully.
+2026-11-26T04:13:57.951153+00:00 exit=0
+2026-11-26T04:13:57.951153+00:00 lake build Quadric.Five.Resources.CaseForms14
+⚠ [726/736] Replayed Quadric.Five.Packing
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:41: 'intro i hi' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:53: 'have := hf _ hi' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:70: 'omega' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:41: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:53: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:70: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [731/741] Replayed Quadric.Five.OneBlock
+warning: .\.\.\.\Quadric\Five\OneBlock.lean:61:12: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [785/792] Replayed Quadric.Five.Forms
+warning: .\.\.\.\Quadric\Five\Forms.lean:50:55: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2083/2101] Replayed Quadric.Pauli
+warning: .\.\.\.\Quadric\Pauli.lean:30:49: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2084/2101] Replayed Quadric.Counts
+warning: .\.\.\.\Quadric\Counts.lean:51:49: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2098/2111] Replayed Quadric.Five.Covers
+warning: .\.\.\.\Quadric\Five\Covers.lean:60:51: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: .\.\.\.\Quadric\Five\Covers.lean:61:42: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2232/2253] Replayed Quadric.Gates
+warning: .\.\.\.\Quadric\Gates.lean:49:33: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Gates.lean:49:33: 'nlinarith' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [2236/2259] Replayed Quadric.Spectral
+warning: .\.\.\.\Quadric\Spectral.lean:23:14: try 'simp' instead of 'simpa'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [2249/2259] Replayed Quadric.Five.Models
+warning: .\.\.\.\Quadric\Five\Models.lean:57:61: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2250/2259] Replayed Quadric.Five.Transport
+warning: .\.\.\.\Quadric\Five\Transport.lean:50:38: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:100:47: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:75: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:87: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:75: 'abel_nf' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:87: 'simp' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [2254/2259] Replayed Quadric.Five.Tagged
+warning: .\.\.\.\Quadric\Five\Tagged.lean:94:31: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [2259/2259] Built Quadric.Five.Resources.CaseForms14
+Build completed successfully.
+2026-11-26T04:17:37.012089+00:00 exit=0
+2026-11-26T04:17:37.012089+00:00 lake build Quadric.Five.Resources.CaseForms15
+⚠ [726/741] Replayed Quadric.Five.Packing
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:41: 'intro i hi' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:53: 'have := hf _ hi' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:70: 'omega' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:41: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:53: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:70: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [735/744] Replayed Quadric.Five.OneBlock
+warning: .\.\.\.\Quadric\Five\OneBlock.lean:61:12: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [782/792] Replayed Quadric.Five.Forms
+warning: .\.\.\.\Quadric\Five\Forms.lean:50:55: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2084/2101] Replayed Quadric.Pauli
+warning: .\.\.\.\Quadric\Pauli.lean:30:49: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2085/2101] Replayed Quadric.Counts
+warning: .\.\.\.\Quadric\Counts.lean:51:49: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2098/2111] Replayed Quadric.Five.Covers
+warning: .\.\.\.\Quadric\Five\Covers.lean:60:51: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: .\.\.\.\Quadric\Five\Covers.lean:61:42: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2235/2259] Replayed Quadric.Spectral
+warning: .\.\.\.\Quadric\Spectral.lean:23:14: try 'simp' instead of 'simpa'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [2239/2259] Replayed Quadric.Gates
+warning: .\.\.\.\Quadric\Gates.lean:49:33: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Gates.lean:49:33: 'nlinarith' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [2249/2259] Replayed Quadric.Five.Models
+warning: .\.\.\.\Quadric\Five\Models.lean:57:61: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2250/2259] Replayed Quadric.Five.Transport
+warning: .\.\.\.\Quadric\Five\Transport.lean:50:38: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:100:47: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:75: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:87: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:75: 'abel_nf' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:87: 'simp' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [2254/2259] Replayed Quadric.Five.Tagged
+warning: .\.\.\.\Quadric\Five\Tagged.lean:94:31: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [2259/2259] Built Quadric.Five.Resources.CaseForms15
+Build completed successfully.
+2026-11-26T04:21:00.017734+00:00 exit=0
+2026-11-26T04:21:00.017734+00:00 lake build Quadric.Five.Resources.CaseForms16
+⚠ [726/734] Replayed Quadric.Five.Packing
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:41: 'intro i hi' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:53: 'have := hf _ hi' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:70: 'omega' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:41: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:53: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:70: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [730/741] Replayed Quadric.Five.OneBlock
+warning: .\.\.\.\Quadric\Five\OneBlock.lean:61:12: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [780/788] Replayed Quadric.Five.Forms
+warning: .\.\.\.\Quadric\Five\Forms.lean:50:55: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2083/2100] Replayed Quadric.Pauli
+warning: .\.\.\.\Quadric\Pauli.lean:30:49: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2084/2100] Replayed Quadric.Counts
+warning: .\.\.\.\Quadric\Counts.lean:51:49: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2097/2111] Replayed Quadric.Five.Covers
+warning: .\.\.\.\Quadric\Five\Covers.lean:60:51: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: .\.\.\.\Quadric\Five\Covers.lean:61:42: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2234/2255] Replayed Quadric.Gates
+warning: .\.\.\.\Quadric\Gates.lean:49:33: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Gates.lean:49:33: 'nlinarith' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [2237/2259] Replayed Quadric.Spectral
+warning: .\.\.\.\Quadric\Spectral.lean:23:14: try 'simp' instead of 'simpa'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [2246/2259] Replayed Quadric.Five.Models
+warning: .\.\.\.\Quadric\Five\Models.lean:57:61: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2253/2259] Replayed Quadric.Five.Transport
+warning: .\.\.\.\Quadric\Five\Transport.lean:50:38: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:100:47: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:75: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:87: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:75: 'abel_nf' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:87: 'simp' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [2255/2259] Replayed Quadric.Five.Tagged
+warning: .\.\.\.\Quadric\Five\Tagged.lean:94:31: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [2259/2259] Built Quadric.Five.Resources.CaseForms16
+Build completed successfully.
+2026-11-26T04:24:14.289048+00:00 exit=0
+2026-11-26T04:24:14.289048+00:00 lake build Quadric.Five.Resources.CaseForms17
+⚠ [726/736] Replayed Quadric.Five.Packing
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:41: 'intro i hi' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:53: 'have := hf _ hi' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:70: 'omega' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:41: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:53: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Packing.lean:126:70: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [732/742] Replayed Quadric.Five.OneBlock
+warning: .\.\.\.\Quadric\Five\OneBlock.lean:61:12: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [784/792] Replayed Quadric.Five.Forms
+warning: .\.\.\.\Quadric\Five\Forms.lean:50:55: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2083/2100] Replayed Quadric.Pauli
+warning: .\.\.\.\Quadric\Pauli.lean:30:49: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2085/2104] Replayed Quadric.Counts
+warning: .\.\.\.\Quadric\Counts.lean:51:49: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2095/2106] Replayed Quadric.Five.Covers
+warning: .\.\.\.\Quadric\Five\Covers.lean:60:51: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: .\.\.\.\Quadric\Five\Covers.lean:61:42: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2234/2255] Replayed Quadric.Gates
+warning: .\.\.\.\Quadric\Gates.lean:49:33: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Gates.lean:49:33: 'nlinarith' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [2237/2259] Replayed Quadric.Spectral
+warning: .\.\.\.\Quadric\Spectral.lean:23:14: try 'simp' instead of 'simpa'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [2252/2259] Replayed Quadric.Five.Models
+warning: .\.\.\.\Quadric\Five\Models.lean:57:61: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2253/2259] Replayed Quadric.Five.Transport
+warning: .\.\.\.\Quadric\Five\Transport.lean:50:38: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:100:47: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:75: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:87: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:75: 'abel_nf' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: .\.\.\.\Quadric\Five\Transport.lean:168:87: 'simp' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [2255/2259] Replayed Quadric.Five.Tagged
+warning: .\.\.\.\Quadric\Five\Tagged.lean:94:31: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [2259/2259] Built Quadric.Five.Resources.CaseForms17
+Build completed successfully.
+2026-11-26T04:27:35.061006+00:00 exit=0

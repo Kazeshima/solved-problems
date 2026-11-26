@@ -1,0 +1,4 @@
+# The historical replay manifest covers exact source bytes, including mixed line endings.
+lean/** -text
+logs/*.txt -text
+logs/*.tsv -text

@@ -1,0 +1,92 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1.05in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,microtype}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newcommand{\F}{\mathbb F_2}
+\newcommand{\tr}{\operatorname{tr}}
+\title{The classical bias of hyperbolic Pauli line constraints}
+\author{}
+\date{Research audit note, 25 November 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+For the real $n$-qubit Pauli quadric, let $D$ be the minimum number of violated lines and $L$ their total number. With $d=2^n$, the difference $1/2-D/L$ is at most $\sqrt{2(d+2)}/(d+4)$. The cubic spectral floor of Jonah gives this bound directly. We give an elementary proof, a second derivation from his section theorem, and an explicit randomized assignment giving a lower bound of order $d^{-1/2}$ on the same difference. Thus the rate of approach to $1/2$ is sharp in order. The original upper bound on the gap and its limit have an end-to-end Lean proof. We distinguish these results from earlier four- and five-qubit classifications.
+\end{abstract}
+
+\section{The limiting question and its prior answer}
+The revised manuscript of Li, Gupta and Ganesh asks in its fourth open problem for the limit of the violated fraction on higher-rank hyperbolic quadrics \cite{lgg,lggrepo}. Its version on arXiv on 19 October 2026 asks a different higher-rank question. An October preprint of Jonah already bounds the signed excess of satisfied lines by the solution of a cubic moment problem \cite[Thms.~1,6,8]{structure}. We derive the requested limit as a corollary and determine the order of its error. The separate equality question for adjacent hyperbolic and elliptic sections remains.
+
+Let $E=\F^n$, $V=E\oplus E$ and $q(a,b)=a\cdot b$. A point is a nonzero $p=(a,b)$ with $q(p)=0$. A line is an unordered triple $\{p,r,p+r\}$ of points. Write
+\[
+ P(a,b)e_x=(-1)^{b\cdot x}e_{x+a}.
+\]
+Write $E_p=P(p)$. Since $E_p^T=(-1)^{q(p)}E_p$, the quadric labels the traceless symmetric Paulis. For $r=(c,h)$ we have $E_pE_r=(-1)^{b\cdot c}E_{p+r}$. On a line these operators commute, since $a\cdot h+b\cdot c=q(p+r)+q(p)+q(r)=0$. Their product is $\epsilon_\ell I$. Individual changes of Pauli representatives multiply the corresponding assigned signs by the same factors and preserve the violated set. The usual tensor convention uses $Y=iXZ$ and changes the representative by $(-1)^{k/2}$ when $k$ factors carry both an $X$ and a $Z$.
+
+An assignment $s$ chooses one sign at each point. A line is violated when $\epsilon_\ell\prod_{p\in\ell}s_p=-1$. Set $D=\min_s N(s)$, where $N(s)$ counts such lines. The maximum signed bias is $\beta=1-2D/L$.
+\begin{theorem}\label{main}
+For every $n\ge2$,
+\[
+ 0\le \frac12-\frac DL\le \frac{\sqrt{2(d+2)}}{d+4}.
+\]
+Moreover,
+\[
+ \sqrt2 e^{-3/2}\le
+ \liminf_{n\to\infty} \sqrt d\left(\frac12-\frac DL\right)
+ \le\limsup_{n\to\infty} \sqrt d\left(\frac12-\frac DL\right)\le \sqrt2.
+\]
+\end{theorem}
+
+\section{The spectral bound}
+Character orthogonality gives $\sum_{a,b}(-1)^{a\cdot b}=d$. Thus the number of points is $m=(d-1)(d+2)/2$. For a fixed point $p$, sum
+$(1+(-1)^{q(r)})(1+(-1)^{q(r+p)})$ over $r\in V$. The constant contributes $d^2$, the two single characters contribute $2d$, and the product sums to zero by nondegeneracy of the polar form. Dividing by four and removing $r=0,p$ gives $(d-2)(d+4)/4$ partners. Each line has six ordered pairs, so
+\[
+ L=(d-1)(d-2)(d+2)(d+4)/48.
+\]
+Define $A=\sum_{p\in Q}s_pE_p$. Its trace vanishes, and $\tr A^2=dm$ by Pauli orthogonality. A triple in $\tr A^3$ has zero trace unless its labels sum to zero. The three nonzero singular labels then constitute a line. All six permutations contribute the same sign. Hence
+\begin{equation}\label{trace}
+ \tr A^3=6d(L-2N(s)).
+\end{equation}
+This identity also follows from Jonah's operator identity for sets closed under commuting products \cite[Thm.~1]{structure}.
+
+Put $a=\sqrt{(d+2)/2}$ and let $\lambda_i$ be the eigenvalues. Their sum is zero and $\sum\lambda_i^2=d(d-1)a^2$. Cauchy--Schwarz on the coordinates other than $i$ gives $\lambda_i^2\le(d-1)(d(d-1)a^2-\lambda_i^2)$, and thus $\lambda_i\le(d-1)a$. Expanding the sum of the nonnegative terms $((d-1)a-\lambda_i)(\lambda_i+a)^2$ gives
+\begin{equation}\label{floor}
+ \tr A^3\le d(d-1)(d-2)a^3 .
+\end{equation}
+This is the trace-zero cubic inequality of Okumura \cite{okumura}. Substitution in \eqref{trace} gives the first upper bound in Theorem~\ref{main}. Negating all assigned signs exchanges satisfied and violated lines, giving $D\le L/2$. The explicit error tends to zero and gives the limsup.
+
+Jonah's explicit formula is $\mathrm{Spec}_Q=m^{3/2}(d-2)/(6\sqrt{d-1})$ with $L-2D\le\mathrm{Spec}_Q$ \cite[Thm.~6]{structure}. Algebraically it is precisely \eqref{floor}. His earlier section theorem gives another derivation \cite[Thm.~2]{section}. Set $h=d/2$. For an off-point hyperplane the section is a full $(n-1)$-qubit space. The $h(h+1)$ outside points support $L_O=h(h^2-1)(h+2)/4$ outside lines, by subtracting the section's $(h^2-1)(h^2-4)/12$ lines. For fixed section signs, the outside signed excess is $X^T\Lambda X/2$, where the largest eigenvalue of $\Lambda$ equals that of a signed full Pauli sum $A'$ in dimension $h$. Since $\tr A'=0$ and $\tr((A')^2)=h(h^2-1)$, its largest eigenvalue is at most $(h-1)\sqrt{h+1}$. Division by $L_O$ bounds the outside bias by $2\sqrt{h+1}/(h+2)$. The full orthogonal group is transitive on lines and permutes these hyperplanes. Every line occurs equally often outside, so averaging gives the same global bound.
+
+\section{An assignment attaining the order of the error}
+Fix $t>0$ and draw a standard Gaussian vector $G$. Given $G$, choose the signs independently, with conditional means
+\[
+  \mathbb E[s_p\mid G]=\sin\!\left(t G^TE_pG/\sqrt d\right).
+\] The optimum is at least the expected signed bias. Fix a line and denote its first two operators by $P,Q$. Oddness of sine absorbs the line sign into the third operator, giving $R=PQ$.
+
+The four common eigenspaces for $P,Q$ have dimension $d/4$: their projectors are $(I\pm P)(I\pm Q)/4$ and $P,Q,PQ$ have trace zero. Write $U,V,W$ for the three quadratic forms divided by $\sqrt d$. Among the four combinations entering the sine product identity, $U+V+W$ has coefficients $3,-1,-1,-1$ on these spaces. Each of $U+V-W,U-V+W,-U+V+W$ has the opposite multiset. Rotational invariance gives
+\[
+ \mathbb E[\sin(tU)\sin(tV)\sin(tW)]
+ =-\operatorname{Im}\left[
+ (1-6it/\sqrt d)^{-d/8}(1+2it/\sqrt d)^{-3d/8}
+ \right].
+\]
+This uses the characteristic function $(1-2iz)^{-1/2}$ of a squared standard Gaussian. The right side is common to all lines.
+
+For fixed $t$, the logarithm of the bracket is $-3t^2-8it^3/\sqrt d+O_t(d^{-1})$. The real part of the remainder is $O_t(d^{-1})$ and its imaginary part is $O_t(d^{-3/2})$, by Taylor expansion of the two logarithms near one. Consequently
+\[
+ \beta\ \ge\ 8t^3e^{-3t^2}/\sqrt d+O_t(d^{-3/2}).
+\]
+Taking $t=1/\sqrt2$ and dividing by two gives the lower liminf in Theorem~\ref{main}. No assumption on convergence of the rescaled gap is needed.
+
+\section{Equality, physical scope and verification}
+Equality in \eqref{floor} requires one eigenvalue $(d-1)a$ and $d-1$ copies of $-a$. Since $L-2D$ is integral, equality with $d\ge4$ forces $a$ rational and hence integral. Then $(a-1)(a+1)=2^{n-1}$. The two positive powers of two differing by two must be 2 and 4. Thus $n=4$, as also follows from Jonah's more general classification \cite[Thm.~8]{structure}. At $d=16$ the vector $(3,-1,\dots,-1)/\sqrt{24}$ has symmetric Pauli expectations of modulus $1/3$. Its signs give $A=48\psi\psi^T-3I$, hence $D=315$. The 61,440 assignments and 240 configurations of type $DW(5,2)$ were established by Li, Gupta and Ganesh following the heuristic discovery of Muller et al.\ \cite{lgg,muller}. Jonah had announced the flat-state equivalence and a conditional geometric argument before this project \cite{digest}. The principal-minor map from three-qubit Lagrangians is also established \cite{plucker}. A direct coordinate proof of the orbit, counts and incidence correspondence accompanies this audit.
+
+The ideal, state-independent signed correlator averaged over all lines is one for quantum measurements and at most $\beta$ for deterministic noncontextual assignments and their mixtures. These statements concern the full compatible context family with uniform weights. A single-neutron experiment with spin, path and energy has realized a different, three-degree-of-freedom Mermin witness \cite{neutron}. Experimental use of the present family would require calibrated joint measurements and a treatment of compatibility and sampling. The theorem alone gives no experimental detection threshold for an implemented instrument.
+
+The accompanying Lean 4.19.0 project defines the actual Pauli matrices, unordered lines and finite minimum. It checks the first inequality of Theorem~\ref{main}, its limit, and the four-qubit degree. The Gaussian construction is a mathematical proof outside that formal verification. The exact rescaled constant, possible oscillations, and explicit deterministic assignments attaining an optimal leading constant remain to be determined. Priority for the matching-order construction and for the detailed coordinate classification remains unsettled.
+
+\bibliographystyle{plain}
+\bibliography{references}
+\end{document}

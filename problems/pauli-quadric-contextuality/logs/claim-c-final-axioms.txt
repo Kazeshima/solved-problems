@@ -1,0 +1,185 @@
+UTC 2026-11-26T06:04:12.467532+00:00 lake env lean --trust=0 Audit.lean
+Quadric.contextuality_bounds (n : ℕ) (hn : 2 ≤ n) :
+  1 / 2 - √(2 * (Quadric.dim n + 2)) / (Quadric.dim n + 4) ≤ Quadric.fraction n ∧ Quadric.fraction n ≤ 1 / 2
+Quadric.contextuality_limit : Filter.Tendsto Quadric.fraction Filter.atTop (nhds (1 / 2))
+Quadric.Four.degree_four : Quadric.degree 4 = 315
+Quadric.Four.optimal_projector {s : Quadric.Assignment 4} (ho : (Quadric.bad s).card = Quadric.degree 4) :
+  ∃ u, ∑ i, u i ^ 2 = 1 ∧ Quadric.operator s = 48 • Quadric.Four.ray u - 3 • 1
+Quadric.Four.flat_iff_optimal (s : Quadric.Assignment 4) :
+  (Quadric.bad s).card = Quadric.degree 4 ↔
+    ∃ u,
+      ∑ i, u i ^ 2 = 1 ∧ ∀ p ∈ Quadric.points 4, (Quadric.Four.ray u * Quadric.pauli p).trace = Quadric.value (s p) / 3
+Quadric.Dual.points_match : (List.map Quadric.Dual.plucker Quadric.Dual.frames).Perm Quadric.Dual.targetPoints
+Quadric.Dual.pencils_match :
+  (List.map (Quadric.Dual.pencil (List.map (fun f => (f, Quadric.Dual.plucker f)) Quadric.Dual.frames))
+        Quadric.Dual.planes).Perm
+    Quadric.Dual.targetPencils
+Quadric.Dual.plucker_points :
+  (List.map Quadric.Dual.decode (List.map Quadric.Dual.plucker Quadric.Dual.frames)).toFinset = Quadric.points 4
+Quadric.Dual.plucker_pencils :
+  (List.map Quadric.Dual.decodedLine
+        (List.map (Quadric.Dual.pencil (List.map (fun f => (f, Quadric.Dual.plucker f)) Quadric.Dual.frames))
+          Quadric.Dual.planes)).toFinset =
+    Quadric.bad Quadric.Four.mixed
+Quadric.Five.spectral_lower : 6426 ≤ Quadric.degree 5
+'Quadric.hermitian_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Quadric.pauli_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Quadric.context_iff_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Quadric.context_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Quadric.point_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Quadric.line_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Quadric.trace_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Quadric.trace_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Quadric.trace_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Quadric.trace_power' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Quadric.cubic_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Quadric.upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Quadric.contextuality_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Quadric.contextuality_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Quadric.Four.degree_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Quadric.Four.optimal_spectrum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Quadric.Four.optimal_projector' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Quadric.Four.flat_iff_optimal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Quadric.gauge_extends' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Quadric.Four.chart_matrix_update' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Quadric.Four.chart_pencil_violated' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Quadric.Dual.points_match' depends on axioms: [propext]
+'Quadric.Dual.pencils_match' depends on axioms: [propext]
+'Quadric.Dual.plucker_points' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Quadric.Dual.plucker_pencils' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Quadric.Five.spectral_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+Quadric.Clifford.normal {n : ℕ} (self : Quadric.Clifford n) (p : Quadric.Label n) :
+  self.U * Quadric.pauli p * Matrix.transpose self.U = Quadric.chi (self.phase p) • Quadric.pauli (self.perm p)
+Quadric.Four.optimal_iff_canonical_orbit (s : Quadric.Four.Signing) :
+  (Quadric.Four.violations s).card = Quadric.degree 4 ↔ Quadric.Four.InCanonicalOrbit s
+Quadric.Four.every_optimal_assignment (s : Quadric.Assignment 4) (hs : (Quadric.bad s).card = Quadric.degree 4) :
+  ∃ C,
+    (∀ p ∈ Quadric.points 4,
+        Quadric.value (s (C.perm p)) = Quadric.chi (C.phase p) * Quadric.value (Quadric.Four.mixed p)) ∧
+      Quadric.operator s = C.U * Quadric.operator Quadric.Four.mixed * Matrix.transpose C.U ∧
+        Quadric.bad s = Finset.image (Quadric.Four.lineMap C) (Quadric.bad Quadric.Four.mixed)
+Quadric.Four.every_optimum_in_orbit (s : Quadric.Four.Opt) : Quadric.Four.InCanonicalOrbit ↑s
+Quadric.Four.optimal_assignments_count : Fintype.card Quadric.Four.Opt = 61440
+Quadric.Four.optimal_configurations_count : Quadric.Four.configurations.card = 240
+Quadric.Four.DWIso.incident {s : Quadric.Four.Signing} (self : Quadric.Four.DWIso s) (f : Quadric.Four.PolarPoint)
+  (z : Quadric.Four.PolarLine) : ↑(self.point f) ∈ ↑(self.line z) ↔ Quadric.Four.polarIncident f z
+Quadric.Four.every_optimum_DW (s : Quadric.Four.Opt) : Nonempty (Quadric.Four.DWIso ↑s)
+Quadric.Four.classification :
+  (∀ (s : Quadric.Four.Opt), Quadric.Four.InCanonicalOrbit ↑s ∧ Nonempty (Quadric.Four.DWIso ↑s)) ∧
+    Fintype.card Quadric.Four.Opt = 61440 ∧ Quadric.Four.configurations.card = 240
+'Quadric.Four.profiles' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Quadric.Four.heavy_wave' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Quadric.Four.heavy_at_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Quadric.Four.incidence_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Quadric.Four.gauge_fiber_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Quadric.Four.optimal_iff_canonical_orbit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Quadric.Four.every_optimal_assignment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Quadric.Four.every_optimum_in_orbit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Quadric.Four.optimal_assignments_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Quadric.Four.optimal_configurations_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Quadric.Four.every_optimum_DW' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Quadric.Four.classification' depends on axioms: [propext, Classical.choice, Quot.sound]
+Quadric.Five.five_qubit_bounds : 6426 ≤ Quadric.degree 5 ∧ Quadric.degree 5 ≤ 6975
+'Quadric.Five.five_qubit_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+Quadric.Five.witness_count : (Quadric.bad Quadric.Five.mixed).card = 6975
+'Quadric.Five.witness_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+Quadric.Five.degree_ne_6975975 : Quadric.degree 5 ≠ 6975975
+'Quadric.Five.degree_ne_6975975' depends on axioms: [propext, Classical.choice, Quot.sound]
+Quadric.Five.canonical_centres5 : (Quadric.Five.centres 0).card = 496
+'Quadric.Five.canonical_centres5' depends on axioms: [propext, Classical.choice, Quot.sound]
+Quadric.Five.five_from_full_four (h : Quadric.Five.AtLeast (Quadric.Five.allPoints 4) 1575) : 6975 ≤ Quadric.degree 5
+'Quadric.Five.five_from_full_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+Quadric.Five.one_elliptic_suffices (h : Quadric.Five.AtLeast (Quadric.Five.quadric Quadric.Five.ellipticBase) 315) :
+  Quadric.Five.AtLeast (Quadric.Five.allPoints 4) 1575
+'Quadric.Five.one_elliptic_suffices' depends on axioms: [propext, Classical.choice, Quot.sound]
+Quadric.Five.elliptic_reduction
+  (H :
+    ∀ (s : Quadric.Five.Signing 4),
+      (Quadric.Five.faults
+              (Quadric.Five.slice (Quadric.Five.quadric Quadric.Five.ellipticBase) Quadric.Five.ellipticBase
+                Quadric.Five.sectionBase)
+              s).card <
+          558 →
+        1890 ≤ (Quadric.Five.faults (Quadric.Five.quadric Quadric.Five.ellipticBase) s).card) :
+  Quadric.Five.AtLeast (Quadric.Five.quadric Quadric.Five.ellipticBase) 315
+'Quadric.Five.elliptic_reduction' depends on axioms: [propext, Classical.choice, Quot.sound]
+Quadric.Five.exact_of_catalogues
+  (innerValid :
+    (List.flatMap Quadric.Five.Tagged.six Quadric.Five.Small.full3).all (Quadric.Five.Tagged.lineCheck true) = true)
+  (innerUnique :
+    Quadric.Five.Tagged.fresh 0
+        (List.map Quadric.Five.Tagged.key (List.flatMap Quadric.Five.Tagged.six Quadric.Five.Small.full3)) =
+      true)
+  (allValid :
+    (List.flatMap Quadric.Five.Tagged.six Quadric.Five.Tagged.ellipticLines).all (Quadric.Five.Tagged.lineCheck false) =
+      true)
+  (allUnique :
+    Quadric.Five.Tagged.fresh 0
+        (List.map Quadric.Five.Tagged.key (List.flatMap Quadric.Five.Tagged.six Quadric.Five.Tagged.ellipticLines)) =
+      true)
+  (census : Quadric.Five.EllipticCompletions) : Quadric.degree 5 = 6975
+'Quadric.Five.exact_of_catalogues' depends on axioms: [propext, Classical.choice, Quot.sound]
+Quadric.Five.Certificates.certificate_bound (C : Quadric.Five.Certificates.Cert)
+  (hn : Quadric.Five.Certificates.checkNumbers C = true) (s : ℕ → Bool)
+  (hp :
+    0 ≤
+      Quadric.Five.Schur.quad (Quadric.Five.Certificates.matrix C)
+        (List.map (fun i => Quadric.Five.Certificates.sign (s i)) Quadric.Five.Small.vertices)) :
+  315 ≤
+    Quadric.Five.Small.errors Quadric.Five.Small.full3 C.sigma.testBit +
+      Quadric.Five.Certificates.outsideErrors C.sigma s
+'Quadric.Five.Certificates.certificate_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Quadric.Five.Certificates.gram_positive (C : Quadric.Five.Certificates.Cert) (F : Quadric.Five.Certificates.Factor)
+  (hscale : 0 < F.scale) (hc : ∀ i ∈ Quadric.Five.Small.vertices, Quadric.Five.Certificates.rowValid C F i = true)
+  (x : ℕ → ℤ) :
+  0 ≤ Quadric.Five.Schur.quad (Quadric.Five.Certificates.matrix C) (List.map x Quadric.Five.Small.vertices)
+'Quadric.Five.Certificates.gram_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+Quadric.Five.Census.LevelOne.coverage (h l : ℕ) (hh : h < 512) (hl : l < 65536) :
+  Quadric.Five.Census.errorCount Quadric.Five.Census.LevelOne.system h l ≤ 21 ↔
+    l ∈ Quadric.Five.Census.LevelOne.survivors[h]
+'Quadric.Five.Census.LevelOne.coverage' depends on axioms: [propext, Classical.choice, Quot.sound]
+Quadric.Five.Census.LevelOne.lengths :
+  Quadric.Five.Census.LevelOne.survivors.length = 512 ∧
+    (List.map List.length Quadric.Five.Census.LevelOne.survivors).sum = 18752
+'Quadric.Five.Census.LevelOne.lengths' depends on axioms: [propext]
+Quadric.Five.Census.LevelOne.section_census (s : ℕ → Bool) :
+  Quadric.Five.Small.hyperErrors (Quadric.Five.Census.extendBits Quadric.Five.Census.LevelOne.freePoints 0 s) 36 ≤ 21 ↔
+    Quadric.Five.Census.field s 0 16 ∈ Quadric.Five.Census.LevelOne.survivors[Quadric.Five.Census.field s 16 9]
+'Quadric.Five.Census.LevelOne.section_census' depends on axioms: [propext, Classical.choice, Quot.sound]
+Quadric.Five.Small.HyperplaneData.low_section {s : ℕ → Bool}
+  (low : Quadric.Five.Small.errors Quadric.Five.Small.full3 s ≤ 92) :
+  ∃ u ∈ Quadric.Five.Small.hyperplanes, Quadric.Five.Small.hyperErrors s u ≤ 21
+'Quadric.Five.Small.HyperplaneData.low_section' depends on axioms: [propext, Classical.choice, Quot.sound]
+Quadric.Five.Certificates.all_42_certificates {sigma : ℕ} (hs : sigma ∈ Quadric.Five.Certificates.sigmas) :
+  Quadric.Five.Certificates.ProfileBound sigma
+'Quadric.Five.Certificates.all_42_certificates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Quadric.Five.Certificates.distinct_42' does not depend on any axioms
+Quadric.Five.Census.LevelOne.distinct_survivors :
+  (List.map (fun r => r.toFinset.card) Quadric.Five.Census.LevelOne.survivors).sum = 18752
+'Quadric.Five.Census.LevelOne.distinct_survivors' depends on axioms: [propext, Classical.choice, Quot.sound]
+Quadric.Five.Census.distinct_completion_count :
+  (List.map (fun rs => (List.map Quadric.Five.Census.distinctRowCount rs).sum) Quadric.Five.Census.censusRows).sum =
+    34224
+'Quadric.Five.Census.distinct_completion_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+Quadric.Five.hyperplane_profile_count :
+  Quadric.Five.Moves.Data.hProfiles.length = 18 ∧ Quadric.Five.Moves.Data.hProfiles.Nodup
+'Quadric.Five.hyperplane_profile_count' does not depend on any axioms
+Quadric.Five.census_classification (s : ℕ → Bool) (hs : Quadric.Five.Small.errors Quadric.Five.Small.full3 s ≤ 92) :
+  ∃ t,
+    Quadric.Five.Tagged.carrier t ∈ Quadric.Five.Certificates.sigmas ∧
+      Quadric.Five.Small.errors Quadric.Five.Tagged.ellipticLines t =
+          Quadric.Five.Small.errors Quadric.Five.Tagged.ellipticLines s ∧
+        Quadric.Five.Moves.Reach Quadric.Five.Moves.Data.table s t
+'Quadric.Five.census_classification' depends on axioms: [propext, Classical.choice, Quot.sound]
+Quadric.Five.all_low_signatures_in_orbits (s : ℕ → Bool)
+  (hs : Quadric.Five.Small.errors Quadric.Five.Small.full3 s ≤ 92) :
+  ∃ w,
+    (∀ i ∈ w, i < Quadric.Five.Moves.Data.table.length) ∧
+      Quadric.Five.Moves.walk Quadric.Five.Moves.Data.table w (Quadric.Five.Tagged.carrier s) ∈
+        Quadric.Five.Certificates.sigmas
+'Quadric.Five.all_low_signatures_in_orbits' depends on axioms: [propext, Classical.choice, Quot.sound]
+Quadric.Five.every_low_restriction : Quadric.Five.ProfileCoverage
+'Quadric.Five.every_low_restriction' depends on axioms: [propext, Classical.choice, Quot.sound]
+Quadric.Five.degree_five : Quadric.degree 5 = 6975
+'Quadric.Five.degree_five' depends on axioms: [propext, Classical.choice, Quot.sound]
+UTC 2026-11-26T06:05:53.015119+00:00 exit=0
