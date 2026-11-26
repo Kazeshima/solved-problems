@@ -6,7 +6,7 @@
 
 **Conjecture 69.** Matthieu Latapy contributed OEIS A060621 in 2001: the number of flips between the $d$-dimensional tilings of the zonotope $Z(d+3,d)$. Stephan observed in April 2004 that the ten known terms satisfy $a(d)=2^d(d^2+11d+24)/2$, and Colin Barker recorded the matching empirical generating function in 2013. [OEIS A060621](https://oeis.org/A060621) · [Latapy's paper](https://arxiv.org/abs/math/0008022)
 
-**Conjecture 85.** Dominique Foata and Guo-Niu Han introduced minimax trees, and Emanuele Munarini contributed their counting sequence as OEIS A080795 in 2003. OEIS A006154, from Simon Plouffe, counts ordered partitions of an $n$-set into blocks of odd size. Stephan conjectured in April 2004 that $\mathrm{A080795}(2n)=2^n\,\mathrm{A006154}(2n)$. [OEIS A080795](https://oeis.org/A080795) · [OEIS A006154](https://oeis.org/A006154) · [Foata and Han](https://doi.org/10.1006/aama.2001.0740)
+**Conjecture 85.** Dominique Foata and Guo-Niu Han introduced minimax trees, and Emanuele Munarini contributed their counting sequence as OEIS A080795 in 2003. OEIS A006154, from Simon Plouffe, counts ordered partitions of an $n$-set into blocks of odd size. Stephan conjectured in April 2004 that $\mathrm{A080795}(2n)=2^n \mathrm{A006154}(2n)$. [OEIS A080795](https://oeis.org/A080795) · [OEIS A006154](https://oeis.org/A006154) · [Foata and Han](https://doi.org/10.1006/aama.2001.0740)
 
 On 26 November 2026 the OEIS entries still showed both statements as an observation and a conjecture.
 
@@ -15,21 +15,21 @@ On 26 November 2026 the OEIS entries still showed both statements as an observat
 **Proved for every $d\ge0$.** The number of flips is
 
 $$
-a(d)=(d+3)(d+8)\,2^{d-1}=(d^2+11d+24)\,2^{d-1}.
+a(d)=(d+3)(d+8) 2^{d-1}=(d^2+11d+24) 2^{d-1}.
 $$
 
-With $n=d+3$ generators this says that the Hasse diagram of the higher Bruhat order $B(n,n-3)$ has $n(n+5)\,2^{n-4}$ edges. The argument has two parts.
+With $n=d+3$ generators this says that the Hasse diagram of the higher Bruhat order $B(n,n-3)$ has $n(n+5) 2^{n-4}$ edges. The argument has two parts.
 
-**Reduction, cited.** By Ziegler's Theorem 4.1 the flip graph of the fine zonotopal tilings of the cyclic zonotope $Z(n,d)$ is the Hasse diagram of $B(n,d)$, and $B(n,k)$ is the set of consistent families of $(k+1)$-subsets of $[n]$ under single-step inclusion. For $k=n-3$, replacing every $(n-2)$-subset by its complementary pair turns a consistent family into a graph on $[n]$ in which every neighbourhood $N(p)$ is an initial or a final segment of $[n]\setminus\{p\}$. A flip becomes a pair $(G,e)$, where $e$ is a non-edge of $G$ and both $G$ and $G+e$ are graphs of this kind.
+**Reduction, cited.** By Ziegler's Theorem 4.1 the flip graph of the fine zonotopal tilings of the cyclic zonotope $Z(n,d)$ is the Hasse diagram of $B(n,d)$, and $B(n,k)$ is the set of consistent families of $(k+1)$-subsets of $[n]$ under single-step inclusion. For $k=n-3$, replacing every $(n-2)$-subset by its complementary pair turns a consistent family into a graph on $[n]$ in which every neighbourhood $N(p)$ is an initial or a final segment of $[n]\setminus\lbrace p\rbrace$. A flip becomes a pair $(G,e)$, where $e$ is a non-edge of $G$ and both $G$ and $G+e$ are graphs of this kind.
 
-**Count, formalized.** Fix $e=\{i,j\}$ with $i<j$. The flips at $e$ fall into four classes, according to the two possible shapes of $N(i)$ and of $N(j)$, and complementation pairs the classes. Two of them have $\binom{n-2}{j-i-1}$ elements each. The other two have $2^{n-4}$ elements each, or $2^{n-3}$ when $j-i\in\{1,n-1\}$. Both counts come from bijections that delete a vertex whose neighbourhood is forced. Summing over all pairs gives the formula. [Written proof](proof/A060621.txt) · [Chinese write-up](Conjecture69.zh.md)
+**Count, formalized.** Fix $e=\lbrace i,j\rbrace$ with $i<j$. The flips at $e$ fall into four classes, according to the two possible shapes of $N(i)$ and of $N(j)$, and complementation pairs the classes. Two of them have $\binom{n-2}{j-i-1}$ elements each. The other two have $2^{n-4}$ elements each, or $2^{n-3}$ when $j-i\in\lbrace 1,n-1\rbrace$. Both counts come from bijections that delete a vertex whose neighbourhood is forced. Summing over all pairs gives the formula. [Written proof](proof/A060621.txt) · [Chinese write-up](Conjecture69.zh.md)
 
 ```lean
 theorem ZonoFlips.card_flipPairs_eq (d : ℕ) :
     2 * (flipPairs (d + 3)).card = (d ^ 2 + 11 * d + 24) * 2 ^ d
 ```
 
-Here `flipPairs n` is the set of pairs $(G,e)$ on the vertex set $\{0,\dots,n-1\}$ described above. The companion theorem `flipCount_eq` states the count as $n(n+5)\,2^{n-4}$ for $n\ge4$, and `flipCount_values` evaluates the ten terms listed in the OEIS. [Theorem](ZonotopeFlips/Total.lean#L249) · [Definition of the model](ZonotopeFlips/Basic.lean#L244) · [Axiom report](logs/zonotope_axioms.log)
+Here `flipPairs n` is the set of pairs $(G,e)$ on the vertex set $\lbrace 0,\dots,n-1\rbrace$ described above. The companion theorem `flipCount_eq` states the count as $n(n+5) 2^{n-4}$ for $n\ge4$, and `flipCount_values` evaluates the ten terms listed in the OEIS. [Theorem](ZonotopeFlips/Total.lean#L249) · [Definition of the model](ZonotopeFlips/Basic.lean#L244) · [Axiom report](logs/zonotope_axioms.log)
 
 ### Scope
 
@@ -45,10 +45,10 @@ Here `flipPairs n` is the set of pairs $(G,e)$ on the vertex set $\{0,\dots,n-1\
 **Proved for every $n\ge0$.** Write $a(n)$ for A080795 and $b(n)$ for A006154. Then
 
 $$
-a(2n)=2^n\,b(2n).
+a(2n)=2^n b(2n).
 $$
 
-The exponential generating function $A$ of $a$ satisfies $A'=2A^2-1$ with $A(0)=1$, and that of $b$ is $B=1/(1-\sinh x)$. The Riccati equation linearizes, which gives $A=-U'/(2U)$ for $U=\cosh(\sqrt2\,x)-\sqrt2\,\sinh(\sqrt2\,x)$. Adding each series to its image under $x\mapsto-x$ shows that $A(x)+A(-x)$ and $B(\sqrt2\,x)+B(-\sqrt2\,x)$ are both equal to $4/(3-\cosh(2\sqrt2\,x))$. Comparing the coefficients of $x^{2n}$ gives the identity. [Written proof](proof/A080795.txt)
+The exponential generating function $A$ of $a$ satisfies $A'=2A^2-1$ with $A(0)=1$, and that of $b$ is $B=1/(1-\sinh x)$. The Riccati equation linearizes, which gives $A=-U'/(2U)$ for $U=\cosh(\sqrt2 x)-\sqrt2 \sinh(\sqrt2 x)$. Adding each series to its image under $x\mapsto-x$ shows that $A(x)+A(-x)$ and $B(\sqrt2 x)+B(-\sqrt2 x)$ are both equal to $4/(3-\cosh(2\sqrt2 x))$. Comparing the coefficients of $x^{2n}$ gives the identity. [Written proof](proof/A080795.txt)
 
 ```lean
 def a : ℕ → ℕ
@@ -72,9 +72,9 @@ The proof works with formal power series over the reals and uses no analysis bey
 
 [Verification log](logs/minimax_verify.log)
 
-## A further observation: lattice points in balls of $\mathbb Z^8$
+## A further observation: lattice points in balls
 
-Stephan noted in July 2003 that every known term of OEIS A055414, the number of points of $\mathbb Z^8$ of norm at most $n$, is congruent to 1 modulo 16. The entry carries no proof. The statement is a classical consequence of Jacobi's eight-square theorem, so it is not an open problem. The Lean proof here is elementary and more general: every ball of $\mathbb Z^{2^k}$ centred at the origin contains a number of lattice points congruent to 1 modulo $2^{k+1}$. [OEIS A055414](https://oeis.org/A055414)
+Stephan noted in July 2003 that every known term of OEIS A055414, the number of points of $\mathbb{Z}^8$ of norm at most $n$, is congruent to 1 modulo 16. The entry carries no proof. The statement is a classical consequence of Jacobi's eight-square theorem, so it is not an open problem. The Lean proof here is elementary and more general: every ball of $\mathbb{Z}^{2^k}$ centred at the origin contains a number of lattice points congruent to 1 modulo $2^{k+1}$. [OEIS A055414](https://oeis.org/A055414)
 
 ```lean
 theorem LatticeBall.A055414_mod_sixteen (n : ℕ) :
