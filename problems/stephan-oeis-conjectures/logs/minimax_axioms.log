@@ -1,0 +1,15 @@
+a_zero : a 0 = 1
+a_succ : ∀ (n : ℕ), a (n + 1) = 2 * ∑ k ∈ Finset.range (n + 1), n.choose k * a k * a (n - k) - 0 ^ n
+b_zero : b 0 = 1
+b_succ : ∀ (n : ℕ), b (n + 1) = ∑ k ∈ Finset.range (n + 1), if Even k then (n + 1).choose (k + 1) * b (n - k) else 0
+a_values : a 1 = 1 ∧ a 2 = 4 ∧ a 3 = 20 ∧ a 4 = 128 ∧ a 5 = 1024 ∧ a 6 = 9856
+b_values : b 1 = 1 ∧ b 2 = 2 ∧ b 3 = 7 ∧ b 4 = 32 ∧ b 5 = 181 ∧ b 6 = 1232
+a_even : ∀ (n : ℕ), a (2 * n) = 2 ^ n * b (2 * n)
+'MinimaxTrees.a_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MinimaxTrees.b_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MinimaxTrees.a_values' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MinimaxTrees.b_values' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MinimaxTrees.derivative_A' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MinimaxTrees.two_mul_B' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MinimaxTrees.a_even' depends on axioms: [propext, Classical.choice, Quot.sound]
+EXIT 0  (24s)

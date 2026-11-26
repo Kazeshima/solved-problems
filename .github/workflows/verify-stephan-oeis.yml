@@ -1,0 +1,59 @@
+name: Verify Stephan's OEIS conjectures
+
+on:
+  push:
+    paths:
+      - 'problems/stephan-oeis-conjectures/**'
+      - '.github/workflows/verify-stephan-oeis.yml'
+  pull_request:
+    paths:
+      - 'problems/stephan-oeis-conjectures/**'
+      - '.github/workflows/verify-stephan-oeis.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: problems/stephan-oeis-conjectures
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Verify source hashes
+        run: sha256sum -c VERIFIED.sha256
+      - name: Enumerate the model and check the written proof
+        run: |
+          python zonotope/verify_packets.py 7
+          python zonotope/verify_flips.py 12
+          python zonotope/check_proof_claims.py 6
+          python minimax/verify_identity.py 6 400
+      - name: Install elan
+        run: |
+          curl --fail --location --retry 3 https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -o "$RUNNER_TEMP/elan-init.sh"
+          sh "$RUNNER_TEMP/elan-init.sh" -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Fetch the pinned Mathlib cache
+        run: lake exe cache get
+      - name: Build the proofs
+        run: lake build
+      - name: Check the definitions on concrete examples
+        run: lake env lean tests/ExamplesZono.lean
+      - name: Check the theorems and their axioms
+        shell: bash
+        run: |
+          set -euo pipefail
+          lake env lean tests/AuditZono.lean | tee "$RUNNER_TEMP/audit.txt"
+          lake env lean tests/AuditMinimax.lean | tee -a "$RUNNER_TEMP/audit.txt"
+          lake env lean tests/AuditLatticeBall.lean | tee -a "$RUNNER_TEMP/audit.txt"
+          grep 'depends on axioms' "$RUNNER_TEMP/audit.txt" > "$RUNNER_TEMP/axioms.txt"
+          test "$(wc -l < "$RUNNER_TEMP/axioms.txt")" -eq 23
+          if grep -v -F 'depends on axioms: [propext, Classical.choice, Quot.sound]' "$RUNNER_TEMP/axioms.txt"; then
+            echo 'unexpected axioms' >&2
+            exit 1
+          fi

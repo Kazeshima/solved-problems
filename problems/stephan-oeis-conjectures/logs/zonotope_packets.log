@@ -1,0 +1,6 @@
+n=3 d=0 consistent sets=8 (formula 8) flips=12 (formula 12) OK
+n=4 d=1 consistent sets=24 (formula 24) flips=36 (formula 36) OK
+n=5 d=2 consistent sets=62 (formula 62) flips=100 (formula 100) OK
+n=6 d=3 consistent sets=148 (formula 148) flips=264 (formula 264) OK
+n=7 d=4 consistent sets=338 (formula 338) flips=672 (formula 672) OK
+ALL OK

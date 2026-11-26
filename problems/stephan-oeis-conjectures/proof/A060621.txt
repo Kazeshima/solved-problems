@@ -1,0 +1,354 @@
+A060621: the number of flips between tilings of the cyclic zonotope Z(d+3, d)
+
+A proof that  a(d) = (d+3)(d+8) 2^(d-1) = (d^2 + 11 d + 24) 2^(d-1).
+
+26 November 2026.
+
+Provenance.  The proof was found and written by Claude, an AI model made by
+Anthropic.  Sections 2-5 were then formalised in Lean 4 (see Section 6).
+The text has not been peer reviewed.
+
+
+0. STATEMENT
+
+OEIS A060621 (M. Latapy, 2001) lists the number a(d) of flips between the
+d-dimensional tilings of the zonotope Z(d+3, d), i.e. the number of edges of
+the flip graph in codimension 3:
+
+    12, 36, 100, 264, 672, 1664, 4032, 9600, 22528, 52224     (d = 0..9).
+
+R. Stephan observed in 2004 that these ten terms satisfy
+a(d) = 2^d (d^2 + 11 d + 24) / 2 and listed this as Conjecture 69 in [S];
+C. Barker (2013) gave the matching empirical generating function.
+
+THEOREM.  For every d >= 0,   a(d) = (d+3)(d+8) 2^(d-1).
+
+Equivalently, writing n = d + 3: the Hasse diagram of the higher Bruhat
+order B(n, n-3) has n (n+5) 2^(n-4) edges.
+
+Section 1 reduces the statement to a count of graphs, using known results.
+Sections 2-5 prove that count; they are elementary and self-contained.
+
+
+1. THE MODEL
+
+Throughout n = d + 3 and [n] = {1, ..., n}.
+
+For a (k+2)-subset X of [n], the packet P(X) consists of the k+2 sets X - x
+(x in X), listed in lexicographic order; so X - x precedes X - y exactly
+when x > y.  A family U of (k+1)-subsets of [n] is CONSISTENT if for every
+(k+2)-subset X the members of P(X) that belong to U form a prefix or a
+suffix of P(X).  (Consistent families are the signotopes of rank k+1 on n
+elements of Felsner and Weil [FW]; compare the comment in A060602.)
+
+We use two known facts about the higher Bruhat orders B(n,k) of Manin and
+Schechtman [MS].
+
+(F1)  The flip graph of the fine zonotopal tilings of the cyclic zonotope
+      Z(n,d) is the Hasse diagram of B(n,d).
+      [Z, Theorem 4.1]; stated in this form in [BW, Theorem 2.5].
+
+(F2)  For 1 <= k < n, B(n,k) is isomorphic to the set of consistent families
+      of (k+1)-subsets of [n] ordered by single-step inclusion, whose
+      covering relations are the pairs U < U + {Y} of consistent families.
+      [Z, Theorem 4.1]; stated in this form in [C, Definitions 2.1, 2.10 and
+      Theorem 2.12].
+
+Here Z(n,d) is taken to be the cyclic zonotope, as in the identification of
+A060602 (the number of these tilings) with [Z, Proposition 7.1] recorded in
+that entry.  For d = 0 the same description gives the Boolean lattice of
+subsets of [3], with 8 elements and 12 covering pairs, in agreement with
+A060602(0) = 8 and a(0) = 12.
+
+Hence a(d) is the number of pairs (U, Y) where U and U + {Y} are consistent
+families of (n-2)-subsets of [n] and Y is not in U.
+
+Now replace every (n-2)-subset by its complement, a 2-subset {p,q}, i.e. an
+edge on the vertex set [n].  A family U becomes a graph G on [n].  The
+(n-1)-subsets are the sets X = [n] - p, and P(X) consists of the sets
+[n] - {p,q}, q != p, in decreasing order of q; they correspond to the edges
+at p.  Consistency therefore reads as follows.
+
+DEFINITION.  Let S be a finite set of integers.  A graph G on S is
+CONSISTENT if for every vertex p the neighbourhood N(p) is an initial
+segment or a final segment of S - p (in the natural order).  A FLIP on S is
+a pair (G, e), where e is a non-edge of G and both G and G + e are
+consistent.
+
+So a(d) is the number of flips on [d+3], and the Theorem follows from:
+
+THEOREM 2.  For n >= 3 the number of flips on [n] is n (n+5) 2^(n-4).
+
+Checks of the reduction.  Enumerating consistent families directly from the
+packet definition for n <= 7 gives 8, 24, 62, 148, 338 families (A060602)
+and 12, 36, 100, 264, 672 covering pairs (A060621).  Enumerating consistent
+graphs for n <= 14 gives 2^n + n 2^(n-2) - 2n graphs, which is the value of
+|B(n, n-3)| in [Z, Proposition 7.1], and reproduces all ten terms of A060621.
+
+
+2. FLIPS AT A FIXED PAIR
+
+Let S be a finite set of integers and G a graph on S.  The ROW of a vertex p
+is the 0/1 word (r(q) : q in S - p), q increasing, with r(q) = 1 iff p ~ q.
+G is consistent iff every row is monotone (non-increasing or
+non-decreasing).  We use repeatedly:
+
+(M)  If a monotone 0/1 word has a 1 somewhere before a 0, it is
+     non-increasing: every entry before that 1 is 1 and every entry after
+     that 0 is 0.  If it has a 0 somewhere before a 1, it is non-decreasing:
+     every entry before that 0 is 0 and every entry after that 1 is 1.
+
+Deleting a vertex from a consistent graph leaves a consistent graph, and so
+does passing to the complementary graph.
+
+Fix i < j in S and put
+
+    A = {q in S : q < i},  B = {q in S : i < q < j},  C = {q in S : q > j},
+
+with alpha = |A|, beta = |B|, gamma = |C|.  Unions below are written with +.
+
+LEMMA 1.  Let G be consistent with i not adjacent to j.  Then G + ij is
+consistent if and only if
+
+    N(i) = A + B  or  N(i) = C,     and     N(j) = A  or  N(j) = B + C.
+
+Proof.  Only the rows of i and j change.  Write the row of i in G as u 0 v,
+where the displayed 0 is the entry at j, u is indexed by A + B and v by C;
+the row of i in G + ij is u 1 v.  Both must be monotone.
+ - If u contains a 1, then by (M) applied to u 0 v we get v = 0...0 and
+   u = 1..1 0..0; a 0 in u would give the pattern 1, 0, 1 in u 1 v.  So
+   u = 1...1 and N(i) = A + B.
+ - If u contains no 1 but v does, then by (M) v = 0..0 1..1, and a 0 in v
+   would give 1, 0, 1 in u 1 v.  So v = 1...1 and N(i) = C.
+ - If neither contains a 1, then u 1 v = 0..0 1 0..0 is monotone only if u
+   or v is empty, i.e. N(i) = {} equals A + B or equals C.
+Conversely, if N(i) is A + B or C then u 1 v is 1..1 1 0..0 or 0..0 1 1..1.
+The argument for j is the same, with the entry at i separating A from
+B + C.  []
+
+Accordingly define four classes of consistent graphs on S:
+
+    DD(S;i,j):  N(i) = A + B,  N(j) = A;
+    DU(S;i,j):  N(i) = A + B,  N(j) = B + C;
+    UD(S;i,j):  N(i) = C,      N(j) = A;
+    UU(S;i,j):  N(i) = C,      N(j) = B + C.
+
+In each of them i and j are non-adjacent.  If |S| >= 3 the four classes are
+pairwise disjoint (A + B = C or A = B + C would force S = {i,j}), and by
+Lemma 1 the flips (G, ij) are exactly the members G of their union.
+
+LEMMA 2 (symmetries).
+(a) G -> complement of G + ij is a bijection DD(S;i,j) -> UU(S;i,j) and
+    DU(S;i,j) -> UD(S;i,j).
+(b) Let -S = {-q : q in S}.  The reversal q -> -q is a bijection
+    DU(S;i,j) -> DU(-S;-j,-i) and DD(S;i,j) -> UU(-S;-j,-i); it exchanges
+    the roles of A and C.
+
+Proof.  Both operations preserve consistency, and (a) is an involution on
+the set of flips at {i,j}, since the complement of (complement of G + ij)
++ ij is G.  The neighbourhoods of i and j are computed directly: for
+instance in (a), if N(i) = A + B then i is adjacent in the new graph to
+exactly the vertices of S - i - j outside A + B, that is to C.  []
+
+COROLLARY.  If |S| >= 3, the number of flips (G, ij) on S is
+2 |DD(S;i,j)| + 2 |DU(S;i,j)|.  Moreover |DU| is unchanged when A and C are
+exchanged by reversal, and so is |DD|, because by (b) and then (a)
+|DD(S;i,j)| = |UU(-S;-j,-i)| = |DD(-S;-j,-i)|.
+
+Two lemmas organise the inductions.
+
+LEMMA 3 (deleting a forced vertex).  Let F be a set of consistent graphs on
+S, let w be in S, N a subset of S - w, and F' a set of consistent graphs on
+S - w.  Assume
+ (i)  every G in F has N(w) = N and G - w in F';
+ (ii) for every H in F', the graph H + (w;N) obtained from H by adding the
+      vertex w with neighbourhood N lies in F.
+Then |F| = |F'|.
+
+Proof.  G -> G - w and H -> H + (w;N) are mutually inverse.  []
+
+LEMMA 4 (twins).  Let H be a graph on S - w and let t be a vertex of S - w
+such that no element of S lies strictly between w and t.  Let G be obtained
+from H by adding w.  If p is a vertex other than w and t, the row of p in H
+is monotone, and p ~ w in G iff p ~ t, then the row of p in G is monotone.
+
+Proof.  The row of p in G is its row in H with the entry at t repeated in
+an adjacent position.  []
+
+We say that w is a TWIN of t (t = i or j) if w and t are consecutive in S
+and every vertex p outside {i, j, w} is adjacent to w iff it is adjacent
+to t.  When a vertex w with a prescribed neighbourhood N is added to a graph
+H of one of the classes on S - w, condition (ii) of Lemma 3 is checked in
+the same way each time: the rows of i, j and w in H + (w;N) are explicit
+words, monotone by inspection, and the rows of all other vertices are
+monotone by Lemma 4 if w is a twin of i or of j.  Note that for p outside
+{i,j}, in the class DU we have p ~ i iff p < j, and p ~ j iff p > i; in the
+class DD we have p ~ i iff p < j, and p ~ j iff p < i.
+
+
+3. THE CLASS DU
+
+PROPOSITION 1.  |DU(S;i,j)| = binomial(alpha + beta + gamma, beta).
+
+Proof.  Induction on |S|.
+
+Case alpha = gamma = 0.  Every b in B is adjacent to i = min S and to
+j = max S, so its row begins and ends with 1 and consists of 1's.  Hence G
+is the complete graph minus the edge ij, which is consistent: the class has
+exactly one element, and binomial(beta, beta) = 1.
+
+Otherwise, by Lemma 2(b) (the binomial is symmetric in alpha and gamma) we
+may assume alpha >= 1.  Let a = max A; then a and i are consecutive.  Let G
+be in DU.  Since a ~ i and a is not adjacent to j, (M) shows that the row
+of a is non-increasing: N(a) = (A - a) + {i} + B', with B' an initial
+segment of B.
+
+(1) Graphs with B' = B.  Then N(a) = {q in S : q < j} - a.  Deleting a
+    gives a graph of DU(S - a; i, j).  Conversely, adding a with this
+    neighbourhood to H in DU(S - a; i, j) gives a graph of DU(S;i,j) of the
+    present kind: a is a twin of i, because p ~ a iff p < j iff p ~ i.  By
+    Lemma 3 there are |DU(S - a; i, j)| such graphs, with parameters
+    (alpha - 1, beta, gamma).
+
+(2) Graphs with B' != B.  Then beta >= 1 and a is not adjacent to
+    b = max B.  Now b ~ i, b ~ j, and the row of b has a 0 (at a) before a
+    1 (at i), so it is non-decreasing by (M): N(b) = {q in S : q >= i} - b.
+    Deleting b gives a graph of DU(S - b; i, j).  Conversely, adding b with
+    this neighbourhood to H in DU(S - b; i, j) gives a graph of DU(S;i,j)
+    in which a is not adjacent to b: here b is a twin of j, because p ~ b
+    iff p > i iff p ~ j.  By Lemma 3 there are |DU(S - b; i, j)| such
+    graphs, with parameters (alpha, beta - 1, gamma).
+
+So, with m = alpha + beta + gamma, the induction hypothesis gives
+|DU| = binomial(m-1, beta) + binomial(m-1, beta-1) = binomial(m, beta) if
+beta >= 1, and |DU| = binomial(m-1, 0) = 1 = binomial(m, 0) if beta = 0.  []
+
+
+4. THE CLASS DD
+
+For an integer x put x^+ = max(x, 0).
+
+PROPOSITION 2.
+|DD(S;i,j)| = 2^( (beta - 1)^+ + (alpha + gamma - 1)^+ ).
+
+Proof.  Induction on |S|.  Let G be in DD(S;i,j).
+
+Case beta >= 2.  Every b in B is adjacent to i and not to j, so by (M)
+N(b) is an initial segment of S - b that contains A + {i} and is contained
+in A + {i} + B.  Let b1 = min B and b2 = max B.
+ (1) Graphs with b1 ~ b2: N(b1) = {q in S : q < j} - b1.  Delete b1; it is
+     a twin of i (p ~ b1 iff p < j iff p ~ i).
+ (2) Graphs with b1 not adjacent to b2: N(b2) = A + {i}.  Delete b2; it is
+     a twin of j (p ~ b2 iff p < i iff p ~ j).
+In both cases Lemma 3 applies with F' the whole class DD of the smaller
+vertex set, whose parameters are (alpha, beta - 1, gamma).  Hence
+|DD| = 2 * 2^( (beta-2) + (alpha+gamma-1)^+ ), as claimed.
+
+Case beta = 1.  For the unique b in B, N(b) = A + {i} is forced; b is a
+twin of i.  Deleting it gives |DD| = |DD(S - b; i, j)|, with parameters
+(alpha, 0, gamma), in agreement with the formula.
+
+Case beta = 0, alpha >= 1 and gamma >= 1.  Now N(i) = N(j) = A, and i, j
+are consecutive.  Let a = max A and c = min C.
+ (1) Graphs with a ~ c.  The row of c has a 1 at a before a 0 at i, so by
+     (M) c is adjacent to all of A and to nothing above i: N(c) = A.
+     Delete c; it is a twin of j (p ~ c iff p < i iff p ~ j).  The
+     parameters become (alpha, 0, gamma - 1).
+ (2) Graphs with a not adjacent to c.  The row of a has a 1 at j before a
+     0 at c, so by (M) N(a) = (A - a) + {i, j}.  Delete a; it is a twin of
+     i (p ~ a iff p < i iff p ~ i, for p outside {i, j, a}).  The
+     parameters become (alpha - 1, 0, gamma).
+By induction each kind contains 2^(alpha+gamma-2) graphs, so
+|DD| = 2^(alpha+gamma-1).
+
+Case beta = 0 and alpha = 0 or gamma = 0.  By the Corollary we may assume
+gamma = 0, so that S = A + {i, j} and N(i) = N(j) = A.  If alpha = 0 the
+only graph is the empty graph on {i,j}.  If alpha = 1, the vertex of A is
+adjacent to i and j and that is all: one graph.  Let alpha >= 2.  Every a
+in A is adjacent to the two largest vertices i and j, so its row is
+non-decreasing: N(a) is a final segment of S - a.  Let a1 = min A and
+a2 = max A.
+ (1) Graphs with a1 ~ a2: N(a2) contains the least vertex, so
+     N(a2) = S - a2.  Delete a2; it is a twin of i (every p in A - a2 is
+     adjacent to both).
+ (2) Graphs with a1 not adjacent to a2: N(a1) = {i, j}.  Delete a1.  For
+     the converse, add a new least vertex a1 with neighbourhood {i, j} to
+     a graph H of DD(S - a1; i, j): the rows of i, j, a1 are monotone by
+     inspection, and the row of any other p, which ends with 1, 1 and is
+     therefore non-decreasing, gets a new first entry 0 and stays
+     non-decreasing.
+Lemma 3 gives |DD| = 2 |DD(alpha - 1, 0, 0)| = 2^(alpha-1).  []
+
+
+5. SUMMATION
+
+Proof of Theorem 2.  Let S = [n], n >= 3.  For i < j we have
+beta = j - i - 1 and alpha + gamma = n - 2 - beta, and there are
+n - 1 - beta pairs with a given beta (0 <= beta <= n-2).  By the Corollary
+and Propositions 1 and 2, the number of flips (G, ij) is
+
+    2 binomial(n-2, beta) + 2 * 2^( (beta-1)^+ + (n-3-beta)^+ ).
+
+The exponent equals n - 3 if beta = 0 or beta = n - 2, and n - 4 otherwise.
+So the number of flips at {i,j} is
+
+    2 binomial(n-2, j-i-1) + 2^(n-2)   if j - i = 1 or j - i = n - 1,
+    2 binomial(n-2, j-i-1) + 2^(n-3)   otherwise.
+
+Summing the first term, with m = n - 2:
+
+    sum_{beta} (m + 1 - beta) binomial(m, beta)
+        = (m+1) 2^m - m 2^(m-1) = (m+2) 2^(m-1) = n 2^(n-3),
+
+which contributes n 2^(n-2).  There are n pairs of the first kind and
+n(n-1)/2 - n of the second, contributing
+
+    n 2^(n-2) + (n(n-1)/2 - n) 2^(n-3) = n (n+1) 2^(n-4).
+
+The total is n 2^(n-2) + n (n+1) 2^(n-4) = n (n+5) 2^(n-4).  []
+
+With n = d + 3 this is (d+3)(d+8) 2^(d-1), which proves the Theorem.
+
+
+6. REMARKS
+
+Generating functions.  The Theorem is equivalent to each of
+
+    sum_{d>=0} a(d) x^d = 4 (3 - 9x + 7x^2) / (1 - 2x)^3,
+    sum_{d>=0} a(d) x^d / d! = 2 (x^2 + 6x + 6) exp(2x),
+    a(d) = 6 a(d-1) - 12 a(d-2) + 8 a(d-3)  with  a(0..2) = 12, 36, 100.
+
+The first is the empirical g.f. of C. Barker in the entry.
+
+Formal verification.  Theorem 2, in the form "the number of pairs (G, e)
+with e a non-edge of G and G, G + e consistent graphs on {0, ..., n-1}
+equals n (n+5) 2^(n-4) for n >= 4, and 12 for n = 3", together with
+Propositions 1 and 2, has been formalised and checked in Lean 4 with
+Mathlib (about 2300 lines, no axioms beyond the three standard ones of
+Lean/Mathlib).  The reduction of Section 1, that is facts (F1) and (F2), is
+not part of the formalisation.  The sources are in ../ZonotopeFlips/; the
+main statement is ZonoFlips.card_flipPairs_eq in ZonotopeFlips/Total.lean.
+
+Sources of the cited facts.  Ziegler's paper [Z] was available only as a
+scan and was not read directly: (F1) and (F2) are quoted in the form given
+in [BW] and [C], and the reference to [Z, Proposition 7.1] is the one
+recorded in OEIS A060602.
+
+
+REFERENCES
+
+[BW] A. Balitskiy and J. Wellman, Flip cycles in plabic graphs, Selecta
+     Math. (N.S.) 26 (2020), Paper No. 15; arXiv:1902.01530.
+[C]  H. Chau, On enumerating higher Bruhat orders through deletion and
+     contraction, arXiv:2412.10532, 2024.
+[FW] S. Felsner and H. Weil, Sweeps, arrangements and signotopes, Discrete
+     Appl. Math. 109 (2001), 67-94.
+[L]  M. Latapy, Generalized integer partitions, tilings of zonotopes and
+     lattices, arXiv:math/0008022, 2000.
+[MS] Yu. I. Manin and V. V. Schechtman, Arrangements of hyperplanes, higher
+     braid groups and higher Bruhat orders, in: Algebraic number theory,
+     Adv. Stud. Pure Math. 17, Academic Press, 1989, 289-308.
+[S]  R. Stephan, Prove or disprove. 100 conjectures from the OEIS,
+     arXiv:math/0409509, 2004.
+[Z]  G. M. Ziegler, Higher Bruhat orders and cyclic hyperplane
+     arrangements, Topology 32 (1993), 259-279.

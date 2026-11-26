@@ -1,0 +1,105 @@
+A080795 and A006154: a proof that  A080795(2n) = 2^n A006154(2n)
+
+26 November 2026.
+
+Provenance.  The proof was found and written by Claude, an AI model made by
+Anthropic, and then formalised in Lean 4 (see Section 3).  The text has not
+been peer reviewed.
+
+
+1. STATEMENT
+
+Let a(n) be OEIS A080795, the number of minimax trees on n nodes (Foata and
+Han [FH]), and let b(n) be OEIS A006154, the number of ordered partitions of
+an n-set into blocks of odd size:
+
+    a :  1, 1, 4, 20, 128, 1024, 9856, 110720, ...
+    b :  1, 1, 2,  7,  32,  181, 1232,   9787, ...
+
+R. Stephan conjectured in 2004 that a(2n) = 2^n b(2n); this is Conjecture 85
+in [S], and the formula line in A080795 is still marked "conjectured".
+
+THEOREM.  For every n >= 0,   a(2n) = 2^n b(2n).
+
+The two sequences enter only through the recurrences stated in their OEIS
+entries:
+
+    a(0) = 1,   a(n+1) = 2 sum_{k=0..n} binomial(n,k) a(k) a(n-k) - 0^n;
+    b(0) = 1,   b(n+1) = sum_{j odd, 1 <= j <= n+1} binomial(n+1,j) b(n+1-j).
+
+They express the obvious decompositions.  In a minimax tree on n+1 >= 2
+nodes the root carries the least or the greatest label (2 choices) and the
+remaining n labels are distributed over the left and the right subtree,
+either of which may be empty.  In an ordered partition into odd blocks the
+first block is an odd-sized subset and the rest is again such a partition.
+
+
+2. PROOF
+
+Let A(x) = sum a(n) x^n / n! and B(x) = sum b(n) x^n / n!, as formal power
+series.  The recurrences say
+
+    A' = 2 A^2 - 1,  A(0) = 1;        B = 1 + sinh(x) B.
+
+Put w = sqrt(2), P = exp(w x), M = exp(-w x), and
+
+    U = (1 - w) P + (1 + w) M,        V = (2 - w) P + (2 + w) M.
+
+Since w^2 = 2 we have U' = -V and V' = -2U.
+
+Step 1:  2 A U = V.  Let Q = 2 A U - V.  Then
+
+    Q' = 2 (2A^2 - 1) U - 2 A V + 2 U = 2 A (2 A U - V) = 2 A Q,
+
+and Q(0) = 2 * 2 - 4 = 0.  A power series with Q' = G Q and Q(0) = 0 is
+zero: if its coefficients up to x^m vanish, then so does the coefficient of
+x^m in G Q, which is (m+1) times the coefficient of x^(m+1) in Q.  (This is
+the usual linearisation of a Riccati equation: A = -U'/(2U), U'' = 2U.)
+
+Step 2:  the even part of A.  Replacing x by -x exchanges P and M, hence
+turns U, V into U~ = (1-w) M + (1+w) P and V~ = (2-w) M + (2+w) P, and
+2 A(-x) U~ = V~.  Using P M = 1 and w^2 = 2,
+
+    U U~ = 6 - P^2 - M^2,        V U~ + V~ U = 16.
+
+Therefore  (A(x) + A(-x)) * 2 (6 - P^2 - M^2) = 16.
+
+Step 3:  the even part of B.  Substituting w x for x in B (1 - sinh x) = 1
+gives B(wx) (2 - P + M) = 2, and then B(-wx) (2 - M + P) = 2.  Since
+(2 - P + M)(2 + P - M) = 4 - (P - M)^2 = 6 - P^2 - M^2,
+
+    (B(wx) + B(-wx)) * 2 (6 - P^2 - M^2) = 16.
+
+Step 4.  The series 2 (6 - P^2 - M^2) has constant term 8, so it can be
+cancelled:  A(x) + A(-x) = B(wx) + B(-wx).  The coefficient of x^(2n) is
+2 a(2n)/(2n)! on the left and 2 w^(2n) b(2n)/(2n)! = 2 * 2^n b(2n)/(2n)! on
+the right.  []
+
+In closed form, both sides of Step 4 equal 4 / (3 - cosh(2 sqrt(2) x)), that
+is, twice 1 / (1 - sinh^2(sqrt(2) x)).
+
+There is no such relation for odd indices: a(3) = 20 and b(3) = 7.
+
+
+3. REMARKS
+
+Formal verification.  The Theorem, for the sequences defined by the two
+recurrences above, is MinimaxTrees.a_even in ../MinimaxTrees.lean (Lean 4
+with Mathlib, formal power series over the reals, no axioms beyond the three
+standard ones).  The combinatorial descriptions are not formalised; the
+script ../minimax/verify_identity.py enumerates minimax trees and ordered
+partitions into odd blocks for n <= 7 and compares the counts with the
+recurrences, and checks the identity up to 2n = 400.
+
+Earlier work.  Both generating functions are in the OEIS entries (the
+differential equation was recorded there by P. Bala in 2011), so the
+identity is a short computation once it is set up as above.  A web search
+found no written proof.
+
+
+REFERENCES
+
+[FH] D. Foata and G.-N. Han, Arbres minimax et polynomes d'Andre, Adv. in
+     Appl. Math. 27 (2001), 367-389.
+[S]  R. Stephan, Prove or disprove. 100 conjectures from the OEIS,
+     arXiv:math/0409509, 2004.

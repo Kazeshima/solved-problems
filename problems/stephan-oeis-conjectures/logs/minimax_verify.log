@@ -1,0 +1,11 @@
+recurrences reproduce the 19 + 22 terms listed in the OEIS: True
+n=0 minimax trees=1 (recurrence 1) odd ordered partitions=1 (recurrence 1) OK
+n=1 minimax trees=1 (recurrence 1) odd ordered partitions=1 (recurrence 1) OK
+n=2 minimax trees=4 (recurrence 4) odd ordered partitions=2 (recurrence 2) OK
+n=3 minimax trees=20 (recurrence 20) odd ordered partitions=7 (recurrence 7) OK
+n=4 minimax trees=128 (recurrence 128) odd ordered partitions=32 (recurrence 32) OK
+n=5 minimax trees=1024 (recurrence 1024) odd ordered partitions=181 (recurrence 181) OK
+n=6 minimax trees=9856 (recurrence 9856) odd ordered partitions=1232 (recurrence 1232) OK
+n=7 minimax trees=110720 (recurrence 110720) odd ordered partitions=9787 (recurrence 9787) OK
+a(2n) = 2^n b(2n) for 0 <= 2n <= 400: OK
+ALL OK

@@ -1,0 +1,25 @@
+Lean 4.19.0, Mathlib v4.19.0 (c44e0c8e), Windows; each module compiled separately with lean, 2026-11-26 
+== ZonotopeFlips/Basic.lean
+EXIT 0  (30s)
+== ZonotopeFlips/Classes.lean
+EXIT 0  (25s)
+== ZonotopeFlips/DU.lean
+EXIT 0  (21s)
+== ZonotopeFlips/DUCount.lean
+EXIT 0  (12s)
+== ZonotopeFlips/DD.lean
+EXIT 0  (14s)
+== ZonotopeFlips/DDCount.lean
+EXIT 0  (16s)
+== ZonotopeFlips/Flips.lean
+EXIT 0  (14s)
+== ZonotopeFlips/Total.lean
+EXIT 0  (17s)
+== ZonotopeFlips.lean
+EXIT 0  (12s)
+== LatticeBall.lean
+EXIT 0  (14s)
+== MinimaxTrees.lean
+EXIT 0  (17s)
+== tests/ExamplesZono.lean
+EXIT 0  (23s)

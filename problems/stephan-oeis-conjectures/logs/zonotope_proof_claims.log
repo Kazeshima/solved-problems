@@ -1,0 +1,7 @@
+n=2: 2 consistent graphs, 1 class members checked, all claims hold
+n=3: 8 consistent graphs, 4 class members checked, all claims hold
+n=4: 24 consistent graphs, 14 class members checked, all claims hold
+n=5: 62 consistent graphs, 42 class members checked, all claims hold
+n=6: 148 consistent graphs, 116 class members checked, all claims hold
+n=7: 338 consistent graphs, 304 class members checked, all claims hold
+PROSE CLAIMS OK

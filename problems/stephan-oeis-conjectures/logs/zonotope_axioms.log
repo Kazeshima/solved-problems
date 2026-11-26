@@ -1,0 +1,36 @@
+def ZonoFlips.pairs : Finset ℕ → Finset (ℕ × ℕ) :=
+fun S => {p ∈ S ×ˢ S | p.1 < p.2}
+def ZonoFlips.graphs : Finset ℕ → Finset Graph :=
+fun S => (pairs S).powerset
+def ZonoFlips.adj : Graph → ℕ → ℕ → Prop :=
+fun G x y => (x, y) ∈ G ∨ (y, x) ∈ G
+def ZonoFlips.DownP : Finset ℕ → ℕ → (ℕ → Prop) → Prop :=
+fun S p a => ∀ x ∈ S, ∀ y ∈ S, x ≠ p → y ≠ p → x < y → a y → a x
+def ZonoFlips.UpP : Finset ℕ → ℕ → (ℕ → Prop) → Prop :=
+fun S p a => ∀ x ∈ S, ∀ y ∈ S, x ≠ p → y ≠ p → x < y → a x → a y
+def ZonoFlips.MonoP : Finset ℕ → ℕ → (ℕ → Prop) → Prop :=
+fun S p a => DownP S p a ∨ UpP S p a
+def ZonoFlips.Consistent : Finset ℕ → Graph → Prop :=
+fun S G => ∀ p ∈ S, MonoP S p (adj G p)
+def ZonoFlips.flipPairs : ℕ → Finset (Graph × ℕ × ℕ) :=
+fun n =>
+  {x ∈ graphs (Finset.range n) ×ˢ pairs (Finset.range n) |
+    Consistent (Finset.range n) x.1 ∧ x.2 ∉ x.1 ∧ Consistent (Finset.range n) (insert x.2 x.1)}
+card_flipPairs_eq : ∀ (d : ℕ), 2 * (flipPairs (d + 3)).card = (d ^ 2 + 11 * d + 24) * 2 ^ d
+flipCount_eq : ∀ (n : ℕ), 4 ≤ n → flipCount n = n * (n + 5) * 2 ^ (n - 4)
+flipCount_values : flipCount 3 = 12 ∧
+  flipCount 4 = 36 ∧
+    flipCount 5 = 100 ∧
+      flipCount 6 = 264 ∧
+        flipCount 7 = 672 ∧
+          flipCount 8 = 1664 ∧ flipCount 9 = 4032 ∧ flipCount 10 = 9600 ∧ flipCount 11 = 22528 ∧ flipCount 12 = 52224
+'ZonoFlips.card_DU' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ZonoFlips.card_DD' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ZonoFlips.card_UU' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ZonoFlips.card_UD' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ZonoFlips.card_flipSet' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ZonoFlips.two_mul_flipCount' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ZonoFlips.flipCount_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ZonoFlips.flipCount_values' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ZonoFlips.card_flipPairs_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+EXIT 0  (31s)
