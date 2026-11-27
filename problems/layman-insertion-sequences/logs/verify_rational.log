@@ -1,0 +1,4 @@
+rational theta = P/Q with Q <= 60, 0 < theta <= 4: 4408 values, all in a plateau
+  deepest node: depth 59; longest period word: 61 letters
+period words of length <= 40: 489; pairs of plateaus with the same type: 0; coincidences with powers: 0
+ALL OK
