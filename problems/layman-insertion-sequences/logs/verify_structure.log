@@ -1,0 +1,6 @@
+pairs (U, V) with |UV| <= 16: 79 checked
+for each: twin point inside the plateau; itinerary of the start equals prefix.(VU)^oo below the twin point
+          and prefix.(UV)^oo from it on, at 7 exact ratios; recurrence type (trace, #L); a different
+          itinerary just outside [fix(UV), fix(VU)]; all types distinct; Layman rule for both children
+types with D <= 4: [(3, 1), (4, 1), (5, 1), (6, 1), (7, 1), (8, 1), (9, 1), (10, 1), (11, 1), (12, 1), (13, 1), (14, 1), (15, 1), (16, 1), (17, 1), (4, 2), (10, 2), (18, 2), (28, 2), (40, 2), (54, 2), (70, 2), (5, 3), (10, 3), (26, 3), (37, 3), (67, 3), (86, 3), (134, 3), (163, 3), (233, 3), (6, 4), (26, 4), (68, 4), (138, 4), (250, 4), (412, 4)]
+ALL OK

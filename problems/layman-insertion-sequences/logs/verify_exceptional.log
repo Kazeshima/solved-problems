@@ -1,0 +1,36 @@
+pattern of steps (1, 3) repeated
+  theta = 0.5797727007401192229984539561158946482520...   k = 1/(1+theta) = 0.6330024563226739605453048787430607149807...   (bounds agree to 1645 digits)
+  every theta between the bounds follows the path for the first 16 of 18 steps
+  itinerary from the path = itinerary of the process on the first 4179 moves: True
+  first terms: [1, 2, 5, 8, 19, 49, 79, 188, 297, 703, 1812, 2921, 6951, 17932]
+  2584 terms; for each D <= 60 the relation a(n+2D) + a(n) = C a(n+D) fails for some n in the second half: True
+  longest stretch on which one relation holds: 89 consecutive n (D = 55)
+pattern of steps (3, 1) repeated
+  theta = 1.7248138774444400248733175278296176623659...   k = 1/(1+theta) = 0.3669975436773260394546951212569392850192...   (bounds agree to 1645 digits)
+  every theta between the bounds follows the path for the first 16 of 18 steps
+  itinerary from the path = itinerary of the process on the first 4179 moves: True
+  first terms: [1, 3, 11, 30, 109, 406, 1109, 4030, 10981, 39894, 148595, 405891, 1474969, 5493985]
+  1597 terms; for each D <= 60 the relation a(n+2D) + a(n) = C a(n+D) fails for some n in the second half: True
+  longest stretch on which one relation holds: 89 consecutive n (D = 55)
+pattern of steps (1, 1, 3) repeated
+  theta = 0.3582711401388542487556461952555957905450...   k = 1/(1+theta) = 0.7362300283415955760521272942734459500949...   (bounds agree to 744 digits)
+  every theta between the bounds follows the path for the first 16 of 18 steps
+  itinerary from the path = itinerary of the process on the first 5040 moves: True
+  first terms: [1, 2, 3, 7, 11, 15, 34, 53, 72, 163, 254, 599, 944, 1289]
+  3691 terms; for each D <= 60 the relation a(n+2D) + a(n) = C a(n+D) fails for some n in the second half: True
+  longest stretch on which one relation holds: 112 consecutive n (D = 41)
+pattern of steps (1, 3, 3) repeated
+  theta = 0.6124216458016772434345167024728744773352...   k = 1/(1+theta) = 0.6201851746432067145644647528781728817059...   (bounds agree to 543 digits)
+  every theta between the bounds follows the path for the first 15 of 18 steps
+  itinerary from the path = itinerary of the process on the first 5040 moves: True
+  first terms: [1, 2, 5, 13, 21, 50, 129, 337, 545, 1298, 3349, 8749, 14149, 33698]
+  2911 terms; for each D <= 60 the relation a(n+2D) + a(n) = C a(n+D) fails for some n in the second half: True
+  longest stretch on which one relation holds: 153 consecutive n (D = 56)
+pattern of steps (1, 3, 3, 1, 3) repeated
+  theta = 0.6124215736398628575173231117308959342710...   k = 1/(1+theta) = 0.6201852023987814284863554868201867444027...   (bounds agree to 748 digits)
+  every theta between the bounds follows the path for the first 15 of 18 steps
+  itinerary from the path = itinerary of the process on the first 4898 moves: True
+  first terms: [1, 2, 5, 13, 21, 50, 129, 337, 545, 1298, 3349, 5400, 12851, 33153]
+  2841 terms; for each D <= 60 the relation a(n+2D) + a(n) = C a(n+D) fails for some n in the second half: True
+  longest stretch on which one relation holds: 69 consecutive n (D = 40)
+ALL OK

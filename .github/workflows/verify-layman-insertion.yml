@@ -1,0 +1,56 @@
+name: Verify Layman's insertion sequences
+
+on:
+  push:
+    paths:
+      - 'problems/layman-insertion-sequences/**'
+      - '.github/workflows/verify-layman-insertion.yml'
+  pull_request:
+    paths:
+      - 'problems/layman-insertion-sequences/**'
+      - '.github/workflows/verify-layman-insertion.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: problems/layman-insertion-sequences
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Verify source hashes
+        run: sha256sum -c VERIFIED.sha256
+      - name: Check the statements and the written proof by exact computation
+        run: |
+          python scripts/explore.py
+          python scripts/targets.py
+          python scripts/verify_tree.py 10 4
+          python scripts/verify_structure.py 16
+          python scripts/verify_rational.py 60 40
+          python scripts/verify_exceptional.py 18 4000 60
+      - name: Install elan
+        run: |
+          curl --fail --location --retry 3 https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -o "$RUNNER_TEMP/elan-init.sh"
+          sh "$RUNNER_TEMP/elan-init.sh" -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Fetch the pinned Mathlib cache
+        run: lake exe cache get
+      - name: Build the proofs
+        run: lake build
+      - name: Check the theorems and their axioms
+        shell: bash
+        run: |
+          set -euo pipefail
+          lake env lean tests/Audit.lean | tee "$RUNNER_TEMP/audit.txt"
+          grep -E 'depends on axioms|does not depend on any axioms' "$RUNNER_TEMP/audit.txt" > "$RUNNER_TEMP/axioms.txt"
+          test "$(wc -l < "$RUNNER_TEMP/axioms.txt")" -eq 26
+          test "$(grep -c -F 'depends on axioms: [propext, Classical.choice, Quot.sound]' "$RUNNER_TEMP/axioms.txt")" -eq 18
+          test "$(grep -c -F 'depends on axioms: [propext, Quot.sound]' "$RUNNER_TEMP/axioms.txt")" -eq 2
+          test "$(grep -c -F 'does not depend on any axioms' "$RUNNER_TEMP/axioms.txt")" -eq 6

@@ -1,0 +1,11 @@
+Lean 4.19.0, Mathlib v4.19.0 (c44e0c8e), Windows; each module compiled separately with lean, 2026-11-27
+== Insertion/Core.lean
+EXIT 0  (167s)
+== Insertion/Families.lean
+EXIT 0  (39s)
+== Insertion/OEIS.lean
+EXIT 0  (72s)
+== Insertion.lean
+EXIT 0  (29s)
+== tests/Audit.lean
+EXIT 0  (35s)

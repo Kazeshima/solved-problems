@@ -1,0 +1,86 @@
+def Insertion.pass : ℕ → ℕ → List ℕ → List ℕ :=
+fun p q x =>
+  List.brecOn x fun x f =>
+    (match (motive := (x : List ℕ) → List.below x → List ℕ) x with
+      | [] => fun x => []
+      | [a] => fun x => [a]
+      | a :: b :: l => fun x => if p * b ≤ q * a then a :: (a + b) :: x.1 else a :: x.1)
+      f
+def Insertion.stage : ℕ → ℕ → ℕ → List ℕ :=
+fun p q n => (Insertion.pass p q)^[n] [1, 1]
+def Insertion.IsLimit : ℕ → ℕ → (ℕ → ℕ) → Prop :=
+fun p q a => ∀ (i : ℕ), ∃ N, ∀ (n : ℕ), N ≤ n → (stage p q n)[i]? = some (a i)
+def Insertion.runLen : ℕ → ℕ → ℕ → ℕ → ℕ :=
+fun p q X Y => if p * (X + Y) ≤ q * X then (q * X - p * (X + Y)) / (p * X) + 1 else 0
+def Insertion.next : ℕ → ℕ → ℕ × ℕ → ℕ × ℕ :=
+fun p q s => (s.1 + (s.2 + runLen p q s.1 s.2 * s.1), s.2 + runLen p q s.1 s.2 * s.1)
+def Insertion.state : ℕ → ℕ → ℕ → ℕ × ℕ :=
+fun p q n => (next p q)^[n] (1, 1)
+def Insertion.rdis : ℕ → ℕ → ℕ → ℕ :=
+fun p q n => (state p q n).1
+isLimit_rdis : ∀ (p q : ℕ), 0 < p → p ≤ q → IsLimit p q (rdis p q)
+@IsLimit.unique : ∀ {p q : ℕ} {a b : ℕ → ℕ}, IsLimit p q a → IsLimit p q b → a = b
+next_eq : ∀ (p q X Y j : ℕ),
+  0 < p →
+    0 < X → j = 0 ∨ p * (Y + j * X) ≤ q * X → q * X < p * (X + Y + j * X) → next p q (X, Y) = (X + Y + j * X, Y + j * X)
+layman_C2 : ∀ (m p q : ℕ),
+  0 < m →
+    0 < p →
+      m * p ≤ q →
+        m * q + p ≤ (m * m + m) * p →
+          rdis p q 0 = 1 ∧ rdis p q 1 = m + 1 ∧ ∀ (n : ℕ), rdis p q (n + 2) + rdis p q n = (m + 1) * rdis p q (n + 1)
+layman_C2_twin : ∀ (m p q : ℕ),
+  2 ≤ m →
+    0 < p →
+      q < m * p →
+        (m * m + m) * p ≤ (m + 1) * q + p →
+          rdis p q 0 = 1 ∧ rdis p q 1 = m ∧ ∀ (n : ℕ), rdis p q (n + 2) + rdis p q n = (m + 1) * rdis p q (n + 1)
+layman_C4 : ∀ (m q : ℕ),
+  2 ≤ m →
+    q + 1 = m * m →
+      (rdis m q 0 = 1 ∧ rdis m q 1 = m ∧ rdis m q 2 + 1 = m * m + m ∧ rdis m q 3 + 2 * m = m * m * m + m * m) ∧
+        ∀ (n : ℕ), rdis m q (n + 4) + rdis m q n + 2 * rdis m q (n + 2) = (m * m + m) * rdis m q (n + 2)
+layman_C4_between : ∀ (m q : ℕ), 2 ≤ m → q + 1 = m * m → q < m * m ∧ (m - 1) * m < q
+A082630_rec : ∀ (n : ℕ), rdis 7 11 (n + 4) + rdis 7 11 n = 4 * rdis 7 11 (n + 2)
+A082630_prod : ∀ (n : ℕ), rdis 7 11 n * rdis 7 11 (n + 3) + 2 = rdis 7 11 (n + 1) * rdis 7 11 (n + 2)
+A082630_square_even : ∀ (n : ℕ), ∃ y, 3 * rdis 7 11 (2 * n) ^ 2 + 6 = y ^ 2
+A082630_square_odd : ∀ (n : ℕ), ∃ x y, rdis 7 11 (2 * n + 1) = 2 * x ∧ 3 * x ^ 2 + 1 = y ^ 2
+A082981_rec : ∀ (n : ℕ), rdis 4 5 (n + 8) + rdis 4 5 n = 6 * rdis 4 5 (n + 4)
+A085260_rec : ∀ (n : ℕ), rdis 833344 10000000 (n + 2) + rdis 833344 10000000 n = 13 * rdis 833344 10000000 (n + 1)
+A085260_prod : ∀ (n : ℕ),
+  rdis 833344 10000000 n * rdis 833344 10000000 (n + 3) =
+    143 + rdis 833344 10000000 (n + 1) * rdis 833344 10000000 (n + 2)
+A085376_rec : ∀ (n : ℕ), rdis 36704 100000 (n + 4) + rdis 36704 100000 n = 10 * rdis 36704 100000 (n + 2)
+A085376_prod : ∀ (n : ℕ),
+  rdis 36704 100000 n * rdis 36704 100000 (n + 3) + 3 = rdis 36704 100000 (n + 1) * rdis 36704 100000 (n + 2)
+A085348_rec : ∀ (n : ℕ), rdis 264 1000 (n + 4) + rdis 264 1000 n = 18 * rdis 264 1000 (n + 2)
+A085348_prod : ∀ (n : ℕ), rdis 264 1000 n * rdis 264 1000 (n + 3) + 4 = rdis 264 1000 (n + 1) * rdis 264 1000 (n + 2)
+A085349_rec : ∀ (n : ℕ), rdis 26688 100000 (n + 4) + rdis 26688 100000 n = 18 * rdis 26688 100000 (n + 2)
+A085349_prod : ∀ (n : ℕ),
+  rdis 26688 100000 n * rdis 26688 100000 (n + 3) = 11 + rdis 26688 100000 (n + 1) * rdis 26688 100000 (n + 2)
+'Insertion.isLimit_rdis' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Insertion.IsLimit.unique' depends on axioms: [propext, Quot.sound]
+'Insertion.next_eq' depends on axioms: [propext, Quot.sound]
+'Insertion.layman_C2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Insertion.layman_C2_twin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Insertion.layman_C4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Insertion.layman_C4_between' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Insertion.A082630_values' does not depend on any axioms
+'Insertion.A082630_rec' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Insertion.A082630_prod' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Insertion.A082630_square_even' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Insertion.A082630_square_odd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Insertion.A082981_values' does not depend on any axioms
+'Insertion.A082981_rec' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Insertion.A085260_values' does not depend on any axioms
+'Insertion.A085260_rec' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Insertion.A085260_prod' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Insertion.A085376_values' does not depend on any axioms
+'Insertion.A085376_rec' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Insertion.A085376_prod' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Insertion.A085348_values' does not depend on any axioms
+'Insertion.A085348_rec' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Insertion.A085348_prod' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Insertion.A085349_values' does not depend on any axioms
+'Insertion.A085349_rec' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Insertion.A085349_prod' depends on axioms: [propext, Classical.choice, Quot.sound]
